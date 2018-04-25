@@ -1,7 +1,9 @@
 %% Main Function For Throughput-Optimal CHAIN
 clear;
+clc;
+tic;
 
-%% Initialization
+%% Part 1. Initialization
 simT = 1000000;
 currentT = 0;
 oldT = 0;
@@ -12,8 +14,8 @@ Tcont = 1;
 Mode = 'Qth-based';
 %Mode = 'Qth-cross-piggyback';
 %Mode = 'Qth-plus-Contention';
-N_CHAIN = 2;
-N_DCF = 8;
+N_CHAIN = 3;
+N_DCF = 0;
 N = N_CHAIN + N_DCF;
 is_CHAIN = [ones(N_CHAIN,1); zeros(N_DCF,1)];
 is_DCF = [zeros(N_CHAIN,1); ones(N_DCF,1)];
@@ -24,7 +26,7 @@ next_arrival_time = zeros(N, 1);
 state_vec = ones(N, 1);
 
 
-%% Arrival rates for Qth-based
+% Arrival rates for Qth-based
 %arrival_rate = 0.96*[1/15*0.3, 1/10*0.2, 1/15*0.4, 1/15*0.05, 1/15*0.05];
 %arrival_rate = 0.96*[1/15*0.15, 1/10*0.1, 1/15*0.4, 1/15*0.2, 1/15*0.15];
 %arrival_rate = 1*[0.04, 0.01, 0.33, 0.03, 0.02, 0.02, 0.02, 0.01, 0.01, 0.01];
@@ -44,11 +46,11 @@ arrival_rate = 1*[0.04, 0.02, 0.2, 0.2, 0.02, 0.02, 0.02, 0.01, 0.01, 0.01];
 %arrival_rate = 0.995*[1/2000, 1/100, 1/200, 1/2000, 1/500, 1/2000, 1/20, 1/1000, 1/200, 1/2000];
 
 
-%% Arrival rates for Qth-cross-piggyback
+% Arrival rates for Qth-cross-piggyback
 
 
 
-%% Parameters
+% Parameters
 Npoints = 3000000;
 
 contention_time = 0; 
@@ -68,7 +70,7 @@ end
 MAX_TOL = 1e-10;
 
 
-%% Main Program
+%% Part 2: Main Program
 count = 0;
 for i=1:N
     next_arrival_time(i) = get_interarrival_time(arrival_rate(i));
@@ -252,4 +254,4 @@ round_count_normalize = round_count/(sum(round_count));
 %plot(frame_timestamps(1:count), qn_history(:,1:count));
 createfigure(frame_timestamps(1:count), qn_history(:,1:count));
 
-
+toc;
