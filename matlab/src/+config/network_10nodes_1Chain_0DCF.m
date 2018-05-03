@@ -21,7 +21,7 @@ Mode = 'Qth-plus-Contention';
 %% Part 3: Node configuration
 N_CHAIN_group = 1;
 CHAINs = cell(N_CHAIN_group,1);
-CHAINs{1} = [1 2 3];
+CHAINs{1} = [1 2 3 4 5 6 7 8 9 10];
 DCF = [];
 len_CHAIN = cellfun('length',CHAINs);
 N_CHAIN_node = sum(len_CHAIN);
@@ -34,8 +34,7 @@ is_DCF = [zeros(N_CHAIN_node,1); ones(N_DCF,1)];
 q_threshold = 10; % threshold for reactivation
 
 %% Part 5: Arrival rates for Qth-based algorithm
-rho = 0.93;
+rho = 0.99;
 
-arrival_rate = rho*[40/100, 15/100, 5/100];
-
+arrival_rate = rho*[15/100, 15/100, 15/100, 10/100, 5/100, 5/100, 5/100, 5/100, 5/100, 5/100];
 

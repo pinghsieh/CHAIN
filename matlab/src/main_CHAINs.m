@@ -5,10 +5,12 @@ tic;
 %% Initialization
 %config.network_5nodes_1Chain;
 %config.network_6nodes_1Chain_1DCF;
-config.network_4nodes_1Chain_1DCF;
+%config.network_4nodes_1Chain_1DCF;
 %config.network_3nodes_1Chain_1DCF;
 %config.network_3nodes_1Chain_0DCF;
 %config.network_5nodes_1Chain_2DCF;
+%config.network_5nodes_1Chain_0DCF;
+config.network_10nodes_1Chain_0DCF;
 
 currentT = 0;
 oldT = 0;
@@ -18,7 +20,8 @@ next_arrival_time = zeros(N, 1);
 state_vec = zeros(N, 1);
 CHAIN_head_id = 0;
 CHAIN_tail_id = 0;
-
+Tput_shortterm = zeros(N, 1); % monitor the short-term empirical throughput
+time_since_last_CHAIN_update = 0;
 
 %% Parameters
 Npoints = 3000000;
@@ -50,6 +53,81 @@ while currentT < simT
     total_TX_time = 0;
     round_idx = 1;
 
+%% Original CHAIN
+% Chain may break due to a link with an empty queue
+% For simplicity, we consider that there is only one CHAIN (by choosing a small delta in the CHAIN paper)
+% For fair comparison, we shall consider that CHAIN is closed
+    if strcmp(Mode,'Original-CHAIN')
+        % Contention
+        winner_id = -1;
+        if time_since_last_CHAIN_update >= Tupdate || currentT == 0
+           % Update CHAIN piggyback relations
+           % TODO!!!
+           [val_sorted, id_sorted] = sort(Tput_shortterm(1:N_CHAIN_node), 'descend');
+           CHAIN_head_id = id_sorted(1);
+           CHAIN_tail_id = id_sorted(N_CHAIN_node);
+           for m=1:N_CHAIN_node
+               if m == 1 
+                   WIFI_nodes{id_sorted(m)}.succ_id = id_sorted(m+1);
+                   WIFI_nodes{id_sorted(m)}.pred_id = id_sorted(N_CHAIN_node);
+               else
+                   if m == N_CHAIN_node
+                       WIFI_nodes{id_sorted(m)}.succ_id = id_sorted(1);
+                       WIFI_nodes{id_sorted(m)}.pred_id = id_sorted(m-1);
+                   else
+                       WIFI_nodes{id_sorted(m)}.succ_id = id_sorted(m+1);
+                       WIFI_nodes{id_sorted(m)}.pred_id = id_sorted(m-1);                      
+                   end
+               end
+           end
+           Tput_shortterm = zeros(N,1);
+           time_since_last_CHAIN_update = 0;
+        end
+        contention_time = get_contention_time(Tcont);
+        % Each node is active if it has at least one packetis active if
+        contention_set = find(qn >= 1);
+        if ~isempty(contention_set)
+            winner_id = contention_set(randi([1, length(contention_set)]));
+        end    
+        % Services
+        if winner_id > 0
+            if winner_id <= N_CHAIN_node
+                % The winner supports CHAIN
+                qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
+                Tput_shortterm(winner_id) = Tput_shortterm(winner_id) + 1;
+                total_TX_time = total_TX_time + Tpkt;
+                round_idx = round_idx + power(2,winner_id-1); 
+                next_in_CHAIN = WIFI_nodes{winner_id}.succ_id;
+                while next_in_CHAIN ~= winner_id
+                    if qn(next_in_CHAIN) > 0
+                        qn(next_in_CHAIN) = qn(next_in_CHAIN) - 1;  % service is deterministic
+                        Tput_shortterm(next_in_CHAIN) = Tput_shortterm(next_in_CHAIN) + 1;
+                        total_TX_time = total_TX_time + Tpkt;
+                        round_idx = round_idx + power(2,next_in_CHAIN-1);
+                        next_in_CHAIN = WIFI_nodes{next_in_CHAIN}.succ_id;
+                    else
+                        % CHAIN breaks and the next contention interval
+                        % starts
+                        break
+                    end
+                end
+            else
+                % The winner follows DCF
+                qn(winner_id) = max(0, qn(winner_id) - 1);  % service is deterministic
+                total_TX_time = total_TX_time + Tpkt;
+                round_idx = round_idx + power(2,winner_id-1);                
+            end
+            % Time evolution
+            total_frame_time = contention_time + total_TX_time;
+            oldT = currentT;
+            currentT = currentT + total_frame_time; 
+            time_since_last_CHAIN_update = time_since_last_CHAIN_update + total_frame_time;
+        else
+            oldT = currentT;
+            currentT = min(next_arrival_time);
+            time_since_last_CHAIN_update = time_since_last_CHAIN_update + (currentT - oldT);
+        end
+    end
 %% Q-threshold plus contention-based re-admission
 % Chain may break due to a link with an empty queue
     if strcmp(Mode,'Qth-plus-Contention')
