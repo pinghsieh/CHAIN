@@ -4,26 +4,25 @@
 % simT: total simulation time 
 % Tpkt: time needed for 1 transmission
 % Tcont: contention time
-simT = 500000;
+% Tupdate: period of piggyback relation update for Original-CHAIN
+simT = 300000;
 Tpkt = 1;
 Tdummy = 0;
 Tcont = 1;
+Tupdate = 2000;
 
 %% Part 2: Choose algorithm
 % Qth-based: 
-% Qth-based-DCF-priority:
-% Qth-based-Chain-wide-contention:
 % Qth-cross-piggyback:
 % Qth-plus-Contention:
-% Qth-plus-Contention-DCF-priority
-% Pure-DCF
+% Original-CHAIN:
 Mode = 'Qth-plus-Contention';
 
 %% Part 3: Node configuration
 N_CHAIN_group = 1;
 CHAINs = cell(N_CHAIN_group,1);
 CHAINs{1} = [1 2 3];
-DCF = 4;
+DCF = [];
 len_CHAIN = cellfun('length',CHAINs);
 N_CHAIN_node = sum(len_CHAIN);
 N_DCF = length(DCF);
@@ -32,11 +31,11 @@ is_CHAIN = [ones(N_CHAIN_node,1); zeros(N_DCF,1)];
 is_DCF = [zeros(N_CHAIN_node,1); ones(N_DCF,1)];
 
 %% Part 4: Policy parameters
-q_threshold = 20; % threshold for reactivation
+q_threshold = 10; % threshold for reactivation
 
 %% Part 5: Arrival rates for Qth-based algorithm
-rho = 0.95;
+rho = 0.93;
 
-arrival_rate = rho*[1/6, 1/6, 1/6, 1/6];
+arrival_rate = rho*[40/100, 15/100, 5/100];
 
 

@@ -1,19 +1,42 @@
+function [] = sim_single_CHAINs_real_backoff(network_config_code, rho, Mode, fileID)
 %% Main Function For Throughput-Optimal CHAIN
-clear;
-%clc;
+%% Choose algorithm
+% Qth-based: 
+% Qth-cross-piggyback:
+% Qth-plus-Contention:
+% Qth-plus-Contention-with-dummy
+% Original-CHAIN:
+% Original-CHAIN-two-chains:
+% Pure-DCF:
+
 tic;
+
+fprintf(fileID, '***** Mode = %s, rho = %.3f ***** \n', Mode, rho);
 %% Initialization
 switch network_config_code
     case '5-1-0'
-        config.network_5nodes_1Chain_0DCF;   
+        config_real_backoff.network_5nodes_1Chain_0DCF;   
     case '10-1-0'
-        config.network_10nodes_1Chain_0DCF;
+        config_real_backoff.network_10nodes_1Chain_0DCF;
     case '20-1-0'
-        config.network_20nodes_1Chain_0DCF;
+        config_real_backoff.network_20nodes_1Chain_0DCF;
+    case '20-1-0-2groups'
+        config_real_backoff.network_20nodes_1Chain_0DCF_2groups;
+    case '20-1-0-2groups-het'
+        config_real_backoff.network_20nodes_1Chain_0DCF_2groups_hetero;         
+    case '20-1-10-2groups-het'
+        config_real_backoff.network_20nodes_1Chain_10DCF_2groups_hetero;        
+    case '20-1-0-4groups'
+        config_real_backoff.network_20nodes_1Chain_0DCF_4groups; 
+    case '30-1-0-3groups'
+        config_real_backoff.network_30nodes_1Chain_0DCF_3groups; 
+    case '30-1-10-3groups'
+        config_real_backoff.network_30nodes_1Chain_10DCF_3groups; 
+    otherwise
+        config_real_backoff.network_5nodes_1Chain_0DCF;
 end
 
 currentT = 0;
-oldT = 0;
 
 WIFI_nodes = cell(N, 1);
 next_arrival_time = zeros(N, 1);
@@ -36,7 +59,6 @@ dummy_packet_count = zeros(N,1);
 
 %% Parameters
 Npoints = 3000000;
-contention_time = 0; 
 qn = zeros(N,1);
 qn_history = zeros(N, Npoints);
 frame_timestamps = zeros(1, Npoints);
@@ -95,7 +117,7 @@ while currentT < simT
         end
         
         %% Determine contention time (including possible collisions)
-        contention_time = 0;   
+        contention_time = DIFS;   
         % Each node is active if it has at least one packet is active if
         contention_set = find(qn >= 1);      
         % There can be multiple winners, a.k.a. collision
@@ -220,7 +242,7 @@ while currentT < simT
         end
 
         %% Determine contention time (including possible collisions)
-        contention_time = 0;   
+        contention_time = DIFS;   
         % Each node is active if it has at least one packet is active if
         contention_set = find(qn >= 1);      
         % There can be multiple winners, a.k.a. collision
@@ -303,7 +325,7 @@ while currentT < simT
         winner_id = -1;
 
         %% Determine contention time (including possible collisions)
-        contention_time = 0;   
+        contention_time = DIFS;   
         % CHAIN node is active if
         % (1) it is already in CHAIN and has at least one packet
         % (2) it it currently not in CHAIN but has more than or equal to
@@ -458,7 +480,7 @@ while currentT < simT
         winner_id = -1;
 
         %% Determine contention time (including possible collisions)
-        contention_time = 0;   
+        contention_time = DIFS;   
         % CHAIN node is active if
         % (1) it is already in CHAIN and has at least one packet
         % (2) it it currently not in CHAIN but has more than or equal to
@@ -1082,7 +1104,7 @@ while currentT < simT
         winner_id = -1;
         
         %% Determine contention time (including possible collisions)
-        contention_time = 0;   
+        contention_time = DIFS;   
         % Each node is active if it has at least one packet is active if
         contention_set = find(qn >= 1);      
         % There can be multiple winners, a.k.a. collision
@@ -1157,12 +1179,14 @@ average_contention_time_per_interval = total_contention_time/total_contention_in
 createfigure(frame_timestamps(1:count), qn_history(:,1:count));
 average_qn = queue_length_calculus/currentT;
 for i=1:N
-fprintf('average queue length: %.2f\n', average_qn(i));
+fprintf(fileID, 'average queue length of client %d: %.2f\n', i, average_qn(i));
 end
-fprintf('total average queue length: %.2f\n', sum(average_qn));
-fprintf('total average delay: %.2f (ms)\n', sum(average_qn)/sum(arrival_rate));
-fprintf('average contention time per interval: %.3f (ms)\n', average_contention_time_per_interval);
-fprintf('contention time percentage: %.3f %%\n', total_contention_time/currentT*100);
-fprintf('average collision rate: %.2f %%\n', total_collision/total_contention_interval*100);
+fprintf(fileID, 'total average queue length: %.2f\n', sum(average_qn));
+fprintf(fileID, 'total average delay: %.2f (ms)\n', sum(average_qn)/sum(arrival_rate));
+fprintf(fileID, 'average contention time per interval: %.3f (ms)\n', average_contention_time_per_interval);
+fprintf(fileID, 'contention time percentage: %.3f %%\n', total_contention_time/currentT*100);
+fprintf(fileID, 'average collision rate: %.2f %%\n\n', total_collision/total_contention_interval*100);
+
 toc;
+end
 

@@ -1,0 +1,54 @@
+***** Mode = Qth-plus-Contention, rho = 0.955 ***** 
+average queue length of client 1: 66.91
+average queue length of client 2: 81.72
+average queue length of client 3: 108.04
+average queue length of client 4: 70.89
+average queue length of client 5: 66.48
+average queue length of client 6: 93.22
+average queue length of client 7: 99.39
+average queue length of client 8: 83.42
+average queue length of client 9: 93.44
+average queue length of client 10: 73.40
+average queue length of client 11: 13.93
+average queue length of client 12: 11.52
+average queue length of client 13: 15.33
+average queue length of client 14: 14.15
+average queue length of client 15: 13.54
+average queue length of client 16: 15.92
+average queue length of client 17: 14.70
+average queue length of client 18: 14.81
+average queue length of client 19: 11.42
+average queue length of client 20: 11.64
+total average queue length: 973.87
+total average delay: 169.96 (ms)
+average contention time per interval: 0.091 (ms)
+contention time percentage: 7.873 %
+average collision rate: 23.70 %
+
+***** Mode = Qth-plus-Contention, rho = 0.960 ***** 
+average queue length of client 1: 104.92
+average queue length of client 2: 82.64
+average queue length of client 3: 85.06
+average queue length of client 4: 73.52
+average queue length of client 5: 88.58
+average queue length of client 6: 84.08
+average queue length of client 7: 89.83
+average queue length of client 8: 90.17
+average queue length of client 9: 95.58
+average queue length of client 10: 73.55
+average queue length of client 11: 14.73
+average queue length of client 12: 13.83
+average queue length of client 13: 11.07
+average queue length of client 14: 11.15
+average queue length of client 15: 15.72
+average queue length of client 16: 11.54
+average queue length of client 17: 15.63
+average queue length of client 18: 16.45
+average queue length of client 19: 11.35
+average queue length of client 20: 16.77
+total average queue length: 1006.15
+total average delay: 174.68 (ms)
+average contention time per interval: 0.091 (ms)
+contention time percentage: 7.680 %
+average collision rate: 23.97 %
+

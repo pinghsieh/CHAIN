@@ -1,6 +1,6 @@
 function t = get_contention_time(tau)
 % Detrministic
-    t = tau;
+    %t = tau;
 % Exponential
-    %t = exprnd(tau);
+    t = exprnd(tau);
 end

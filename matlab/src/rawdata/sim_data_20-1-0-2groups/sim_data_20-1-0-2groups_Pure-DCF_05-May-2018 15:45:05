@@ -1,0 +1,54 @@
+***** Mode = Pure-DCF, rho = 0.600 ***** 
+average queue length of client 1: 0.19
+average queue length of client 2: 0.19
+average queue length of client 3: 0.19
+average queue length of client 4: 0.19
+average queue length of client 5: 0.19
+average queue length of client 6: 0.19
+average queue length of client 7: 0.18
+average queue length of client 8: 0.19
+average queue length of client 9: 0.19
+average queue length of client 10: 0.18
+average queue length of client 11: 0.03
+average queue length of client 12: 0.03
+average queue length of client 13: 0.03
+average queue length of client 14: 0.03
+average queue length of client 15: 0.03
+average queue length of client 16: 0.04
+average queue length of client 17: 0.03
+average queue length of client 18: 0.03
+average queue length of client 19: 0.03
+average queue length of client 20: 0.03
+total average queue length: 2.23
+total average delay: 0.62 (ms)
+average contention time per interval: 0.058 (ms)
+contention time percentage: 22.107 %
+average collision rate: 6.19 %
+
+***** Mode = Pure-DCF, rho = 0.620 ***** 
+average queue length of client 1: 0.23
+average queue length of client 2: 0.23
+average queue length of client 3: 0.24
+average queue length of client 4: 0.23
+average queue length of client 5: 0.24
+average queue length of client 6: 0.23
+average queue length of client 7: 0.24
+average queue length of client 8: 0.24
+average queue length of client 9: 0.25
+average queue length of client 10: 0.24
+average queue length of client 11: 0.04
+average queue length of client 12: 0.04
+average queue length of client 13: 0.04
+average queue length of client 14: 0.04
+average queue length of client 15: 0.04
+average queue length of client 16: 0.04
+average queue length of client 17: 0.04
+average queue length of client 18: 0.04
+average queue length of client 19: 0.04
+average queue length of client 20: 0.04
+total average queue length: 2.76
+total average delay: 0.74 (ms)
+average contention time per interval: 0.057 (ms)
+contention time percentage: 23.128 %
+average collision rate: 7.27 %
+

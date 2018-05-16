@@ -1,0 +1,270 @@
+***** Mode = Original-CHAIN-two-chains, rho = 0.680 ***** 
+average queue length of client 1: 0.73
+average queue length of client 2: 0.72
+average queue length of client 3: 0.67
+average queue length of client 4: 0.68
+average queue length of client 5: 0.66
+average queue length of client 6: 0.76
+average queue length of client 7: 0.72
+average queue length of client 8: 0.68
+average queue length of client 9: 0.71
+average queue length of client 10: 0.66
+average queue length of client 11: 0.13
+average queue length of client 12: 0.15
+average queue length of client 13: 0.14
+average queue length of client 14: 0.13
+average queue length of client 15: 0.13
+average queue length of client 16: 0.13
+average queue length of client 17: 0.13
+average queue length of client 18: 0.14
+average queue length of client 19: 0.13
+average queue length of client 20: 0.13
+total average queue length: 8.33
+total average delay: 2.04 (ms)
+average contention time per interval: 0.090 (ms)
+contention time percentage: 31.353 %
+average collision rate: 13.58 %
+
+***** Mode = Original-CHAIN-two-chains, rho = 0.700 ***** 
+average queue length of client 1: 0.92
+average queue length of client 2: 0.98
+average queue length of client 3: 0.90
+average queue length of client 4: 0.87
+average queue length of client 5: 0.91
+average queue length of client 6: 1.11
+average queue length of client 7: 0.92
+average queue length of client 8: 1.04
+average queue length of client 9: 0.95
+average queue length of client 10: 0.90
+average queue length of client 11: 0.17
+average queue length of client 12: 0.18
+average queue length of client 13: 0.18
+average queue length of client 14: 0.18
+average queue length of client 15: 0.18
+average queue length of client 16: 0.18
+average queue length of client 17: 0.17
+average queue length of client 18: 0.18
+average queue length of client 19: 0.17
+average queue length of client 20: 0.19
+total average queue length: 11.30
+total average delay: 2.69 (ms)
+average contention time per interval: 0.090 (ms)
+contention time percentage: 30.914 %
+average collision rate: 15.48 %
+
+***** Mode = Original-CHAIN-two-chains, rho = 0.720 ***** 
+average queue length of client 1: 1.43
+average queue length of client 2: 1.18
+average queue length of client 3: 1.30
+average queue length of client 4: 1.22
+average queue length of client 5: 1.35
+average queue length of client 6: 1.40
+average queue length of client 7: 1.14
+average queue length of client 8: 1.67
+average queue length of client 9: 1.55
+average queue length of client 10: 1.61
+average queue length of client 11: 0.22
+average queue length of client 12: 0.27
+average queue length of client 13: 0.23
+average queue length of client 14: 0.23
+average queue length of client 15: 0.22
+average queue length of client 16: 0.21
+average queue length of client 17: 0.23
+average queue length of client 18: 0.23
+average queue length of client 19: 0.25
+average queue length of client 20: 0.24
+total average queue length: 16.18
+total average delay: 3.74 (ms)
+average contention time per interval: 0.090 (ms)
+contention time percentage: 29.885 %
+average collision rate: 17.19 %
+
+***** Mode = Original-CHAIN-two-chains, rho = 0.740 ***** 
+average queue length of client 1: 1.88
+average queue length of client 2: 2.45
+average queue length of client 3: 2.51
+average queue length of client 4: 2.12
+average queue length of client 5: 1.80
+average queue length of client 6: 2.06
+average queue length of client 7: 2.41
+average queue length of client 8: 2.26
+average queue length of client 9: 1.81
+average queue length of client 10: 1.79
+average queue length of client 11: 0.31
+average queue length of client 12: 0.30
+average queue length of client 13: 0.29
+average queue length of client 14: 0.29
+average queue length of client 15: 0.27
+average queue length of client 16: 0.30
+average queue length of client 17: 0.31
+average queue length of client 18: 0.34
+average queue length of client 19: 0.32
+average queue length of client 20: 0.33
+total average queue length: 24.15
+total average delay: 5.44 (ms)
+average contention time per interval: 0.090 (ms)
+contention time percentage: 28.418 %
+average collision rate: 18.89 %
+
+***** Mode = Original-CHAIN-two-chains, rho = 0.760 ***** 
+average queue length of client 1: 4.24
+average queue length of client 2: 3.82
+average queue length of client 3: 2.70
+average queue length of client 4: 3.03
+average queue length of client 5: 3.31
+average queue length of client 6: 3.55
+average queue length of client 7: 4.40
+average queue length of client 8: 3.88
+average queue length of client 9: 3.18
+average queue length of client 10: 3.00
+average queue length of client 11: 0.35
+average queue length of client 12: 0.46
+average queue length of client 13: 0.41
+average queue length of client 14: 0.38
+average queue length of client 15: 0.41
+average queue length of client 16: 0.39
+average queue length of client 17: 0.45
+average queue length of client 18: 0.38
+average queue length of client 19: 0.45
+average queue length of client 20: 0.39
+total average queue length: 39.18
+total average delay: 8.59 (ms)
+average contention time per interval: 0.090 (ms)
+contention time percentage: 26.826 %
+average collision rate: 20.09 %
+
+***** Mode = Original-CHAIN-two-chains, rho = 0.780 ***** 
+average queue length of client 1: 4.71
+average queue length of client 2: 5.15
+average queue length of client 3: 6.11
+average queue length of client 4: 8.45
+average queue length of client 5: 5.86
+average queue length of client 6: 8.30
+average queue length of client 7: 5.61
+average queue length of client 8: 7.47
+average queue length of client 9: 3.83
+average queue length of client 10: 9.11
+average queue length of client 11: 0.49
+average queue length of client 12: 0.52
+average queue length of client 13: 0.58
+average queue length of client 14: 0.46
+average queue length of client 15: 0.53
+average queue length of client 16: 0.49
+average queue length of client 17: 0.59
+average queue length of client 18: 0.50
+average queue length of client 19: 0.56
+average queue length of client 20: 0.50
+total average queue length: 69.82
+total average delay: 14.92 (ms)
+average contention time per interval: 0.090 (ms)
+contention time percentage: 24.888 %
+average collision rate: 21.32 %
+
+***** Mode = Original-CHAIN-two-chains, rho = 0.800 ***** 
+average queue length of client 1: 8.24
+average queue length of client 2: 22.16
+average queue length of client 3: 30.12
+average queue length of client 4: 5.01
+average queue length of client 5: 34.91
+average queue length of client 6: 9.23
+average queue length of client 7: 5.45
+average queue length of client 8: 35.84
+average queue length of client 9: 4.89
+average queue length of client 10: 5.70
+average queue length of client 11: 0.69
+average queue length of client 12: 0.70
+average queue length of client 13: 0.63
+average queue length of client 14: 0.71
+average queue length of client 15: 0.67
+average queue length of client 16: 0.62
+average queue length of client 17: 0.81
+average queue length of client 18: 0.63
+average queue length of client 19: 0.85
+average queue length of client 20: 0.73
+total average queue length: 168.59
+total average delay: 35.12 (ms)
+average contention time per interval: 0.090 (ms)
+contention time percentage: 22.784 %
+average collision rate: 22.48 %
+
+***** Mode = Original-CHAIN-two-chains, rho = 0.810 ***** 
+average queue length of client 1: 81.22
+average queue length of client 2: 6.00
+average queue length of client 3: 5.48
+average queue length of client 4: 5.89
+average queue length of client 5: 47.13
+average queue length of client 6: 5.96
+average queue length of client 7: 5.41
+average queue length of client 8: 6.40
+average queue length of client 9: 6.12
+average queue length of client 10: 43.38
+average queue length of client 11: 0.84
+average queue length of client 12: 0.98
+average queue length of client 13: 0.81
+average queue length of client 14: 0.64
+average queue length of client 15: 0.78
+average queue length of client 16: 0.90
+average queue length of client 17: 0.73
+average queue length of client 18: 0.90
+average queue length of client 19: 0.92
+average queue length of client 20: 0.79
+total average queue length: 221.26
+total average delay: 45.53 (ms)
+average contention time per interval: 0.090 (ms)
+contention time percentage: 21.908 %
+average collision rate: 22.68 %
+
+***** Mode = Original-CHAIN-two-chains, rho = 0.820 ***** 
+average queue length of client 1: 7.33
+average queue length of client 2: 9.80
+average queue length of client 3: 10.55
+average queue length of client 4: 6.87
+average queue length of client 5: 36.04
+average queue length of client 6: 93.09
+average queue length of client 7: 62.47
+average queue length of client 8: 11.10
+average queue length of client 9: 7.79
+average queue length of client 10: 5.91
+average queue length of client 11: 0.74
+average queue length of client 12: 0.85
+average queue length of client 13: 0.99
+average queue length of client 14: 0.92
+average queue length of client 15: 0.95
+average queue length of client 16: 0.94
+average queue length of client 17: 0.96
+average queue length of client 18: 0.88
+average queue length of client 19: 0.82
+average queue length of client 20: 1.04
+total average queue length: 260.04
+total average delay: 52.85 (ms)
+average contention time per interval: 0.091 (ms)
+contention time percentage: 21.050 %
+average collision rate: 23.04 %
+
+***** Mode = Original-CHAIN-two-chains, rho = 0.830 ***** 
+average queue length of client 1: 10.47
+average queue length of client 2: 78.68
+average queue length of client 3: 6.50
+average queue length of client 4: 13.11
+average queue length of client 5: 41.92
+average queue length of client 6: 5.64
+average queue length of client 7: 16.66
+average queue length of client 8: 19.88
+average queue length of client 9: 254.41
+average queue length of client 10: 27.38
+average queue length of client 11: 0.92
+average queue length of client 12: 0.97
+average queue length of client 13: 1.11
+average queue length of client 14: 0.92
+average queue length of client 15: 1.41
+average queue length of client 16: 1.17
+average queue length of client 17: 1.03
+average queue length of client 18: 1.05
+average queue length of client 19: 0.89
+average queue length of client 20: 0.99
+total average queue length: 485.12
+total average delay: 97.41 (ms)
+average contention time per interval: 0.091 (ms)
+contention time percentage: 20.034 %
+average collision rate: 23.55 %
+
