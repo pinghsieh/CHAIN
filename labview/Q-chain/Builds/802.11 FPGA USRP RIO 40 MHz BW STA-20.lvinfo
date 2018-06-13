@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompilationResults.xml Version="2">
+  <BuildInformation>
+    <Family>kintex7</Family>
+    <BuildSpecSourceName>:USRP:Fix\ stop\ condition</BuildSpecSourceName>
+    <CompileServer>localhost</CompileServer>
+    <ResourceThreshold>80</ResourceThreshold>
+  </BuildInformation>
+  <CompileStatus State="Success">
+    <CurrentStep>Generate Programming File</CurrentStep>
+    <ConnectionState>Completed</ConnectionState>
+    <LocalTime>0:00:05:13.1130910</LocalTime>
+    <XilinxTime>0:01:46:34.7932961</XilinxTime>
+  </CompileStatus>
+  <CompileSteps>
+    <Step Name="Analyzing Diagrams">
+      <Status>Done</Status>
+      <Type>Building</Type>
+      <Duration>0:00:00:00.5086761</Duration>
+    </Step>
+    <Step Name="Building">
+      <Status>Done</Status>
+      <Type>Building</Type>
+      <Duration>0:00:04:54.1263630</Duration>
+    </Step>
+    <Step Name="Transferring">
+      <Status>Done</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:00:02.4964097</Duration>
+    </Step>
+    <Step Name="Waiting">
+      <Status>Done</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:00:15.9816422</Duration>
+    </Step>
+    <Step Name="CoreGenerator">
+      <Status>Done</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:00:02.9399699</Duration>
+    </Step>
+    <Step Name="Synthesize - Vivado">
+      <Status>Done</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:53:40.5836601</Duration>
+    </Step>
+    <Step Name="Optimize Logic">
+      <Status>Done</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:04:44.2336962</Duration>
+    </Step>
+    <Step Name="Place">
+      <Status>Done</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:14:09.6711136</Duration>
+    </Step>
+    <Step Name="Optimize Timing">
+      <Status>Done</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:08:16.2800938</Duration>
+    </Step>
+    <Step Name="Route">
+      <Status>Done</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:20:22.3093593</Duration>
+    </Step>
+    <Step Name="Generate Programming File">
+      <Status>Done</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:05:18.7753965</Duration>
+    </Step>
+  </CompileSteps>
+  <ReportList>
+    <Report Name="Estimated Device Utilization (Synthesize)" Type="Utilization">
+      <ReportItem>
+        <Resource>Slice Registers</Resource>
+        <Used>115639</Used>
+        <Total>508400</Total>
+        <Percent>22.75</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>DSP</Resource>
+        <Used>476</Used>
+        <Total>1540</Total>
+        <Percent>30.91</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>Block RAMs</Resource>
+        <Used>171</Used>
+        <Total>795</Total>
+        <Percent>21.51</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>Slice LUTs</Resource>
+        <Used>81665</Used>
+        <Total>254200</Total>
+        <Percent>32.13</Percent>
+      </ReportItem>
+    </Report>
+    <Report Name="Final Device Utilization (Place)" Type="Utilization">
+      <ReportItem>
+        <Resource>Slice Registers</Resource>
+        <Used>111862</Used>
+        <Total>508400</Total>
+        <Percent>22.00</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>DSP</Resource>
+        <Used>466</Used>
+        <Total>1540</Total>
+        <Percent>30.26</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>Block RAMs</Resource>
+        <Used>153</Used>
+        <Total>795</Total>
+        <Percent>19.25</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>Slice LUTs</Resource>
+        <Used>67547</Used>
+        <Total>254200</Total>
+        <Percent>26.57</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>Total Slices</Resource>
+        <Used>27534</Used>
+        <Total>63550</Total>
+        <Percent>43.33</Percent>
+      </ReportItem>
+    </Report>
+  </ReportList>
+  <ErrorList />
+</CompilationResults.xml>

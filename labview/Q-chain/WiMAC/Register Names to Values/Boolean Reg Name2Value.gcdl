@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="C2C62261A5B5471A4AB7DD910F02D49F" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Boolean Reg Name2Value" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="10" ListViewHeight="70" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="66" />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 50" Parameter="132" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
+			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="138" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]139" Left="[float]0" Top="[float]23" Value="{DataItemBinding Id=66}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]100" p4:ControlDefinitionChecksum="0XOwK++Lwd3Vi54jT1IA+A==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="Boolean\ Register\ Names\ Enum\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<EnumSelectorInfo DisplayValue="[string]Default" Id="34" IsEnabled="[bool]True" Value="[ushort]0" ValueType="[Type]UInt16" />
+				<EnumSelectorInfo DisplayValue="[string]Fixed Backoff?" IsEnabled="[bool]True" Value="[ushort]1" ValueType="[Type]UInt16" />
+				<EnumSelectorInfo DisplayValue="[string]Enable Piggyback?" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
+			</EnumSelector>
+			<Label Height="[float]16" Id="139" LabelOwner="[UIModel]138" Left="[float]0" Text="[string]Boolean Reg Name In" Top="[float]0" Width="[float]30" xmlns="http://www.ni.com/PanelCommon" />
+			<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]30" Id="135" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]16" MinWidth="[float]16" Name="[string]Boolean Reg Value" Shape="[LEDShape]Square" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=132}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+		</FrontPanelUnplacedItems>
+		<BlockDiagram Id="13">
+			<CaseStructure Bounds="86 55 376 145" DataType="@047cdfc532e443328b735d52c9196dec" Default="59" Id="58" Selected="141" UserSelectorBounds="101.6 0 172.8 16.8">
+				<CaseStructure.Case Bounds="5 5 366 135" Id="59" Pattern="&quot;Default&quot;, Default">
+					<Literal Bounds="314 45 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="130" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>False</p.Data>
+						<BooleanBehavior />
+					</Literal>
+					<Wire Id="131" Joints="N(130:Out) N(129:59)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 366 135" Id="75" Pattern="&quot;Fixed Backoff?&quot;">
+					<RegisterRead Bounds="304 35 40 40" Id="124" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<IONameConstant Bounds="292 35 12 10" DataType="@fe727365e16a43739fc579617e572605" Facade="DockedConstantFacade" Id="125" Label="126" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>"802.11 AFW Resources.grsc\\Fixed Backoff?"</p.Data>
+						<IONameConstantBehavior />
+						<DockedConstantFacade UndockedSize="268.233337 27" />
+					</IONameConstant>
+					<Wire Facade="WireInvisibleFacade" Id="127" Joints="N(125:Out) N(124:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+					<NodeLabel AttachedTo="125" Bounds="292 35 0 0" Id="126" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>reference in</p.Text>
+					</NodeLabel>
+					<Wire Id="128" Joints="N(124:data) N(129:75)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 366 135" Id="141" Pattern="&quot;Enable Piggyback?&quot;">
+					<RegisterRead Bounds="289 30 40 40" Id="142" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<IONameConstant Bounds="277 30 12 10" DataType="@fe727365e16a43739fc579617e572605" Facade="DockedConstantFacade" Id="143" Label="144" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>"802.11 AFW Resources.grsc\\Enable Piggyback?"</p.Data>
+						<IONameConstantBehavior />
+						<DockedConstantFacade UndockedSize="289.116669 27" />
+					</IONameConstant>
+					<Wire Facade="WireInvisibleFacade" Id="145" Joints="N(143:Out) N(142:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+					<NodeLabel AttachedTo="143" Bounds="277 30 0 0" Id="144" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>reference in</p.Text>
+					</NodeLabel>
+					<Wire Id="146" Joints="N(142:data) h(28) v(5) N(129:141)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 125 13 10" Docking="Left" Id="61" Terminals="58=74, 59, 75, 141" />
+				<CaseStructure.Tunnel Bounds="367 50 13 10" Docking="Right" Id="129" Terminals="58=137, 59=131, 75=128, 141=146" />
+			</CaseStructure>
+			<DataAccessor Bounds="35 180 40 15" DataItem="66" Id="67" Label="69" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@047cdfc532e443328b735d52c9196dec" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="67" Bounds="-91 180 121 14" Id="69" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Boolean Reg Name In</p.Text>
+			</NodeLabel>
+			<Wire Id="74" Joints="N(67:Value) N(61:58)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="500 105 40 15" DataItem="132" Id="134" Label="136" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="134" Bounds="545 105 104 14" Id="136" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Boolean Reg Value</p.Text>
+			</NodeLabel>
+			<Wire Id="137" Joints="N(129:58) N(134:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<DataItem CallDirection="Input" CallIndex="1" DataType="@047cdfc532e443328b735d52c9196dec" Id="66" Name="Boolean Reg Name In" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="Boolean\ Register\ Names\ Enum\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="Boolean" Id="132" Name="Boolean Reg Value" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="047cdfc532e443328b735d52c9196dec">
+			<Typedef TypedefName="Boolean Register Names Enum.gtype" UnderlyingType="@3e2d592be76e473a90c224cb7b694696" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="fe727365e16a43739fc579617e572605">
+			<Attributed>
+				<AttributedType>
+					<Composite Id="1" Name="RegisterDataType" ReferenceClass="">
+						<GenericTypeDefinition>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="2" Name="RegisterDataType" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Composite RefId="2" />
+										</GenericTypeDefinition>
+										<GenericParameters>
+											<Typedef TypedefName="Element" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
+										</GenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Function Id="3" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+														<DataType>
+															<Typedef TypedefName="Element" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
+														</DataType>
+													</Parameter>
+												</Parameters>
+											</Function>
+											<Function Id="4" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+														<DataType>
+															<Typedef TypedefName="Element" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
+														</DataType>
+													</Parameter>
+												</Parameters>
+											</Function>
+										</Members>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</GenericTypeDefinition>
+						<ClosedGenericParameters>
+							<Boolean />
+						</ClosedGenericParameters>
+						<BaseType>
+							<Void />
+						</BaseType>
+						<Members>
+							<Function Id="5" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+								<DeclaringType>
+									<Composite RefId="1" />
+								</DeclaringType>
+								<GenericTypeDefinition>
+									<Void />
+								</GenericTypeDefinition>
+								<Parameters>
+									<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data" DataType="Boolean" />
+								</Parameters>
+							</Function>
+							<Function Id="6" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+								<DeclaringType>
+									<Composite RefId="1" />
+								</DeclaringType>
+								<GenericTypeDefinition>
+									<Void />
+								</GenericTypeDefinition>
+								<Parameters>
+									<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="Boolean" />
+								</Parameters>
+							</Function>
+						</Members>
+					</Composite>
+				</AttributedType>
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="3e2d592be76e473a90c224cb7b694696">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Default" />
+					<EnumerationMember Value="1" Name="Fixed Backoff?" />
+					<EnumerationMember Value="2" Name="Enable Piggyback?" />
+				</Members>
+				<DataType>
+					<UInt16 />
+				</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="c843328a30f744cbb29e05526807c415">
+			<Generic />
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
