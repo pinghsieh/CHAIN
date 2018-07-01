@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="ACE0F703CBBCFE154179CB2749CF9BE2" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="7337F90DEA97D32AFB01A52D3140B1D1" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="GComponentFeatureSet" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/GComponent.xsd" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -4189,7 +4189,7 @@
 					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="108367" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Native" Reparentable="False">
 						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
 					</EmbeddedDefinitionReference>
-					<NameScopingEnvoy Bindings="VILibFpga,Envoy,DefinitionReference,BuildSpecification,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy,MirroringNameScopingEnvoy" Id="126993" MirrorName=":USRP:Fix\ the\ logic\ of\ first\ node\ in\ chain" ModelDefinitionType="BuildSpecification" Name="Fix\ the\ logic\ of\ first\ node\ in\ chain">
+					<NameScopingEnvoy Bindings="VILibFpga,Envoy,DefinitionReference,BuildSpecification,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy,MirroringNameScopingEnvoy" Id="126993" MirrorName=":USRP:Fix\ the\ logic\ of\ first\ node\ in\ chain\ and\ use\ 80MHz\ MAC\ clock" ModelDefinitionType="BuildSpecification" Name="Fix\ the\ logic\ of\ first\ node\ in\ chain\ and\ use\ 80MHz\ MAC\ clock">
 						<BuildSpecificationDefinition HasUserDefinedName="True" Id="126994" TopLevelComponentRefId="127000" xmlns="http://www.ni.com/GComponent.xsd">
 							<CompilerSymbolTable Id="126995" xmlns="http://www.ni.com/PlatformFramework" />
 							<ComponentConfigurationReference AssociatedEnvoyId="126996" ConfigName="Config_a7d2a886-eaa4-482b-8dda-346b55e763fa" Id="127000" />
@@ -5488,7 +5488,7 @@
 				<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="108359" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Native" Reparentable="False">
 					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
 				</EmbeddedDefinitionReference>
-				<NameScopingEnvoy Bindings="VILibFpga,Envoy,DefinitionReference,BuildSpecification,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="126985" ModelDefinitionType="BuildSpecification" Name="Fix\ the\ logic\ of\ first\ node\ in\ chain">
+				<NameScopingEnvoy Bindings="VILibFpga,Envoy,DefinitionReference,BuildSpecification,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="126985" ModelDefinitionType="BuildSpecification" Name="Fix\ the\ logic\ of\ first\ node\ in\ chain\ and\ use\ 80MHz\ MAC\ clock">
 					<BuildSpecificationDefinition HasUserDefinedName="True" Id="126986" TopLevelComponentRefId="126991" xmlns="http://www.ni.com/GComponent.xsd">
 						<CompilerSymbolTable Id="126987" xmlns="http://www.ni.com/PlatformFramework" />
 						<ComponentConfigurationReference AssociatedEnvoyId="126988" ConfigName="Config_a7d2a886-eaa4-482b-8dda-346b55e763fa" Id="126991" />

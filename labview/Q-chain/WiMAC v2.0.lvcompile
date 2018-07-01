@@ -3,14 +3,14 @@
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-23.lvbitx</Name>
     <JobInfo>
-      <SessionId>NBwpU43</SessionId>
-      <JobId>Css4S9Q</JobId>
+      <SessionId>QTwW670</SessionId>
+      <JobId>YmwDX6m</JobId>
     </JobInfo>
-    <SourceFolder>C:\NIFPGA\compilation\c5d0opji.uw5\top</SourceFolder>
-    <BuildFolder>C:\NIFPGA\compilation\c5d0opji.uw5</BuildFolder>
+    <SourceFolder>C:\NIFPGA\compilation\pq5orz4u.vyt\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\pq5orz4u.vyt</BuildFolder>
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-23.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>06/29/2018 17:39:16</StartTime>
+    <StartTime>06/29/2018 17:52:51</StartTime>
   </Job>
 </JobList>

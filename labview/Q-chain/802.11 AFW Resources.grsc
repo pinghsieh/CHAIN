@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="5C57A0022F16F7B4463EDB5F0AFC933B" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="69358102320009D82B55DCA3CDA5E650" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="GResources" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/GResources/SystemModel" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" Version="4.5.0.49152" />
@@ -197,6 +197,9 @@
 					</Symbols>
 					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
 				</Instance>
+				<Instance Id="2970" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock]DerivedClock" p7:Clock.Divisor="1" p7:Clock.FreqInHz="80000000" p7:Clock.Multiplier="2" p7:Clock.ParentClockName="RioClk40" p8:Process.AliasName="MACSLOW" p8:Process.AssociatedIdentifier="2976" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
 				<Superimposition Id="3" Name="Root Superimposition">
 					<Superimpose Source="9" />
 					<Superimpose Source="67" />
@@ -239,6 +242,7 @@
 					<Superimpose Source="2542" />
 					<Superimpose Source="2549" />
 					<Superimpose Source="2757" />
+					<Superimpose Source="2970" />
 				</Superimposition>
 			</MappingManager>
 		</EnvoyFacadeManager>
@@ -288,6 +292,7 @@
 			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.Restricted.SystemDesigner.SystemModelCore.Process,ContentKind_{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.LocalFifo,ProcessBackedProjectServiceMetaFactory" ContentName="{:/2542}[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo" Id="2548" Name="ACK\(may\ not\ match\)\ Received\ FIFO" />
 			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.Restricted.SystemDesigner.SystemModelCore.Process,ContentKind_{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.TargetRegister,ProcessBackedProjectServiceMetaFactory" ContentName="{:/2549}[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" Id="2555" Name="CCA\ busy" />
 			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.Restricted.SystemDesigner.SystemModelCore.Process,ContentKind_{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.TargetRegister,ProcessBackedProjectServiceMetaFactory" ContentName="{:/2757}[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" Id="2763" Name="Begin\ the\ chain\?" />
+			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.Restricted.SystemDesigner.SystemModelCore.Process,ContentKind_{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.DerivedClock,ProcessBackedProjectServiceMetaFactory" ContentName="{:/2970}[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock]DerivedClock" Id="2976" Name="MACSLOW" />
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 </SourceFile>
