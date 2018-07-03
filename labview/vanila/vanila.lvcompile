@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JobList>
+  <Job>
+    <Name>802.11 FPGA USRP RIO 40 MHz BW STA 02.lvbitx</Name>
+    <JobInfo>
+      <SessionId>VlHunp3</SessionId>
+      <JobId>X6AyYHy</JobId>
+    </JobInfo>
+    <SourceFolder>C:\NIFPGA\compilation\k00n1zjx.ix5\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\k00n1zjx.ix5</BuildFolder>
+    <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA 02.lvbitx</OutputPath>
+    <ConnectionState>Completed</ConnectionState>
+    <ConnectionType>Localhost</ConnectionType>
+    <StartTime>07/03/2018 16:16:14</StartTime>
+  </Job>
+</JobList>
