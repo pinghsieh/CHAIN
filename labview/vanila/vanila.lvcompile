@@ -11,6 +11,19 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA 02.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/03/2018 16:16:14</StartTime>
+    <StartTime>07/03/2018 18:28:25</StartTime>
+  </Job>
+  <Job>
+    <Name>802.11 FPGA USRP RIO 40 MHz BW STA 03.lvbitx</Name>
+    <JobInfo>
+      <SessionId>SIjay09</SessionId>
+      <JobId>rI57s08</JobId>
+    </JobInfo>
+    <SourceFolder>C:\NIFPGA\compilation\dki5bpsj.ugg\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\dki5bpsj.ugg</BuildFolder>
+    <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA 03.lvbitx</OutputPath>
+    <ConnectionState>Completed</ConnectionState>
+    <ConnectionType>Localhost</ConnectionType>
+    <StartTime>07/03/2018 18:57:55</StartTime>
   </Job>
 </JobList>

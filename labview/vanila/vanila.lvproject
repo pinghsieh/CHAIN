@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="BCB352613376D83BA74C2E7262647B72" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="88231E4332353462B354FED89EB40C20" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="GComponentFeatureSet" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/GComponent.xsd" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -5706,7 +5706,7 @@
 					<ComponentConfiguration ComponentOutputType="Bitfile" Id="125423" Name="Config_a00d7407-d53d-4d68-81b5-d2cc52fd2dfd">
 						<CompilerSymbolTable Id="125424" xmlns="http://www.ni.com/PlatformFramework" />
 						<ComponentItemProperties AssociatedEnvoyId="118919" Id="125425" TopLevel="True" />
-						<BitfileOutputTypeProperties BaseOutputFileName="802.11 FPGA USRP RIO 40 MHz BW STA 02" Id="125433" LastBuildOutputName=":NullTarget:\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\ 02\.lvbitx" NumberOfDigitsForAutoNumber="4" OutputFileNameIsCustom="True" StartingNumberForAutoNumber="1" UseAutoNumber="False" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+						<BitfileOutputTypeProperties BaseOutputFileName="802.11 FPGA USRP RIO 40 MHz BW STA 03" Id="125433" LastBuildOutputName=":NullTarget:\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\ 03\.lvbitx" NumberOfDigitsForAutoNumber="4" OutputFileNameIsCustom="True" StartingNumberForAutoNumber="1" UseAutoNumber="False" xmlns="http://www.ni.com/LabVIEW.FPGA" />
 					</ComponentConfiguration>
 				</ComponentDefinition>
 				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1106" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="\802\.11\ Host\.gvi" StoragePath="802.11 Host.gvi" />
@@ -6172,6 +6172,11 @@
 			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition,EmbeddedReference" Id="126240" ModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" Name="\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\ 02\.lvbitx">
 				<FpgaBitfile FamilyName="USRP 294xR; 295xR 120 MSps" xmlns="http://www.ni.com/LabVIEW.FPGA">
 					<p.StoragePath>"Builds\\802.11 FPGA USRP RIO 40 MHz BW STA 02.lvbitx"</p.StoragePath>
+				</FpgaBitfile>
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition,EmbeddedReference" Id="129632" ModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" Name="\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\ 03\.lvbitx">
+				<FpgaBitfile FamilyName="USRP 294xR; 295xR 120 MSps" xmlns="http://www.ni.com/LabVIEW.FPGA">
+					<p.StoragePath>"Builds\\802.11 FPGA USRP RIO 40 MHz BW STA 03.lvbitx"</p.StoragePath>
 				</FpgaBitfile>
 			</EmbeddedDefinitionReference>
 		</NameScopingEnvoy>

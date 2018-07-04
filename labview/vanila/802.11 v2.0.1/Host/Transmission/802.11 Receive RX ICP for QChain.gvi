@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="030DA21686D017B101F843FC99EC87E4" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="B0231C9FAA3AF6989989E5A4EB90B5FD" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -405,7 +405,7 @@
 						<Wire Id="190" Joints="N(189:95) N(191:70)" xmlns="http://www.ni.com/PlatformFramework" />
 						<ArraySubset Bounds="138 130 40 40" Id="313" Terminals="array=314, subarray=174, index0, length0=345" />
 						<Wire Id="314" Joints="N(315:70) h(129) B(1) N(328:95) B(1) v(30) N(313:array)" xmlns="http://www.ni.com/PlatformFramework" />
-						<Add Bounds="368 155 30 45" Id="326" Terminals="o=349, c0t0v=350, c1t0v=345, c2t0v=717" VerticalChunkCount="3" />
+						<Add Bounds="368 155 30 30" Id="326" Terminals="o=349, c0t0v=350, c1t0v=345" />
 						<ToLongInteger Bounds="313 130 30 10" Id="331" />
 						<Wire Id="335" Joints="N(87:R2) h(10) B(1) N(331:number) B(1) v(130) N(521:x)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="339" Joints="N(338:95) N(340:70)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -453,7 +453,6 @@
 						<NodeLabel AttachedTo="556" Bounds="73 335 0 0" Id="557" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 							<p.Text>error source</p.Text>
 						</NodeLabel>
-						<Wire Id="717" Joints="N(718:70) h(9) v(40) N(326:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="1097" Joints="N(1096:95) N(1098:70)" xmlns="http://www.ni.com/PlatformFramework" />
 						<Wire Id="1107" Joints="N(1105:70) N(1108:95)" xmlns="http://www.ni.com/PlatformFramework" />
 					</CaseStructure.Case>
@@ -469,7 +468,6 @@
 					<CaseStructure.Tunnel Bounds="-4 255 13 10" Docking="Left" Id="464" Terminals="68=463, 69, 70=465" />
 					<CaseStructure.Tunnel Bounds="-4 280 13 10" Docking="Left" Id="526" Terminals="68=527, 69, 70=525" />
 					<CaseStructure.Tunnel Bounds="-4 325 13 10" Docking="Left" Id="552" Terminals="68=553, 69, 70=551" />
-					<CaseStructure.Tunnel Bounds="-4 150 13 10" Docking="Left" Id="718" Terminals="68=719, 69, 70=717" />
 					<CaseStructure.Tunnel Bounds="1791 535 13 10" DefaultIfUnwired="True" Docking="Right" Id="1098" Terminals="68=1099, 69=1106, 70=1097" />
 					<CaseStructure.Tunnel Bounds="1028 656 10 13" Docking="Bottom" Id="1105" Terminals="68=1104, 69=1106, 70=1107" />
 				</CaseStructure>
@@ -486,7 +484,6 @@
 				<Wire Id="463" Joints="N(462:i0) N(464:68)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="527" Joints="N(528:i0) N(526:68)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="553" Joints="N(554:i0) N(552:68)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="719" Joints="N(720:i0) N(718:68)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="1099" Joints="N(1098:68) h(9) B(1) N(889:Value) B(1) v(150) N(1102:input)" xmlns="http://www.ni.com/PlatformFramework" />
 				<DataAccessor Bounds="1950 555 40 15" DataItem="887" Id="889" Label="891" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="Int32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -506,13 +503,12 @@
 				<LoopTunnel Bounds="-4 280 13 10" Docking="Left" Id="462" Terminals="o0=461, i0=463" />
 				<LoopTunnel Bounds="-4 305 13 10" Docking="Left" Id="528" Terminals="o0=529, i0=527" />
 				<LoopTunnel Bounds="-4 350 13 10" Docking="Left" Id="554" Terminals="o0=555, i0=553" />
-				<LoopTunnel Bounds="-4 175 13 10" Docking="Left" Id="720" Terminals="o0=716, i0=719" />
 			</WhileLoop>
 			<Wire Id="299" Joints="N(14:elements remaining) h(10) v(-10) N(246:number of elements)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="306" Joints="N(303:264) h(16) v(-160) N(260:input)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="311" Joints="N(246:data) h(10) v(-95) N(261:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="312" Joints="N(261:outArray) N(302:o0)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Add Bounds="-700 1590 30 45" Id="320" Terminals="o=325, c0t0v=66, c1t0v=324, c2t0v=716" VerticalChunkCount="3" />
+			<Add Bounds="-700 1590 30 45" Id="320" Terminals="o=325, c0t0v=66, c1t0v=324, c2t0v=1117" VerticalChunkCount="3" />
 			<Wire Id="324" Joints="N(137:Out) N(320:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="325" Joints="N(320:o) h(215) v(35) N(278:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="357" Joints="N(246:error out) N(356:o0)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -577,7 +573,7 @@
 			<NodeLabel AttachedTo="714" Bounds="-959 1625 144 14" Id="715" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>additional ICP header size</p.Text>
 			</NodeLabel>
-			<Wire Id="716" Joints="N(714:Out) h(65.5) B(1) v(-5) N(320:c2t0v) B(1) v(10) h(220) v(-40) N(720:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="1117" Joints="N(714:Out) h(65.5) v(-5) N(320:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" Top="[float]0" Width="[float]2000">
 			<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]40" Id="203" IncludeInCapture="[bool]True" Label="[UIModel]470" Left="[float]378" RefnumType="[Type]@0c873cc365734e2db884af03a7e9a5ab" Top="[float]228" Value="{DataItemBinding Id=202}" Width="[float]80" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
