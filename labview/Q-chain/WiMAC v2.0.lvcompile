@@ -11,6 +11,19 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-23.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>06/29/2018 17:52:51</StartTime>
+    <StartTime>07/05/2018 16:39:55</StartTime>
+  </Job>
+  <Job>
+    <Name>802.11 FPGA USRP RIO 40 MHz BW STA-24.lvbitx</Name>
+    <JobInfo>
+      <SessionId>B6esS2Z</SessionId>
+      <JobId>nG7mK4I</JobId>
+    </JobInfo>
+    <SourceFolder>C:\NIFPGA\compilation\bzvscsdn.dwn\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\bzvscsdn.dwn</BuildFolder>
+    <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-24.lvbitx</OutputPath>
+    <ConnectionState>Completed</ConnectionState>
+    <ConnectionType>Localhost</ConnectionType>
+    <StartTime>07/05/2018 16:39:55</StartTime>
   </Job>
 </JobList>

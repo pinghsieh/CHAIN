@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="01F06F80EB8D005E3BD3580542AB71A6" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="EC648B3E37DE5BCED96A06CA407AB32A" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -37,7 +37,7 @@
 			<ConnectorPaneTerminal Hotspot="25 40" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
-		<FrontPanelUnplacedItems Height="[float]1812" Id="11" Left="[float]0" Top="[float]0" Width="[float]2000">
+		<FrontPanelUnplacedItems Height="[float]1812" Id="11" Left="[float]0" Top="[float]0" Width="[float]2053">
 			<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]30" Id="37" IsReadOnly="[bool]True" Label="[UIModel]82" Left="[float]415" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" Top="[float]33" TrueContent="[string]On" Value="{DataItemBinding Id=35}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<Label Id="82" IsVisualChild="[bool]False" LabelOwner="[UIModel]37" Left="[float]415" Text="[string]reg.notify host.go 0" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
 			</LED>
@@ -666,6 +666,12 @@
 				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="4893" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[ulong]1" Left="[float]1152" MinHeight="[float]22" Name="[string]Child" RadixBase="[RadixBase]Hexadecimal" Top="[float]8" Value="[ulong]78543332928872" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt64" Width="[float]181" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<Label Height="[float]16" Id="4894" LabelOwner="[UIModel]4892" Left="[float]530" Text="[string]Input: chain table" Top="[float]181" Width="[float]58" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText Height="[float]22" Id="4908" Interval="[uint]1" Left="[float]0" MinHeight="[float]22" Name="[string]Host queue length (packets)" Top="[float]0" Value="{DataItemBinding Id=4907}" ValueType="[Type]UInt32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText Height="[float]22" Id="4920" Interval="[uint]1" Left="[float]0" MinHeight="[float]22" Name="[string]Queue threshold for contention" Top="[float]0" Value="{DataItemBinding Id=4919}" ValueType="[Type]UInt32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText Height="[float]22" Id="4926" Interval="[uint]1" Left="[float]0" MinHeight="[float]22" Name="[string]packet size (bytes)" Top="[float]0" Value="{DataItemBinding Id=4925}" ValueType="[Type]UInt32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="4936" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]36" MinWidth="[float]34" Name="[string]reset permission to contend" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=4935}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]30" Id="4942" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]16" MinWidth="[float]16" Name="[string]authorized to contend?" Shape="[LEDShape]Square" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=4941}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="4950" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" Left="[float]0" MinHeight="[float]22" Name="[string]FPGA queue length" Top="[float]0" Value="{DataItemBinding Id=4947}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<ClockDrivenLoop Bounds="-4042 1800 1104 830" DiagramId="19" Id="18" xmlns="http://www.ni.com/LabVIEW.FPGA">
@@ -2777,6 +2783,7 @@
 							<Parameter Id="L3" Desc="TX status indication" />
 							<Parameter Id="T0" Desc="backoff value" />
 							<Parameter Id="T1" Desc="Use RTR instead of Data?" />
+							<Parameter Id="L5" Desc="authorized to contend?" />
 							<Parameter Id="R0" Desc="MPDU block" />
 							<Parameter Id="R4" Desc="ready for input" />
 							<Parameter Id="R1" Desc="output valid" />
@@ -2790,6 +2797,7 @@
 					<Terminal DataType="@72ff3231910448e8aa318830593f847a" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="UInt16" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Boolean" Direction="Input" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Boolean" Direction="Input" Hotspot="0 55" Id="L5" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="UInt8" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Boolean" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Boolean" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
@@ -2899,7 +2907,7 @@
 					<InstanceDataEntry Id="1626" Key="ElementDataTypeFilter" Value="[Type]UInt8" />
 					<InstanceDataEntry Id="1627" Key="ElementShapeFilter" Value="Scalar" />
 				</IONameConstant>
-				<Wire Id="1561" Joints="N(1560:Out) h(95.3800049) B(1) N(1562:L0) B(1) v(20) N(1538:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="1561" Joints="N(1560:Out) h(10.3900146) B(1) h(84.98999) B(2) N(1562:L0) B(2) v(20) N(1538:L0) B(1) v(15) h(-40) v(90) N(4931:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
 				<MethodCall Bounds="1718 605 50 50" DomainName="NI.Appframeworks.802.11" Id="1562" Target="\802\.11\ TX\ MAC\ Bypass\.gcdl" xmlns="http://www.ni.com/MocCommon">
 					<p.MethodDeclaration>
 						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
@@ -3267,9 +3275,9 @@
 					<p.Point>569.6 865</p.Point>
 					<p.Text>PHY RX AGC state indication</p.Text>
 				</WireComment>
-				<WireComment AttachedTo="3431" Bounds="250.001251 847 192.8 16" Id="3437" xmlns="http://www.ni.com/PlatformFramework">
+				<WireComment AttachedTo="3431" Bounds="250.001282 847 192.8 16" Id="3437" xmlns="http://www.ni.com/PlatformFramework">
 					<p.ExpandedWidth>192.8</p.ExpandedWidth>
-					<p.Point>346.401245 855</p.Point>
+					<p.Point>346.401276 855</p.Point>
 					<p.Text>PHY RX Gain change indication</p.Text>
 				</WireComment>
 				<WireComment AttachedTo="3425" Bounds="145 837 100 16" Id="3438" xmlns="http://www.ni.com/PlatformFramework">
@@ -3463,7 +3471,7 @@
 					<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
 				<Wire Id="4006" Joints="N(4004:Value) h(70) N(1493:B1)" xmlns="http://www.ni.com/PlatformFramework" />
-				<NodeLabel AttachedTo="4004" Bounds="1335 790 175 14" Id="4005" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="4004" Bounds="1334 790 176 14" Id="4005" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Set Backoff Done Pulse to False</p.Text>
 				</NodeLabel>
 				<Wire Id="4008" Joints="N(3970:Value) h(45) v(10) N(3540:L0)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -3632,7 +3640,7 @@
 					<Terminal DataType="UInt64[8]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
 				<Wire Id="4580" Joints="N(4567:data) N(4577:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-				<NodeLabel AttachedTo="4577" Bounds="1145 1215 64 14" Id="4579" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="4577" Bounds="1145 1215 65 14" Id="4579" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Chain Table</p.Text>
 				</NodeLabel>
 				<RegisterRead Bounds="970 1305 40 40" Id="4592" />
@@ -3795,6 +3803,69 @@
 					<p.Text>reference in</p.Text>
 				</NodeLabel>
 				<Wire Facade="WireInvisibleFacade" Id="4900" Joints="N(4898:Out) N(4897:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+				<MethodCall Bounds="1305 820 40 50" DomainName="NI.MocCommon" Id="4902" Target="manage\ permission\ to\ contend\.gcdl" xmlns="http://www.ni.com/MocCommon">
+					<p.MethodDeclaration>
+						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+							<Parameter Id="L0" Desc="Host queue length (packets)" />
+							<Parameter Id="L1" Desc="FPGA queue length (bytes)" />
+							<Parameter Id="L2" Desc="Queue threshold for contention (packets)" />
+							<Parameter Id="L3" Desc="packet size (bytes)" />
+							<Parameter Id="T0" Desc="reset permission to contend" />
+							<Parameter Id="R0" Desc="authorized to contend?" />
+						</MethodDeclaration>
+					</p.MethodDeclaration>
+					<Terminal DataType="UInt32" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="UInt32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="UInt32" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				</MethodCall>
+				<Wire Id="4903" Joints="N(4902:R0) h(50) B(1) N(4944:Value) B(1) v(-145) N(1502:L5)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="1180 805 40 15" DataItem="4907" Id="4910" Label="4911" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<Wire Id="4912" Joints="N(4910:Value) h(60) v(15) N(4902:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="4910" Bounds="1017 805 158 14" Id="4911" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Host queue length (packets)</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="1180 840 40 15" DataItem="4919" Id="4922" Label="4923" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<Wire Id="4924" Joints="N(4922:Value) N(4902:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="4922" Bounds="1002 840 173 14" Id="4923" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Queue threshold for contention</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="1180 855 40 15" DataItem="4925" Id="4928" Label="4929" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<Wire Id="4930" Joints="N(4928:Value) h(9) v(-5) N(4902:L3)" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="4928" Bounds="1069 855 106 14" Id="4929" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>packet size (bytes)</p.Text>
+				</NodeLabel>
+				<PropertyNode Bounds="1135 710 115.2 35" HasErrorTerminals="False" Id="4931" InstanceDataType="@b9c96ce99be740f5964a0f28c5272ffe" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/LabVIEW.VI">
+					<PropertyItemTerminal DataType="UInt32" Hotspot="115.2 15" Id="c0t0v" Path="used elements" Usage="Optional" />
+				</PropertyNode>
+				<Wire Id="4933" Joints="N(4931:c0t0v) h(9.800049) v(45) B(2) N(4949:Value) B(2) v(65) N(4902:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="1180 785 40 15" DataItem="4935" Id="4938" Label="4939" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<Wire Id="4940" Joints="N(4938:Value) h(100) N(4902:T0)" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="4938" Bounds="1020 785 155 14" Id="4939" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>reset permission to contend</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="1400 820 40 15" DataItem="4941" Id="4944" Label="4945" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="4944" Bounds="1445 820 128 14" Id="4945" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>authorized to contend?</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="1265 765 40 15" DataItem="4947" Id="4949" Label="4951" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="UInt32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="4949" Bounds="1310 765 106 14" Id="4951" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>FPGA queue length</p.Text>
+				</NodeLabel>
 				<ClockDrivenLoop.ClockBorderNode Bounds="1 295 22 20" Docking="Left" Id="2497" Terminals="2495=2502" />
 				<ClockDrivenLoop.Tunnel Bounds="-3 370 26 10" Docking="Left" Id="2534" Terminals="o0=3189, i0=2535" />
 				<ClockDrivenLoop.Tunnel Bounds="-3 335 26 10" Docking="Left" Id="2908" Terminals="o0=3191, i0=3177" />
@@ -6068,6 +6139,24 @@
 		<DataItem AdaptToDiagramType="True" DataType="UInt64[8]" Id="4891" Name="Input: chain table" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="UInt32" Id="4907" Name="Host queue length (packets)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="UInt32" Id="4919" Name="Queue threshold for contention" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="UInt32" Id="4925" Name="packet size (bytes)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="4935" Name="reset permission to contend" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="4941" Name="authorized to contend?" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="UInt32" Id="4947" Name="FPGA queue length" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="niInstr\ Register\ Bus\ v1\ FPGA\.lvlib__Process\.gcdl">
 				<MergeScript>
@@ -6675,6 +6764,24 @@
 									</FileNameText>
 								</IconTemplate>
 								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+							</IconPanel>
+						</Icon>
+					</MergeItem>
+				</MergeScript>
+			</p.IconModel>
+			<p.IconModel Target="manage\ permission\ to\ contend\.gcdl">
+				<MergeScript>
+					<MergeItem Path="." IsPrimary="True">
+						<Icon ListViewIconCrop="0 0 40 50">
+							<IconPanel Height="[float]50" Left="[float]0" Top="[float]0" Width="[float]40">
+								<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
+									<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+									<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]manage permission to contend" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+										<FontSetting FontFamily="Verdana" FontSize="6" />
+									</FileNameText>
+								</IconTemplate>
+								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]44" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
 							</IconPanel>
 						</Icon>
 					</MergeItem>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="7337F90DEA97D32AFB01A52D3140B1D1" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="43B17C6EA37F1308B6992450FF309CED" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="GComponentFeatureSet" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/GComponent.xsd" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -2026,6 +2026,7 @@
 						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="146508" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="DUC\ Parameters\.gtype" StoragePath="USRP RIO\FPGA SubVIs\DUC Parameters.gtype" />
 						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="199807" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Chain\ Table\.gvi" StoragePath="WiMAC\Chains\Chain Table.gvi" />
 						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="199813" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Change_U8array_to_U64\.gvi" StoragePath="WiMAC\Chains\Change_U8array_to_U64.gvi" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="206224" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Cluster\ Constant\.gtype" StoragePath="Cluster Constant.gtype" />
 					</EmbeddedDefinitionReference>
 					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="63" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Common" Reparentable="False">
 						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Common&quot;" />
@@ -4189,7 +4190,7 @@
 					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="108367" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Native" Reparentable="False">
 						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
 					</EmbeddedDefinitionReference>
-					<NameScopingEnvoy Bindings="VILibFpga,Envoy,DefinitionReference,BuildSpecification,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy,MirroringNameScopingEnvoy" Id="126993" MirrorName=":USRP:Fix\ the\ logic\ of\ first\ node\ in\ chain\ and\ use\ 80MHz\ MAC\ clock" ModelDefinitionType="BuildSpecification" Name="Fix\ the\ logic\ of\ first\ node\ in\ chain\ and\ use\ 80MHz\ MAC\ clock">
+					<NameScopingEnvoy Bindings="VILibFpga,Envoy,DefinitionReference,BuildSpecification,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy,MirroringNameScopingEnvoy" Id="126993" MirrorName=":USRP:Increase\ the\ size\ of\ H2T\ TX\ Data\ FIFO" ModelDefinitionType="BuildSpecification" Name="Increase\ the\ size\ of\ H2T\ TX\ Data\ FIFO">
 						<BuildSpecificationDefinition HasUserDefinedName="True" Id="126994" TopLevelComponentRefId="127000" xmlns="http://www.ni.com/GComponent.xsd">
 							<CompilerSymbolTable Id="126995" xmlns="http://www.ni.com/PlatformFramework" />
 							<ComponentConfigurationReference AssociatedEnvoyId="126996" ConfigName="Config_a7d2a886-eaa4-482b-8dda-346b55e763fa" Id="127000" />
@@ -5488,7 +5489,7 @@
 				<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="108359" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Native" Reparentable="False">
 					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
 				</EmbeddedDefinitionReference>
-				<NameScopingEnvoy Bindings="VILibFpga,Envoy,DefinitionReference,BuildSpecification,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="126985" ModelDefinitionType="BuildSpecification" Name="Fix\ the\ logic\ of\ first\ node\ in\ chain\ and\ use\ 80MHz\ MAC\ clock">
+				<NameScopingEnvoy Bindings="VILibFpga,Envoy,DefinitionReference,BuildSpecification,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="126985" ModelDefinitionType="BuildSpecification" Name="Increase\ the\ size\ of\ H2T\ TX\ Data\ FIFO">
 					<BuildSpecificationDefinition HasUserDefinedName="True" Id="126986" TopLevelComponentRefId="126991" xmlns="http://www.ni.com/GComponent.xsd">
 						<CompilerSymbolTable Id="126987" xmlns="http://www.ni.com/PlatformFramework" />
 						<ComponentConfigurationReference AssociatedEnvoyId="126988" ConfigName="Config_a7d2a886-eaa4-482b-8dda-346b55e763fa" Id="126991" />
@@ -6207,7 +6208,7 @@
 					<ComponentConfiguration ComponentOutputType="Bitfile" Id="126982" Name="Config_a7d2a886-eaa4-482b-8dda-346b55e763fa">
 						<CompilerSymbolTable Id="126983" xmlns="http://www.ni.com/PlatformFramework" />
 						<ComponentItemProperties AssociatedEnvoyId="118919" Id="126984" TopLevel="True" />
-						<BitfileOutputTypeProperties AskBeforeOverwriteExistingFiles="False" BaseOutputFileName="802.11 FPGA USRP RIO 40 MHz BW STA" Id="126992" LastBuildOutputName=":NullTarget:\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-23\.lvbitx" NumberOfDigitsForAutoNumber="1" OutputFileNameIsCustom="True" StartingNumberForAutoNumber="23" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+						<BitfileOutputTypeProperties AskBeforeOverwriteExistingFiles="False" BaseOutputFileName="802.11 FPGA USRP RIO 40 MHz BW STA" Id="126992" LastBuildOutputName=":NullTarget:\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-24\.lvbitx" NumberOfDigitsForAutoNumber="1" OutputFileNameIsCustom="True" StartingNumberForAutoNumber="24" xmlns="http://www.ni.com/LabVIEW.FPGA" />
 					</ComponentConfiguration>
 				</ComponentDefinition>
 				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1106" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="\802\.11\ Host\.gvi" StoragePath="802.11 Host.gvi" />
@@ -6724,6 +6725,11 @@
 			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition,EmbeddedReference" Id="204627" ModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" Name="\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-23\.lvbitx">
 				<FpgaBitfile FamilyName="USRP 294xR; 295xR 120 MSps" xmlns="http://www.ni.com/LabVIEW.FPGA">
 					<p.StoragePath>"Builds\\802.11 FPGA USRP RIO 40 MHz BW STA-23.lvbitx"</p.StoragePath>
+				</FpgaBitfile>
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition,EmbeddedReference" Id="206225" ModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" Name="\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-24\.lvbitx">
+				<FpgaBitfile FamilyName="USRP 294xR; 295xR 120 MSps" xmlns="http://www.ni.com/LabVIEW.FPGA">
+					<p.StoragePath>"Builds\\802.11 FPGA USRP RIO 40 MHz BW STA-24.lvbitx"</p.StoragePath>
 				</FpgaBitfile>
 			</EmbeddedDefinitionReference>
 		</NameScopingEnvoy>
