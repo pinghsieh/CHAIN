@@ -26,4 +26,17 @@
     <ConnectionType>Localhost</ConnectionType>
     <StartTime>07/05/2018 16:39:55</StartTime>
   </Job>
+  <Job>
+    <Name>802.11 FPGA USRP RIO 40 MHz BW STA-25.lvbitx</Name>
+    <JobInfo>
+      <SessionId>IC3xF67</SessionId>
+      <JobId>FOw2m44</JobId>
+    </JobInfo>
+    <SourceFolder>C:\NIFPGA\compilation\hsga0cxw.dff\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\hsga0cxw.dff</BuildFolder>
+    <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-25.lvbitx</OutputPath>
+    <ConnectionState>Completed</ConnectionState>
+    <ConnectionType>Localhost</ConnectionType>
+    <StartTime>07/05/2018 18:38:55</StartTime>
+  </Job>
 </JobList>
