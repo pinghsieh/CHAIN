@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="B4FB7963345DD1C23085F9EAFA866AC0" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="1188E0E9ACB08E880ECE251FF8CD7000" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="GComponentFeatureSet" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/GComponent.xsd" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -1411,6 +1411,9 @@
 						<Instance Id="207808" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.SclVi">
 							<Symbols p8:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.SclVi]Process.SclVi" p9:Process.AliasName="manage permission to contend.gcdl" p9:Process.AssociatedIdentifier="207805" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
 						</Instance>
+						<Instance Id="207825" Source="{http://www.ni.com/SystemDesigner/Vi}Process.Vi">
+							<Symbols p8:Path="[{http://www.ni.com/SystemDesigner/Vi}Process.Vi]Process.Vi" p9:Process.AliasName="Get Host side total queue length.gvi" p9:Process.AssociatedIdentifier="207823" p9:Process.Visible="False" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/Core/Proxy" />
+						</Instance>
 						<Superimposition Id="7" Name="Root Superimposition">
 							<Superimpose Source="11">
 								<Superimpose Parent="{:/11}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost/[{http://www.ni.com/SystemDesigner/Common/SystemModel}EthernetConnector]EthernetConnector" Source="27" />
@@ -1493,6 +1496,7 @@
 								<Superimpose Parent="{:/11}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" Source="118370" />
 								<Superimpose Parent="{:/11}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" Source="199809" />
 								<Superimpose Parent="{:/11}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" Source="199815" />
+								<Superimpose Parent="{:/11}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop/DesktopHost" Source="207825" />
 								<Superimpose Parent="{:/11}[{http://www.ni.com/SystemDesigner/Desktop/SystemModel}Desktop]Desktop" Source="229" />
 							</Superimpose>
 							<Superimpose Source="105770" />
@@ -2031,6 +2035,8 @@
 						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="199807" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Chain\ Table\.gvi" StoragePath="WiMAC\Chains\Chain Table.gvi" />
 						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="199813" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Change_U8array_to_U64\.gvi" StoragePath="WiMAC\Chains\Change_U8array_to_U64.gvi" />
 						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="206224" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Cluster\ Constant\.gtype" StoragePath="Cluster Constant.gtype" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="207818" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Custom\ session\.gtype" StoragePath="Custom session.gtype" />
+						<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,ProcessBackedProjectServiceMetaFactory" Id="207823" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Get\ Host\ side\ total\ queue\ length\.gvi" StoragePath="Get Host side total queue length.gvi" />
 					</EmbeddedDefinitionReference>
 					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="63" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Common" Reparentable="False">
 						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Common&quot;" />
@@ -3045,6 +3051,7 @@
 									</SourceFileReference>
 									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="146648" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Complex\ Compact\ Array\.gtype" StoragePath="Complex Compact Array.gtype" />
 									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="146649" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Real\ Compact\ Array\.gtype" StoragePath="Real Compact Array.gtype" />
+									<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc" Id="207816" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Real\ QR\ Decomposition\.gvi" StoragePath="Real QR Decomposition.gvi" />
 								</NameScopingContentReference>
 							</NameScopingContentReference>
 						</NameScopingContentReference>
@@ -4195,7 +4202,7 @@
 					<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="108367" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Native" Reparentable="False">
 						<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
 					</EmbeddedDefinitionReference>
-					<NameScopingEnvoy Bindings="VILibFpga,Envoy,DefinitionReference,BuildSpecification,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy,MirroringNameScopingEnvoy" Id="126993" MirrorName=":USRP:Increase\ the\ size\ of\ H2T\ TX\ Data\ FIFO" ModelDefinitionType="BuildSpecification" Name="Increase\ the\ size\ of\ H2T\ TX\ Data\ FIFO">
+					<NameScopingEnvoy Bindings="VILibFpga,Envoy,DefinitionReference,BuildSpecification,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy,MirroringNameScopingEnvoy" Id="126993" MirrorName=":USRP:Queue\ length\ check\ for\ permission\ to\ contend" ModelDefinitionType="BuildSpecification" Name="Queue\ length\ check\ for\ permission\ to\ contend">
 						<BuildSpecificationDefinition HasUserDefinedName="True" Id="126994" TopLevelComponentRefId="127000" xmlns="http://www.ni.com/GComponent.xsd">
 							<CompilerSymbolTable Id="126995" xmlns="http://www.ni.com/PlatformFramework" />
 							<ComponentConfigurationReference AssociatedEnvoyId="126996" ConfigName="Config_a7d2a886-eaa4-482b-8dda-346b55e763fa" Id="127000" />
@@ -4700,6 +4707,7 @@
 					<EnvoyReference Bindings="Envoy,ContentReference,NationalInstruments.Fpga.SystemModel.FpgaBitfileModelDefinition,EnvoyReference,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" ContentIdentifier="198206" Id="198208" ModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" Name="\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-21\.lvbitx" />
 					<EnvoyReference Bindings="Envoy,ContentReference,NationalInstruments.Fpga.SystemModel.FpgaBitfileModelDefinition,EnvoyReference,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" ContentIdentifier="199803" Id="199805" ModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" Name="\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-22\.lvbitx" />
 					<EnvoyReference Bindings="Envoy,ContentReference,NationalInstruments.Fpga.SystemModel.FpgaBitfileModelDefinition,EnvoyReference,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" ContentIdentifier="204627" Id="204629" ModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" Name="\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-23\.lvbitx" />
+					<EnvoyReference Bindings="Envoy,ContentReference,NationalInstruments.Fpga.SystemModel.FpgaBitfileModelDefinition,EnvoyReference,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" ContentIdentifier="207829" Id="207831" ModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" Name="\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-26\.lvbitx" />
 				</NameScopingEnvoy>
 				<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.Restricted.SystemDesigner.SystemModelCore.Port,ContentKind_{http://www.ni.com/SystemDesigner/Common/SystemModel}Port.DigitalInput,ProcessBackedProjectServiceMetaFactory" ContentName="{:/107671}[{http://www.ni.com/SystemDesigner/Usrp/SystemModel}USRP-2953R]USRP-2953R/USRP 294xR; 295xR 120 MSps/MGT Socket/Port0_TX_p" Id="108119" Name="Port0_TX_p" />
 				<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.Restricted.SystemDesigner.SystemModelCore.Port,ContentKind_{http://www.ni.com/SystemDesigner/Common/SystemModel}Port.DigitalInput,ProcessBackedProjectServiceMetaFactory" ContentName="{:/107671}[{http://www.ni.com/SystemDesigner/Usrp/SystemModel}USRP-2953R]USRP-2953R/USRP 294xR; 295xR 120 MSps/MGT Socket/Port0_TX_n" Id="108120" Name="Port0_TX_n" />
@@ -5497,7 +5505,7 @@
 				<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,RepositoryManagerDefinition,EmbeddedReference" Id="108359" ModelDefinitionType="RepositoryManagerDefinition" Name="vi\.lib\.Native" Reparentable="False">
 					<RepositoryManagerDefinition Location="&quot;&lt;AppDir&gt;\\Resources\\vi.lib\\Native&quot;" />
 				</EmbeddedDefinitionReference>
-				<NameScopingEnvoy Bindings="VILibFpga,Envoy,DefinitionReference,BuildSpecification,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="126985" ModelDefinitionType="BuildSpecification" Name="Increase\ the\ size\ of\ H2T\ TX\ Data\ FIFO">
+				<NameScopingEnvoy Bindings="VILibFpga,Envoy,DefinitionReference,BuildSpecification,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="126985" ModelDefinitionType="BuildSpecification" Name="Queue\ length\ check\ for\ permission\ to\ contend">
 					<BuildSpecificationDefinition HasUserDefinedName="True" Id="126986" TopLevelComponentRefId="126991" xmlns="http://www.ni.com/GComponent.xsd">
 						<CompilerSymbolTable Id="126987" xmlns="http://www.ni.com/PlatformFramework" />
 						<ComponentConfigurationReference AssociatedEnvoyId="126988" ConfigName="Config_a7d2a886-eaa4-482b-8dda-346b55e763fa" Id="126991" />
@@ -6204,6 +6212,7 @@
 				<EnvoyReference Bindings="Envoy,ContentReference,NationalInstruments.Fpga.SystemModel.FpgaBitfileModelDefinition,EnvoyReference,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" ContentIdentifier="199803" Id="203046" ModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" Name="\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-22\.lvbitx" />
 				<EnvoyReference Bindings="Envoy,ContentReference,NationalInstruments.Fpga.SystemModel.FpgaBitfileModelDefinition,EnvoyReference,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" ContentIdentifier="199803" Id="203047" ModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" Name="\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-22\.lvbitx" />
 				<EnvoyReference Bindings="Envoy,ContentReference,NationalInstruments.Fpga.SystemModel.FpgaBitfileModelDefinition,EnvoyReference,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" ContentIdentifier="204627" Id="204628" ModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" Name="\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-23\.lvbitx" />
+				<EnvoyReference Bindings="Envoy,ContentReference,NationalInstruments.Fpga.SystemModel.FpgaBitfileModelDefinition,EnvoyReference,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" ContentIdentifier="207829" Id="207830" ModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" Name="\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-26\.lvbitx" />
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
 		<NameScopingEnvoy Bindings="Envoy,DefinitionReference,NullTarget,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="10" ModelDefinitionType="NullTarget" Name="NullTarget">
@@ -6217,7 +6226,7 @@
 					<ComponentConfiguration ComponentOutputType="Bitfile" Id="126982" Name="Config_a7d2a886-eaa4-482b-8dda-346b55e763fa">
 						<CompilerSymbolTable Id="126983" xmlns="http://www.ni.com/PlatformFramework" />
 						<ComponentItemProperties AssociatedEnvoyId="118919" Id="126984" TopLevel="True" />
-						<BitfileOutputTypeProperties AskBeforeOverwriteExistingFiles="False" BaseOutputFileName="802.11 FPGA USRP RIO 40 MHz BW STA" Id="126992" LastBuildOutputName=":NullTarget:\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-24\.lvbitx" NumberOfDigitsForAutoNumber="1" OutputFileNameIsCustom="True" StartingNumberForAutoNumber="24" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+						<BitfileOutputTypeProperties AskBeforeOverwriteExistingFiles="False" BaseOutputFileName="802.11 FPGA USRP RIO 40 MHz BW STA" Id="126992" LastBuildOutputName=":NullTarget:\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-26\.lvbitx" NumberOfDigitsForAutoNumber="1" OutputFileNameIsCustom="True" StartingNumberForAutoNumber="26" xmlns="http://www.ni.com/LabVIEW.FPGA" />
 					</ComponentConfiguration>
 				</ComponentDefinition>
 				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="1106" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="\802\.11\ Host\.gvi" StoragePath="802.11 Host.gvi" />
@@ -6646,6 +6655,8 @@
 				<SourceFileReference Bindings="NationalInstruments.LabVIEW.FPGA.InsideSingleCycleLoop.Moc,SCL,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.ClockDrivenLogic,Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference" Id="201440" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Check_if_in_chain_table\.gcdl" OverridingModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.ClockDrivenLogic" StoragePath="WiMAC\Chains\Check_if_in_chain_table.gcdl" />
 				<SourceFileReference Bindings="NationalInstruments.LabVIEW.FPGA.InsideSingleCycleLoop.Moc,SCL,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.ClockDrivenLogic,Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference" Id="201456" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Not\ include\ itself\.gcdl" OverridingModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.ClockDrivenLogic" StoragePath="WiMAC\Chains\Not include itself.gcdl" />
 				<SourceFileReference Bindings="NationalInstruments.LabVIEW.FPGA.InsideSingleCycleLoop.Moc,SCL,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.ClockDrivenLogic,Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,FileReference,SourceFileReference" Id="207806" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="manage\ permission\ to\ contend\.gcdl" OverridingModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.ClockDrivenLogic" StoragePath="manage permission to contend.gcdl" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="207819" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Custom\ session\.gtype" StoragePath="Custom session.gtype" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="207824" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Get\ Host\ side\ total\ queue\ length\.gvi" StoragePath="Get Host side total queue length.gvi" />
 			</EmbeddedDefinitionReference>
 			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,PackageReferencesDefinition,EmbeddedReference" Id="67" ModelDefinitionType="PackageReferencesDefinition" Name="ProjectReferences">
 				<PackageReferencesDefinition xmlns="http://www.ni.com/GComponent.xsd" />
@@ -6740,6 +6751,16 @@
 			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition,EmbeddedReference" Id="206225" ModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" Name="\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-24\.lvbitx">
 				<FpgaBitfile FamilyName="USRP 294xR; 295xR 120 MSps" xmlns="http://www.ni.com/LabVIEW.FPGA">
 					<p.StoragePath>"Builds\\802.11 FPGA USRP RIO 40 MHz BW STA-24.lvbitx"</p.StoragePath>
+				</FpgaBitfile>
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition,EmbeddedReference" Id="207815" ModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" Name="\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-25\.lvbitx">
+				<FpgaBitfile FamilyName="USRP 294xR; 295xR 120 MSps" xmlns="http://www.ni.com/LabVIEW.FPGA">
+					<p.StoragePath>"Builds\\802.11 FPGA USRP RIO 40 MHz BW STA-25.lvbitx"</p.StoragePath>
+				</FpgaBitfile>
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition,EmbeddedReference" Id="207829" ModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.FpgaBitfileModelDefinition" Name="\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-26\.lvbitx">
+				<FpgaBitfile FamilyName="USRP 294xR; 295xR 120 MSps" xmlns="http://www.ni.com/LabVIEW.FPGA">
+					<p.StoragePath>"Builds\\802.11 FPGA USRP RIO 40 MHz BW STA-26.lvbitx"</p.StoragePath>
 				</FpgaBitfile>
 			</EmbeddedDefinitionReference>
 		</NameScopingEnvoy>
