@@ -11,7 +11,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-23.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/09/2018 21:41:35</StartTime>
+    <StartTime>07/12/2018 17:06:43</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-24.lvbitx</Name>
@@ -24,7 +24,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-24.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/09/2018 21:41:35</StartTime>
+    <StartTime>07/12/2018 17:06:43</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-25.lvbitx</Name>
@@ -37,7 +37,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-25.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/09/2018 21:41:35</StartTime>
+    <StartTime>07/12/2018 17:06:43</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-26.lvbitx</Name>
@@ -50,6 +50,19 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-26.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/09/2018 23:50:05</StartTime>
+    <StartTime>07/12/2018 17:06:43</StartTime>
+  </Job>
+  <Job>
+    <Name>802.11 FPGA USRP RIO 40 MHz BW STA-27.lvbitx</Name>
+    <JobInfo>
+      <SessionId>qaA0l40</SessionId>
+      <JobId>D2iSElb</JobId>
+    </JobInfo>
+    <SourceFolder>C:\NIFPGA\compilation\funwsfhi.elo\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\funwsfhi.elo</BuildFolder>
+    <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-27.lvbitx</OutputPath>
+    <ConnectionState>Error</ConnectionState>
+    <ConnectionType>Localhost</ConnectionType>
+    <StartTime>07/12/2018 17:22:41</StartTime>
   </Job>
 </JobList>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="EC648B3E37DE5BCED96A06CA407AB32A" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="97CA630550075F70D7E4B57A6B2D40A2" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -672,6 +672,8 @@
 			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="4936" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]36" MinWidth="[float]34" Name="[string]reset permission to contend" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=4935}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]30" Id="4942" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]16" MinWidth="[float]16" Name="[string]authorized to contend?" Shape="[LEDShape]Square" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=4941}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="4950" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" Left="[float]0" MinHeight="[float]22" Name="[string]FPGA queue length" Top="[float]0" Value="{DataItemBinding Id=4947}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="4954" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" Label="[UIModel]4955" Left="[float]415" MinHeight="[float]22" Top="[float]36" Value="{DataItemBinding Id=4953}" ValueType="[Type]UInt32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="4955" LabelOwner="[UIModel]4954" Left="[float]415" Text="[string]count DIFS after ACK done" Top="[float]13" xmlns="http://www.ni.com/PanelCommon" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<ClockDrivenLoop Bounds="-4042 1800 1104 830" DiagramId="19" Id="18" xmlns="http://www.ni.com/LabVIEW.FPGA">
@@ -3017,6 +3019,7 @@
 							<Parameter Id="B2" Desc="ACK Received Pulse" />
 							<Parameter Id="B3" Desc="Piggyback?" />
 							<Parameter Id="R5" Desc="Received ACK pulse(maybe not ACK for itself)" />
+							<Parameter Id="R6" Desc="count DIFS after ACK done" />
 						</MethodDeclaration>
 					</p.MethodDeclaration>
 					<Terminal DataType="UInt8" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
@@ -3040,6 +3043,7 @@
 					<Terminal DataType="Boolean" Direction="Output" Hotspot="35 70" Id="B2" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Boolean" Direction="Output" Hotspot="45 70" Id="B3" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Boolean" Direction="Output" Hotspot="60 55" Id="R5" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="UInt32" Direction="Output" Hotspot="60 65" Id="R6" xmlns="http://www.ni.com/PlatformFramework" />
 				</MethodCall>
 				<DataAccessor Bounds="752 610 40 15" DataItem="2005" Id="1184" Label="1365" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="@62a197377d2042e98487a474562c9cc1" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -3275,9 +3279,9 @@
 					<p.Point>569.6 865</p.Point>
 					<p.Text>PHY RX AGC state indication</p.Text>
 				</WireComment>
-				<WireComment AttachedTo="3431" Bounds="250.001282 847 192.8 16" Id="3437" xmlns="http://www.ni.com/PlatformFramework">
+				<WireComment AttachedTo="3431" Bounds="250.001312 847 192.8 16" Id="3437" xmlns="http://www.ni.com/PlatformFramework">
 					<p.ExpandedWidth>192.8</p.ExpandedWidth>
-					<p.Point>346.401276 855</p.Point>
+					<p.Point>346.4013 855</p.Point>
 					<p.Text>PHY RX Gain change indication</p.Text>
 				</WireComment>
 				<WireComment AttachedTo="3425" Bounds="145 837 100 16" Id="3438" xmlns="http://www.ni.com/PlatformFramework">
@@ -3843,7 +3847,7 @@
 				<NodeLabel AttachedTo="4928" Bounds="1069 855 106 14" Id="4929" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>packet size (bytes)</p.Text>
 				</NodeLabel>
-				<PropertyNode Bounds="1135 710 115.2 35" HasErrorTerminals="False" Id="4931" InstanceDataType="@b9c96ce99be740f5964a0f28c5272ffe" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/LabVIEW.VI">
+				<PropertyNode Bounds="1135 710 115.2 35.2" HasErrorTerminals="False" Id="4931" InstanceDataType="@b9c96ce99be740f5964a0f28c5272ffe" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/LabVIEW.VI">
 					<PropertyItemTerminal DataType="UInt32" Hotspot="115.2 15" Id="c0t0v" Path="used elements" Usage="Optional" />
 				</PropertyNode>
 				<Wire Id="4933" Joints="N(4931:c0t0v) h(9.800049) v(45) B(2) N(4949:Value) B(2) v(65) N(4902:L1)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -3865,6 +3869,18 @@
 				</DataAccessor>
 				<NodeLabel AttachedTo="4949" Bounds="1310 765 106 14" Id="4951" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>FPGA queue length</p.Text>
+				</NodeLabel>
+				<WireComment AttachedTo="4076" Bounds="1446.35 522 126.4 16" Id="4952" xmlns="http://www.ni.com/PlatformFramework">
+					<p.ExpandedWidth>126.4</p.ExpandedWidth>
+					<p.Point>1509.54993 530</p.Point>
+					<p.Text>TX Data after SIFS</p.Text>
+				</WireComment>
+				<DataAccessor Bounds="755 520 40 15" DataItem="4953" Id="4957" Label="4958" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="UInt32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<Wire Id="4959" Joints="N(1183:R6) h(7) v(-105) N(4957:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="4957" Bounds="800 520 149 14" Id="4958" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>count DIFS after ACK done</p.Text>
 				</NodeLabel>
 				<ClockDrivenLoop.ClockBorderNode Bounds="1 295 22 20" Docking="Left" Id="2497" Terminals="2495=2502" />
 				<ClockDrivenLoop.Tunnel Bounds="-3 370 26 10" Docking="Left" Id="2534" Terminals="o0=3189, i0=2535" />
@@ -5428,7 +5444,7 @@
 					<p.Text>PHY RX Gain change indication</p.Text>
 				</NodeLabel>
 			</ClusterLiteral>
-			<PropertyNode Bounds="-4365 95 220.8 185" HasErrorTerminals="False" Id="3475" InstanceDataType="@c9854e2662f84133baff84897c7331b0" Mode="InstanceProperties" Template="List">
+			<PropertyNode Bounds="-4365 95 220.8 184.8" HasErrorTerminals="False" Id="3475" InstanceDataType="@c9854e2662f84133baff84897c7331b0" Mode="InstanceProperties" Template="List">
 				<PropertyItemTerminal Action="Write" DataType="@e062ea92ed3a49119e69cd284b87f133" Hotspot="0 15" Id="c0t0v" Path="CW Max Reg" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="@e062ea92ed3a49119e69cd284b87f133" Hotspot="0 30" Id="c1t0v" Path="CW Min Reg" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="@e062ea92ed3a49119e69cd284b87f133" Hotspot="0 45" Id="c2t0v" Path="Fixed Backoff Value Reg" Usage="Required" />
@@ -6157,6 +6173,9 @@
 		<DataItem AdaptToDiagramType="True" DataType="UInt32" Id="4947" Name="FPGA queue length" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="UInt32" Id="4953" Name="count DIFS after ACK done" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="niInstr\ Register\ Bus\ v1\ FPGA\.lvlib__Process\.gcdl">
 				<MergeScript>
@@ -6575,7 +6594,7 @@
 						<Icon ListViewIconCrop="0 0 60 70">
 							<IconPanel Height="[float]70" Left="[float]0" Top="[float]0" Width="[float]60">
 								<Canvas Height="[float]70" Left="[float]0" Top="[float]0" Width="[float]60">
-									<Path Data="[PathGeometry]M 55.2,50 L 4.8,50 C 2.1492,50 0,48.209 0,46 L 0,4 C 0,1.791 2.1492,0 4.8,0 L 55.2,0 C 57.8508,0 60,1.791 60,4 L 60,46 C 60,48.209 57.8508,50 55.2,50 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]60" />
+									<Path Data="[PathGeometry]M 55.2,70 L 4.8,70 C 2.1492,70 0,67.4926 0,64.4 L 0,5.6 C 0,2.5074 2.1492,0 4.8,0 L 55.2,0 C 57.8508,0 60,2.5074 60,5.6 L 60,64.4 C 60,67.4926 57.8508,70 55.2,70 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]70" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]60" />
 									<Path Data="[PathGeometry]M 55.58334,49 L 4.833333,49 C 2.831125,49 1.208333,47.657 1.208333,46 L 1.208333,4 C 1.208333,2.343 2.831125,1 4.833333,1 L 55.58334,1 C 57.58554,1 59.20834,2.343 59.20834,4 L 59.20834,46 C 59.20834,47.657 57.58554,49 55.58334,49 Z" Fill="[SMSolidColorBrush]#fff2f2f2" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]58" />
 									<Path Data="[PathGeometry]M 4.869565,2 L 56,2 C 57.34521,2 58.43478,2.895 58.43478,4 L 58.43478,46 C 58.43478,47.105 57.34521,48 56,48 L 4.869565,48 C 3.524348,48 2.434783,47.105 2.434783,46 L 2.434783,4 C 2.434783,2.895 3.524348,2 4.869565,2 Z" Fill="[SMSolidColorBrush]#ffe5e5e5" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]56" />
 									<Path Data="[PathGeometry]M 12.426,7.684 C 12.34,7.645 12.215,7.597 12.051,7.539 C 11.887,7.481 11.748,7.432 11.637,7.391 C 11.526,7.493 11.424,7.616 11.334,7.76 C 11.244,7.904 11.199,8.067 11.199,8.246 C 11.199,8.517 11.297,8.732 11.49,8.892 C 11.683,9.052 11.937,9.132 12.25,9.132 C 12.334,9.132 12.432,9.12 12.543,9.095 C 12.654,9.07 12.752,9.032 12.832,8.98 C 12.926,8.92 13.002,8.85 13.059,8.769 C 13.116,8.688 13.145,8.579 13.145,8.441 C 13.145,8.253 13.098,8.111 13.004,8.015 C 12.91,7.919 12.717,7.809 12.426,7.684 Z" Fill="[SMSolidColorBrush]#ff892121" Height="[float]50" Left="[float]5" MinHeight="[float]1" MinWidth="[float]1" Top="[float]-1" Width="[float]50" />

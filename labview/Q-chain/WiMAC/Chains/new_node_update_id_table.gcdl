@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="B591201F46BB4A6CB84C61A4D91A1ED9" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="2A946BE07DB2585E1169C49114E7A584" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -62,45 +62,44 @@
 			<NodeLabel AttachedTo="49" Bounds="875 220 56 14" Id="51" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>update ID</p.Text>
 			</NodeLabel>
-			<CaseStructure Bounds="410 105 370 285" Default="110" Id="109" Selected="111" UserSelectorBounds="140.8 0 88 16.8">
-				<CaseStructure.Case Bounds="5 5 360 275" Id="110" Pattern="False">
-					<Literal Bounds="220 55 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="137" xmlns="http://www.ni.com/MocCommon">
+			<CaseStructure Bounds="395 105 385 285" Default="110" Id="109" Selected="111" UserSelectorBounds="148.8 0 88 16.8">
+				<CaseStructure.Case Bounds="5 5 375 275" Id="110" Pattern="False">
+					<Literal Bounds="235 55 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="137" xmlns="http://www.ni.com/MocCommon">
 						<p.Data>False</p.Data>
 						<BooleanBehavior />
 					</Literal>
 					<Wire Id="138" Joints="N(137:Out) N(135:110)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="140" Joints="N(114:110) N(128:110)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
-				<CaseStructure.Case Bounds="5 5 360 275" Id="111" Pattern="True">
-					<IsEqualTo0 Bounds="35 100 30 30" Id="113" />
-					<CaseStructure Bounds="100 70 220 95" Default="117" Id="116" Selected="118" UserSelectorBounds="65.6 0 88 16.8">
+				<CaseStructure.Case Bounds="5 5 375 275" Id="111" Pattern="True">
+					<IsEqualTo0 Bounds="50 100 30 30" Id="113" />
+					<CaseStructure Bounds="115 70 220 95" Default="117" Id="116" Selected="118" UserSelectorBounds="65.6 0 88 16.8">
 						<CaseStructure.Case Bounds="5 5 210 85" Id="117" Pattern="False">
 							<Wire Id="189" Joints="N(190:117) h(181) v(-20) N(126:117)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
 						<CaseStructure.Case Bounds="5 5 210 85" Id="118" Pattern="True">
-							<Wire Id="186" Joints="N(183:118) h(187) v(-30) N(126:118)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="288" Joints="N(183:118) h(197) v(-30) N(126:118)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
 						<CaseStructure.Selector Bounds="-4 40 13 10" Docking="Left" Id="119" Terminals="116=120, 117, 118" />
-						<CaseStructure.Tunnel Bounds="211 40 13 10" Docking="Right" Id="126" Terminals="116=127, 117=189, 118=186" />
-						<CaseStructure.Tunnel Bounds="-4 70 13 10" Docking="Left" Id="183" Terminals="116=185, 117, 118=186" />
+						<CaseStructure.Tunnel Bounds="211 40 13 10" Docking="Right" Id="126" Terminals="116=127, 117=189, 118=288" />
+						<CaseStructure.Tunnel Bounds="-4 70 13 10" Docking="Left" Id="183" Terminals="116=185, 117, 118=288" />
 						<CaseStructure.Tunnel Bounds="-4 60 13 10" Docking="Left" Id="190" Terminals="116=179, 117=189, 118" />
 					</CaseStructure>
 					<Wire Id="120" Joints="N(113:x = 0?) h(20) B(1) N(119:116) B(1) v(-55) N(135:111)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="127" Joints="N(126:116) N(128:111)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="154" Joints="N(153:111) h(6) v(50) N(278:197)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="179" Joints="N(114:111) h(11) B(1) h(10) B(2) N(113:x) B(2) v(20) N(190:116) B(1) v(70) N(192:x)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="154" Joints="N(153:111) h(21) v(50) N(278:197)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="179" Joints="N(114:111) h(26) B(1) h(10) B(2) N(113:x) B(2) v(20) N(190:116) B(1) v(70) N(192:x)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="185" Joints="N(184:111) N(183:116)" xmlns="http://www.ni.com/PlatformFramework" />
-					<IsEqual Bounds="70 180 30 30" Id="192" />
-					<Literal Bounds="58 195 12 10" DataType="UInt8" Facade="DockedConstantFacade" Id="193" Label="194" xmlns="http://www.ni.com/MocCommon">
-						<p.Data>1</p.Data>
+					<IsEqual Bounds="85 180 30 30" Id="192" />
+					<Literal Bounds="15 245 39.5 16" DataType="UInt8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="193" Label="194" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>0</p.Data>
 						<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-						<DockedConstantFacade UndockedSize="39.5 16" />
 					</Literal>
-					<NodeLabel AttachedTo="193" Bounds="58 195 0 0" Id="194" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<NodeLabel AttachedTo="193" Bounds="15 245 0 0" Id="194" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>y</p.Text>
 					</NodeLabel>
-					<Wire Facade="WireInvisibleFacade" Id="195" Joints="N(193:Out) h(5) v(-9) h(-10) v(9) N(192:y)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-					<CaseStructure Bounds="125 185 190 85" Default="198" Id="197" Selected="199" UserSelectorBounds="51.2 0 88 16.8">
+					<Wire Id="195" Joints="N(193:Out) h(15.5) v(-50) N(192:y)" xmlns="http://www.ni.com/PlatformFramework" />
+					<CaseStructure Bounds="140 185 190 85" Default="198" Id="197" Selected="199" UserSelectorBounds="51.2 0 88 16.8">
 						<CaseStructure.Case Bounds="5 5 180 75" Id="198" Pattern="False" />
 						<CaseStructure.Case Bounds="5 5 180 75" Id="199" Pattern="True">
 							<RegisterWrite Bounds="85 15 40 40" Id="148" xmlns="http://www.ni.com/LabVIEW.FPGA" />
@@ -122,8 +121,8 @@
 				</CaseStructure.Case>
 				<CaseStructure.Selector Bounds="-4 65 13 10" Docking="Left" Id="112" Terminals="109=159, 110, 111" />
 				<CaseStructure.Tunnel Bounds="-4 115 13 10" Docking="Left" Id="114" Terminals="109=164, 110=140, 111=179" />
-				<CaseStructure.Tunnel Bounds="361 115 13 10" Docking="Right" Id="128" Terminals="109=173, 110=140, 111=127" />
-				<CaseStructure.Tunnel Bounds="361 60 13 10" Docking="Right" Id="135" Terminals="109=170, 110=138, 111=120" />
+				<CaseStructure.Tunnel Bounds="376 115 13 10" Docking="Right" Id="128" Terminals="109=173, 110=140, 111=127" />
+				<CaseStructure.Tunnel Bounds="376 60 13 10" Docking="Right" Id="135" Terminals="109=170, 110=138, 111=120" />
 				<CaseStructure.Tunnel Bounds="-4 170 13 10" Docking="Left" Id="153" Terminals="109=152, 110, 111=154" />
 				<CaseStructure.Tunnel Bounds="-4 145 13 10" Docking="Left" Id="184" Terminals="109=182, 110, 111=185" />
 			</CaseStructure>
@@ -153,6 +152,9 @@
 			<Wire Id="182" Joints="N(174:Value) N(184:109)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Comment Bounds="185 -35 440 41.6" Id="283" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>"05/03/2018 Yue\r\nFor the new node adds into chain. We will get the ACk from the latest chain,\r\nupdate the id table for the new node."</p.Text>
+			</Comment>
+			<Comment Bounds="805 290 245 105" Id="287" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"07/10/2018 Ping-Chun\r\nModify the logic:\r\n1. If ID=0, then there is a new node who just won the contention. Therefore, the ID of the new node should be 1, and the head MAC address should be the address of the new node"</p.Text>
 			</Comment>
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">

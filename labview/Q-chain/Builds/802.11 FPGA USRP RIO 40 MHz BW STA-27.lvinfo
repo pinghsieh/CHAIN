@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompilationResults.xml Version="2">
+  <BuildInformation>
+    <Family>kintex7</Family>
+    <BuildSpecSourceName>:USRP:Queue\ length\ check\ for\ permission\ to\ contend</BuildSpecSourceName>
+    <CompileServer>localhost</CompileServer>
+    <ResourceThreshold>80</ResourceThreshold>
+  </BuildInformation>
+  <CompileStatus State="Error">
+    <CurrentStep>Synthesize - Vivado</CurrentStep>
+    <ConnectionState>Error</ConnectionState>
+    <LocalTime>0:00:06:00.7493452</LocalTime>
+    <XilinxTime>0:00:05:05.6628059</XilinxTime>
+  </CompileStatus>
+  <CompileSteps>
+    <Step Name="Analyzing Diagrams">
+      <Status>Done</Status>
+      <Type>Building</Type>
+      <Duration>0:00:00:49.1380363</Duration>
+    </Step>
+    <Step Name="Building">
+      <Status>Done</Status>
+      <Type>Building</Type>
+      <Duration>0:00:04:39.3214412</Duration>
+    </Step>
+    <Step Name="Transferring">
+      <Status>Done</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:00:12.1761429</Duration>
+    </Step>
+    <Step Name="Waiting">
+      <Status>Done</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:00:20.1137248</Duration>
+    </Step>
+    <Step Name="CoreGenerator">
+      <Status>Done</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:00:02.8123222</Duration>
+    </Step>
+    <Step Name="Synthesize - Vivado">
+      <Status>Failed</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:04:57.3640018</Duration>
+    </Step>
+    <Step Name="Optimize Logic">
+      <Status>NotStarted</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:00:00.0000000</Duration>
+    </Step>
+    <Step Name="Place">
+      <Status>NotStarted</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:00:00.0000000</Duration>
+    </Step>
+    <Step Name="Optimize Timing">
+      <Status>NotStarted</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:00:00.0000000</Duration>
+    </Step>
+    <Step Name="Route">
+      <Status>NotStarted</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:00:00.0000000</Duration>
+    </Step>
+    <Step Name="Generate Programming File">
+      <Status>NotStarted</Status>
+      <Type>XilinxCompile</Type>
+      <Duration>0:00:00:00.0000000</Duration>
+    </Step>
+  </CompileSteps>
+  <ReportList />
+  <ErrorList>
+    <CompileError Type="NationalInstruments.Restricted.LabVIEW.FPGA.Compiler.CompileClient.ServerError">
+      <ErrorCode>2</ErrorCode>
+    </CompileError>
+  </ErrorList>
+</CompilationResults.xml>
