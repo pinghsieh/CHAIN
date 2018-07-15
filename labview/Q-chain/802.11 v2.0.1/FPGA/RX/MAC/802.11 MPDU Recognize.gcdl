@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="C25BFBD6F5AC958765C6D8709D6C2F03" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="14AFF1EB259380DC2E652743ACC2266A" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -379,7 +379,7 @@
 					<Wire Id="3144" Joints="N(3143:Out) N(3131:1962)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 508 960" Id="905" Pattern="&quot;active&quot;">
-					<CaseStructure Bounds="10 60 470 841" DataType="@861612449fa04e558957e659e0cc26b9" Default="899" Id="898" Selected="1339" UserSelectorBounds="185.6 0 100 16.8">
+					<CaseStructure Bounds="10 60 470 841" DataType="@861612449fa04e558957e659e0cc26b9" Default="899" Id="898" Selected="900" UserSelectorBounds="185.6 0 100 16.8">
 						<CaseStructure.Case Bounds="5 5 460 831" Id="899" Pattern="Default">
 							<ArrayLiteral Bounds="444 690 12 10" DataType="UInt8[6]" Facade="DockedConstantFacade" Id="1359" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>
@@ -749,7 +749,7 @@
 				<CaseStructure.Tunnel Bounds="-4 205 13 10" Docking="Left" Id="2518" Terminals="903=2516, 904, 1962, 905=2519" />
 				<CaseStructure.Tunnel Bounds="509 185 13 10" DefaultIfUnwired="True" Docking="Right" Id="2529" Terminals="903=2550, 904, 1962, 905=2531" />
 				<CaseStructure.Tunnel Bounds="509 200 13 10" DefaultIfUnwired="True" Docking="Right" Id="2533" Terminals="903=2551, 904, 1962, 905=2535" />
-				<CaseStructure.Tunnel Bounds="-4 565 13 10" Docking="Left" Id="2925" Terminals="903=2923, 904, 1962, 905=2926" />
+				<CaseStructure.Tunnel Bounds="-4 565 13 10" Docking="Left" Id="2925" Terminals="903=3156, 904, 1962, 905=2926" />
 				<CaseStructure.Tunnel Bounds="509 850 13 10" Docking="Right" Id="3131" Terminals="903=3130, 904=3142, 1962=3144, 905=3132" />
 			</CaseStructure>
 			<FeedbackNode Bounds="975 1040 30 20" EnableTerminalVisible="False" Id="914" />
@@ -1424,13 +1424,12 @@
 			<Wire Id="2902" Joints="N(724:R0) h(70) B(1) N(864:input) B(1) v(-145) h(60) v(-35) h(-60) v(-25) N(2605:L3) B(1) v(145) B(9) N(820:L0) B(9) v(65) B(11) N(2506:L0) B(11) v(90) B(13) N(2107:L0) B(13) v(120) B(15) N(2281:L0) B(15) v(285) N(957:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="2913" Joints="N(1273:output) h(-670) v(-200) B(2) N(1385:L2) B(2) v(-185) B(4) h(205) N(957:T0) B(4) v(-300) B(7) h(220) N(2281:T1) B(7) v(-115) B(10) h(220) N(2107:T1) B(10) v(-80) B(13) h(205) N(2506:T0) B(13) v(-65) B(16) h(205) N(820:T0) B(16) v(-150) h(25) B(20) v(-115) h(-45) v(-65) N(2605:L4) B(20) N(724:T0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="2914" Joints="N(724:R1) h(20) B(1) h(985) v(10) N(869:input) B(1) v(-225) N(2605:L2) B(1) v(145) B(7) N(820:L1) B(7) v(65) B(9) N(2506:L1) B(9) v(90) B(11) N(2107:L1) B(11) v(120) B(13) N(2281:L1) B(13) v(285) N(957:L1)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="575 580 40 15" DataItem="2917" Id="2915" Label="2916" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="605 545 40 15" DataItem="2917" Id="2915" Label="2916" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="2915" Bounds="455 580 115 14" Id="2916" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="2915" Bounds="485 545 115 14" Id="2916" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>DIFS after ACK done</p.Text>
 			</NodeLabel>
-			<Wire Id="2923" Joints="N(2915:Value) N(2925:903)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Comment Bounds="745 -465 353.6 28" Id="2933" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>"04/29/2018/\r\nUpdate piggyback Address should be after update the self ID"</p.Text>
 			</Comment>
@@ -1586,6 +1585,10 @@
 				<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="UInt32" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
+			<Comment Bounds="445 565 160 70" Id="3155" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"07/14/2018 Ping-Chun\r\nFor debugging, set to "true"\r\n"</p.Text>
+			</Comment>
+			<Wire Id="3156" Joints="N(2915:Value) h(6) v(35) N(2925:903)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" Top="[float]0" Width="[float]2000">
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="697" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]2139" Left="[float]183" MinHeight="[float]22" Top="[float]59" Value="{DataItemBinding Id=696}" ValueType="[Type]UInt8" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />

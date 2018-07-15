@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="94CF08941FF608BA523F48ED412DD433" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="6B93371BD18C30821C6A34E1E36A6871" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -10,10 +10,10 @@
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" LicenseFeatureNames="LVCOMMS_WLAN" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"&lt;p&gt;Coordinates the MAC transmission functionality. The module reads requests for transmission with and without application of the 802.11 backoff procedure. Those requests are processed based on actual timing and backoff information. The module adds the FCS field in order to generate complete MPDUs. The MPDUs, together with associated control information, are sent to the PHY SAP TX.&lt;/p&gt;\n\n&lt;p&gt;&lt;strong&gt;Latency: for data path: 1 cycle + FCS byte insertion (4 cycle).&lt;/strong&gt;&lt;/p&gt;"</p.UserDescription>
-		<Icon Id="2" ListViewIconCrop="0 0 50 60" xmlns="http://www.ni.com/PlatformFramework">
-			<IconPanel Height="[float]60" Id="1414" Left="[float]0" Top="[float]0" Width="[float]50">
-				<Canvas Height="[float]60" Id="1415" Left="[float]0" Top="[float]0" Width="[float]50">
-					<Path Data="[PathGeometry]M 46,60 L 4,60 C 1.791,60 0,57.8508 0,55.2 L 0,4.8 C 0,2.1492 1.791,0 4,0 L 46,0 C 48.209,0 50,2.1492 50,4.8 L 50,55.2 C 50,57.8508 48.209,60 46,60 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]60" Id="1416" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+		<Icon Id="2" ListViewIconCrop="0 0 50 80" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]80" Id="1414" Left="[float]0" Top="[float]0" Width="[float]50">
+				<Canvas Height="[float]80" Id="1415" Left="[float]0" Top="[float]0" Width="[float]50">
+					<Path Data="[PathGeometry]M 46,80 L 4,80 C 1.791,80 0,77.1344 0,73.60001 L 0,6.4 C 0,2.8656 1.791,0 4,0 L 46,0 C 48.209,0 50,2.8656 50,6.4 L 50,73.60001 C 50,77.1344 48.209,80 46,80 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]80" Id="1416" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
 					<Path Data="[PathGeometry]M 46,59.20834 L 4,59.20834 C 2.343,59.20834 1,57.58554 1,55.58334 L 1,4.833333 C 1,2.831125 2.343,1.208333 4,1.208333 L 46,1.208333 C 47.657,1.208333 49,2.831125 49,4.833333 L 49,55.58334 C 49,57.58554 47.657,59.20834 46,59.20834 Z" Fill="[SMSolidColorBrush]#fff2f2f2" Height="[float]58" Id="1417" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
 					<Path Data="[PathGeometry]M 4,2.434783 L 46,2.434783 C 47.105,2.434783 48,3.524348 48,4.869565 L 48,56 C 48,57.34521 47.105,58.43478 46,58.43478 L 4,58.43478 C 2.895,58.43478 2,57.34521 2,56 L 2,4.869565 C 2,3.524348 2.895,2.434783 4,2.434783 Z" Fill="[SMSolidColorBrush]#ffe5e5e5" Height="[float]56" Id="1418" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
 					<Path Data="[PathGeometry]M 12.426,7.684 C 12.34,7.645 12.215,7.597 12.051,7.539 C 11.887,7.481 11.748,7.432 11.637,7.391 C 11.526,7.493 11.424,7.616 11.334,7.76 C 11.244,7.904 11.199,8.067 11.199,8.246 C 11.199,8.517 11.297,8.732 11.49,8.892 C 11.683,9.052 11.937,9.132 12.25,9.132 C 12.334,9.132 12.432,9.12 12.543,9.095 C 12.654,9.07 12.752,9.032 12.832,8.98 C 12.926,8.92 13.002,8.85 13.059,8.769 C 13.116,8.688 13.145,8.579 13.145,8.441 C 13.145,8.253 13.098,8.111 13.004,8.015 C 12.91,7.919 12.717,7.809 12.426,7.684 Z" Fill="[SMSolidColorBrush]#ff892121" Height="[float]50" Id="1419" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
@@ -26,7 +26,7 @@
 				</Canvas>
 			</IconPanel>
 		</Icon>
-		<ConnectorPane Height="60" Id="9" ListViewHeight="255" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+		<ConnectorPane Height="80" Id="9" ListViewHeight="255" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
 			<ConnectorPaneTerminal ListViewHotspot="0 155" Parameter="902" />
 			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 170" Parameter="908" />
 			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 185" Parameter="925" />
@@ -36,23 +36,29 @@
 			<ConnectorPaneTerminal Hotspot="25 0" ListViewHotspot="0 140" Parameter="20" />
 			<ConnectorPaneTerminal Hotspot="35 0" ListViewHotspot="150 80" Parameter="21" />
 			<ConnectorPaneTerminal Hotspot="50 5" ListViewHotspot="150 230" Parameter="934" />
-			<ConnectorPaneTerminal Hotspot="50 15" ListViewHotspot="150 290" Parameter="939" />
+			<ConnectorPaneTerminal Hotspot="50 15" ListViewHotspot="150 305" Parameter="939" />
 			<ConnectorPaneTerminal Hotspot="50 25" ListViewHotspot="150 215" Parameter="949" />
 			<ConnectorPaneTerminal Hotspot="50 35" ListViewHotspot="150 35" Parameter="549" />
 			<ConnectorPaneTerminal Hotspot="50 45" ListViewHotspot="150 50" Parameter="553" />
-			<ConnectorPaneTerminal Hotspot="15 60" ListViewHotspot="0 125" Parameter="460" />
-			<ConnectorPaneTerminal Hotspot="25 60" ListViewHotspot="150 245" Parameter="1438" />
-			<ConnectorPaneTerminal Hotspot="35 60" ListViewHotspot="150 65" Parameter="710" />
-			<ConnectorPaneTerminal Hotspot="50 55" ListViewHotspot="150 275" Parameter="1425" />
-			<ConnectorPaneTerminal Hotspot="0 55" ListViewHotspot="0 260" Parameter="1431" />
+			<ConnectorPaneTerminal Hotspot="15 80" ListViewHotspot="0 125" Parameter="460" />
+			<ConnectorPaneTerminal Hotspot="25 80" ListViewHotspot="150 260" Parameter="1438" />
+			<ConnectorPaneTerminal Hotspot="35 80" ListViewHotspot="150 65" Parameter="710" />
+			<ConnectorPaneTerminal Hotspot="50 55" ListViewHotspot="150 290" Parameter="1425" />
+			<ConnectorPaneTerminal Hotspot="0 55" ListViewHotspot="0 275" Parameter="1431" />
+			<ConnectorPaneTerminal Hotspot="50 65" ListViewHotspot="150 245" Parameter="1445" />
+			<ConnectorPaneTerminal Hotspot="0 65" />
+			<ConnectorPaneTerminal Hotspot="50 75" />
+			<ConnectorPaneTerminal Hotspot="0 75" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
-		<FrontPanelUnplacedItems Id="11" Left="[float]0" Top="[float]0">
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" Top="[float]0" Width="[float]2000">
 			<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]30" Id="1426" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]16" MinWidth="[float]16" Name="[string]TX after backoff done" Shape="[LEDShape]Square" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=1425}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="1432" IsReadOnly="[bool]False" Label="[UIModel]1433" Left="[float]335" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]36" TrueContent="[string]On" Value="{DataItemBinding Id=1431}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Id="1433" LabelOwner="[UIModel]1432" Left="[float]335" Text="[string]TX Data After SIFS" Top="[float]13" xmlns="http://www.ni.com/PanelCommon" />
-			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="1439" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]1440" Left="[float]415" MinHeight="[float]22" Top="[float]36" Value="{DataItemBinding Id=1438}" ValueType="[Type]UInt8" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="1439" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" Label="[UIModel]1440" Left="[float]415" MinHeight="[float]22" Top="[float]36" Value="{DataItemBinding Id=1438}" ValueType="[Type]UInt32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Id="1440" LabelOwner="[UIModel]1439" Left="[float]415" Text="[string]count out" Top="[float]14" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="1446" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" Label="[UIModel]1447" Left="[float]415" MinHeight="[float]22" Top="[float]36" Value="{DataItemBinding Id=1445}" ValueType="[Type]UInt32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="1447" LabelOwner="[UIModel]1446" Left="[float]415" Text="[string]count TX after backoff done" Top="[float]13" xmlns="http://www.ni.com/PanelCommon" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<DataAccessor Bounds="40 220 40 15" DataItem="20" Id="14" Label="17" xmlns="http://www.ni.com/MocCommon">
@@ -70,10 +76,10 @@
 			<DataAccessor Bounds="40 260 40 15" DataItem="460" Id="458" Label="459" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@c275d586b22043eb87f515fc4bb60aaa" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<DataAccessor Bounds="515 350 40 15" DataItem="549" Id="547" Label="548" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="515 370 40 15" DataItem="549" Id="547" Label="548" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<DataAccessor Bounds="515 335 40 15" DataItem="553" Id="551" Label="552" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="515 355 40 15" DataItem="553" Id="551" Label="552" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<FeedbackNode ArrowDirection="Right" Bounds="270 205 30 20" EnableTerminalVisible="False" Id="633" />
@@ -168,7 +174,7 @@
 			</PropertyNode>
 			<Wire Id="1212" Joints="N(904:Value) N(1001:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="1214" Joints="N(910:Value) h(15) v(-5) N(1001:L1)" xmlns="http://www.ni.com/PlatformFramework" />
-			<MethodCall Bounds="105 190 50 50" DomainName="NI.Appframeworks.802.11" Id="1267" Target="\802\.11\ Request\ Scheduler\.gcdl" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="105 190 50 70" DomainName="NI.Appframeworks.802.11" Id="1267" Target="\802\.11\ Request\ Scheduler\.gcdl" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="T0" Desc="TX Data After SIFS" />
@@ -180,7 +186,8 @@
 						<Parameter Id="L3" Desc="PHY TX end indication" />
 						<Parameter Id="R0" Desc="PHY TX Start Request" />
 						<Parameter Id="R3" Desc="TX after backoff done" />
-						<Parameter Id="R1" Desc="count out" />
+						<Parameter Id="R1" Desc="count TX Data After SIFS" />
+						<Parameter Id="R5" Desc="count TX after backoff done" />
 						<Parameter Id="B1" Desc="TX after SIFS data ready for input" />
 						<Parameter Id="B2" Desc="TX after backoff data ready for input" />
 						<Parameter Id="R2" Desc="TX Status Indication" />
@@ -188,7 +195,7 @@
 					</MethodDeclaration>
 				</p.MethodDeclaration>
 				<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="Boolean" Direction="Input" Hotspot="15 50" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="15 70" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="@3b38de67c24544038d72aad703fcad99" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="@d216bc80504e46a0b6747dbc4849a4eb" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
@@ -196,9 +203,10 @@
 				<Terminal DataType="@c275d586b22043eb87f515fc4bb60aaa" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="@9c4d0a96a53f499a9b7a3b2a1719bafc" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Boolean" Direction="Output" Hotspot="50 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="UInt8" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="Boolean" Direction="Output" Hotspot="25 50" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="Boolean" Direction="Output" Hotspot="35 50" Id="B2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="50 55" Id="R5" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="25 70" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="35 70" Id="B2" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="@72ff3231910448e8aa318830593f847a" Direction="Output" Hotspot="50 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Boolean" Direction="Output" Hotspot="50 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
@@ -211,7 +219,7 @@
 			<Wire Id="1291" Joints="N(14:Value) h(5) v(-10) N(1267:L2)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="1293" Joints="N(16:Value) h(5) v(-10) N(1267:L4)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="1298" Joints="N(1267:R2) N(633:input)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="1299" Joints="N(1267:R4) h(5) v(90) N(15:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="1299" Joints="N(1267:R4) h(25) v(90) N(15:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="1301" Joints="N(1208:c0t0v) h(7.600006) B(1) h(185) v(-105) N(1066:L3) B(1) v(-105) N(1001:L3)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="1302" Joints="N(458:Value) h(15) v(-10) B(2) N(1208:instance in) B(2) v(-30) N(1267:L3)" xmlns="http://www.ni.com/PlatformFramework" />
 			<NodeLabel AttachedTo="14" Bounds="-76 220 111 14" Id="17" xmlns="http://www.ni.com/PlatformFramework">
@@ -229,10 +237,10 @@
 			<NodeLabel AttachedTo="458" Bounds="-87 260 122 14" Id="459" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>PHY TX end indication</p.Text>
 			</NodeLabel>
-			<NodeLabel AttachedTo="547" Bounds="560 350 189 14" Id="548" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="547" Bounds="560 370 189 14" Id="548" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>TX after SIFS data ready for input</p.Text>
 			</NodeLabel>
-			<NodeLabel AttachedTo="551" Bounds="560 335 203 14" Id="552" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="551" Bounds="560 355 203 14" Id="552" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>TX after backoff data ready for input</p.Text>
 			</NodeLabel>
 			<NodeLabel AttachedTo="712" Bounds="560 210 109 14" Id="734" xmlns="http://www.ni.com/PlatformFramework">
@@ -265,7 +273,7 @@
 			<NodeLabel AttachedTo="1428" Bounds="690 310 120 14" Id="1429" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>TX after backoff done</p.Text>
 			</NodeLabel>
-			<Wire Id="1430" Joints="N(1267:R3) h(20) v(90) N(1428:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="1430" Joints="N(1267:R3) h(30) v(90) N(1428:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="-20 160 40 15" DataItem="1431" Id="1435" Label="1436" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
@@ -274,12 +282,19 @@
 			</NodeLabel>
 			<Wire Id="1437" Joints="N(1435:Value) h(100) N(1267:T0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="400 10 40 15" DataItem="1438" Id="1442" Label="1443" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="UInt8" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="1442" Bounds="445 10 53 14" Id="1443" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>count out</p.Text>
 			</NodeLabel>
 			<Wire Id="1444" Joints="N(1267:R1) h(10) v(-190) N(1442:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="515 335 40 15" DataItem="1445" Id="1449" Label="1450" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="1449" Bounds="560 335 154 14" Id="1450" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>count TX after backoff done</p.Text>
+			</NodeLabel>
+			<Wire Id="1451" Joints="N(1267:R5) h(20) v(95) N(1449:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" Top="[float]0" Width="[float]2000">
 			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@3b38de67c24544038d72aad703fcad99" Height="[float]410" Id="744" Label="[UIModel]747" Left="[float]260" Top="[float]53" Value="{DataItemBinding Id=925}" Width="[float]126" xmlns="http://www.ni.com/PanelCommon">
@@ -485,7 +500,10 @@
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="8" DataType="Boolean" Id="1431" Name="TX Data After SIFS" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="8" DataType="UInt8" Id="1438" Name="count out" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="8" DataType="UInt32" Id="1438" Name="count out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="9" DataType="UInt32" Id="1445" Name="count TX after backoff done" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
@@ -536,10 +554,10 @@
 			<p.IconModel Target="\802\.11\ Request\ Scheduler\.gcdl">
 				<MergeScript>
 					<MergeItem Path="." IsPrimary="True">
-						<Icon ListViewIconCrop="0 0 50 50">
-							<IconPanel Height="[float]50" Left="[float]0" Top="[float]0" Width="[float]50">
-								<Canvas Left="[float]0" Top="[float]0">
-									<Path Data="[PathGeometry]M 46,50 L 4,50 C 1.791,50 0,48.209 0,46 L 0,4 C 0,1.791 1.791,0 4,0 L 46,0 C 48.209,0 50,1.791 50,4 L 50,46 C 50,48.209 48.209,50 46,50 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+						<Icon ListViewIconCrop="0 0 50 70">
+							<IconPanel Height="[float]70" Left="[float]0" Top="[float]0" Width="[float]50">
+								<Canvas Height="[float]70" Left="[float]0" Top="[float]0" Width="[float]50">
+									<Path Data="[PathGeometry]M 46,70 L 4,70 C 1.791,70 0,67.4926 0,64.4 L 0,5.6 C 0,2.5074 1.791,0 4,0 L 46,0 C 48.209,0 50,2.5074 50,5.6 L 50,64.4 C 50,67.4926 48.209,70 46,70 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]70" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
 									<Path Data="[PathGeometry]M 46,49 L 4,49 C 2.343,49 1,47.657 1,46 L 1,4 C 1,2.343 2.343,1 4,1 L 46,1 C 47.657,1 49,2.343 49,4 L 49,46 C 49,47.657 47.657,49 46,49 Z" Fill="[SMSolidColorBrush]#fff2f2f2" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
 									<Path Data="[PathGeometry]M 4,2 L 46,2 C 47.105,2 48,2.895 48,4 L 48,46 C 48,47.105 47.105,48 46,48 L 4,48 C 2.895,48 2,47.105 2,46 L 2,4 C 2,2.895 2.895,2 4,2 Z" Fill="[SMSolidColorBrush]#ffe5e5e5" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
 									<Path Data="[PathGeometry]M 12.426,7.684 C 12.34,7.645 12.215,7.597 12.051,7.539 C 11.887,7.481 11.748,7.432 11.637,7.391 C 11.526,7.493 11.424,7.616 11.334,7.76 C 11.244,7.904 11.199,8.067 11.199,8.246 C 11.199,8.517 11.297,8.732 11.49,8.892 C 11.683,9.052 11.937,9.132 12.25,9.132 C 12.334,9.132 12.432,9.12 12.543,9.095 C 12.654,9.07 12.752,9.032 12.832,8.98 C 12.926,8.92 13.002,8.85 13.059,8.769 C 13.116,8.688 13.145,8.579 13.145,8.441 C 13.145,8.253 13.098,8.111 13.004,8.015 C 12.91,7.919 12.717,7.809 12.426,7.684 Z" Fill="[SMSolidColorBrush]#ff892121" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />

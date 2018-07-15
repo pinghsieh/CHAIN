@@ -11,7 +11,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-23.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/12/2018 17:06:43</StartTime>
+    <StartTime>07/13/2018 18:18:50</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-24.lvbitx</Name>
@@ -24,7 +24,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-24.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/12/2018 17:06:43</StartTime>
+    <StartTime>07/13/2018 18:18:50</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-25.lvbitx</Name>
@@ -37,7 +37,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-25.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/12/2018 17:06:43</StartTime>
+    <StartTime>07/13/2018 18:18:50</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-26.lvbitx</Name>
@@ -50,19 +50,84 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-26.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/12/2018 17:06:43</StartTime>
+    <StartTime>07/13/2018 18:18:50</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-27.lvbitx</Name>
     <JobInfo>
-      <SessionId>qaA0l40</SessionId>
-      <JobId>D2iSElb</JobId>
+      <SessionId>UMFN4t2</SessionId>
+      <JobId>R6553Lv</JobId>
     </JobInfo>
-    <SourceFolder>C:\NIFPGA\compilation\funwsfhi.elo\top</SourceFolder>
-    <BuildFolder>C:\NIFPGA\compilation\funwsfhi.elo</BuildFolder>
+    <SourceFolder>C:\NIFPGA\compilation\tghasjnh.kal\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\tghasjnh.kal</BuildFolder>
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-27.lvbitx</OutputPath>
-    <ConnectionState>Error</ConnectionState>
+    <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/12/2018 17:22:41</StartTime>
+    <StartTime>07/13/2018 18:18:50</StartTime>
+  </Job>
+  <Job>
+    <Name>802.11 FPGA USRP RIO 40 MHz BW STA-28.lvbitx</Name>
+    <JobInfo>
+      <SessionId>mC6Eyz1</SessionId>
+      <JobId>X0mL47w</JobId>
+    </JobInfo>
+    <SourceFolder>C:\NIFPGA\compilation\h0ndswh0.ctk\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\h0ndswh0.ctk</BuildFolder>
+    <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-28.lvbitx</OutputPath>
+    <ConnectionState>Completed</ConnectionState>
+    <ConnectionType>Localhost</ConnectionType>
+    <StartTime>07/13/2018 19:40:25</StartTime>
+  </Job>
+  <Job>
+    <Name>802.11 FPGA USRP RIO 40 MHz BW STA-29.lvbitx</Name>
+    <JobInfo>
+      <SessionId>q2v0a6r</SessionId>
+      <JobId>kDR1Kvd</JobId>
+    </JobInfo>
+    <SourceFolder>C:\NIFPGA\compilation\3fn33duu.0j3\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\3fn33duu.0j3</BuildFolder>
+    <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-29.lvbitx</OutputPath>
+    <ConnectionState>Completed</ConnectionState>
+    <ConnectionType>Localhost</ConnectionType>
+    <StartTime>07/14/2018 00:40:02</StartTime>
+  </Job>
+  <Job>
+    <Name>802.11 FPGA USRP RIO 40 MHz BW STA-30.lvbitx</Name>
+    <JobInfo>
+      <SessionId>J8k4x3J</SessionId>
+      <JobId>PCpG4dC</JobId>
+    </JobInfo>
+    <SourceFolder>C:\NIFPGA\compilation\2cv5yvem.edv\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\2cv5yvem.edv</BuildFolder>
+    <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-30.lvbitx</OutputPath>
+    <ConnectionState>Completed</ConnectionState>
+    <ConnectionType>Localhost</ConnectionType>
+    <StartTime>07/14/2018 17:46:55</StartTime>
+  </Job>
+  <Job>
+    <Name>802.11 FPGA USRP RIO 40 MHz BW STA-31.lvbitx</Name>
+    <JobInfo>
+      <SessionId>N65Fz4N</SessionId>
+      <JobId>InQBzFy</JobId>
+    </JobInfo>
+    <SourceFolder>C:\NIFPGA\compilation\grbfv55k.gfx\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\grbfv55k.gfx</BuildFolder>
+    <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-31.lvbitx</OutputPath>
+    <ConnectionState>Completed</ConnectionState>
+    <ConnectionType>Localhost</ConnectionType>
+    <StartTime>07/14/2018 21:51:29</StartTime>
+  </Job>
+  <Job>
+    <Name>802.11 FPGA USRP RIO 40 MHz BW STA-32.lvbitx</Name>
+    <JobInfo>
+      <SessionId>H1q38vX</SessionId>
+      <JobId>fZg9Ns4</JobId>
+    </JobInfo>
+    <SourceFolder>C:\NIFPGA\compilation\lfxox3t1.1az\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\lfxox3t1.1az</BuildFolder>
+    <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-32.lvbitx</OutputPath>
+    <ConnectionState>Completed</ConnectionState>
+    <ConnectionType>Localhost</ConnectionType>
+    <StartTime>07/15/2018 15:08:11</StartTime>
   </Job>
 </JobList>

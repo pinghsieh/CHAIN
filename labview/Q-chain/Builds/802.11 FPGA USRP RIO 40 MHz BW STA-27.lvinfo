@@ -6,73 +6,128 @@
     <CompileServer>localhost</CompileServer>
     <ResourceThreshold>80</ResourceThreshold>
   </BuildInformation>
-  <CompileStatus State="Error">
-    <CurrentStep>Synthesize - Vivado</CurrentStep>
-    <ConnectionState>Error</ConnectionState>
-    <LocalTime>0:00:06:00.7493452</LocalTime>
-    <XilinxTime>0:00:05:05.6628059</XilinxTime>
+  <CompileStatus State="Success">
+    <CurrentStep>Generate Programming File</CurrentStep>
+    <ConnectionState>Completed</ConnectionState>
+    <LocalTime>0:00:07:34.0136133</LocalTime>
+    <XilinxTime>0:01:36:51.0161918</XilinxTime>
   </CompileStatus>
   <CompileSteps>
     <Step Name="Analyzing Diagrams">
       <Status>Done</Status>
       <Type>Building</Type>
-      <Duration>0:00:00:49.1380363</Duration>
+      <Duration>0:00:01:25.8305996</Duration>
     </Step>
     <Step Name="Building">
       <Status>Done</Status>
       <Type>Building</Type>
-      <Duration>0:00:04:39.3214412</Duration>
+      <Duration>0:00:05:32.6493782</Duration>
     </Step>
     <Step Name="Transferring">
       <Status>Done</Status>
       <Type>XilinxCompile</Type>
-      <Duration>0:00:00:12.1761429</Duration>
+      <Duration>0:00:00:13.5467982</Duration>
     </Step>
     <Step Name="Waiting">
       <Status>Done</Status>
       <Type>XilinxCompile</Type>
-      <Duration>0:00:00:20.1137248</Duration>
+      <Duration>0:00:00:21.9868373</Duration>
     </Step>
     <Step Name="CoreGenerator">
       <Status>Done</Status>
       <Type>XilinxCompile</Type>
-      <Duration>0:00:00:02.8123222</Duration>
+      <Duration>0:00:00:03.0810438</Duration>
     </Step>
     <Step Name="Synthesize - Vivado">
-      <Status>Failed</Status>
+      <Status>Done</Status>
       <Type>XilinxCompile</Type>
-      <Duration>0:00:04:57.3640018</Duration>
+      <Duration>0:00:54:56.1440891</Duration>
     </Step>
     <Step Name="Optimize Logic">
-      <Status>NotStarted</Status>
+      <Status>Done</Status>
       <Type>XilinxCompile</Type>
-      <Duration>0:00:00:00.0000000</Duration>
+      <Duration>0:00:04:42.7504150</Duration>
     </Step>
     <Step Name="Place">
-      <Status>NotStarted</Status>
+      <Status>Done</Status>
       <Type>XilinxCompile</Type>
-      <Duration>0:00:00:00.0000000</Duration>
+      <Duration>0:00:13:43.3923177</Duration>
     </Step>
     <Step Name="Optimize Timing">
-      <Status>NotStarted</Status>
+      <Status>Done</Status>
       <Type>XilinxCompile</Type>
-      <Duration>0:00:00:00.0000000</Duration>
+      <Duration>0:00:05:15.8336827</Duration>
     </Step>
     <Step Name="Route">
-      <Status>NotStarted</Status>
+      <Status>Done</Status>
       <Type>XilinxCompile</Type>
-      <Duration>0:00:00:00.0000000</Duration>
+      <Duration>0:00:12:46.6329054</Duration>
     </Step>
     <Step Name="Generate Programming File">
-      <Status>NotStarted</Status>
+      <Status>Done</Status>
       <Type>XilinxCompile</Type>
-      <Duration>0:00:00:00.0000000</Duration>
+      <Duration>0:00:05:23.1817019</Duration>
     </Step>
   </CompileSteps>
-  <ReportList />
-  <ErrorList>
-    <CompileError Type="NationalInstruments.Restricted.LabVIEW.FPGA.Compiler.CompileClient.ServerError">
-      <ErrorCode>2</ErrorCode>
-    </CompileError>
-  </ErrorList>
+  <ReportList>
+    <Report Name="Estimated Device Utilization (Synthesize)" Type="Utilization">
+      <ReportItem>
+        <Resource>Slice Registers</Resource>
+        <Used>112301</Used>
+        <Total>508400</Total>
+        <Percent>22.09</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>DSP</Resource>
+        <Used>482</Used>
+        <Total>1540</Total>
+        <Percent>31.30</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>Block RAMs</Resource>
+        <Used>171</Used>
+        <Total>795</Total>
+        <Percent>21.51</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>Slice LUTs</Resource>
+        <Used>79960</Used>
+        <Total>254200</Total>
+        <Percent>31.46</Percent>
+      </ReportItem>
+    </Report>
+    <Report Name="Final Device Utilization (Place)" Type="Utilization">
+      <ReportItem>
+        <Resource>Slice Registers</Resource>
+        <Used>108786</Used>
+        <Total>508400</Total>
+        <Percent>21.40</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>DSP</Resource>
+        <Used>472</Used>
+        <Total>1540</Total>
+        <Percent>30.65</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>Block RAMs</Resource>
+        <Used>153</Used>
+        <Total>795</Total>
+        <Percent>19.25</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>Slice LUTs</Resource>
+        <Used>68498</Used>
+        <Total>254200</Total>
+        <Percent>26.95</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>Total Slices</Resource>
+        <Used>27190</Used>
+        <Total>63550</Total>
+        <Percent>42.79</Percent>
+      </ReportItem>
+    </Report>
+  </ReportList>
+  <ErrorList />
 </CompilationResults.xml>
