@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="F7A2D19ACE9C6438F604E692CB8917CD" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="5BD0EB2FBC882265639B6E91DB703D43" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -22,11 +22,11 @@
 				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]44" />
 			</IconPanel>
 		</Icon>
-		<ConnectorPane Height="40" Id="10" ListViewHeight="145" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+		<ConnectorPane Height="40" Id="10" ListViewHeight="160" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
 			<ConnectorPaneTerminal ListViewHotspot="0 65" Parameter="354" />
 			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 95" Parameter="385" />
 			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 35" Parameter="23" />
-			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 140" Parameter="414" />
 			<ConnectorPaneTerminal Hotspot="15 0" ListViewHotspot="0 110" Parameter="396" />
 			<ConnectorPaneTerminal Hotspot="25 0" ListViewHotspot="0 125" Parameter="391" />
 			<ConnectorPaneTerminal Hotspot="50 5" ListViewHotspot="150 50" Parameter="231" />
@@ -52,6 +52,7 @@
 			<Label Height="[float]16" Id="393" LabelOwner="[UIModel]392" Left="[float]402" Text="[string]DIFS after ACK done (manual)" Top="[float]95" Width="[float]59" xmlns="http://www.ni.com/PanelCommon" />
 			<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]30" Id="397" IsReadOnly="[bool]False" Label="[UIModel]398" Left="[float]402" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" Top="[float]118" TrueContent="[string]On" Value="{DataItemBinding Id=396}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="398" LabelOwner="[UIModel]397" Left="[float]402" Text="[string]Use manual for DIFS after ACK done?" Top="[float]95" Width="[float]59" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="417" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[uint]1" Left="[float]0" MinHeight="[float]22" Name="[string]Qchain:DIFS in global clock ticks" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Collapsed" Top="[float]0" UnitAnnotation="[string]" Value="{DataItemBinding Id=414}" ValueFormatter="[string]LV:" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="13">
 			<DataAccessor Bounds="240 185 40 15" DataItem="23" Id="27" Label="28" xmlns="http://www.ni.com/MocCommon">
@@ -67,14 +68,7 @@
 					</Comment>
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 225 76.19995" Id="73" Pattern="&quot;10 MHz&quot;">
-					<Literal Bounds="167 20 42 16" DataType="UInt32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="78" Label="80" xmlns="http://www.ni.com/MocCommon">
-						<p.Data>340</p.Data>
-						<NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
-					</Literal>
-					<Wire Id="79" Joints="N(78:Out) N(76:73)" xmlns="http://www.ni.com/PlatformFramework" />
-					<NodeLabel AttachedTo="78" Bounds="23 20 139 14" Id="80" xmlns="http://www.ni.com/PlatformFramework">
-						<p.Text>DIFS in global clock ticks</p.Text>
-					</NodeLabel>
+					<Wire Id="413" Joints="N(412:73) N(76:73)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 225 76.19995" Id="74" Pattern="&quot;1 MHz&quot;">
 					<Literal Bounds="169.5 20 39.5 16" DataType="UInt32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="81" Label="83" xmlns="http://www.ni.com/MocCommon">
@@ -87,14 +81,15 @@
 					</NodeLabel>
 				</CaseStructure.Case>
 				<CaseStructure.Selector Bounds="-4 50 13 10" Docking="Left" Id="75" Terminals="71=86, 72, 73, 74" />
-				<CaseStructure.Tunnel Bounds="226 25 13 10" DefaultIfUnwired="True" Docking="Right" Id="76" Terminals="71=221, 72, 73=79, 74=82" />
+				<CaseStructure.Tunnel Bounds="226 25 13 10" DefaultIfUnwired="True" Docking="Right" Id="76" Terminals="71=410, 72, 73=413, 74=82" />
+				<CaseStructure.Tunnel Bounds="-4 25 13 10" Docking="Left" Id="412" Terminals="71=411, 72, 73=413, 74" />
 			</CaseStructure>
-			<Literal Bounds="115 -55 98.5333252 15" DataType="@65e1f1cb74f24ddfa76bd0f74be0192a" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="84" Label="87" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="110 35 98.5333252 15" DataType="@65e1f1cb74f24ddfa76bd0f74be0192a" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="84" Label="87" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>1</p.Data>
 				<EnumBehavior Id="85" />
 			</Literal>
-			<Wire Id="86" Joints="N(84:Out) h(5) v(90) N(75:71)" xmlns="http://www.ni.com/PlatformFramework" />
-			<NodeLabel AttachedTo="84" Bounds="-5 -55 115 14" Id="87" xmlns="http://www.ni.com/PlatformFramework">
+			<Wire Id="86" Joints="N(84:Out) N(75:71)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="84" Bounds="-10 35 115 14" Id="87" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>global clock tick rate</p.Text>
 			</NodeLabel>
 			<Comment Bounds="665 430 380.8 28" Id="96" xmlns="http://www.ni.com/MocCommon">
@@ -140,7 +135,6 @@
 				<Terminal DataType="Boolean" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Boolean" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
-			<Wire Id="221" Joints="N(76:71) h(96) v(85) N(220:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="1035 -55 40 15" DataItem="231" Id="235" Label="236" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
@@ -170,7 +164,7 @@
 			</NodeLabel>
 			<Wire Facade="WireInvisibleFacade" Id="317" Joints="N(315:Out) N(314:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="335" Joints="N(314:data) N(303:input)" xmlns="http://www.ni.com/PlatformFramework" />
-			<MethodCall Bounds="730 85 50 50" DomainName="NI.LabVIEW.ExtShared" Id="343" Target="niInstr\ Basic\ Elements\ v1\ FPGA\.lvlib__Synchronous\ Latch\.gcdl" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="730 95 50 50" DomainName="NI.LabVIEW.ExtShared" Id="343" Target="niInstr\ Basic\ Elements\ v1\ FPGA\.lvlib__Synchronous\ Latch\.gcdl" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L1" Desc="set" />
@@ -188,12 +182,12 @@
 			<NodeLabel AttachedTo="352" Bounds="420 240 120 14" Id="353" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>TX after backoff done</p.Text>
 			</NodeLabel>
-			<FeedbackNode ArrowDirection="Right" Bounds="850 90 30 20" EnableTerminalVisible="False" Id="362" />
+			<FeedbackNode ArrowDirection="Right" Bounds="850 100 30 20" EnableTerminalVisible="False" Id="362" />
 			<Wire Id="366" Joints="N(343:R1) N(362:input)" xmlns="http://www.ni.com/PlatformFramework" />
 			<FeedbackNode ArrowDirection="Right" Bounds="635 235 30 20" EnableTerminalVisible="False" Id="368" />
 			<Wire Id="371" Joints="N(352:Value) N(368:input)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="372" Joints="N(368:output) h(60) v(-135) N(343:L2)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="374" Joints="N(220:R1) h(40) v(45) N(382:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="372" Joints="N(368:output) h(60) v(-125) N(343:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="374" Joints="N(220:R1) h(40) B(1) N(343:L1) B(1) v(45) N(382:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="750 150 40 15" DataItem="375" Id="379" Label="380" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="UInt32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
@@ -213,13 +207,12 @@
 				<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="UInt32" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
-			<DataAccessor Bounds="670 35 40 15" DataItem="385" Id="383" Label="384" xmlns="http://www.ni.com/MocCommon">
+			<DataAccessor Bounds="685 40 40 15" DataItem="385" Id="383" Label="384" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="383" Bounds="567 35 98 14" Id="384" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="383" Bounds="582 40 98 14" Id="384" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>slot M2 end pulse</p.Text>
 			</NodeLabel>
-			<Wire Id="387" Joints="N(383:Value) h(5) v(60) N(343:L1)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Comment Bounds="570 -10 230 35" Id="388" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>"07/15/2018 Ping-Chun\r\nUse the default signal for DIFS end"</p.Text>
 			</Comment>
@@ -235,11 +228,19 @@
 			<NodeLabel AttachedTo="394" Bounds="636 -55 209 14" Id="395" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Use manual for DIFS after ACK done?</p.Text>
 			</NodeLabel>
-			<Wire Id="399" Joints="N(362:output) h(65) B(1) h(86) v(-30) N(111:108) B(1) v(-135) N(400:f)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="399" Joints="N(362:output) h(65) B(1) h(86) v(-40) N(111:108) B(1) v(-145) N(400:f)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Select Bounds="970 -70 40 40" Id="400" />
 			<Wire Id="401" Joints="N(394:Value) N(400:s)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="402" Joints="N(389:Value) N(400:t)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="407" Joints="N(400:s? t:f) N(235:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="410" Joints="N(76:71) h(96) v(85) N(220:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="411" Joints="N(416:Value) N(412:71)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="162 10 40 15" DataItem="414" Id="416" Label="418" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="416" Bounds="-25 10 182 14" Id="418" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Qchain:DIFS in global clock ticks</p.Text>
+			</NodeLabel>
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="3" DataType="UInt32" Id="23" Name="global clock counter" xmlns="http://www.ni.com/MocCommon">
@@ -262,6 +263,9 @@
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" DataType="Boolean" Id="396" Name="Use manual for DIFS after ACK done?" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="5" DataType="UInt32" Id="414" Name="Qchain:DIFS in global clock ticks" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>340</p.DefaultValue>
 		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="\802\.11\ Timer\ Global\ Clock\.gcdl">

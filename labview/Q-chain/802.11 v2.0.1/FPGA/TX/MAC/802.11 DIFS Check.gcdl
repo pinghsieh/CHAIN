@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="DFF4C5B48EA4A751727B96549A830FAB" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="461D8173BC83E25D8A19D64B1ADD2637" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -9,7 +9,7 @@
 		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" LicenseFeatureNames="LVCOMMS_WLAN" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
-		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"&lt;p&gt;Performs the backoff procedure as defined in Figure 9-10 of IEEE Standard 802.11-2012.&lt;/p&gt;&lt;p&gt;The backoff counter is initialized with the desired value. At the relevant timing instant within each slot (indicated via signal "slot M2 start"), the CCA information is checked. If the channel is idle, the backoff counter is decremented. If the counter reaches zero, the node returns the value "backoff done".&lt;/p&gt;&lt;p&gt;\n&lt;strong&gt;Latency: 2 cycles&lt;/strong&gt;\n&lt;/p&gt;"</p.UserDescription>
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"&lt;p&gt;Performs the backoff procedure as defined in Figure 9-10 of IEEE Standard 802.11-2012.&lt;/p&gt;\n\n&lt;p&gt;The backoff counter is initialized with the desired value. At the relevant timing instant within each slot (indicated via signal &amp;quot;slot M2 start&amp;quot;), the CCA information is checked. If the channel is idle, the backoff counter is decremented. If the counter reaches zero, the node returns the value &amp;quot;backoff done&amp;quot;.&lt;/p&gt;\n\n&lt;p&gt;&lt;strong&gt;Latency: 2 cycles&lt;/strong&gt;&lt;/p&gt;"</p.UserDescription>
 		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="304" Left="[float]0" Top="[float]0" Width="[float]40">
 				<Canvas Id="305" Left="[float]0" Top="[float]0">

@@ -130,4 +130,30 @@
     <ConnectionType>Localhost</ConnectionType>
     <StartTime>07/15/2018 15:08:11</StartTime>
   </Job>
+  <Job>
+    <Name>802.11 FPGA USRP RIO 40 MHz BW STA-33.lvbitx</Name>
+    <JobInfo>
+      <SessionId>P2vE3aE</SessionId>
+      <JobId>Qdqx68Z</JobId>
+    </JobInfo>
+    <SourceFolder>C:\NIFPGA\compilation\zka2ewtu.kao\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\zka2ewtu.kao</BuildFolder>
+    <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-33.lvbitx</OutputPath>
+    <ConnectionState>Completed</ConnectionState>
+    <ConnectionType>Localhost</ConnectionType>
+    <StartTime>07/15/2018 22:33:21</StartTime>
+  </Job>
+  <Job>
+    <Name>802.11 FPGA USRP RIO 40 MHz BW STA-34.lvbitx</Name>
+    <JobInfo>
+      <SessionId>rX0Oc82</SessionId>
+      <JobId>Y36y4B3</JobId>
+    </JobInfo>
+    <SourceFolder>C:\NIFPGA\compilation\2oih41wt.smq\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\2oih41wt.smq</BuildFolder>
+    <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-34.lvbitx</OutputPath>
+    <ConnectionState>Completed</ConnectionState>
+    <ConnectionType>Localhost</ConnectionType>
+    <StartTime>07/16/2018 11:58:06</StartTime>
+  </Job>
 </JobList>

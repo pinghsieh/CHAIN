@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="705C90A65A06F89F0B1A9BBF10221B1D" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="2C8811B851916D1741757E8830654BF0" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -43,12 +43,12 @@
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" Top="[float]0" Width="[float]2000">
-			<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="510" Label="[UIModel]511" Left="[float]163" RefnumType="[Type]@bf098bfb31d8400c8d758c6621a104dc" Top="[float]110" Value="{DataItemBinding Id=132}" Width="[float]20" p4:ControlDefinitionChecksum="YU+TojVgvqzKfNYNFF61qg==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+			<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="515" Label="[UIModel]516" Left="[float]163" RefnumType="[Type]@3d399d041b1348fa85b5bebc976dcb1f" Top="[float]110" Value="{DataItemBinding Id=132}" Width="[float]20" p4:ControlDefinitionChecksum="DydDE5rfHsqY2HI8uN6l3w==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="\802\.11\ FGPA\ Reference\.gtype:ControlDefinition" />
 				</p4:p.TypeDefinitionTargets>
 			</OpaqueRefnum>
-			<Label Height="[float]16" Id="511" LabelOwner="[UIModel]510" Left="[float]163" Text="[string]FPGA interface" Top="[float]87" Width="[float]84" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="516" LabelOwner="[UIModel]515" Left="[float]163" Text="[string]FPGA interface" Top="[float]87" Width="[float]84" xmlns="http://www.ni.com/PanelCommon" />
 			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="468" IsTypeAheadEnabled="[bool]True" Label="[UIModel]469" Left="[float]1198" Top="[float]126" Value="{DataItemBinding Id=148}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]90" p4:ControlDefinitionChecksum="2lkFS3rqKmJCVWKdYoVXng==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="USRP\ bandwidth\.gtype:ControlDefinition" />
@@ -84,17 +84,17 @@
 				<p.Text>error out</p.Text>
 			</NodeLabel>
 			<DataAccessor Bounds="-1060 -535 40 15" DataItem="132" Id="130" Label="131" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@bf098bfb31d8400c8d758c6621a104dc" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@3d399d041b1348fa85b5bebc976dcb1f" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="130" Bounds="-1015 -535 82 14" Id="131" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>FPGA interface</p.Text>
 			</NodeLabel>
 			<TypeCast Bounds="-1110 -535 30 15" Id="135" />
 			<Wire Id="137" Joints="N(135:*(type *\) &amp;x) N(130:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-			<NodeLabel AttachedTo="513" Bounds="-1155 -610 0 0" Id="144" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="518" Bounds="-1155 -610 0 0" Id="144" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>FPGA interface_2</p.Text>
 			</NodeLabel>
-			<Wire Id="145" Joints="N(513:Out) h(20) N(135:type)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="145" Joints="N(518:Out) h(20) N(135:type)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="-1325 -520 40 15" DataItem="148" Id="146" Label="147" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@e6f4afd4ccaf494ebaf9f79492a4818c" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
@@ -103,7 +103,7 @@
 			</NodeLabel>
 			<CaseStructure Bounds="-1265 -595 145 125" DataType="@e6f4afd4ccaf494ebaf9f79492a4818c" Id="151" Selected="152" UserSelectorBounds="13.6 0 118.4 16.8">
 				<CaseStructure.Case Bounds="5 5 135 115" Id="152" Pattern="&quot;40 MHz&quot;">
-					<FPGAOpenNode Bounds="50 55 40 40" Id="189" ProjectItem=":NullTarget:\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-32\.lvbitx" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FPGAOpenNode Bounds="50 55 40 40" Id="189" ProjectItem=":NullTarget:\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-34\.lvbitx" xmlns="http://www.ni.com/LabVIEW.FPGA" />
 					<Literal Bounds="38 65 12 10" DataType="Boolean" Facade="DockedConstantFacade" Id="190" Label="192" xmlns="http://www.ni.com/MocCommon">
 						<p.Data>False</p.Data>
 						<BooleanBehavior />
@@ -189,7 +189,7 @@
 				<p.Text>RF loop clock frequency</p.Text>
 			</NodeLabel>
 			<Wire Id="208" Joints="N(205:151) N(201:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-			<OpaqueRefnumLiteral Bounds="-1155 -610 40 15" DataType="@bf098bfb31d8400c8d758c6621a104dc" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="513" Label="144" xmlns="http://www.ni.com/MocCommon">
+			<OpaqueRefnumLiteral Bounds="-1155 -610 40 15" DataType="@3d399d041b1348fa85b5bebc976dcb1f" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="518" Label="144" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>0</p.Data>
 				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 					<TypeDefinitionTarget TargetName="\802\.11\ FGPA\ Reference\.gtype" />
@@ -255,7 +255,7 @@
 			</p.TypeDefinitionTargets>
 			<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">&lt;p&gt;Error information. The node produces this output according to standard error behavior.&lt;/p&gt;</p.UserDescription>
 		</DataItem>
-		<DataItem CallDirection="Output" CallIndex="0" DataType="@bf098bfb31d8400c8d758c6621a104dc" Id="132" Name="FPGA interface" xmlns="http://www.ni.com/MocCommon">
+		<DataItem CallDirection="Output" CallIndex="0" DataType="@3d399d041b1348fa85b5bebc976dcb1f" Id="132" Name="FPGA interface" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 				<TypeDefinitionTarget TargetName="\802\.11\ FGPA\ Reference\.gtype" />
@@ -272,13 +272,13 @@
 		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="bf098bfb31d8400c8d758c6621a104dc">
-			<Typedef TypedefName="802.11 FGPA Reference.gtype" UnderlyingType="@ec395139c95d4dddac01e24953140e3b" />
+		<p.TypeReference TypeId="3d399d041b1348fa85b5bebc976dcb1f">
+			<Typedef TypedefName="802.11 FGPA Reference.gtype" UnderlyingType="@04dfa1f93c3f4805bb75790746af1ef4" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="e6f4afd4ccaf494ebaf9f79492a4818c">
 			<Typedef TypedefName="USRP bandwidth.gtype" UnderlyingType="@2d0d3f657a8f424a95616337470343e9" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="ec395139c95d4dddac01e24953140e3b">
+		<p.TypeReference TypeId="04dfa1f93c3f4805bb75790746af1ef4">
 			<Attributed>
 				<AttributedType>
 					<Generic>
@@ -1194,42 +1194,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="count piggyback" DataType="UInt32" />
 								</Members>
 							</Composite>
-							<Composite Id="46" Name="count slot M2 end" ReferenceClass="" Interface="">
+							<Composite Id="46" Name="count TX after backoff done" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="47" Name="count slot M2 end" ReferenceClass="" Interface="">
+									<Composite Id="47" Name="count TX after backoff done" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
 											<Composite RefId="47" />
-										</GenericTypeDefinition>
-										<GenericParameters>
-											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
-										</GenericParameters>
-										<BaseType>
-											<Void />
-										</BaseType>
-										<Members>
-											<Field FieldAccessPolicy="ReadWrite" Name="count slot M2 end">
-												<DataType>
-													<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
-												</DataType>
-											</Field>
-										</Members>
-									</Composite>
-								</GenericTypeDefinition>
-								<ClosedGenericParameters>
-									<UInt32 />
-								</ClosedGenericParameters>
-								<BaseType>
-									<Void />
-								</BaseType>
-								<Members>
-									<Field FieldAccessPolicy="ReadWrite" Name="count slot M2 end" DataType="UInt32" />
-								</Members>
-							</Composite>
-							<Composite Id="48" Name="count TX after backoff done" ReferenceClass="" Interface="">
-								<GenericTypeDefinition>
-									<Composite Id="49" Name="count TX after backoff done" ReferenceClass="" Interface="">
-										<GenericTypeDefinition>
-											<Composite RefId="49" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1256,11 +1225,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="count TX after backoff done" DataType="UInt32" />
 								</Members>
 							</Composite>
-							<Composite Id="50" Name="cpld enable" ReferenceClass="" Interface="">
+							<Composite Id="48" Name="cpld enable" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="51" Name="cpld enable" ReferenceClass="" Interface="">
+									<Composite Id="49" Name="cpld enable" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="51" />
+											<Composite RefId="49" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1287,11 +1256,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="cpld enable" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="52" Name="CW and Backoff Indicators" ReferenceClass="" Interface="">
+							<Composite Id="50" Name="CW and Backoff Indicators" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="53" Name="CW and Backoff Indicators" ReferenceClass="" Interface="">
+									<Composite Id="51" Name="CW and Backoff Indicators" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="53" />
+											<Composite RefId="51" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1309,7 +1278,7 @@
 									</Composite>
 								</GenericTypeDefinition>
 								<ClosedGenericParameters>
-									<Composite Id="54" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+									<Composite Id="52" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 										<Members>
 											<Field FieldAccessPolicy="ReadWrite" Name="CW" DataType="UInt16" />
 											<Field FieldAccessPolicy="ReadWrite" Name="Last CWs">
@@ -1340,16 +1309,16 @@
 								<Members>
 									<Field FieldAccessPolicy="ReadWrite" Name="CW and Backoff Indicators">
 										<DataType>
-											<Composite RefId="54" />
+											<Composite RefId="52" />
 										</DataType>
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="55" Name="CW Max" ReferenceClass="" Interface="">
+							<Composite Id="53" Name="CW Max" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="56" Name="CW Max" ReferenceClass="" Interface="">
+									<Composite Id="54" Name="CW Max" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="56" />
+											<Composite RefId="54" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1376,11 +1345,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="CW Max" DataType="UInt16" />
 								</Members>
 							</Composite>
-							<Composite Id="57" Name="CW Min" ReferenceClass="" Interface="">
+							<Composite Id="55" Name="CW Min" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="58" Name="CW Min" ReferenceClass="" Interface="">
+									<Composite Id="56" Name="CW Min" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="58" />
+											<Composite RefId="56" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1407,11 +1376,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="CW Min" DataType="UInt16" />
 								</Members>
 							</Composite>
-							<Composite Id="59" Name="data after sifs count" ReferenceClass="" Interface="">
+							<Composite Id="57" Name="data after sifs count" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="60" Name="data after sifs count" ReferenceClass="" Interface="">
+									<Composite Id="58" Name="data after sifs count" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="60" />
+											<Composite RefId="58" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1438,11 +1407,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="data after sifs count" DataType="UInt32" />
 								</Members>
 							</Composite>
-							<Composite Id="61" Name="Data clock cycles per OFDM symbol" ReferenceClass="" Interface="">
+							<Composite Id="59" Name="Data clock cycles per OFDM symbol" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="62" Name="Data clock cycles per OFDM symbol" ReferenceClass="" Interface="">
+									<Composite Id="60" Name="Data clock cycles per OFDM symbol" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="62" />
+											<Composite RefId="60" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1469,11 +1438,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="Data clock cycles per OFDM symbol" DataType="UInt16" />
 								</Members>
 							</Composite>
-							<Composite Id="63" Name="Data clock cycles per tick (0.1us)" ReferenceClass="" Interface="">
+							<Composite Id="61" Name="Data clock cycles per tick (0.1us)" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="64" Name="Data clock cycles per tick (0.1us)" ReferenceClass="" Interface="">
+									<Composite Id="62" Name="Data clock cycles per tick (0.1us)" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="64" />
+											<Composite RefId="62" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1500,11 +1469,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="Data clock cycles per tick (0.1us)" DataType="UInt16" />
 								</Members>
 							</Composite>
-							<Composite Id="65" Name="data clock locked?" ReferenceClass="" Interface="">
+							<Composite Id="63" Name="data clock locked?" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="66" Name="data clock locked?" ReferenceClass="" Interface="">
+									<Composite Id="64" Name="data clock locked?" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="66" />
+											<Composite RefId="64" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1531,11 +1500,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="data clock locked?" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="67" Name="daughterboard" ReferenceClass="" Interface="">
+							<Composite Id="65" Name="daughterboard" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="68" Name="daughterboard" ReferenceClass="" Interface="">
+									<Composite Id="66" Name="daughterboard" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="68" />
+											<Composite RefId="66" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1588,11 +1557,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="69" Name="DC average" ReferenceClass="" Interface="">
+							<Composite Id="67" Name="DC average" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="70" Name="DC average" ReferenceClass="" Interface="">
+									<Composite Id="68" Name="DC average" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="70" />
+											<Composite RefId="68" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1623,11 +1592,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="71" Name="DC centered signal" ReferenceClass="" Interface="">
+							<Composite Id="69" Name="DC centered signal" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="72" Name="DC centered signal" ReferenceClass="" Interface="">
+									<Composite Id="70" Name="DC centered signal" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="72" />
+											<Composite RefId="70" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1654,11 +1623,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="DC centered signal" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="73" Name="device MAC address" ReferenceClass="" Interface="">
+							<Composite Id="71" Name="device MAC address" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="74" Name="device MAC address" ReferenceClass="" Interface="">
+									<Composite Id="72" Name="device MAC address" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="74" />
+											<Composite RefId="72" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1689,11 +1658,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="75" Name="DIFS after ACK done (manual)" ReferenceClass="" Interface="">
+							<Composite Id="73" Name="DIFS after ACK done (manual)" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="76" Name="DIFS after ACK done (manual)" ReferenceClass="" Interface="">
+									<Composite Id="74" Name="DIFS after ACK done (manual)" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="76" />
+											<Composite RefId="74" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1720,11 +1689,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="DIFS after ACK done (manual)" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="77" Name="enable AGC" ReferenceClass="" Interface="">
+							<Composite Id="75" Name="enable AGC" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="78" Name="enable AGC" ReferenceClass="" Interface="">
+									<Composite Id="76" Name="enable AGC" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="78" />
+											<Composite RefId="76" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1751,11 +1720,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="enable AGC" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="79" Name="enable DC offset correction" ReferenceClass="" Interface="">
+							<Composite Id="77" Name="enable DC offset correction" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="80" Name="enable DC offset correction" ReferenceClass="" Interface="">
+									<Composite Id="78" Name="enable DC offset correction" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="80" />
+											<Composite RefId="78" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1782,11 +1751,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="enable DC offset correction" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="81" Name="Enable Piggyback" ReferenceClass="" Interface="">
+							<Composite Id="79" Name="Enable Piggyback" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="82" Name="Enable Piggyback" ReferenceClass="" Interface="">
+									<Composite Id="80" Name="Enable Piggyback" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="82" />
+											<Composite RefId="80" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1813,11 +1782,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="Enable Piggyback" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="83" Name="enable piggyback register" ReferenceClass="" Interface="">
+							<Composite Id="81" Name="enable piggyback register" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="84" Name="enable piggyback register" ReferenceClass="" Interface="">
+									<Composite Id="82" Name="enable piggyback register" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="84" />
+											<Composite RefId="82" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1844,11 +1813,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="enable piggyback register" DataType="UInt32" />
 								</Members>
 							</Composite>
-							<Composite Id="85" Name="Exponential Backoff Ratio" ReferenceClass="" Interface="">
+							<Composite Id="83" Name="Exponential Backoff Ratio" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="86" Name="Exponential Backoff Ratio" ReferenceClass="" Interface="">
+									<Composite Id="84" Name="Exponential Backoff Ratio" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="86" />
+											<Composite RefId="84" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1879,11 +1848,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="87" Name="Fixed backoff value" ReferenceClass="" Interface="">
+							<Composite Id="85" Name="Fixed backoff value" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="88" Name="Fixed backoff value" ReferenceClass="" Interface="">
+									<Composite Id="86" Name="Fixed backoff value" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="88" />
+											<Composite RefId="86" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1910,11 +1879,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="Fixed backoff value" DataType="UInt16" />
 								</Members>
 							</Composite>
-							<Composite Id="89" Name="Fixed backoff?" ReferenceClass="" Interface="">
+							<Composite Id="87" Name="Fixed backoff?" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="90" Name="Fixed backoff?" ReferenceClass="" Interface="">
+									<Composite Id="88" Name="Fixed backoff?" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="90" />
+											<Composite RefId="88" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1941,11 +1910,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="Fixed backoff?" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="91" Name="format" ReferenceClass="" Interface="">
+							<Composite Id="89" Name="format" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="92" Name="format" ReferenceClass="" Interface="">
+									<Composite Id="90" Name="format" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="92" />
+											<Composite RefId="90" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -1992,11 +1961,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="93" Name="FPGA queue length" ReferenceClass="" Interface="">
+							<Composite Id="91" Name="FPGA queue length" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="94" Name="FPGA queue length" ReferenceClass="" Interface="">
+									<Composite Id="92" Name="FPGA queue length" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="94" />
+											<Composite RefId="92" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2023,11 +1992,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="FPGA queue length" DataType="UInt32" />
 								</Members>
 							</Composite>
-							<Composite Id="95" Name="Has been transferred?" ReferenceClass="" Interface="">
+							<Composite Id="93" Name="Has been transferred?" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="96" Name="Has been transferred?" ReferenceClass="" Interface="">
+									<Composite Id="94" Name="Has been transferred?" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="96" />
+											<Composite RefId="94" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2054,11 +2023,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="Has been transferred?" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="97" Name="Head Mac Address" ReferenceClass="" Interface="">
+							<Composite Id="95" Name="Head Mac Address" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="98" Name="Head Mac Address" ReferenceClass="" Interface="">
+									<Composite Id="96" Name="Head Mac Address" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="98" />
+											<Composite RefId="96" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2089,11 +2058,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="99" Name="Host queue length (packets)" ReferenceClass="" Interface="">
+							<Composite Id="97" Name="Host queue length (packets)" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="100" Name="Host queue length (packets)" ReferenceClass="" Interface="">
+									<Composite Id="98" Name="Host queue length (packets)" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="100" />
+											<Composite RefId="98" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2120,11 +2089,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="Host queue length (packets)" DataType="UInt32" />
 								</Members>
 							</Composite>
-							<Composite Id="101" Name="ID table" ReferenceClass="" Interface="">
+							<Composite Id="99" Name="ID table" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="102" Name="ID table" ReferenceClass="" Interface="">
+									<Composite Id="100" Name="ID table" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="102" />
+											<Composite RefId="100" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2155,12 +2124,12 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="103" Name="IFPGAReferenceDataType" ReferenceClass="" Interface="" GenericTypeDefinition="Void" BaseType="Void" />
-							<Composite Id="104" Name="Index of Max ID" ReferenceClass="" Interface="">
+							<Composite Id="101" Name="IFPGAReferenceDataType" ReferenceClass="" Interface="" GenericTypeDefinition="Void" BaseType="Void" />
+							<Composite Id="102" Name="Index of Max ID" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="105" Name="Index of Max ID" ReferenceClass="" Interface="">
+									<Composite Id="103" Name="Index of Max ID" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="105" />
+											<Composite RefId="103" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2187,11 +2156,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="Index of Max ID" DataType="Int32" />
 								</Members>
 							</Composite>
-							<Composite Id="106" Name="Input: chain table" ReferenceClass="" Interface="">
+							<Composite Id="104" Name="Input: chain table" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="107" Name="Input: chain table" ReferenceClass="" Interface="">
+									<Composite Id="105" Name="Input: chain table" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="107" />
+											<Composite RefId="105" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2222,11 +2191,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="108" Name="internal loopback FIFO overflow" ReferenceClass="" Interface="">
+							<Composite Id="106" Name="internal loopback FIFO overflow" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="109" Name="internal loopback FIFO overflow" ReferenceClass="" Interface="">
+									<Composite Id="107" Name="internal loopback FIFO overflow" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="109" />
+											<Composite RefId="107" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2253,11 +2222,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="internal loopback FIFO overflow" DataType="UInt16" />
 								</Members>
 							</Composite>
-							<Composite Id="110" Name="Is header?" ReferenceClass="" Interface="">
+							<Composite Id="108" Name="Is header?" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="111" Name="Is header?" ReferenceClass="" Interface="">
+									<Composite Id="109" Name="Is header?" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="111" />
+											<Composite RefId="109" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2284,11 +2253,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="Is header?" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="112" Name="last applied gain" ReferenceClass="" Interface="">
+							<Composite Id="110" Name="last applied gain" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="113" Name="last applied gain" ReferenceClass="" Interface="">
+									<Composite Id="111" Name="last applied gain" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="113" />
+											<Composite RefId="111" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2319,11 +2288,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="114" Name="lo lpf enable" ReferenceClass="" Interface="">
+							<Composite Id="112" Name="lo lpf enable" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="115" Name="lo lpf enable" ReferenceClass="" Interface="">
+									<Composite Id="113" Name="lo lpf enable" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="115" />
+											<Composite RefId="113" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2350,11 +2319,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="lo lpf enable" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="116" Name="MAC RX statistics" ReferenceClass="" Interface="">
+							<Composite Id="114" Name="MAC RX statistics" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="117" Name="MAC RX statistics" ReferenceClass="" Interface="">
+									<Composite Id="115" Name="MAC RX statistics" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="117" />
+											<Composite RefId="115" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2372,7 +2341,7 @@
 									</Composite>
 								</GenericTypeDefinition>
 								<ClosedGenericParameters>
-									<Composite Id="118" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+									<Composite Id="116" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 										<Members>
 											<Field FieldAccessPolicy="ReadWrite" Name="number of frames detected" DataType="UInt32" />
 											<Field FieldAccessPolicy="ReadWrite" Name="number of subframes received" DataType="UInt32" />
@@ -2388,16 +2357,16 @@
 								<Members>
 									<Field FieldAccessPolicy="ReadWrite" Name="MAC RX statistics">
 										<DataType>
-											<Composite RefId="118" />
+											<Composite RefId="116" />
 										</DataType>
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="119" Name="MAC TX statistics" ReferenceClass="" Interface="">
+							<Composite Id="117" Name="MAC TX statistics" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="120" Name="MAC TX statistics" ReferenceClass="" Interface="">
+									<Composite Id="118" Name="MAC TX statistics" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="120" />
+											<Composite RefId="118" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2415,7 +2384,7 @@
 									</Composite>
 								</GenericTypeDefinition>
 								<ClosedGenericParameters>
-									<Composite Id="121" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+									<Composite Id="119" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 										<Members>
 											<Field FieldAccessPolicy="ReadWrite" Name="number of TX after SIFS requests detected" DataType="UInt32" />
 											<Field FieldAccessPolicy="ReadWrite" Name="number of TX after SIFS requests completed" DataType="UInt32" />
@@ -2430,16 +2399,16 @@
 								<Members>
 									<Field FieldAccessPolicy="ReadWrite" Name="MAC TX statistics">
 										<DataType>
-											<Composite RefId="121" />
+											<Composite RefId="119" />
 										</DataType>
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="122" Name="manual PhyTxStart.req" ReferenceClass="" Interface="">
+							<Composite Id="120" Name="manual PhyTxStart.req" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="123" Name="manual PhyTxStart.req" ReferenceClass="" Interface="">
+									<Composite Id="121" Name="manual PhyTxStart.req" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="123" />
+											<Composite RefId="121" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2457,11 +2426,11 @@
 									</Composite>
 								</GenericTypeDefinition>
 								<ClosedGenericParameters>
-									<Composite Id="124" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+									<Composite Id="122" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 										<Members>
 											<Field FieldAccessPolicy="ReadWrite" Name="TX vector">
 												<DataType>
-													<Composite Id="125" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+													<Composite Id="123" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 														<Members>
 															<Field FieldAccessPolicy="ReadWrite" Name="format">
 																<DataType>
@@ -2520,16 +2489,16 @@
 								<Members>
 									<Field FieldAccessPolicy="ReadWrite" Name="manual PhyTxStart.req">
 										<DataType>
-											<Composite RefId="124" />
+											<Composite RefId="122" />
 										</DataType>
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="126" Name="manual trigger" ReferenceClass="" Interface="">
+							<Composite Id="124" Name="manual trigger" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="127" Name="manual trigger" ReferenceClass="" Interface="">
+									<Composite Id="125" Name="manual trigger" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="127" />
+											<Composite RefId="125" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2556,11 +2525,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="manual trigger" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="128" Name="mixer enable" ReferenceClass="" Interface="">
+							<Composite Id="126" Name="mixer enable" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="129" Name="mixer enable" ReferenceClass="" Interface="">
+									<Composite Id="127" Name="mixer enable" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="129" />
+											<Composite RefId="127" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2587,11 +2556,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="mixer enable" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="130" Name="MPDU filter config" ReferenceClass="" Interface="">
+							<Composite Id="128" Name="MPDU filter config" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="131" Name="MPDU filter config" ReferenceClass="" Interface="">
+									<Composite Id="129" Name="MPDU filter config" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="131" />
+											<Composite RefId="129" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2609,7 +2578,7 @@
 									</Composite>
 								</GenericTypeDefinition>
 								<ClosedGenericParameters>
-									<Composite Id="132" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+									<Composite Id="130" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 										<Members>
 											<Field FieldAccessPolicy="ReadWrite" Name="remove header" DataType="Boolean" />
 											<Field FieldAccessPolicy="ReadWrite" Name="block unsupported frame types" DataType="Boolean" />
@@ -2625,16 +2594,16 @@
 								<Members>
 									<Field FieldAccessPolicy="ReadWrite" Name="MPDU filter config">
 										<DataType>
-											<Composite RefId="132" />
+											<Composite RefId="130" />
 										</DataType>
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="133" Name="mute RX while TX active?" ReferenceClass="" Interface="">
+							<Composite Id="131" Name="mute RX while TX active?" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="134" Name="mute RX while TX active?" ReferenceClass="" Interface="">
+									<Composite Id="132" Name="mute RX while TX active?" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="134" />
+											<Composite RefId="132" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2661,11 +2630,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="mute RX while TX active?" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="135" Name="noise coefficient" ReferenceClass="" Interface="">
+							<Composite Id="133" Name="noise coefficient" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="136" Name="noise coefficient" ReferenceClass="" Interface="">
+									<Composite Id="134" Name="noise coefficient" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="136" />
+											<Composite RefId="134" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2696,11 +2665,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="137" Name="number of samples before trigger" ReferenceClass="" Interface="">
+							<Composite Id="135" Name="number of samples before trigger" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="138" Name="number of samples before trigger" ReferenceClass="" Interface="">
+									<Composite Id="136" Name="number of samples before trigger" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="138" />
+											<Composite RefId="136" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2727,11 +2696,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="number of samples before trigger" DataType="UInt16" />
 								</Members>
 							</Composite>
-							<Composite Id="139" Name="number of samples to capture" ReferenceClass="" Interface="">
+							<Composite Id="137" Name="number of samples to capture" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="140" Name="number of samples to capture" ReferenceClass="" Interface="">
+									<Composite Id="138" Name="number of samples to capture" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="140" />
+											<Composite RefId="138" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2758,11 +2727,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="number of samples to capture" DataType="UInt16" />
 								</Members>
 							</Composite>
-							<Composite Id="141" Name="Order in Chain" ReferenceClass="" Interface="">
+							<Composite Id="139" Name="Order in Chain" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="142" Name="Order in Chain" ReferenceClass="" Interface="">
+									<Composite Id="140" Name="Order in Chain" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="142" />
+											<Composite RefId="140" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2789,11 +2758,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="Order in Chain" DataType="UInt8" />
 								</Members>
 							</Composite>
-							<Composite Id="143" Name="out of range?" ReferenceClass="" Interface="">
+							<Composite Id="141" Name="out of range?" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="144" Name="out of range?" ReferenceClass="" Interface="">
+									<Composite Id="142" Name="out of range?" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="144" />
+											<Composite RefId="142" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2820,11 +2789,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="out of range?" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="145" Name="packet size (bytes)" ReferenceClass="" Interface="">
+							<Composite Id="143" Name="packet size (bytes)" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="146" Name="packet size (bytes)" ReferenceClass="" Interface="">
+									<Composite Id="144" Name="packet size (bytes)" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="146" />
+											<Composite RefId="144" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2851,11 +2820,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="packet size (bytes)" DataType="UInt32" />
 								</Members>
 							</Composite>
-							<Composite Id="147" Name="packet start sample index" ReferenceClass="" Interface="">
+							<Composite Id="145" Name="packet start sample index" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="148" Name="packet start sample index" ReferenceClass="" Interface="">
+									<Composite Id="146" Name="packet start sample index" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="148" />
+											<Composite RefId="146" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2882,11 +2851,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="packet start sample index" DataType="UInt16" />
 								</Members>
 							</Composite>
-							<Composite Id="149" Name="PhyRxEnd.ind" ReferenceClass="" Interface="">
+							<Composite Id="147" Name="PhyRxEnd.ind" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="150" Name="PhyRxEnd.ind" ReferenceClass="" Interface="">
+									<Composite Id="148" Name="PhyRxEnd.ind" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="150" />
+											<Composite RefId="148" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2904,7 +2873,7 @@
 									</Composite>
 								</GenericTypeDefinition>
 								<ClosedGenericParameters>
-									<Composite Id="151" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+									<Composite Id="149" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 										<Members>
 											<Field FieldAccessPolicy="ReadWrite" Name="Format Violation" DataType="Boolean" />
 											<Field FieldAccessPolicy="ReadWrite" Name="Timing valid" DataType="Boolean" />
@@ -2919,16 +2888,16 @@
 								<Members>
 									<Field FieldAccessPolicy="ReadWrite" Name="PhyRxEnd.ind">
 										<DataType>
-											<Composite RefId="151" />
+											<Composite RefId="149" />
 										</DataType>
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="152" Name="PhyRxStart.ind" ReferenceClass="" Interface="">
+							<Composite Id="150" Name="PhyRxStart.ind" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="153" Name="PhyRxStart.ind" ReferenceClass="" Interface="">
+									<Composite Id="151" Name="PhyRxStart.ind" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="153" />
+											<Composite RefId="151" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -2946,7 +2915,7 @@
 									</Composite>
 								</GenericTypeDefinition>
 								<ClosedGenericParameters>
-									<Composite Id="154" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+									<Composite Id="152" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 										<Members>
 											<Field FieldAccessPolicy="ReadWrite" Name="Format">
 												<DataType>
@@ -2991,16 +2960,16 @@
 								<Members>
 									<Field FieldAccessPolicy="ReadWrite" Name="PhyRxStart.ind">
 										<DataType>
-											<Composite RefId="154" />
+											<Composite RefId="152" />
 										</DataType>
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="155" Name="PhyTxEnd.ind" ReferenceClass="" Interface="">
+							<Composite Id="153" Name="PhyTxEnd.ind" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="156" Name="PhyTxEnd.ind" ReferenceClass="" Interface="">
+									<Composite Id="154" Name="PhyTxEnd.ind" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="156" />
+											<Composite RefId="154" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -3018,7 +2987,7 @@
 									</Composite>
 								</GenericTypeDefinition>
 								<ClosedGenericParameters>
-									<Composite Id="157" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+									<Composite Id="155" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 										<Members>
 											<Field FieldAccessPolicy="ReadWrite" Name="Valid" DataType="Boolean" />
 										</Members>
@@ -3030,16 +2999,16 @@
 								<Members>
 									<Field FieldAccessPolicy="ReadWrite" Name="PhyTxEnd.ind">
 										<DataType>
-											<Composite RefId="157" />
+											<Composite RefId="155" />
 										</DataType>
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="158" Name="PhyTxStart.req" ReferenceClass="" Interface="">
+							<Composite Id="156" Name="PhyTxStart.req" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="159" Name="PhyTxStart.req" ReferenceClass="" Interface="">
+									<Composite Id="157" Name="PhyTxStart.req" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="159" />
+											<Composite RefId="157" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -3057,7 +3026,7 @@
 									</Composite>
 								</GenericTypeDefinition>
 								<ClosedGenericParameters>
-									<Composite RefId="124" />
+									<Composite RefId="122" />
 								</ClosedGenericParameters>
 								<BaseType>
 									<Void />
@@ -3065,16 +3034,16 @@
 								<Members>
 									<Field FieldAccessPolicy="ReadWrite" Name="PhyTxStart.req">
 										<DataType>
-											<Composite RefId="124" />
+											<Composite RefId="122" />
 										</DataType>
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="160" Name="Piggy" ReferenceClass="" Interface="">
+							<Composite Id="158" Name="Piggy" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="161" Name="Piggy" ReferenceClass="" Interface="">
+									<Composite Id="159" Name="Piggy" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="161" />
+											<Composite RefId="159" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -3101,11 +3070,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="Piggy" DataType="UInt64" />
 								</Members>
 							</Composite>
-							<Composite Id="162" Name="PiggyBack Address" ReferenceClass="" Interface="">
+							<Composite Id="160" Name="PiggyBack Address" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="163" Name="PiggyBack Address" ReferenceClass="" Interface="">
+									<Composite Id="161" Name="PiggyBack Address" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="163" />
+											<Composite RefId="161" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -3136,11 +3105,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="164" Name="Piggyback: Enable Piggyback" ReferenceClass="" Interface="">
+							<Composite Id="162" Name="Piggyback: Enable Piggyback" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="165" Name="Piggyback: Enable Piggyback" ReferenceClass="" Interface="">
+									<Composite Id="163" Name="Piggyback: Enable Piggyback" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="165" />
+											<Composite RefId="163" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -3189,11 +3158,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="166" Name="Piggyback: Piggyback Address" ReferenceClass="" Interface="">
+							<Composite Id="164" Name="Piggyback: Piggyback Address" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="167" Name="Piggyback: Piggyback Address" ReferenceClass="" Interface="">
+									<Composite Id="165" Name="Piggyback: Piggyback Address" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="167" />
+											<Composite RefId="165" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -3238,6 +3207,37 @@
 											</Enumeration>
 										</DataType>
 									</Field>
+								</Members>
+							</Composite>
+							<Composite Id="166" Name="PingChun:DIFS count" ReferenceClass="" Interface="">
+								<GenericTypeDefinition>
+									<Composite Id="167" Name="PingChun:DIFS count" ReferenceClass="" Interface="">
+										<GenericTypeDefinition>
+											<Composite RefId="167" />
+										</GenericTypeDefinition>
+										<GenericParameters>
+											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
+										</GenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Field FieldAccessPolicy="ReadWrite" Name="PingChun:DIFS count">
+												<DataType>
+													<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
+												</DataType>
+											</Field>
+										</Members>
+									</Composite>
+								</GenericTypeDefinition>
+								<ClosedGenericParameters>
+									<UInt32 />
+								</ClosedGenericParameters>
+								<BaseType>
+									<Void />
+								</BaseType>
+								<Members>
+									<Field FieldAccessPolicy="ReadWrite" Name="PingChun:DIFS count" DataType="UInt32" />
 								</Members>
 							</Composite>
 							<Composite Id="168" Name="power calibration offset" ReferenceClass="" Interface="">

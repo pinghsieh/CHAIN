@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="14AFF1EB259380DC2E652743ACC2266A" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="75EAF77DDF6A7F1702970685016E2F20" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -160,7 +160,7 @@
 			</ArrayViewer>
 			<Label Height="[float]16" Id="3128" LabelOwner="[UIModel]3126" Left="[float]530" Text="[string]Input: chain table" Top="[float]181" Width="[float]58" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="3146" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" Label="[UIModel]3147" Left="[float]415" MinHeight="[float]22" Top="[float]36" Value="{DataItemBinding Id=3145}" ValueType="[Type]UInt32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Id="3147" LabelOwner="[UIModel]3146" Left="[float]415" Text="[string]count DIFS after ACK done" Top="[float]13" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Id="3147" LabelOwner="[UIModel]3146" Left="[float]415" Text="[string]Qchain:count DIFS after ACK done" Top="[float]13" xmlns="http://www.ni.com/PanelCommon" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<DataAccessor Bounds="230 10 40 15" DataItem="35" Id="37" Label="39" xmlns="http://www.ni.com/MocCommon">
@@ -1569,8 +1569,8 @@
 			<DataAccessor Bounds="1505 865 40 15" DataItem="3145" Id="3149" Label="3150" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="UInt32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="3149" Bounds="1550 865 149 14" Id="3150" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>count DIFS after ACK done</p.Text>
+			<NodeLabel AttachedTo="3149" Bounds="1550 865 192 14" Id="3150" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Qchain:count DIFS after ACK done</p.Text>
 			</NodeLabel>
 			<Wire Id="3151" Joints="N(3152:R0) N(3149:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 			<MethodCall Bounds="1320 865 50 50" DomainName="NI.LabVIEW.ExtShared" Id="3152" Target="niInstr\ Basic\ Elements\ v1\ FPGA\.lvlib__Count\ Up\ U32\.gcdl" xmlns="http://www.ni.com/MocCommon">
@@ -1692,7 +1692,7 @@
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="8" DataType="UInt64[8]" Id="3125" Name="Input: chain table" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="7" DataType="UInt32" Id="3145" Name="count DIFS after ACK done" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="7" DataType="UInt32" Id="3145" Name="Qchain:count DIFS after ACK done" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">

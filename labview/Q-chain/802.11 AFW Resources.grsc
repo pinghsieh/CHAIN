@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="69358102320009D82B55DCA3CDA5E650" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="7C4A8F7ED4CE8BF7DDA9FE4E61B086D1" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="GResources" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/GResources/SystemModel" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" Version="4.5.0.49152" />
@@ -198,7 +198,7 @@
 					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
 				</Instance>
 				<Instance Id="2970" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock">
-					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock]DerivedClock" p7:Clock.Divisor="1" p7:Clock.FreqInHz="80000000" p7:Clock.Multiplier="2" p7:Clock.ParentClockName="RioClk40" p8:Process.AliasName="MACSLOW" p8:Process.AssociatedIdentifier="2976" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock]DerivedClock" p7:Clock.Divisor="8" p7:Clock.FreqInHz="75000000" p7:Clock.Multiplier="15" p7:Clock.ParentClockName="RioClk40" p8:Process.AliasName="MACSLOW" p8:Process.AssociatedIdentifier="2976" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
 				</Instance>
 				<Superimposition Id="3" Name="Root Superimposition">
 					<Superimpose Source="9" />

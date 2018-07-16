@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="5AF7AEB6EB4EB10386C720173177D2F1" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="CB3E7A9BF1A9B952D7B3D9CF6C6E358B" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -109,7 +109,7 @@
 			</Cluster>
 			<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]30" Id="683" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]16" MinWidth="[float]16" Name="[string]Received ACK pulse(maybe not ACK for itself)" Shape="[LEDShape]Square" Top="[float]1" TrueContent="[string]On" Value="{DataItemBinding Id=682}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]30" Id="704" IsReadOnly="[bool]False" Label="[UIModel]705" Left="[float]402" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" Top="[float]118" TrueContent="[string]On" Value="{DataItemBinding Id=703}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Height="[float]16" Id="705" LabelOwner="[UIModel]704" Left="[float]402" Text="[string]DIFS after ACK done" Top="[float]95" Width="[float]59" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="705" LabelOwner="[UIModel]704" Left="[float]402" Text="[string]Qchain:DIFS after ACK done" Top="[float]95" Width="[float]59" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="708" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]709" Left="[float]130" MinHeight="[float]22" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Collapsed" Top="[float]118" Value="{DataItemBinding Id=707}" ValueFormatter="[string]LV:" ValueType="[Type]UInt32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Id="709" LabelOwner="[UIModel]708" Left="[float]130" Text="[string]global clock counter" Top="[float]95" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]718" BaseName="[string]Array" Columns="[int]8" Dimensions="[int]1" FixedSize="[int]8" Height="[float]36" Id="717" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]True" Label="[UIModel]719" Left="[float]530" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]204" Value="{DataItemBinding Id=716}" Width="[float]1523" xmlns="http://www.ni.com/PanelCommon">
@@ -118,7 +118,7 @@
 			</ArrayViewer>
 			<Label Height="[float]16" Id="719" LabelOwner="[UIModel]717" Left="[float]530" Text="[string]Input: chain table" Top="[float]181" Width="[float]58" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="722" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" Label="[UIModel]723" Left="[float]415" MinHeight="[float]22" Top="[float]36" Value="{DataItemBinding Id=721}" ValueType="[Type]UInt32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Id="723" LabelOwner="[UIModel]722" Left="[float]415" Text="[string]count DIFS after ACK done" Top="[float]13" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Id="723" LabelOwner="[UIModel]722" Left="[float]415" Text="[string]Qchain:count DIFS after ACK done" Top="[float]13" xmlns="http://www.ni.com/PanelCommon" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<MethodCall Bounds="725 250 40 40" DomainName="NI.Appframeworks.802.11" Id="14" Target="\802\.11\ MPDU\ Validate\.gcdl" xmlns="http://www.ni.com/MocCommon">
@@ -252,7 +252,7 @@
 						<Parameter Id="B2" Desc="RTR?" />
 						<Parameter Id="R1" Desc="output valid" />
 						<Parameter Id="R4" Desc="Scheduling-related parameters" />
-						<Parameter Id="R5" Desc="count DIFS after ACK done" />
+						<Parameter Id="R5" Desc="Qchain:count DIFS after ACK done" />
 					</MethodDeclaration>
 				</p.MethodDeclaration>
 				<Terminal DataType="UInt8" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
@@ -449,8 +449,8 @@
 			<DataAccessor Bounds="840 545 40 15" DataItem="703" Id="701" Label="702" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="701" Bounds="720 545 115 14" Id="702" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>DIFS after ACK done</p.Text>
+			<NodeLabel AttachedTo="701" Bounds="677 545 158 14" Id="702" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Qchain:DIFS after ACK done</p.Text>
 			</NodeLabel>
 			<Wire Id="706" Joints="N(701:Value) h(5) v(-275) N(295:L2)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="395 385 40 15" DataItem="707" Id="711" Label="712" xmlns="http://www.ni.com/MocCommon">
@@ -470,8 +470,8 @@
 			<DataAccessor Bounds="1390 375 40 15" DataItem="721" Id="725" Label="726" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="UInt32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="725" Bounds="1435 375 149 14" Id="726" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>count DIFS after ACK done</p.Text>
+			<NodeLabel AttachedTo="725" Bounds="1435 375 192 14" Id="726" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Qchain:count DIFS after ACK done</p.Text>
 			</NodeLabel>
 			<Wire Id="727" Joints="N(295:R5) h(20) v(75) N(725:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
@@ -630,7 +630,7 @@
 		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="7" DataType="Boolean" Id="682" Name="Received ACK pulse(maybe not ACK for itself)" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="10" DataType="Boolean" Id="703" Name="DIFS after ACK done" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="10" DataType="Boolean" Id="703" Name="Qchain:DIFS after ACK done" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="11" DataType="UInt32" Id="707" Name="global clock counter" xmlns="http://www.ni.com/MocCommon">
@@ -639,7 +639,7 @@
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="12" DataType="UInt64[8]" Id="716" Name="Input: chain table" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="8" DataType="UInt32" Id="721" Name="count DIFS after ACK done" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="8" DataType="UInt32" Id="721" Name="Qchain:count DIFS after ACK done" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
