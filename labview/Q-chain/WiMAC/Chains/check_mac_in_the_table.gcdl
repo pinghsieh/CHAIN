@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="75C589A05AE2BC4224270D3F3B325AD6" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="305A5EC8DF2EAC09AC7527C40679C251" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -239,7 +239,7 @@
 				<p.Text>Fast piggyback</p.Text>
 			</NodeLabel>
 			<Wire Id="1175" Joints="N(4220:1176) N(1161:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-			<CaseStructure Bounds="-300 -820 1915 1610" DataType="@c853508d8d994dd7b00dcc3c150111a3" Id="1176" Selected="1178" UserSelectorBounds="824 0 266.4 16.8">
+			<CaseStructure Bounds="-300 -820 1915 1610" DataType="@c853508d8d994dd7b00dcc3c150111a3" Id="1176" Selected="1177" UserSelectorBounds="824 0 266.4 16.8">
 				<CaseStructure.Case Bounds="5 5 1905 1600" Id="5668" Pattern="&quot;\&quot;First time into the chain\&quot;&quot;">
 					<Wire Id="5675" Joints="N(4463:5668) h(241) v(65) N(5679:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="5676" Joints="N(4466:5668) h(221) v(55) N(5679:L1)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -532,7 +532,7 @@
 						<PropertyItemTerminal DataType="UInt8" Hotspot="125 105" Id="c6t0v" Path="Element 7" Usage="Optional" />
 						<PropertyItemTerminal DataType="UInt8" Hotspot="125 120" Id="c7t0v" Path="Element 8" Usage="Optional" />
 					</PropertyNode>
-					<Wire Id="4787" Joints="N(4764:1177) h(10) B(1) N(4786:instance in) B(1) v(315) N(4855:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="4787" Joints="N(4764:1177) h(26) B(1) N(4786:instance in) B(1) v(315) N(4855:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
 					<BuildArray Bounds="345 185 40 80" CanToggle="False" Id="4789" Terminals="outArray=4799, c0t0v=4790, c1t0v=4791, c2t0v=4792, c3t0v=4793, c4t0v=4794, c5t0v=4795, c6t0v=4796, c7t0v=4797" VerticalChunkCount="8" />
 					<Wire Id="4790" Joints="N(4786:c0t0v) N(4789:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="4791" Joints="N(4786:c1t0v) h(20) v(-5) N(4789:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -969,8 +969,8 @@
 					<Wire Id="5223" Joints="N(4825:R0) N(5256:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="5230" Joints="N(4827:R0) N(5264:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="5233" Joints="N(4828:R0) N(5268:L0)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Comment Bounds="180 95 440 41.6" Id="5239" xmlns="http://www.ni.com/MocCommon">
-						<p.Text>"05/03/2018 Yue\r\nFor the new node adds into chain. We will get the ACk from the latest chain,\r\nupdate the id table for the new node until CCA busy is idle in DIFS."</p.Text>
+					<Comment Bounds="180 95 443.2 41.6" Id="5239" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>"05/03/2018 Yue\r\nFor the new node that joins chain. We will get the ACK from the latest chain,\r\nupdate the id table for the new node until CCA is idle for DIFS."</p.Text>
 					</Comment>
 					<MethodCall Bounds="1130 720 40 40" DomainName="NI.MocCommon" Id="5240" Target="new_node_update_id_table\.gcdl" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
