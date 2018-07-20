@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="846B1F776CCFBB72BD1B0904EF3DB680" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="126E6C58378451927A52446410946E1B" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -32,7 +32,7 @@
 			<ConnectorPaneTerminal Hotspot="0 25" />
 			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 170" Parameter="961" />
 			<ConnectorPaneTerminal Hotspot="0 45" ListViewHotspot="0 155" Parameter="957" />
-			<ConnectorPaneTerminal Hotspot="15 0" ListViewHotspot="0 380" Parameter="1062" />
+			<ConnectorPaneTerminal Hotspot="15 0" ListViewHotspot="0 395" Parameter="1062" />
 			<ConnectorPaneTerminal Hotspot="25 0" ListViewHotspot="0 80" Parameter="87" />
 			<ConnectorPaneTerminal Hotspot="35 0" ListViewHotspot="0 65" Parameter="81" />
 			<ConnectorPaneTerminal Hotspot="70 5" ListViewHotspot="150 215" Parameter="1003" />
@@ -40,20 +40,20 @@
 			<ConnectorPaneTerminal Hotspot="70 25" ListViewHotspot="150 245" Parameter="1000" />
 			<ConnectorPaneTerminal Hotspot="70 35" ListViewHotspot="150 95" Parameter="393" />
 			<ConnectorPaneTerminal Hotspot="70 45" ListViewHotspot="150 110" Parameter="399" />
-			<ConnectorPaneTerminal Hotspot="15 90" ListViewHotspot="150 365" Parameter="1212" />
-			<ConnectorPaneTerminal Hotspot="25 90" ListViewHotspot="0 350" Parameter="1220" />
+			<ConnectorPaneTerminal Hotspot="15 90" ListViewHotspot="150 380" Parameter="1212" />
+			<ConnectorPaneTerminal Hotspot="25 90" ListViewHotspot="0 365" Parameter="1220" />
 			<ConnectorPaneTerminal Hotspot="35 90" />
 			<ConnectorPaneTerminal Hotspot="45 0" ListViewHotspot="0 260" Parameter="1017" />
-			<ConnectorPaneTerminal Hotspot="45 90" ListViewHotspot="150 305" Parameter="1243" />
+			<ConnectorPaneTerminal Hotspot="45 90" ListViewHotspot="150 320" Parameter="1243" />
 			<ConnectorPaneTerminal Hotspot="70 55" ListViewHotspot="150 125" Parameter="458" />
 			<ConnectorPaneTerminal Hotspot="0 55" ListViewHotspot="0 50" Parameter="359" />
 			<ConnectorPaneTerminal Hotspot="70 65" ListViewHotspot="150 140" Parameter="432" />
 			<ConnectorPaneTerminal Hotspot="0 65" ListViewHotspot="0 35" Parameter="337" />
-			<ConnectorPaneTerminal Hotspot="55 0" ListViewHotspot="0 320" Parameter="1229" />
-			<ConnectorPaneTerminal Hotspot="55 90" ListViewHotspot="150 335" Parameter="1236" />
-			<ConnectorPaneTerminal Hotspot="70 75" ListViewHotspot="150 290" Parameter="1269" />
-			<ConnectorPaneTerminal Hotspot="0 75" />
-			<ConnectorPaneTerminal Hotspot="70 85" ListViewHotspot="150 275" Parameter="1277" />
+			<ConnectorPaneTerminal Hotspot="55 0" ListViewHotspot="0 335" Parameter="1229" />
+			<ConnectorPaneTerminal Hotspot="55 90" ListViewHotspot="150 350" Parameter="1236" />
+			<ConnectorPaneTerminal Hotspot="70 75" ListViewHotspot="150 305" Parameter="1269" />
+			<ConnectorPaneTerminal Hotspot="0 75" ListViewHotspot="0 275" Parameter="1291" />
+			<ConnectorPaneTerminal Hotspot="70 85" ListViewHotspot="150 290" Parameter="1277" />
 			<ConnectorPaneTerminal Hotspot="0 85" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
@@ -69,6 +69,7 @@
 			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="1270" IsReadOnly="[bool]True" Label="[UIModel]1271" Left="[float]693" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]33" TrueContent="[string]On" Value="{DataItemBinding Id=1269}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="1271" LabelOwner="[UIModel]1270" Left="[float]693" Text="[string]Qchain:DIFS done pulse" Top="[float]10" Width="[float]86" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="1278" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" Left="[float]0" MinHeight="[float]22" Name="[string]Qchain:DIFS count" Top="[float]0" Value="{DataItemBinding Id=1277}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="1292" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[uint]1" Left="[float]0" MinHeight="[float]22" Name="[string]time for starting tracking" Top="[float]0" Value="{DataItemBinding Id=1291}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<MethodCall Bounds="705 255 50 50" DomainName="NI.Appframeworks.802.11" Id="15" Target="\802\.11\ Timing\ Control\.gcdl" xmlns="http://www.ni.com/MocCommon">
@@ -78,6 +79,7 @@
 						<Parameter Id="T0" Desc="global clock value" />
 						<Parameter Id="B0" Desc="RX TX turnaround time in global clock ticks" />
 						<Parameter Id="B1" Desc="global clock tick rate" />
+						<Parameter Id="T1" Desc="time for starting tracking" />
 						<Parameter Id="R1" Desc="TX timing indication" />
 						<Parameter Id="R0" Desc="CCA timing indication" />
 					</MethodDeclaration>
@@ -86,6 +88,7 @@
 				<Terminal DataType="UInt32" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="UInt32" Direction="Input" Hotspot="15 50" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="@65e1f1cb74f24ddfa76bd0f74be0192a" Direction="Input" Hotspot="25 50" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="@dcfbd750ddcb4dbbb4297a9cc6d34cbb" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="@d91fe66dc6904e318b4248c50dce2919" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
@@ -407,6 +410,13 @@
 			<NodeLabel AttachedTo="1265" Bounds="995 267 108 14" Id="1289" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>802.11 DIFS Check</p.Text>
 			</NodeLabel>
+			<DataAccessor Bounds="455 215 40 15" DataItem="1291" Id="1294" Label="1295" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="1294" Bounds="311 215 139 14" Id="1295" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>time for starting tracking</p.Text>
+			</NodeLabel>
+			<Wire Id="1296" Joints="N(1294:Value) h(235) N(15:T1)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" Top="[float]0" Width="[float]2000">
 			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@d216bc80504e46a0b6747dbc4849a4eb" Height="[float]452" Id="723" Label="[UIModel]762" Left="[float]239" Top="[float]37" Value="{DataItemBinding Id=957}" Width="[float]126" xmlns="http://www.ni.com/PanelCommon">
@@ -646,6 +656,9 @@
 			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="12" DataType="UInt32" Id="1277" Name="Qchain:DIFS count" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="12" DataType="UInt32" Id="1291" Name="time for starting tracking" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">

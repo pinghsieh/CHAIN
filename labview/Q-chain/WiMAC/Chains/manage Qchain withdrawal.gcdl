@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="0985B9A17A68F155A2D37C7804C4F47D" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 50 60" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]60" Id="3" Left="[float]0" Top="[float]0" Width="[float]50">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]manage Qchain withdrawal" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]54" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]44" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="60" Id="10" ListViewHeight="145" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="47" />
+			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 50" Parameter="48" />
+			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 65" Parameter="49" />
+			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 80" Parameter="50" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="50 5" ListViewHotspot="150 95" Parameter="80" />
+			<ConnectorPaneTerminal Hotspot="50 15" />
+			<ConnectorPaneTerminal Hotspot="50 25" />
+			<ConnectorPaneTerminal Hotspot="50 35" />
+			<ConnectorPaneTerminal Hotspot="15 60" />
+			<ConnectorPaneTerminal Hotspot="25 60" />
+			<ConnectorPaneTerminal Hotspot="35 0" />
+			<ConnectorPaneTerminal Hotspot="35 60" />
+			<ConnectorPaneTerminal Hotspot="50 45" />
+			<ConnectorPaneTerminal Hotspot="0 45" ListViewHotspot="0 110" Parameter="97" />
+			<ConnectorPaneTerminal Hotspot="50 55" />
+			<ConnectorPaneTerminal Hotspot="0 55" ListViewHotspot="0 125" Parameter="108" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
+			<NumericText Height="[float]22" Id="51" Interval="[uint]1" Left="[float]0" MinHeight="[float]22" Name="[string]Host queue length (packets)" Top="[float]0" Value="{DataItemBinding Id=47}" ValueType="[Type]UInt32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText Height="[float]22" Id="52" Interval="[uint]1" Left="[float]0" MinHeight="[float]22" Name="[string]FPGA queue length (bytes)" Top="[float]0" Value="{DataItemBinding Id=48}" ValueType="[Type]UInt32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText Height="[float]22" Id="53" Interval="[uint]1" Left="[float]0" MinHeight="[float]22" Name="[string]Queue threshold for withdrawal (packets)" Top="[float]0" Value="{DataItemBinding Id=49}" ValueType="[Type]UInt32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText Height="[float]22" Id="54" Interval="[uint]1" Left="[float]0" MinHeight="[float]22" Name="[string]packet size (bytes)" Top="[float]0" Value="{DataItemBinding Id=50}" ValueType="[Type]UInt32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]Off" Height="[float]30" Id="81" IsReadOnly="[bool]True" Label="[UIModel]82" Left="[float]415" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" Top="[float]36" TrueContent="[string]On" Value="{DataItemBinding Id=80}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="82" LabelOwner="[UIModel]81" Left="[float]415" Text="[string]Qchain withdrawal" Top="[float]13" xmlns="http://www.ni.com/PanelCommon" />
+			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="100" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]36" MinWidth="[float]34" Name="[string]Use manual Qchain withdrawal?" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=97}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="111" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]36" MinWidth="[float]34" Name="[string]manual Qchain withdrawal" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=108}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+		</FrontPanelUnplacedItems>
+		<BlockDiagram Id="13">
+			<DataAccessor Bounds="425 315 40 15" DataItem="47" Id="16" Label="39" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<DataAccessor Bounds="425 350 40 15" DataItem="48" Id="17" Label="40" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<DataAccessor Bounds="425 235 40 15" DataItem="49" Id="18" Label="41" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<DataAccessor Bounds="425 280 40 15" DataItem="50" Id="19" Label="42" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<FeedbackNode ArrowDirection="Right" Bounds="480 230 30 20" EnableTerminalVisible="False" Id="20" />
+			<Wire Id="21" Joints="N(18:Value) N(20:input)" xmlns="http://www.ni.com/PlatformFramework" />
+			<FeedbackNode ArrowDirection="Right" Bounds="480 275 30 20" EnableTerminalVisible="False" Id="22" />
+			<FeedbackNode ArrowDirection="Right" Bounds="480 310 30 20" EnableTerminalVisible="False" Id="23" />
+			<FeedbackNode ArrowDirection="Right" Bounds="480 345 30 20" EnableTerminalVisible="False" Id="24" />
+			<Wire Id="25" Joints="N(17:Value) N(24:input)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="27" Joints="N(16:Value) N(23:input)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="28" Joints="N(19:Value) N(22:input)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="500 218 12 10" DataType="UInt32" Facade="DockedConstantFacade" Id="31" Label="43" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>10000</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+				<DockedConstantFacade UndockedSize="56 16" />
+			</Literal>
+			<Wire Facade="WireInvisibleFacade" Id="32" Joints="N(31:Out) h(5) v(-3) h(-22) N(20:initial value)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="500 263 12 10" DataType="UInt32" Facade="DockedConstantFacade" Id="33" Label="44" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>1000</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+				<DockedConstantFacade UndockedSize="49 16" />
+			</Literal>
+			<Wire Facade="WireInvisibleFacade" Id="34" Joints="N(33:Out) h(5) v(-3) h(-22) N(22:initial value)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="500 298 12 10" DataType="UInt32" Facade="DockedConstantFacade" Id="35" Label="45" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+				<DockedConstantFacade UndockedSize="39.5 16" />
+			</Literal>
+			<Wire Facade="WireInvisibleFacade" Id="36" Joints="N(35:Out) h(5) v(-10) h(-22) N(23:initial value)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="500 333 12 10" DataType="UInt32" Facade="DockedConstantFacade" Id="37" Label="46" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+				<DockedConstantFacade UndockedSize="39.5 16" />
+			</Literal>
+			<Wire Facade="WireInvisibleFacade" Id="38" Joints="N(37:Out) h(5) v(2) h(-22) N(24:initial value)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="16" Bounds="262 315 158 14" Id="39" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Host queue length (packets)</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="17" Bounds="270 350 150 14" Id="40" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>FPGA queue length (bytes)</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="18" Bounds="189 235 231 14" Id="41" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Queue threshold for withdrawal (packets)</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="19" Bounds="314 280 106 14" Id="42" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>packet size (bytes)</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="31" Bounds="500 218 0 0" Id="43" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>initial value</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="33" Bounds="500 263 0 0" Id="44" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>initial value</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="35" Bounds="500 298 0 0" Id="45" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>initial value</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="37" Bounds="500 333 0 0" Id="46" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>initial value</p.Text>
+			</NodeLabel>
+			<Multiply Bounds="580 300 30 30" Id="56" Terminals="o=59, c0t0v=68, c1t0v=71">
+				<ConfigurableDataTypeTerminal DataType="UInt32" DesiredType="UInt32" Direction="Output" GuardBits="12" Hotspot="30 15" Id="o" LimitStrategy="Error" TypeOverrideKind="Exact" Usage="Optional" WordLengthLimit="MaximumWordLength" WordLengthLimitOffset="16" xmlns="http://www.ni.com/PlatformFramework" />
+			</Multiply>
+			<Add Bounds="695 305 30 30" Id="57" Terminals="o=58, c0t0v=59, c1t0v=72" />
+			<Wire Id="58" Joints="N(57:o) h(5) v(10) N(75:y)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="59" Joints="N(56:o) h(5) v(-5) N(57:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Multiply Bounds="580 250 30 30" Id="63" Terminals="o=65, c0t0v=69, c1t0v=68">
+				<ConfigurableDataTypeTerminal DataType="UInt32" DesiredType="UInt32" Direction="Output" GuardBits="12" Hotspot="30 15" Id="o" LimitStrategy="Error" TypeOverrideKind="Exact" Usage="Optional" WordLengthLimit="MaximumWordLength" WordLengthLimitOffset="16" xmlns="http://www.ni.com/PlatformFramework" />
+			</Multiply>
+			<Wire Id="65" Joints="N(63:o) h(130) v(50) N(75:x)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="68" Joints="N(22:output) h(60) B(1) v(-15) N(63:c1t0v) B(1) v(20) N(56:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="69" Joints="N(20:output) h(60) v(15) N(63:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="71" Joints="N(23:output) N(56:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="72" Joints="N(24:output) h(180) v(-30) N(57:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<IsGreater Bounds="800 310 30 30" Id="75" />
+			<DataAccessor Bounds="1285 335 40 15" DataItem="80" Id="84" Label="85" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="84" Bounds="1330 335 102 14" Id="85" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Qchain withdrawal</p.Text>
+			</NodeLabel>
+			<FeedbackNode ArrowDirection="Right" Bounds="1015 315 30 20" EnableTerminalVisible="False" Id="88" />
+			<Wire Id="89" Joints="N(75:x &gt; y?) N(88:input)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Select Bounds="1170 320 40 40" Id="93" />
+			<DataAccessor Bounds="425 395 40 15" DataItem="97" Id="99" Label="101" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="99" Bounds="243 395 177 14" Id="101" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Use manual Qchain withdrawal?</p.Text>
+			</NodeLabel>
+			<Not Bounds="605 390 25 20" Id="103" />
+			<Wire Id="105" Joints="N(103:.not. x?) h(490) v(-60) N(93:s)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="106" Joints="N(99:Value) N(103:x)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="425 425 40 15" DataItem="108" Id="110" Label="112" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="110" Bounds="273 425 147 14" Id="112" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>manual Qchain withdrawal</p.Text>
+			</NodeLabel>
+			<Wire Id="113" Joints="N(110:Value) h(680) v(-75) N(93:f)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="114" Joints="N(88:output) N(93:t)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="115" Joints="N(93:s? t:f) N(84:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<DataItem CallDirection="Input" CallIndex="0" DataType="UInt32" Id="47" Name="Host queue length (packets)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="1" DataType="UInt32" Id="48" Name="FPGA queue length (bytes)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="2" DataType="UInt32" Id="49" Name="Queue threshold for withdrawal (packets)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="3" DataType="UInt32" Id="50" Name="packet size (bytes)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="Boolean" Id="80" Name="Qchain withdrawal" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="4" DataType="Boolean" Id="97" Name="Use manual Qchain withdrawal?" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="5" DataType="Boolean" Id="108" Name="manual Qchain withdrawal" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+</SourceFile>

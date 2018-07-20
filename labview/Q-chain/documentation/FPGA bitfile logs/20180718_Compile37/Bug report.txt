@@ -1,0 +1,16 @@
+Bug:
+The Qchain order is not correct
+Suppose the order of node admission is:
+62->63->64->65
+
+Then, the order ID should be:
+62: 4
+63: 3
+64: 2
+65: 1
+
+However, on node 65, the order on the front panel is:
+62: 2
+63: 3
+64: 4
+65: 1
