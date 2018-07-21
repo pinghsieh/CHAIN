@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="D7607125ABD10F57FC48E18A8D87F3CE" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="054A1B85BABB4EDC94AA1370AEFEB3C7" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -56,7 +56,7 @@
 				<PropertyItemTerminal DataType="Boolean" Hotspot="184 60" Id="c3t0v" Path="frame timing use DIFS" Usage="Optional" />
 				<PropertyItemTerminal DataType="Boolean" Hotspot="184 75" Id="c4t0v" Path="frame timing valid" Usage="Optional" />
 			</PropertyNode>
-			<CaseStructure Bounds="665 205 456 610" DataType="@f4678f83360140c88f5e42fbb76534c7" Id="32" Selected="34" UserSelectorBounds="123.2 0 209.6 16.8">
+			<CaseStructure Bounds="665 205 456 610" DataType="@f4678f83360140c88f5e42fbb76534c7" Id="32" Selected="41" UserSelectorBounds="123.2 0 209.6 16.8">
 				<CaseStructure.Case Bounds="5 5 446 600" Id="33" Pattern="&quot;Startup&quot;">
 					<Wire Id="44" Joints="N(510:Out) N(45:33)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Literal Bounds="290 560 141 15" DataType="@f4678f83360140c88f5e42fbb76534c7" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="510" xmlns="http://www.ni.com/MocCommon">
@@ -129,14 +129,14 @@
 					<Wire Id="383" Joints="N(380:s? t:f) h(25) v(30) N(45:41)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="384" Joints="N(61:s? t:f) h(65) v(-15) N(380:f)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="389" Joints="N(493:Out) N(380:t)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Comment Bounds="140 305 281 42" Id="410" xmlns="http://www.ni.com/MocCommon">
+					<Comment Bounds="140 305 280 28" Id="410" xmlns="http://www.ni.com/MocCommon">
 						<p.Text>"Check for incoming frame timing update. If so,\r\nstore "frame timing value" and "use DIFS" flag."</p.Text>
 					</Comment>
-					<Literal Bounds="165 515 186 15" DataType="@f4678f83360140c88f5e42fbb76534c7" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="493" xmlns="http://www.ni.com/MocCommon">
+					<Literal Bounds="169.066666 515 181.933334 15" DataType="@f4678f83360140c88f5e42fbb76534c7" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="493" xmlns="http://www.ni.com/MocCommon">
 						<p.Data>3</p.Data>
 						<EnumBehavior Id="494" />
 					</Literal>
-					<Literal Bounds="110 545 141 15" DataType="@f4678f83360140c88f5e42fbb76534c7" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="496" xmlns="http://www.ni.com/MocCommon">
+					<Literal Bounds="113.876663 545 137.123337 15" DataType="@f4678f83360140c88f5e42fbb76534c7" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="496" xmlns="http://www.ni.com/MocCommon">
 						<p.Data>1</p.Data>
 						<EnumBehavior Id="497" />
 					</Literal>
@@ -153,7 +153,7 @@
 						<BooleanBehavior />
 					</Literal>
 					<Wire Id="425" Joints="N(424:Out) N(154:51)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Comment Bounds="85 385 337 55" Id="426" xmlns="http://www.ni.com/MocCommon">
+					<Comment Bounds="85 385 336 41.6" Id="426" xmlns="http://www.ni.com/MocCommon">
 						<p.Text>"Start timer for signal "slot M1 end":\r\n- Load with:\r\n    aSIFS - aRxTxTurnaroundTime - (now - frame timing )"</p.Text>
 					</Comment>
 					<Wire Id="429" Joints="N(502:Out) N(45:51)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -162,11 +162,11 @@
 					<Wire Id="459" Joints="N(416:x-y) N(458:x)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="460" Joints="N(412:x-y) h(5) v(-25) N(458:y)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="461" Joints="N(458:x-y) N(344:51)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Literal Bounds="290 560 132 15" DataType="@f4678f83360140c88f5e42fbb76534c7" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="502" xmlns="http://www.ni.com/MocCommon">
+					<Literal Bounds="294.273315 560 127.726669 15" DataType="@f4678f83360140c88f5e42fbb76534c7" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="502" xmlns="http://www.ni.com/MocCommon">
 						<p.Data>4</p.Data>
 						<EnumBehavior Id="503" />
 					</Literal>
-					<Comment Bounds="40 130 360 68" Id="576" xmlns="http://www.ni.com/MocCommon">
+					<Comment Bounds="40 130 358.4 55.2" Id="576" xmlns="http://www.ni.com/MocCommon">
 						<p.Text>"New frame timing reference has been received from RX:\r\n- Regular slot signal pattern is stopped ("M2 start"/"M2 end")\r\n- Next step is wait for TX after SIFS instant ("M1 end")\r\n- Could be used for tranmission of ACK frame, CTS frame , ..."</p.Text>
 					</Comment>
 					<Wire Id="704" Joints="N(393:51) h(11) v(430) N(412:y)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -182,10 +182,10 @@
 					<Wire Id="432" Joints="N(430:s? t:f) N(45:52)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="433" Joints="N(35:52) N(430:f)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="437" Joints="N(504:Out) N(430:t)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Comment Bounds="75 210 318 68" Id="438" xmlns="http://www.ni.com/MocCommon">
+					<Comment Bounds="75 210 316 55.2" Id="438" xmlns="http://www.ni.com/MocCommon">
 						<p.Text>"During waiting for SIFS end we do not need to check\r\nfor new frame timing info. Due to the minimum frame\r\nlength (ACKTxTime = 44 us) it is not possible that\r\nour PHY already sends us a new frame timing here."</p.Text>
 					</Comment>
-					<Literal Bounds="200 545 165 15" DataType="@f4678f83360140c88f5e42fbb76534c7" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="504" xmlns="http://www.ni.com/MocCommon">
+					<Literal Bounds="203.926666 545 161.073334 15" DataType="@f4678f83360140c88f5e42fbb76534c7" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="504" xmlns="http://www.ni.com/MocCommon">
 						<p.Data>5</p.Data>
 						<EnumBehavior Id="505" />
 					</Literal>
@@ -196,7 +196,7 @@
 						<BooleanBehavior />
 					</Literal>
 					<Wire Id="443" Joints="N(439:Out) N(442:53)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Comment Bounds="265 195 165 28" Id="444" xmlns="http://www.ni.com/MocCommon">
+					<Comment Bounds="265 195 164 15.2" Id="444" xmlns="http://www.ni.com/MocCommon">
 						<p.Text>Send signal "slot M1 end":</p.Text>
 					</Comment>
 					<Literal Bounds="400 480 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="445" xmlns="http://www.ni.com/MocCommon">
@@ -221,10 +221,10 @@
 					<Wire Id="490" Joints="N(477:x-y) N(489:x)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="491" Joints="N(489:x-y) N(344:53)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="492" Joints="N(486:x-y) h(75) v(-65) N(489:y)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Comment Bounds="105 350 328 82" Id="447" xmlns="http://www.ni.com/MocCommon">
+					<Comment Bounds="105 350 326.4 68" Id="447" xmlns="http://www.ni.com/MocCommon">
 						<p.Text>"Start timer for first "slot M2 start" signal:\r\n- Load with:  (DIFS or EIFS)\r\n                    - (aSIFS - aRxTxTurnaroundTime)\r\n                    - (aSlotTime - aCCATime)\r\n  (Note: aCCATime includes Air Propagation Delay time)"</p.Text>
 					</Comment>
-					<Literal Bounds="275 560 148 15" DataType="@f4678f83360140c88f5e42fbb76534c7" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="507" xmlns="http://www.ni.com/MocCommon">
+					<Literal Bounds="278.726685 560 144.273331 15" DataType="@f4678f83360140c88f5e42fbb76534c7" Facade="NationalInstruments.MocCommon.SourceModel.IEnumBehavior" Id="507" xmlns="http://www.ni.com/MocCommon">
 						<p.Data>2</p.Data>
 						<EnumBehavior Id="508" />
 					</Literal>
@@ -286,16 +286,16 @@
 					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
 				</Literal>
 				<DockedConstantFacade LabelPosition="Top" UndockedSize="167 148" />
-				<NodeLabel AttachedTo="223" Bounds="5 36 139 16" Id="224" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="223" Bounds="5 36 144 14" Id="224" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>CCA signal detection busy</p.Text>
 				</NodeLabel>
-				<NodeLabel AttachedTo="225" Bounds="5 70 67 16" Id="226" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="225" Bounds="5 70 70 14" Id="226" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>slot M2 start</p.Text>
 				</NodeLabel>
-				<NodeLabel AttachedTo="231" Bounds="5 104 25 16" Id="232" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="231" Bounds="5 104 27 14" Id="232" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>valid</p.Text>
 				</NodeLabel>
-				<NodeLabel AttachedTo="799" Bounds="5 2 144 16" Id="800" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="799" Bounds="5 2 150 14" Id="800" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>CCA energy detection busy</p.Text>
 				</NodeLabel>
 			</ClusterLiteral>
@@ -412,10 +412,10 @@
 					<Wire Id="590" Joints="N(420:Out) N(591:582)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="593" Joints="N(448:Out) N(594:582)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="596" Joints="N(450:Out) N(597:582)" xmlns="http://www.ni.com/PlatformFramework" />
-					<NodeLabel AttachedTo="362" Bounds="5 80 160 14" Id="363" xmlns="http://www.ni.com/PlatformFramework">
+					<NodeLabel AttachedTo="362" Bounds="5.5 80 160 14" Id="363" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>slot time in global clock ticks</p.Text>
 					</NodeLabel>
-					<NodeLabel AttachedTo="366" Bounds="2 100 163 14" Id="367" xmlns="http://www.ni.com/PlatformFramework">
+					<NodeLabel AttachedTo="366" Bounds="2.5 100 163 14" Id="367" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>CCA time in global clock ticks</p.Text>
 					</NodeLabel>
 					<NodeLabel AttachedTo="420" Bounds="24 60 138 14" Id="421" xmlns="http://www.ni.com/PlatformFramework">
@@ -484,7 +484,7 @@
 			<Comment Bounds="615 120 608.8 41.6" Id="627" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>"MAC TX timing control state machine:\r\n- It is assumed that cycle clock rate is significantly larger than global clock rate (e.g. 250 MHz vs. 10 MHz)\r\n- If this condition is fullfilled, timing offsets caused by state transistions can be neglected"</p.Text>
 			</Comment>
-			<Wire Id="639" Joints="N(45:32) h(10) B(1) N(943:L0) B(1) v(85) N(36:input)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="639" Joints="N(45:32) h(10) v(21.7999878) B(2) N(1029:953) B(2) v(63.2000122) N(36:input)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Comment Bounds="1230 455 89.6 15.2" Id="641" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>M2 end timer</p.Text>
 			</Comment>
@@ -517,8 +517,8 @@
 			<Comment Bounds="1230 645 92.8 15.2" Id="675" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>General timer</p.Text>
 			</Comment>
-			<Wire Id="677" Joints="N(314:Value) h(145) B(1) h(770) v(-135) B(3) N(943:L1) B(3) v(-60) B(5) N(671:L4) B(5) v(-195) N(324:L4) B(1) v(-245) N(413:32)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="680" Joints="N(671:R1) h(20) v(185) N(162:input)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="677" Joints="N(314:Value) h(145) B(1) h(770) v(-135) B(3) N(1032:953) B(3) v(-60) B(5) N(671:L4) B(5) v(-195) N(324:L4) B(1) v(-245) N(413:32)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="680" Joints="N(671:R1) h(60) v(185) N(162:input)" xmlns="http://www.ni.com/PlatformFramework" />
 			<WireComment AttachedTo="645" Bounds="521.6 727 134.4 16" Id="681" xmlns="http://www.ni.com/PlatformFramework">
 				<p.ExpandedWidth>134.4</p.ExpandedWidth>
 				<p.Point>588.8 735</p.Point>
@@ -591,19 +591,7 @@
 			<NodeLabel AttachedTo="803" Bounds="1580 245 119 14" Id="821" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>CCA timing indication</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="1270 770 40 40" DomainName="NI.MocCommon" Id="943" Target="Track\ Timing\ Control\.gcdl" xmlns="http://www.ni.com/MocCommon">
-				<p.MethodDeclaration>
-					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
-						<Parameter Id="L1" Desc="global clock counter" />
-						<Parameter Id="L0" Desc="Timing Control State Enum" />
-						<Parameter Id="L2" Desc="time for starting tracking" />
-					</MethodDeclaration>
-				</p.MethodDeclaration>
-				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="@f4678f83360140c88f5e42fbb76534c7" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
-			</MethodCall>
-			<Comment Bounds="1335 775 270 65" Id="946" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+			<Comment Bounds="1380 760 270 65" Id="946" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>"07/19/2018 Ping-Chun\r\nTrack critical timing events (SIFS, slot time, CCA...etc)"</p.Text>
 			</Comment>
 			<DataAccessor Bounds="255 950 40 15" DataItem="947" Id="950" Label="951" xmlns="http://www.ni.com/MocCommon">
@@ -612,7 +600,30 @@
 			<NodeLabel AttachedTo="950" Bounds="255 933 139 14" Id="951" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>time for starting tracking</p.Text>
 			</NodeLabel>
-			<Wire Id="952" Joints="N(950:Value) h(965) v(-160) N(943:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="952" Joints="N(950:Value) h(965) N(1035:953)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DisableStructure Bounds="1235 755 90 95" Id="953" Selected="955" UserSelectorBounds="4.8 0 80 16.8">
+				<DisableStructure.DisableDiagram Bounds="5 5 80 85" Id="954" Pattern="Enabled" />
+				<DisableStructure.DisableDiagram Bounds="5 5 80 85" Id="955" Pattern="Disabled">
+					<MethodCall Bounds="30 10 40 40" DomainName="NI.MocCommon" Id="943" Target="Track\ Timing\ Control\.gcdl" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L1" Desc="global clock counter" />
+								<Parameter Id="L0" Desc="Timing Control State Enum" />
+								<Parameter Id="L2" Desc="time for starting tracking" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="UInt32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@f4678f83360140c88f5e42fbb76534c7" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<Wire Id="1028" Joints="N(1029:955) h(5) v(-21.8) N(943:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="1031" Joints="N(1032:955) N(943:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="1034" Joints="N(1035:955) v(-46) N(943:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+				</DisableStructure.DisableDiagram>
+				<DisableStructure.Tunnel Bounds="-4 36.8 13 10" DefaultIfUnwired="True" Docking="Left" Id="1029" Terminals="953=639, 954, 955=1028" />
+				<DisableStructure.Tunnel Bounds="-4 25 13 10" DefaultIfUnwired="True" Docking="Left" Id="1032" Terminals="953=677, 954, 955=1031" />
+				<DisableStructure.Tunnel Bounds="20 86 10 13" DefaultIfUnwired="True" Docking="Bottom" Id="1035" Terminals="953=952, 954, 955=1034" />
+			</DisableStructure>
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" Top="[float]0" Width="[float]2000">
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="569" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]756" Left="[float]122" MinHeight="[float]22" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Collapsed" Top="[float]53" Value="{DataItemBinding Id=566}" ValueFormatter="[string]LV:" ValueType="[Type]UInt32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />

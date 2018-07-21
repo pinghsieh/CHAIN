@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="F322CD8E169DEBF9A50E0293D97145A8" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="D14912C9E01E555C501D615DD095C66E" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -274,15 +274,14 @@
 				<p.Text>"04/08/2018 Yue\r\nupdate the ID table"</p.Text>
 			</Comment>
 			<RegisterWrite Bounds="965 155 40 40" Id="125" xmlns="http://www.ni.com/LabVIEW.FPGA" />
-			<IONameConstant Bounds="953 155 12 10" DataType="@4686a14070e5421183b21313e6db78c0" Facade="DockedConstantFacade" Id="126" Label="127" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+			<IONameConstant Bounds="645.910034 105 239.09 27" DataType="@4686a14070e5421183b21313e6db78c0" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="126" Label="127" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>"802.11 AFW Resources.grsc\\ID Table"</p.Data>
 				<IONameConstantBehavior />
-				<DockedConstantFacade UndockedSize="239.09 27" />
 			</IONameConstant>
-			<NodeLabel AttachedTo="126" Bounds="953 155 0 0" Id="127" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="126" Bounds="645.910034 105 0 0" Id="127" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>reference in</p.Text>
 			</NodeLabel>
-			<Wire Facade="WireInvisibleFacade" Id="128" Joints="N(126:Out) N(125:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="128" Joints="N(126:Out) h(65) v(50) N(125:reference in)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="1205 285 40 15" DataItem="139" Id="141" Label="175" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@13d59c69032243ce8fcb6f06d6324ba2" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
@@ -367,74 +366,7 @@
 			<Wire Facade="WireInvisibleFacade" Id="201" Joints="N(199:Out) N(198:instance in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="218" Joints="N(79:R0) h(85) v(-255) h(70) B(3) N(106:c6t0v) B(3) v(160) N(198:c6t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="219" Joints="N(80:R0) h(95) v(-300) h(45) B(3) N(106:c7t0v) B(3) v(165) N(198:c7t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<FeedbackNode ArrowDirection="Right" Bounds="1120 280 30 20" EnableTerminalVisible="False" Id="222" />
-			<Wire Id="223" Joints="N(198:instance out) N(222:input)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="224" Joints="N(222:output) N(141:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-			<ClusterLiteral Bounds="1140 268 12 10" DataType="@01ba3d935381490484a813fdcca049b3" Facade="DockedConstantFacade" Id="225" Label="242" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>0_0_0_0_0_0_0_0_</p.Data>
-				<ClusterBehavior AutoArrange="ArrangeVertically" />
-				<Literal Bounds="5 19 39.5 16" DataType="UInt8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="226" Label="227">
-					<p.Data>0</p.Data>
-					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-				</Literal>
-				<NodeLabel AttachedTo="226" Bounds="5 2 57 14" Id="227" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>Update ID</p.Text>
-				</NodeLabel>
-				<Literal Bounds="5 52 39.5 16" DataType="UInt8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="228" Label="229">
-					<p.Data>0</p.Data>
-					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-				</Literal>
-				<NodeLabel AttachedTo="228" Bounds="5 35 71 14" Id="229" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>Update ID_2</p.Text>
-				</NodeLabel>
-				<Literal Bounds="5 85 39.5 16" DataType="UInt8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="230" Label="231">
-					<p.Data>0</p.Data>
-					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-				</Literal>
-				<NodeLabel AttachedTo="230" Bounds="5 68 71 14" Id="231" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>Update ID_3</p.Text>
-				</NodeLabel>
-				<Literal Bounds="5 118 39.5 16" DataType="UInt8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="232" Label="233">
-					<p.Data>0</p.Data>
-					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-				</Literal>
-				<NodeLabel AttachedTo="232" Bounds="5 101 71 14" Id="233" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>Update ID_4</p.Text>
-				</NodeLabel>
-				<Literal Bounds="5 151 39.5 16" DataType="UInt8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="234" Label="235">
-					<p.Data>0</p.Data>
-					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-				</Literal>
-				<NodeLabel AttachedTo="234" Bounds="5 134 71 14" Id="235" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>Update ID_5</p.Text>
-				</NodeLabel>
-				<Literal Bounds="5 184 39.5 16" DataType="UInt8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="236" Label="237">
-					<p.Data>0</p.Data>
-					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-				</Literal>
-				<NodeLabel AttachedTo="236" Bounds="5 167 71 14" Id="237" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>Update ID_6</p.Text>
-				</NodeLabel>
-				<Literal Bounds="5 217 39.5 16" DataType="UInt8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="238" Label="239">
-					<p.Data>0</p.Data>
-					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-				</Literal>
-				<NodeLabel AttachedTo="238" Bounds="5 200 71 14" Id="239" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>Update ID_7</p.Text>
-				</NodeLabel>
-				<Literal Bounds="5 250 39.5 16" DataType="UInt8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="240" Label="241">
-					<p.Data>0</p.Data>
-					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
-				</Literal>
-				<NodeLabel AttachedTo="240" Bounds="5 233 71 14" Id="241" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>Update ID_8</p.Text>
-				</NodeLabel>
-				<DockedConstantFacade UndockedSize="94 276" />
-			</ClusterLiteral>
-			<NodeLabel AttachedTo="225" Bounds="1140 268 0 0" Id="242" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>initial value</p.Text>
-			</NodeLabel>
-			<Wire Facade="WireInvisibleFacade" Id="243" Joints="N(225:Out) h(13) v(-10) h(-30) N(222:initial value)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="224" Joints="N(198:instance out) N(141:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="261" Joints="N(106:outArray) N(125:data)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />

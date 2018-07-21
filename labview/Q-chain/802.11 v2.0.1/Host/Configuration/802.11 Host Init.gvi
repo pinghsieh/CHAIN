@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="AD7D93EBD9CFBF9FB8FBC8422294319E" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="C30D4DF7BD21CA6B1474C217A6B4E5C5" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -43,7 +43,7 @@
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Height="[float]4374" Id="11" Left="[float]0" Top="[float]0" Width="[float]2000">
-			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@26251a18b8814291858c4dbdcc8769dc" Height="[float]4351" Id="20960" Label="[UIModel]21158" Left="[float]0" Top="[float]23" Value="{DataItemBinding Id=8667}" Width="[float]267" p4:ControlDefinitionChecksum="mTdeRKR8wTmhXAm5GQc00g==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@ccc0c27b788c46d0aab5f7b727a49dfc" Height="[float]4351" Id="20960" Label="[UIModel]21158" Left="[float]0" Top="[float]23" Value="{DataItemBinding Id=8667}" Width="[float]267" p4:ControlDefinitionChecksum="mTdeRKR8wTmhXAm5GQc00g==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="\802\.11\ Host\ Session\.gtype:ControlDefinition" />
 				</p4:p.TypeDefinitionTargets>
@@ -341,12 +341,12 @@
 				<p4:Label Height="[float]16" Id="20976" LabelOwner="[UIModel]20966" Left="[float]5" Text="[string]FlexRIO session" Top="[float]362" Width="[float]82" />
 				<p4:Label Height="[float]16" Id="20977" LabelOwner="[UIModel]20967" Left="[float]5" Text="[string]FlexRIO TX Characterization Data" Top="[float]425" Width="[float]174" />
 				<p4:Label Height="[float]16" Id="20978" LabelOwner="[UIModel]20968" Left="[float]5" Text="[string]FlexRIO RX Characterization Data" Top="[float]891" Width="[float]175" />
-				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="21818" Label="[UIModel]21819" Left="[float]5" RefnumType="[Type]@0f82c04c32fd45f3854bbf33416935ee" Top="[float]25" Value="{ClusterBinding FieldName=FPGA\ interface}" Width="[float]20" p4:ControlDefinitionChecksum="Zeo7EYXnS3ykfnHX9zKROA==" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="21917" Label="[UIModel]21918" Left="[float]5" RefnumType="[Type]@ae9551090bdf435f9ff326acf67d4f9f" Top="[float]25" Value="{ClusterBinding FieldName=FPGA\ interface}" Width="[float]20" p4:ControlDefinitionChecksum="FbRpmW1HmzjLXotWU1pFCQ==" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 					<p4:p.TypeDefinitionTargets>
 						<p4:TypeDefinitionTarget TargetName="\802\.11\ FGPA\ Reference\.gtype:ControlDefinition" />
 					</p4:p.TypeDefinitionTargets>
 				</OpaqueRefnum>
-				<p4:Label Height="[float]16" Id="21819" LabelOwner="[UIModel]21818" Left="[float]5" Text="[string]FPGA interface" Top="[float]2" Width="[float]84" />
+				<p4:Label Height="[float]16" Id="21918" LabelOwner="[UIModel]21917" Left="[float]5" Text="[string]FPGA interface" Top="[float]2" Width="[float]84" />
 				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="20981" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]20982" Left="[float]5" MinHeight="[float]22" RadixBase="[RadixBase]Decimal" Top="[float]4270" Value="{ClusterBinding FieldName=RF\ loop\ clock\ frequency}" ValueFormatter="[string]LVSI:G6" ValueType="[Type]Double" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 				<p4:Label Height="[float]16" Id="20982" LabelOwner="[UIModel]20981" Left="[float]5" Text="[string]RF loop clock frequency" Top="[float]4247" Width="[float]127" />
 				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="20983" Label="[UIModel]20984" Left="[float]5" RefnumType="[Type]@4f68d9cb62ad46b8bcb6c6597733f134" Top="[float]4315" Value="{ClusterBinding FieldName=queue\ out}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -362,18 +362,18 @@
 				<EnumSelectorInfo DisplayValue="[string]160 MHz" IsEnabled="[bool]True" Value="[ushort]2" ValueType="[Type]UInt16" />
 			</EnumSelector>
 			<Label Height="[float]16" Id="20492" LabelAlignment="[PartAlignment]LeftCenter" LabelOwner="[UIModel]20491" Left="[float]1102" Text="[string]USRP bandwidth" Top="[float]129" Width="[float]160" xmlns="http://www.ni.com/PanelCommon" />
-			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@3667e42b32f247c48f8ef236ec7f547c" Height="[float]156" Id="21885" Label="[UIModel]21892" Left="[float]100" Top="[float]100" Value="{DataItemBinding Id=21884}" Width="[float]88" p4:ControlDefinitionChecksum="ng0ZHsKAhhdHwuiz6BUaMg==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@a771701145f24dcab677b23c1687c663" Height="[float]156" Id="21925" Label="[UIModel]21932" Left="[float]100" Top="[float]100" Value="{DataItemBinding Id=21884}" Width="[float]88" p4:ControlDefinitionChecksum="GjFGwX0KRBqi3k9SdzrxFw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="Custom\ session\.gtype:ControlDefinition" />
 				</p4:p.TypeDefinitionTargets>
-				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="21886" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" Label="[UIModel]21889" Left="[float]5" MinHeight="[float]22" Top="[float]23" Value="{ClusterBinding FieldName=H2T\ TX\ Data\ FIFO:\ actual\ depth}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="21887" Label="[UIModel]21890" Left="[float]5" RefnumType="[Type]@95cc0d1c93f240f0b2cdb037a23a0518" Top="[float]68" Value="{ClusterBinding FieldName=Track\ CCA\ Busy\ queue}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="21888" Label="[UIModel]21891" Left="[float]5" RefnumType="[Type]@fe709c613e164faf9c225a8316eb5f9d" Top="[float]117" Value="{ClusterBinding FieldName=Track\ Timing\ Control\ queue}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-				<p4:Label Id="21889" LabelOwner="[UIModel]21886" Left="[float]5" Text="[string]H2T TX Data FIFO: actual depth" Top="[float]0" />
-				<p4:Label Id="21890" LabelOwner="[UIModel]21887" Left="[float]5" Text="[string]Track CCA Busy queue" Top="[float]45" />
-				<p4:Label Id="21891" LabelOwner="[UIModel]21888" Left="[float]5" Text="[string]Track Timing Control queue" Top="[float]94" />
+				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="21926" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" Label="[UIModel]21929" Left="[float]5" MinHeight="[float]22" Top="[float]23" Value="{ClusterBinding FieldName=H2T\ TX\ Data\ FIFO:\ actual\ depth}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="21927" Label="[UIModel]21930" Left="[float]5" RefnumType="[Type]@95cc0d1c93f240f0b2cdb037a23a0518" Top="[float]68" Value="{ClusterBinding FieldName=Track\ CCA\ Busy\ queue}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="21928" Label="[UIModel]21931" Left="[float]5" RefnumType="[Type]@fe709c613e164faf9c225a8316eb5f9d" Top="[float]117" Value="{ClusterBinding FieldName=Track\ Chain\ State\ queue}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="21929" LabelOwner="[UIModel]21926" Left="[float]5" Text="[string]H2T TX Data FIFO: actual depth" Top="[float]0" Width="[float]166" />
+				<p4:Label Height="[float]16" Id="21930" LabelOwner="[UIModel]21927" Left="[float]5" Text="[string]Track CCA Busy queue" Top="[float]45" Width="[float]119" />
+				<p4:Label Height="[float]16" Id="21931" LabelOwner="[UIModel]21928" Left="[float]5" Text="[string]Track Chain State queue" Top="[float]94" Width="[float]129" />
 			</Cluster>
-			<Label Id="21892" LabelOwner="[UIModel]21885" Left="[float]100" Text="[string]custom session out" Top="[float]77" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="21932" LabelOwner="[UIModel]21925" Left="[float]100" Text="[string]custom session out" Top="[float]77" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<FPGADownloadNode Bounds="-1615 -475 40 40" Id="15" xmlns="http://www.ni.com/LabVIEW.FPGA" />
@@ -391,9 +391,9 @@
 					</MethodDeclaration>
 				</p.MethodDeclaration>
 				<Terminal DataType="String" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="@26251a18b8814291858c4dbdcc8769dc" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@ccc0c27b788c46d0aab5f7b727a49dfc" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="@26251a18b8814291858c4dbdcc8769dc" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@ccc0c27b788c46d0aab5f7b727a49dfc" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
 			<MergeErrors Bounds="-1045 -445 30 80" Id="26" Terminals="error out=30, c0t0v=19708, c1t0v=19706, c2t0v=484, c3t0v=483, c4t0v=774, c5t0v=21377, c6t0v=21905, c7t0v=21906" VerticalChunkCount="8" />
@@ -515,14 +515,14 @@
 				<Terminal DataType="String" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="@e6f4afd4ccaf494ebaf9f79492a4818c" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="@0f82c04c32fd45f3854bbf33416935ee" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@ae9551090bdf435f9ff326acf67d4f9f" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Double" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
 			<Wire Id="1711" Joints="N(31:Value) N(1710:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="1716" Joints="N(44:Value) N(1710:L3)" xmlns="http://www.ni.com/PlatformFramework" />
-			<PropertyNode Bounds="-1445 -605 126.4 35.2" HasErrorTerminals="False" Id="1721" InstanceDataType="@26251a18b8814291858c4dbdcc8769dc" Mode="InstanceProperties" Template="List">
-				<PropertyItemTerminal Action="Write" DataType="@0f82c04c32fd45f3854bbf33416935ee" Hotspot="0 15" Id="c0t0v" Path="FPGA interface" Usage="Required" />
+			<PropertyNode Bounds="-1445 -605 126.4 35" HasErrorTerminals="False" Id="1721" InstanceDataType="@ccc0c27b788c46d0aab5f7b727a49dfc" Mode="InstanceProperties" Template="List">
+				<PropertyItemTerminal Action="Write" DataType="@ae9551090bdf435f9ff326acf67d4f9f" Hotspot="0 15" Id="c0t0v" Path="FPGA interface" Usage="Required" />
 			</PropertyNode>
 			<Wire Id="1731" Joints="N(25:R0) N(17854:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
 			<MethodCall Bounds="-1300 -425 40 40" DomainName="NI.Appframeworks.802.11" Id="2292" Target="\802\.11\ Setup\ DMA\ FIFOs\.gvi" xmlns="http://www.ni.com/MocCommon">
@@ -535,9 +535,9 @@
 						<Parameter Id="R1" Desc="H2T TX Data FIFO: actual depth" />
 					</MethodDeclaration>
 				</p.MethodDeclaration>
-				<Terminal DataType="@0f82c04c32fd45f3854bbf33416935ee" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@ae9551090bdf435f9ff326acf67d4f9f" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
-				<Terminal DataType="@0f82c04c32fd45f3854bbf33416935ee" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@ae9551090bdf435f9ff326acf67d4f9f" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
@@ -576,7 +576,7 @@
 				<p.Text>reference clock</p.Text>
 			</NodeLabel>
 			<DataAccessor Bounds="-960 -605 40 15" DataItem="8667" Id="8665" Label="8666" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@26251a18b8814291858c4dbdcc8769dc" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@ccc0c27b788c46d0aab5f7b727a49dfc" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="8665" Bounds="-915 -605 63 14" Id="8666" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>session out</p.Text>
@@ -587,7 +587,7 @@
 			<NodeLabel AttachedTo="17147" Bounds="-1847 -460 92 14" Id="17148" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>USRP bandwidth</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="-1170 -605 195.2 95" HasErrorTerminals="False" Id="17854" InstanceDataType="@26251a18b8814291858c4dbdcc8769dc" Mode="InstanceProperties" Template="List">
+			<PropertyNode Bounds="-1170 -605 195.2 95" HasErrorTerminals="False" Id="17854" InstanceDataType="@ccc0c27b788c46d0aab5f7b727a49dfc" Mode="InstanceProperties" Template="List">
 				<PropertyItemTerminal Action="Write" DataType="@0c873cc365734e2db884af03a7e9a5ab" Hotspot="0 15" Id="c0t0v" Path="send queue" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="@0c873cc365734e2db884af03a7e9a5ab" Hotspot="0 30" Id="c1t0v" Path="receive queue" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="@4f68d9cb62ad46b8bcb6c6597733f134" Hotspot="0 45" Id="c2t0v" Path="queue out" Usage="Required" />
@@ -604,8 +604,8 @@
 			<Wire Id="20037" Joints="N(1710:R3) N(15:error in)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="20038" Joints="N(17147:Value) h(15) v(-5) N(1710:L1)" xmlns="http://www.ni.com/PlatformFramework" />
 			<TypeCast Bounds="-1505 -475 30 15" Id="20039" />
-			<Wire Id="20041" Joints="N(21824:Out) h(55) N(20039:type)" xmlns="http://www.ni.com/PlatformFramework" />
-			<NodeLabel AttachedTo="21824" Bounds="-1585 -570 0 0" Id="20042" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+			<Wire Id="20041" Joints="N(21923:Out) h(55) N(20039:type)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="21923" Bounds="-1585 -570 0 0" Id="20042" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>FPGA interface_2</p.Text>
 			</NodeLabel>
 			<Wire Id="20044" Joints="N(16:reference out) N(20039:x)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -657,17 +657,17 @@
 			<Wire Facade="WireInvisibleFacade" Id="21375" Joints="N(21368:Out) N(21361:element data type)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="21377" Joints="N(21361:error out) h(120) v(-325) N(26:c5t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="21378" Joints="N(21361:queue out) h(70) v(-435) N(17854:c4t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<NodeLabel AttachedTo="21897" Bounds="-1506 -370 0 0" Id="21605" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="21934" Bounds="-1506 -370 0 0" Id="21605" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Custom session</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="-975 -335 230.4 65" HasErrorTerminals="False" Id="21606" InstanceDataType="@3667e42b32f247c48f8ef236ec7f547c" Mode="InstanceProperties" Template="List">
+			<PropertyNode Bounds="-975 -335 230.4 65" HasErrorTerminals="False" Id="21606" InstanceDataType="@a771701145f24dcab677b23c1687c663" Mode="InstanceProperties" Template="List">
 				<PropertyItemTerminal Action="Write" DataType="UInt32" Hotspot="0 15" Id="c0t0v" Path="&quot;H2T TX Data FIFO\\: actual depth&quot;" Usage="Required" />
 				<PropertyItemTerminal Action="Write" DataType="@95cc0d1c93f240f0b2cdb037a23a0518" Hotspot="0 30" Id="c1t0v" Path="Track CCA Busy queue" Usage="Required" />
-				<PropertyItemTerminal Action="Write" DataType="@fe709c613e164faf9c225a8316eb5f9d" Hotspot="0 45" Id="c2t0v" Path="Track Timing Control queue" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@fe709c613e164faf9c225a8316eb5f9d" Hotspot="0 45" Id="c2t0v" Path="Track Chain State queue" Usage="Required" />
 			</PropertyNode>
-			<Wire Id="21607" Joints="N(21897:Out) h(5) v(35) N(21606:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="21607" Joints="N(21934:Out) h(5) v(35) N(21606:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="21608" Joints="N(2292:R1) h(10) v(90) N(21606:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<ClusterLiteral Bounds="-1926 -385 334 3044.2002" DataType="@26251a18b8814291858c4dbdcc8769dc" Facade="NationalInstruments.MocCommon.SourceModel.IClusterBehavior" Id="21622" Label="21356" xmlns="http://www.ni.com/MocCommon">
+			<ClusterLiteral Bounds="-1926 -385 334 3044.2002" DataType="@ccc0c27b788c46d0aab5f7b727a49dfc" Facade="NationalInstruments.MocCommon.SourceModel.IClusterBehavior" Id="21622" Label="21356" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>
 					<Cluster>
 						<Field1>0</Field1>
@@ -763,7 +763,7 @@
 					<TypeDefinitionTarget TargetName="\802\.11\ Host\ Session\.gtype" />
 				</p.TypeDefinitionTargets>
 				<ClusterBehavior AutoArrange="ArrangeVertically" />
-				<NodeLabel AttachedTo="21822" Bounds="5 2 82 14" Id="21624" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="21921" Bounds="5 2 82 14" Id="21624" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>FPGA interface</p.Text>
 				</NodeLabel>
 				<OpaqueRefnumLiteral Bounds="5 51 40 15" DataType="@0c873cc365734e2db884af03a7e9a5ab" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="21625" Label="21626">
@@ -1644,7 +1644,7 @@
 				<NodeLabel AttachedTo="21645" Bounds="5 3002.2002 56 14" Id="21646" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>queue out</p.Text>
 				</NodeLabel>
-				<OpaqueRefnumLiteral Bounds="5 19 40 15" DataType="@0f82c04c32fd45f3854bbf33416935ee" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="21822" Label="21624">
+				<OpaqueRefnumLiteral Bounds="5 19 40 15" DataType="@ae9551090bdf435f9ff326acf67d4f9f" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="21921" Label="21624">
 					<p.Data>0</p.Data>
 					<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 						<TypeDefinitionTarget TargetName="\802\.11\ FGPA\ Reference\.gtype" />
@@ -1652,13 +1652,6 @@
 					<OpaqueRefnumLiteralBehavior />
 				</OpaqueRefnumLiteral>
 			</ClusterLiteral>
-			<OpaqueRefnumLiteral Bounds="-1585 -570 40 15" DataType="@0f82c04c32fd45f3854bbf33416935ee" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="21824" Label="20042" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>0</p.Data>
-				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
-					<TypeDefinitionTarget TargetName="\802\.11\ FGPA\ Reference\.gtype" />
-				</p.TypeDefinitionTargets>
-				<OpaqueRefnumLiteralBehavior />
-			</OpaqueRefnumLiteral>
 			<ObtainQueue Bounds="-1295 -25 40 40" Id="21826" />
 			<Wire Facade="WireInvisibleFacade" Id="21834" Joints="N(21841:Out) N(21826:element data type)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 			<Literal Bounds="-1307 -5 12 10" DataType="Boolean" Facade="DockedConstantFacade" Id="21835" Label="21839" xmlns="http://www.ni.com/MocCommon">
@@ -1698,7 +1691,7 @@
 				</NodeLabel>
 				<DockedConstantFacade UndockedSize="120 115" />
 			</ClusterLiteral>
-			<ClusterLiteral Bounds="-1307 60 12 10" DataType="@5314d4e569424cb3bd27ffb8b7b0e9cc" Facade="DockedConstantFacade" Id="21855" xmlns="http://www.ni.com/MocCommon">
+			<ClusterLiteral Bounds="-1307 60 12 10" DataType="@2f017241f0f54258943cd758bbee4b5e" Facade="DockedConstantFacade" Id="21855" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>0_0_</p.Data>
 				<ClusterBehavior />
 				<Literal Bounds="25 85 39.5 16" DataType="UInt32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="21856" Label="21857">
@@ -1706,7 +1699,7 @@
 					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 				</Literal>
 				<NodeLabel AttachedTo="21856" Bounds="25 67 160 15" Id="21857" SizeToText="False" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>Timing Control State Enum</p.Text>
+					<p.Text>Chain State Enum</p.Text>
 				</NodeLabel>
 				<Literal Bounds="30 40 39.5 16" DataType="UInt32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="21858" Label="21859">
 					<p.Data>0</p.Data>
@@ -1718,7 +1711,7 @@
 				<DockedConstantFacade UndockedSize="215 115" />
 			</ClusterLiteral>
 			<ObtainQueue Bounds="-1295 50 40 40" Id="21860" />
-			<Wire Facade="WireInvisibleFacade" Id="21866" Joints="N(21855:Out) N(21860:element data type)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Facade="WireInvisibleFacade" Id="21866" Joints="N(21855:Out) h(5) v(30) h(-22) v(-30) N(21860:element data type)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 			<Literal Bounds="-1307 70 12 10" DataType="Boolean" Facade="DockedConstantFacade" Id="21867" Label="21871" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>True</p.Data>
 				<BooleanBehavior />
@@ -1738,44 +1731,51 @@
 				<p.Text>max queue size</p.Text>
 			</NodeLabel>
 			<DataAccessor Bounds="-665 -335 40 15" DataItem="21884" Id="21894" Label="21895" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@3667e42b32f247c48f8ef236ec7f547c" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@a771701145f24dcab677b23c1687c663" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="21894" Bounds="-620 -335 107 14" Id="21895" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>custom session out</p.Text>
 			</NodeLabel>
 			<Wire Id="21896" Joints="N(21606:instance out) N(21894:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-			<ClusterLiteral Bounds="-1506 -370 201 109" DataType="@3667e42b32f247c48f8ef236ec7f547c" Facade="NationalInstruments.MocCommon.SourceModel.IClusterBehavior" Id="21897" Label="21605" xmlns="http://www.ni.com/MocCommon">
+			<Wire Id="21905" Joints="N(21826:error out) h(135) v(-390) N(26:c6t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="21906" Joints="N(21860:error out) h(150) v(-455) N(26:c7t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="21907" Joints="N(21826:queue out) h(225) v(-285) N(21606:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="21908" Joints="N(21860:queue out) h(245) v(-345) N(21606:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<OpaqueRefnumLiteral Bounds="-1585 -570 40 15" DataType="@ae9551090bdf435f9ff326acf67d4f9f" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="21923" Label="20042" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0</p.Data>
+				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+					<TypeDefinitionTarget TargetName="\802\.11\ FGPA\ Reference\.gtype" />
+				</p.TypeDefinitionTargets>
+				<OpaqueRefnumLiteralBehavior />
+			</OpaqueRefnumLiteral>
+			<ClusterLiteral Bounds="-1506 -370 201 109" DataType="@a771701145f24dcab677b23c1687c663" Facade="NationalInstruments.MocCommon.SourceModel.IClusterBehavior" Id="21934" Label="21605" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>0_0_0_</p.Data>
 				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 					<TypeDefinitionTarget TargetName="Custom\ session\.gtype" />
 				</p.TypeDefinitionTargets>
 				<ClusterBehavior AutoArrange="ArrangeVertically" />
-				<Literal Bounds="5 19 39.5 16" DataType="UInt32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="21898" Label="21899">
+				<Literal Bounds="5 19 39.5 16" DataType="UInt32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="21935" Label="21936">
 					<p.Data>0</p.Data>
 					<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 				</Literal>
-				<NodeLabel AttachedTo="21898" Bounds="5 2 178 14" Id="21899" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="21935" Bounds="5 2 178 14" Id="21936" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>H2T TX Data FIFO: actual depth</p.Text>
 				</NodeLabel>
-				<OpaqueRefnumLiteral Bounds="5 52 40 15" DataType="@95cc0d1c93f240f0b2cdb037a23a0518" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="21900" Label="21901">
+				<OpaqueRefnumLiteral Bounds="5 52 40 15" DataType="@95cc0d1c93f240f0b2cdb037a23a0518" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="21937" Label="21938">
 					<p.Data>0</p.Data>
 					<OpaqueRefnumLiteralBehavior />
 				</OpaqueRefnumLiteral>
-				<NodeLabel AttachedTo="21900" Bounds="5 35 126 14" Id="21901" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="21937" Bounds="5 35 126 14" Id="21938" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Track CCA Busy queue</p.Text>
 				</NodeLabel>
-				<OpaqueRefnumLiteral Bounds="5 84 40 15" DataType="@fe709c613e164faf9c225a8316eb5f9d" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="21902" Label="21903">
+				<OpaqueRefnumLiteral Bounds="5 84 40 15" DataType="@fe709c613e164faf9c225a8316eb5f9d" Facade="NationalInstruments.MocCommon.SourceModel.IOpaqueRefnumLiteralBehavior" Id="21939" Label="21940">
 					<p.Data>0</p.Data>
 					<OpaqueRefnumLiteralBehavior />
 				</OpaqueRefnumLiteral>
-				<NodeLabel AttachedTo="21902" Bounds="5 67 154 14" Id="21903" xmlns="http://www.ni.com/PlatformFramework">
-					<p.Text>Track Timing Control queue</p.Text>
+				<NodeLabel AttachedTo="21939" Bounds="5 67 137 14" Id="21940" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Track Chain State queue</p.Text>
 				</NodeLabel>
 			</ClusterLiteral>
-			<Wire Id="21905" Joints="N(21826:error out) h(135) v(-390) N(26:c6t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="21906" Joints="N(21860:error out) h(150) v(-455) N(26:c7t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="21907" Joints="N(21826:queue out) h(225) v(-285) N(21606:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="21908" Joints="N(21860:queue out) h(245) v(-345) N(21606:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" Top="[float]0" Width="[float]2000">
 			<StringControl AcceptsReturn="[bool]True" BaseName="[string]String" Height="[float]22" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="86" IsReadOnly="[bool]False" Label="[UIModel]87" Left="[float]554" Text="{DataItemBinding Id=79}" Top="[float]23" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]117" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -1846,7 +1846,7 @@
 			<p.DefaultValue>Internal</p.DefaultValue>
 			<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">&lt;p&gt;Reference Clock source.&lt;/p&gt;</p.UserDescription>
 		</DataItem>
-		<DataItem CallDirection="Output" CallIndex="0" DataType="@26251a18b8814291858c4dbdcc8769dc" Id="8667" Name="session out" xmlns="http://www.ni.com/MocCommon">
+		<DataItem CallDirection="Output" CallIndex="0" DataType="@ccc0c27b788c46d0aab5f7b727a49dfc" Id="8667" Name="session out" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Cluster>
 					<Field1>0</Field1>
@@ -1950,7 +1950,7 @@
 			</p.TypeDefinitionTargets>
 			<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">&lt;p&gt;Device bandwidth of USRP. This parameter is used to select the correct bitfile image for the USRP device. It can be ignored for FlexRIO-FAM modules.&lt;/p&gt;</p.UserDescription>
 		</DataItem>
-		<DataItem CallDirection="Output" CallIndex="1" DataType="@3667e42b32f247c48f8ef236ec7f547c" Id="21884" Name="custom session out" xmlns="http://www.ni.com/MocCommon">
+		<DataItem CallDirection="Output" CallIndex="1" DataType="@a771701145f24dcab677b23c1687c663" Id="21884" Name="custom session out" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0_0_0_</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 				<TypeDefinitionTarget TargetName="Custom\ session\.gtype" />
@@ -2026,8 +2026,8 @@
 		</IconTable>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="26251a18b8814291858c4dbdcc8769dc">
-			<Typedef TypedefName="802.11 Host Session.gtype" UnderlyingType="@983141944cb04d4d82f694c2293814c9" />
+		<p.TypeReference TypeId="ccc0c27b788c46d0aab5f7b727a49dfc">
+			<Typedef TypedefName="802.11 Host Session.gtype" UnderlyingType="@310340abb6fb4bd29c38e70d69023de8" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="0c873cc365734e2db884af03a7e9a5ab">
 			<Attributed>
@@ -2278,8 +2278,8 @@
 		<p.TypeReference TypeId="7138889cf98142969c95682ccec6de4b">
 			<Typedef TypedefName="niUsrpRio Config v1 Host.lvlib__Characterization Data.gtype" UnderlyingType="@bd4d32b68d2143f9a350a58d6f3dbb81" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="0f82c04c32fd45f3854bbf33416935ee">
-			<Typedef TypedefName="802.11 FGPA Reference.gtype" UnderlyingType="@5e658f27d309411eba059f68f2680a8d" />
+		<p.TypeReference TypeId="ae9551090bdf435f9ff326acf67d4f9f">
+			<Typedef TypedefName="802.11 FGPA Reference.gtype" UnderlyingType="@4db3f118d3554ba3a88d5089a4b8f0e8" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="4f68d9cb62ad46b8bcb6c6597733f134">
 			<Attributed>
@@ -2324,8 +2324,8 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="3667e42b32f247c48f8ef236ec7f547c">
-			<Typedef TypedefName="Custom session.gtype" UnderlyingType="@4e479a6bf9b9410391eee64852566710" />
+		<p.TypeReference TypeId="a771701145f24dcab677b23c1687c663">
+			<Typedef TypedefName="Custom session.gtype" UnderlyingType="@87ee4ee7b7094a788cbcc399ef5f05d4" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="95cc0d1c93f240f0b2cdb037a23a0518">
 			<Attributed>
@@ -2476,20 +2476,20 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="5314d4e569424cb3bd27ffb8b7b0e9cc">
+		<p.TypeReference TypeId="2f017241f0f54258943cd758bbee4b5e">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="Timestamp" DataType="UInt32" />
-					<Field FieldAccessPolicy="ReadWrite" Name="Timing Control State Enum" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Chain State Enum" DataType="UInt32" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="983141944cb04d4d82f694c2293814c9">
+		<p.TypeReference TypeId="310340abb6fb4bd29c38e70d69023de8">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="FPGA interface">
 						<DataType>
-							<Typedef TypedefName="802.11 FGPA Reference.gtype" UnderlyingType="@5e658f27d309411eba059f68f2680a8d" />
+							<Typedef TypedefName="802.11 FGPA Reference.gtype" UnderlyingType="@4db3f118d3554ba3a88d5089a4b8f0e8" />
 						</DataType>
 					</Field>
 					<Field FieldAccessPolicy="ReadWrite" Name="send queue">
@@ -3024,7 +3024,7 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="5e658f27d309411eba059f68f2680a8d">
+		<p.TypeReference TypeId="4db3f118d3554ba3a88d5089a4b8f0e8">
 			<Attributed>
 				<AttributedType>
 					<Generic>
@@ -8094,11 +8094,42 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="T2H TX Bit Processing Output FIFO overflow" DataType="UInt16" />
 								</Members>
 							</Composite>
-							<Composite Id="291" Name="time to wait for decoding packet" ReferenceClass="" Interface="">
+							<Composite Id="291" Name="time for starting tracking" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="292" Name="time to wait for decoding packet" ReferenceClass="" Interface="">
+									<Composite Id="292" Name="time for starting tracking" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
 											<Composite RefId="292" />
+										</GenericTypeDefinition>
+										<GenericParameters>
+											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
+										</GenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Field FieldAccessPolicy="ReadWrite" Name="time for starting tracking">
+												<DataType>
+													<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
+												</DataType>
+											</Field>
+										</Members>
+									</Composite>
+								</GenericTypeDefinition>
+								<ClosedGenericParameters>
+									<UInt32 />
+								</ClosedGenericParameters>
+								<BaseType>
+									<Void />
+								</BaseType>
+								<Members>
+									<Field FieldAccessPolicy="ReadWrite" Name="time for starting tracking" DataType="UInt32" />
+								</Members>
+							</Composite>
+							<Composite Id="293" Name="time to wait for decoding packet" ReferenceClass="" Interface="">
+								<GenericTypeDefinition>
+									<Composite Id="294" Name="time to wait for decoding packet" ReferenceClass="" Interface="">
+										<GenericTypeDefinition>
+											<Composite RefId="294" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8125,11 +8156,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="time to wait for decoding packet" DataType="UInt32" />
 								</Members>
 							</Composite>
-							<Composite Id="293" Name="Timestamp" ReferenceClass="" Interface="">
+							<Composite Id="295" Name="Timestamp" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="294" Name="Timestamp" ReferenceClass="" Interface="">
+									<Composite Id="296" Name="Timestamp" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="294" />
+											<Composite RefId="296" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8156,11 +8187,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="Timestamp" DataType="UInt32" />
 								</Members>
 							</Composite>
-							<Composite Id="295" Name="trigger condition" ReferenceClass="" Interface="">
+							<Composite Id="297" Name="trigger condition" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="296" Name="trigger condition" ReferenceClass="" Interface="">
+									<Composite Id="298" Name="trigger condition" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="296" />
+											<Composite RefId="298" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8211,11 +8242,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="297" Name="tx 0.frequency shift" ReferenceClass="" Interface="">
+							<Composite Id="299" Name="tx 0.frequency shift" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="298" Name="tx 0.frequency shift" ReferenceClass="" Interface="">
+									<Composite Id="300" Name="tx 0.frequency shift" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="298" />
+											<Composite RefId="300" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8246,11 +8277,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="299" Name="tx 0.gain" ReferenceClass="" Interface="">
+							<Composite Id="301" Name="tx 0.gain" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="300" Name="tx 0.gain" ReferenceClass="" Interface="">
+									<Composite Id="302" Name="tx 0.gain" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="300" />
+											<Composite RefId="302" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8268,7 +8299,7 @@
 									</Composite>
 								</GenericTypeDefinition>
 								<ClosedGenericParameters>
-									<Composite Id="301" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+									<Composite Id="303" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 										<Members>
 											<Field FieldAccessPolicy="ReadWrite" Name="gain I">
 												<DataType>
@@ -8289,16 +8320,16 @@
 								<Members>
 									<Field FieldAccessPolicy="ReadWrite" Name="tx 0.gain">
 										<DataType>
-											<Composite RefId="301" />
+											<Composite RefId="303" />
 										</DataType>
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="302" Name="tx 0.impairments" ReferenceClass="" Interface="">
+							<Composite Id="304" Name="tx 0.impairments" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="303" Name="tx 0.impairments" ReferenceClass="" Interface="">
+									<Composite Id="305" Name="tx 0.impairments" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="303" />
+											<Composite RefId="305" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8329,11 +8360,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="304" Name="tx 0.phase" ReferenceClass="" Interface="">
+							<Composite Id="306" Name="tx 0.phase" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="305" Name="tx 0.phase" ReferenceClass="" Interface="">
+									<Composite Id="307" Name="tx 0.phase" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="305" />
+											<Composite RefId="307" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8364,11 +8395,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="306" Name="tx 0.stream enable" ReferenceClass="" Interface="">
+							<Composite Id="308" Name="tx 0.stream enable" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="307" Name="tx 0.stream enable" ReferenceClass="" Interface="">
+									<Composite Id="309" Name="tx 0.stream enable" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="307" />
+											<Composite RefId="309" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8395,11 +8426,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="tx 0.stream enable" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="308" Name="tx 1.frequency shift" ReferenceClass="" Interface="">
+							<Composite Id="310" Name="tx 1.frequency shift" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="309" Name="tx 1.frequency shift" ReferenceClass="" Interface="">
+									<Composite Id="311" Name="tx 1.frequency shift" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="309" />
+											<Composite RefId="311" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8430,11 +8461,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="310" Name="tx 1.gain" ReferenceClass="" Interface="">
+							<Composite Id="312" Name="tx 1.gain" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="311" Name="tx 1.gain" ReferenceClass="" Interface="">
+									<Composite Id="313" Name="tx 1.gain" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="311" />
+											<Composite RefId="313" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8452,7 +8483,7 @@
 									</Composite>
 								</GenericTypeDefinition>
 								<ClosedGenericParameters>
-									<Composite RefId="301" />
+									<Composite RefId="303" />
 								</ClosedGenericParameters>
 								<BaseType>
 									<Void />
@@ -8460,16 +8491,16 @@
 								<Members>
 									<Field FieldAccessPolicy="ReadWrite" Name="tx 1.gain">
 										<DataType>
-											<Composite RefId="301" />
+											<Composite RefId="303" />
 										</DataType>
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="312" Name="tx 1.impairments" ReferenceClass="" Interface="">
+							<Composite Id="314" Name="tx 1.impairments" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="313" Name="tx 1.impairments" ReferenceClass="" Interface="">
+									<Composite Id="315" Name="tx 1.impairments" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="313" />
+											<Composite RefId="315" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8500,11 +8531,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="314" Name="tx 1.phase" ReferenceClass="" Interface="">
+							<Composite Id="316" Name="tx 1.phase" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="315" Name="tx 1.phase" ReferenceClass="" Interface="">
+									<Composite Id="317" Name="tx 1.phase" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="315" />
+											<Composite RefId="317" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8535,11 +8566,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="316" Name="tx 1.stream enable" ReferenceClass="" Interface="">
+							<Composite Id="318" Name="tx 1.stream enable" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="317" Name="tx 1.stream enable" ReferenceClass="" Interface="">
+									<Composite Id="319" Name="tx 1.stream enable" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="317" />
+											<Composite RefId="319" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8566,11 +8597,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="tx 1.stream enable" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="318" Name="TX to RF FIFO overflow" ReferenceClass="" Interface="">
+							<Composite Id="320" Name="TX to RF FIFO overflow" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="319" Name="TX to RF FIFO overflow" ReferenceClass="" Interface="">
+									<Composite Id="321" Name="TX to RF FIFO overflow" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="319" />
+											<Composite RefId="321" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8597,11 +8628,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="TX to RF FIFO overflow" DataType="UInt16" />
 								</Members>
 							</Composite>
-							<Composite Id="320" Name="tx.abort" ReferenceClass="" Interface="">
+							<Composite Id="322" Name="tx.abort" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="321" Name="tx.abort" ReferenceClass="" Interface="">
+									<Composite Id="323" Name="tx.abort" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="321" />
+											<Composite RefId="323" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8628,11 +8659,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="tx.abort" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="322" Name="tx.configuration" ReferenceClass="" Interface="">
+							<Composite Id="324" Name="tx.configuration" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="323" Name="tx.configuration" ReferenceClass="" Interface="">
+									<Composite Id="325" Name="tx.configuration" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="323" />
+											<Composite RefId="325" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8650,7 +8681,7 @@
 									</Composite>
 								</GenericTypeDefinition>
 								<ClosedGenericParameters>
-									<Composite Id="324" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+									<Composite Id="326" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 										<Members>
 											<Field FieldAccessPolicy="ReadWrite" Name="power enable" DataType="Boolean" />
 											<Field FieldAccessPolicy="ReadWrite" Name="mixer enable" DataType="Boolean" />
@@ -8664,16 +8695,16 @@
 								<Members>
 									<Field FieldAccessPolicy="ReadWrite" Name="tx.configuration">
 										<DataType>
-											<Composite RefId="324" />
+											<Composite RefId="326" />
 										</DataType>
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="325" Name="tx.delay" ReferenceClass="" Interface="">
+							<Composite Id="327" Name="tx.delay" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="326" Name="tx.delay" ReferenceClass="" Interface="">
+									<Composite Id="328" Name="tx.delay" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="326" />
+											<Composite RefId="328" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8704,11 +8735,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="327" Name="tx.dsp reset done" ReferenceClass="" Interface="">
+							<Composite Id="329" Name="tx.dsp reset done" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="328" Name="tx.dsp reset done" ReferenceClass="" Interface="">
+									<Composite Id="330" Name="tx.dsp reset done" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="328" />
+											<Composite RefId="330" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8735,11 +8766,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="tx.dsp reset done" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="329" Name="tx.input sample rate" ReferenceClass="" Interface="">
+							<Composite Id="331" Name="tx.input sample rate" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="330" Name="tx.input sample rate" ReferenceClass="" Interface="">
+									<Composite Id="332" Name="tx.input sample rate" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="330" />
+											<Composite RefId="332" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8770,11 +8801,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="331" Name="tx.number of IQ data overflows" ReferenceClass="" Interface="">
+							<Composite Id="333" Name="tx.number of IQ data overflows" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="332" Name="tx.number of IQ data overflows" ReferenceClass="" Interface="">
+									<Composite Id="334" Name="tx.number of IQ data overflows" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="332" />
+											<Composite RefId="334" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8801,11 +8832,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="tx.number of IQ data overflows" DataType="UInt64" />
 								</Members>
 							</Composite>
-							<Composite Id="333" Name="tx.reset" ReferenceClass="" Interface="">
+							<Composite Id="335" Name="tx.reset" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="334" Name="tx.reset" ReferenceClass="" Interface="">
+									<Composite Id="336" Name="tx.reset" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="334" />
+											<Composite RefId="336" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8832,11 +8863,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="tx.reset" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="335" Name="tx.rf channel" ReferenceClass="" Interface="">
+							<Composite Id="337" Name="tx.rf channel" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="336" Name="tx.rf channel" ReferenceClass="" Interface="">
+									<Composite Id="338" Name="tx.rf channel" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="336" />
+											<Composite RefId="338" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8867,11 +8898,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="337" Name="tx.samples processed" ReferenceClass="" Interface="">
+							<Composite Id="339" Name="tx.samples processed" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="338" Name="tx.samples processed" ReferenceClass="" Interface="">
+									<Composite Id="340" Name="tx.samples processed" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="338" />
+											<Composite RefId="340" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8898,11 +8929,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="tx.samples processed" DataType="UInt32" />
 								</Members>
 							</Composite>
-							<Composite Id="339" Name="tx.state" ReferenceClass="" Interface="">
+							<Composite Id="341" Name="tx.state" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="340" Name="tx.state" ReferenceClass="" Interface="">
+									<Composite Id="342" Name="tx.state" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="340" />
+											<Composite RefId="342" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8949,11 +8980,11 @@
 									</Field>
 								</Members>
 							</Composite>
-							<Composite Id="341" Name="tx.underflows" ReferenceClass="" Interface="">
+							<Composite Id="343" Name="tx.underflows" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="342" Name="tx.underflows" ReferenceClass="" Interface="">
+									<Composite Id="344" Name="tx.underflows" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="342" />
+											<Composite RefId="344" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -8980,11 +9011,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="tx.underflows" DataType="UInt32" />
 								</Members>
 							</Composite>
-							<Composite Id="343" Name="Use manual Qchain withdrawal?" ReferenceClass="" Interface="">
+							<Composite Id="345" Name="Use manual Qchain withdrawal?" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="344" Name="Use manual Qchain withdrawal?" ReferenceClass="" Interface="">
+									<Composite Id="346" Name="Use manual Qchain withdrawal?" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="344" />
+											<Composite RefId="346" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -9011,11 +9042,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="Use manual Qchain withdrawal?" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="345" Name="Use RTR instead of Data?" ReferenceClass="" Interface="">
+							<Composite Id="347" Name="Use RTR instead of Data?" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="346" Name="Use RTR instead of Data?" ReferenceClass="" Interface="">
+									<Composite Id="348" Name="Use RTR instead of Data?" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="346" />
+											<Composite RefId="348" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -9042,11 +9073,11 @@
 									<Field FieldAccessPolicy="ReadWrite" Name="Use RTR instead of Data?" DataType="Boolean" />
 								</Members>
 							</Composite>
-							<Composite Id="347" Name="802.11 AFW Resources.grsc\T2H Track Timing Control" ReferenceClass="" Interface="">
+							<Composite Id="349" Name="802.11 AFW Resources.grsc\T2H Track Received ACK" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="348" Name="802.11 AFW Resources.grsc\T2H Track Timing Control" ReferenceClass="" Interface="">
+									<Composite Id="350" Name="802.11 AFW Resources.grsc\T2H Track Received ACK" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="348" />
+											<Composite RefId="350" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -9055,9 +9086,9 @@
 											<Void />
 										</BaseType>
 										<Members>
-											<Function Id="349" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Timing Control.Configure" ReturnType="Void">
+											<Function Id="351" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Received ACK.Configure" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="348" />
+													<Composite RefId="350" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9067,9 +9098,9 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="350" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Timing Control.Read" ReturnType="Void">
+											<Function Id="352" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Received ACK.Read" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="348" />
+													<Composite RefId="350" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9085,17 +9116,17 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="351" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Timing Control.Start" ReturnType="Void">
+											<Function Id="353" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Received ACK.Start" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="348" />
+													<Composite RefId="350" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="352" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Timing Control.Stop" ReturnType="Void">
+											<Function Id="354" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Received ACK.Stop" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="348" />
+													<Composite RefId="350" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9111,9 +9142,9 @@
 									<Void />
 								</BaseType>
 								<Members>
-									<Function Id="353" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Timing Control.Configure" ReturnType="Void">
+									<Function Id="355" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Received ACK.Configure" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="347" />
+											<Composite RefId="349" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9123,9 +9154,9 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="354" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Timing Control.Read" ReturnType="Void">
+									<Function Id="356" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Received ACK.Read" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="347" />
+											<Composite RefId="349" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9141,17 +9172,17 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="355" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Timing Control.Start" ReturnType="Void">
+									<Function Id="357" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Received ACK.Start" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="347" />
+											<Composite RefId="349" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="356" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Timing Control.Stop" ReturnType="Void">
+									<Function Id="358" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Received ACK.Stop" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="347" />
+											<Composite RefId="349" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9159,11 +9190,11 @@
 									</Function>
 								</Members>
 							</Composite>
-							<Composite Id="357" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO" ReferenceClass="" Interface="">
+							<Composite Id="359" Name="802.11 AFW Resources.grsc\T2H Track Chain State" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="358" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO" ReferenceClass="" Interface="">
+									<Composite Id="360" Name="802.11 AFW Resources.grsc\T2H Track Chain State" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="358" />
+											<Composite RefId="360" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -9172,9 +9203,9 @@
 											<Void />
 										</BaseType>
 										<Members>
-											<Function Id="359" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO.Configure" ReturnType="Void">
+											<Function Id="361" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Chain State.Configure" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="358" />
+													<Composite RefId="360" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9184,25 +9215,142 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="360" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO.Start" ReturnType="Void">
+											<Function Id="362" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Chain State.Read" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="358" />
+													<Composite RefId="360" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="Number of Elements" DataType="UInt32" />
+													<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="Timeout (ms)" DataType="Int32" />
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Required" Name="Data">
+														<DataType>
+															<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
+														</DataType>
+													</Parameter>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
+												</Parameters>
+											</Function>
+											<Function Id="363" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Chain State.Start" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="360" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="361" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO.Stop" ReturnType="Void">
+											<Function Id="364" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Chain State.Stop" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="358" />
+													<Composite RefId="360" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="362" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO.Write" ReturnType="Void">
+										</Members>
+									</Composite>
+								</GenericTypeDefinition>
+								<ClosedGenericParameters>
+									<VariableArray DereferenceType="UInt64" />
+								</ClosedGenericParameters>
+								<BaseType>
+									<Void />
+								</BaseType>
+								<Members>
+									<Function Id="365" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Chain State.Configure" ReturnType="Void">
+										<DeclaringType>
+											<Composite RefId="359" />
+										</DeclaringType>
+										<GenericTypeDefinition>
+											<Void />
+										</GenericTypeDefinition>
+										<Parameters>
+											<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="Requested Depth" DataType="UInt32" />
+											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
+										</Parameters>
+									</Function>
+									<Function Id="366" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Chain State.Read" ReturnType="Void">
+										<DeclaringType>
+											<Composite RefId="359" />
+										</DeclaringType>
+										<GenericTypeDefinition>
+											<Void />
+										</GenericTypeDefinition>
+										<Parameters>
+											<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="Number of Elements" DataType="UInt32" />
+											<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="Timeout (ms)" DataType="Int32" />
+											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Required" Name="Data">
+												<DataType>
+													<VariableArray DereferenceType="UInt64" />
+												</DataType>
+											</Parameter>
+											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
+										</Parameters>
+									</Function>
+									<Function Id="367" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Chain State.Start" ReturnType="Void">
+										<DeclaringType>
+											<Composite RefId="359" />
+										</DeclaringType>
+										<GenericTypeDefinition>
+											<Void />
+										</GenericTypeDefinition>
+									</Function>
+									<Function Id="368" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track Chain State.Stop" ReturnType="Void">
+										<DeclaringType>
+											<Composite RefId="359" />
+										</DeclaringType>
+										<GenericTypeDefinition>
+											<Void />
+										</GenericTypeDefinition>
+									</Function>
+								</Members>
+							</Composite>
+							<Composite Id="369" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO" ReferenceClass="" Interface="">
+								<GenericTypeDefinition>
+									<Composite Id="370" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO" ReferenceClass="" Interface="">
+										<GenericTypeDefinition>
+											<Composite RefId="370" />
+										</GenericTypeDefinition>
+										<GenericParameters>
+											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
+										</GenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Function Id="371" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO.Configure" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="358" />
+													<Composite RefId="370" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="Requested Depth" DataType="UInt32" />
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
+												</Parameters>
+											</Function>
+											<Function Id="372" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO.Start" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="370" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+											</Function>
+											<Function Id="373" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO.Stop" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="370" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+											</Function>
+											<Function Id="374" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO.Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="370" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9231,9 +9379,9 @@
 									<Void />
 								</BaseType>
 								<Members>
-									<Function Id="363" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO.Configure" ReturnType="Void">
+									<Function Id="375" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO.Configure" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="357" />
+											<Composite RefId="369" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9243,25 +9391,25 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="364" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO.Start" ReturnType="Void">
+									<Function Id="376" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO.Start" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="357" />
+											<Composite RefId="369" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="365" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO.Stop" ReturnType="Void">
+									<Function Id="377" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO.Stop" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="357" />
+											<Composite RefId="369" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="366" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO.Write" ReturnType="Void">
+									<Function Id="378" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T Random Number FIFO.Write" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="357" />
+											<Composite RefId="369" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9282,11 +9430,11 @@
 									</Function>
 								</Members>
 							</Composite>
-							<Composite Id="367" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy" ReferenceClass="" Interface="">
+							<Composite Id="379" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="368" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy" ReferenceClass="" Interface="">
+									<Composite Id="380" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="368" />
+											<Composite RefId="380" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -9295,9 +9443,9 @@
 											<Void />
 										</BaseType>
 										<Members>
-											<Function Id="369" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy.Configure" ReturnType="Void">
+											<Function Id="381" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy.Configure" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="368" />
+													<Composite RefId="380" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9307,9 +9455,9 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="370" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy.Read" ReturnType="Void">
+											<Function Id="382" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy.Read" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="368" />
+													<Composite RefId="380" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9325,17 +9473,17 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="371" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy.Start" ReturnType="Void">
+											<Function Id="383" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy.Start" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="368" />
+													<Composite RefId="380" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="372" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy.Stop" ReturnType="Void">
+											<Function Id="384" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy.Stop" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="368" />
+													<Composite RefId="380" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9351,9 +9499,9 @@
 									<Void />
 								</BaseType>
 								<Members>
-									<Function Id="373" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy.Configure" ReturnType="Void">
+									<Function Id="385" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy.Configure" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="367" />
+											<Composite RefId="379" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9363,9 +9511,9 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="374" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy.Read" ReturnType="Void">
+									<Function Id="386" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy.Read" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="367" />
+											<Composite RefId="379" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9381,17 +9529,17 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="375" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy.Start" ReturnType="Void">
+									<Function Id="387" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy.Start" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="367" />
+											<Composite RefId="379" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="376" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy.Stop" ReturnType="Void">
+									<Function Id="388" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Track CCA Busy.Stop" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="367" />
+											<Composite RefId="379" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9399,11 +9547,11 @@
 									</Function>
 								</Members>
 							</Composite>
-							<Composite Id="377" Name="802.11 AFW Resources.grsc\T2H RX Data" ReferenceClass="" Interface="">
+							<Composite Id="389" Name="802.11 AFW Resources.grsc\T2H RX Data" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="378" Name="802.11 AFW Resources.grsc\T2H RX Data" ReferenceClass="" Interface="">
+									<Composite Id="390" Name="802.11 AFW Resources.grsc\T2H RX Data" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="378" />
+											<Composite RefId="390" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -9412,9 +9560,9 @@
 											<Void />
 										</BaseType>
 										<Members>
-											<Function Id="379" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Data.Configure" ReturnType="Void">
+											<Function Id="391" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Data.Configure" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="378" />
+													<Composite RefId="390" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9424,9 +9572,9 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="380" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Data.Read" ReturnType="Void">
+											<Function Id="392" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Data.Read" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="378" />
+													<Composite RefId="390" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9442,17 +9590,17 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="381" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Data.Start" ReturnType="Void">
+											<Function Id="393" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Data.Start" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="378" />
+													<Composite RefId="390" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="382" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Data.Stop" ReturnType="Void">
+											<Function Id="394" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Data.Stop" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="378" />
+													<Composite RefId="390" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9468,9 +9616,9 @@
 									<Void />
 								</BaseType>
 								<Members>
-									<Function Id="383" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Data.Configure" ReturnType="Void">
+									<Function Id="395" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Data.Configure" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="377" />
+											<Composite RefId="389" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9480,9 +9628,9 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="384" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Data.Read" ReturnType="Void">
+									<Function Id="396" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Data.Read" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="377" />
+											<Composite RefId="389" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9498,17 +9646,17 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="385" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Data.Start" ReturnType="Void">
+									<Function Id="397" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Data.Start" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="377" />
+											<Composite RefId="389" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="386" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Data.Stop" ReturnType="Void">
+									<Function Id="398" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Data.Stop" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="377" />
+											<Composite RefId="389" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9516,11 +9664,11 @@
 									</Function>
 								</Members>
 							</Composite>
-							<Composite Id="387" Name="802.11 AFW Resources.grsc\H2T TX Data" ReferenceClass="" Interface="">
+							<Composite Id="399" Name="802.11 AFW Resources.grsc\H2T TX Data" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="388" Name="802.11 AFW Resources.grsc\H2T TX Data" ReferenceClass="" Interface="">
+									<Composite Id="400" Name="802.11 AFW Resources.grsc\H2T TX Data" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="388" />
+											<Composite RefId="400" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -9529,9 +9677,9 @@
 											<Void />
 										</BaseType>
 										<Members>
-											<Function Id="389" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T TX Data.Configure" ReturnType="Void">
+											<Function Id="401" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T TX Data.Configure" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="388" />
+													<Composite RefId="400" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9541,25 +9689,25 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="390" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T TX Data.Start" ReturnType="Void">
+											<Function Id="402" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T TX Data.Start" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="388" />
+													<Composite RefId="400" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="391" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T TX Data.Stop" ReturnType="Void">
+											<Function Id="403" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T TX Data.Stop" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="388" />
+													<Composite RefId="400" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="392" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T TX Data.Write" ReturnType="Void">
+											<Function Id="404" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T TX Data.Write" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="388" />
+													<Composite RefId="400" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9584,9 +9732,9 @@
 									<Void />
 								</BaseType>
 								<Members>
-									<Function Id="393" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T TX Data.Configure" ReturnType="Void">
+									<Function Id="405" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T TX Data.Configure" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="387" />
+											<Composite RefId="399" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9596,25 +9744,25 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="394" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T TX Data.Start" ReturnType="Void">
+									<Function Id="406" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T TX Data.Start" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="387" />
+											<Composite RefId="399" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="395" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T TX Data.Stop" ReturnType="Void">
+									<Function Id="407" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T TX Data.Stop" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="387" />
+											<Composite RefId="399" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="396" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T TX Data.Write" ReturnType="Void">
+									<Function Id="408" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T TX Data.Write" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="387" />
+											<Composite RefId="399" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9631,11 +9779,11 @@
 									</Function>
 								</Members>
 							</Composite>
-							<Composite Id="397" Name="802.11 AFW Resources.grsc\T2H Events" ReferenceClass="" Interface="">
+							<Composite Id="409" Name="802.11 AFW Resources.grsc\T2H Events" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="398" Name="802.11 AFW Resources.grsc\T2H Events" ReferenceClass="" Interface="">
+									<Composite Id="410" Name="802.11 AFW Resources.grsc\T2H Events" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="398" />
+											<Composite RefId="410" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -9644,9 +9792,9 @@
 											<Void />
 										</BaseType>
 										<Members>
-											<Function Id="399" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Events.Configure" ReturnType="Void">
+											<Function Id="411" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Events.Configure" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="398" />
+													<Composite RefId="410" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9656,9 +9804,9 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="400" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Events.Read" ReturnType="Void">
+											<Function Id="412" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Events.Read" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="398" />
+													<Composite RefId="410" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9674,17 +9822,17 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="401" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Events.Start" ReturnType="Void">
+											<Function Id="413" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Events.Start" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="398" />
+													<Composite RefId="410" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="402" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Events.Stop" ReturnType="Void">
+											<Function Id="414" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Events.Stop" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="398" />
+													<Composite RefId="410" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9700,9 +9848,9 @@
 									<Void />
 								</BaseType>
 								<Members>
-									<Function Id="403" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Events.Configure" ReturnType="Void">
+									<Function Id="415" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Events.Configure" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="397" />
+											<Composite RefId="409" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9712,9 +9860,9 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="404" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Events.Read" ReturnType="Void">
+									<Function Id="416" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Events.Read" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="397" />
+											<Composite RefId="409" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9730,17 +9878,17 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="405" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Events.Start" ReturnType="Void">
+									<Function Id="417" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Events.Start" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="397" />
+											<Composite RefId="409" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="406" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Events.Stop" ReturnType="Void">
+									<Function Id="418" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Events.Stop" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="397" />
+											<Composite RefId="409" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9748,11 +9896,11 @@
 									</Function>
 								</Members>
 							</Composite>
-							<Composite Id="407" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output" ReferenceClass="" Interface="">
+							<Composite Id="419" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="408" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output" ReferenceClass="" Interface="">
+									<Composite Id="420" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="408" />
+											<Composite RefId="420" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -9761,9 +9909,9 @@
 											<Void />
 										</BaseType>
 										<Members>
-											<Function Id="409" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output.Configure" ReturnType="Void">
+											<Function Id="421" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output.Configure" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="408" />
+													<Composite RefId="420" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9773,9 +9921,9 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="410" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output.Read" ReturnType="Void">
+											<Function Id="422" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output.Read" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="408" />
+													<Composite RefId="420" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9791,17 +9939,17 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="411" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output.Start" ReturnType="Void">
+											<Function Id="423" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output.Start" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="408" />
+													<Composite RefId="420" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="412" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output.Stop" ReturnType="Void">
+											<Function Id="424" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output.Stop" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="408" />
+													<Composite RefId="420" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9817,9 +9965,9 @@
 									<Void />
 								</BaseType>
 								<Members>
-									<Function Id="413" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output.Configure" ReturnType="Void">
+									<Function Id="425" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output.Configure" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="407" />
+											<Composite RefId="419" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9829,9 +9977,9 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="414" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output.Read" ReturnType="Void">
+									<Function Id="426" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output.Read" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="407" />
+											<Composite RefId="419" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9847,17 +9995,17 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="415" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output.Start" ReturnType="Void">
+									<Function Id="427" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output.Start" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="407" />
+											<Composite RefId="419" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="416" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output.Stop" ReturnType="Void">
+									<Function Id="428" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Bit Processing Output.Stop" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="407" />
+											<Composite RefId="419" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9865,11 +10013,11 @@
 									</Function>
 								</Members>
 							</Composite>
-							<Composite Id="417" Name="802.11 AFW Resources.grsc\T2H TX Baseband" ReferenceClass="" Interface="">
+							<Composite Id="429" Name="802.11 AFW Resources.grsc\T2H TX Baseband" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="418" Name="802.11 AFW Resources.grsc\T2H TX Baseband" ReferenceClass="" Interface="">
+									<Composite Id="430" Name="802.11 AFW Resources.grsc\T2H TX Baseband" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="418" />
+											<Composite RefId="430" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -9878,9 +10026,9 @@
 											<Void />
 										</BaseType>
 										<Members>
-											<Function Id="419" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Baseband.Configure" ReturnType="Void">
+											<Function Id="431" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Baseband.Configure" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="418" />
+													<Composite RefId="430" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9890,9 +10038,9 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="420" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Baseband.Read" ReturnType="Void">
+											<Function Id="432" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Baseband.Read" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="418" />
+													<Composite RefId="430" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9908,17 +10056,17 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="421" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Baseband.Start" ReturnType="Void">
+											<Function Id="433" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Baseband.Start" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="418" />
+													<Composite RefId="430" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="422" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Baseband.Stop" ReturnType="Void">
+											<Function Id="434" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Baseband.Stop" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="418" />
+													<Composite RefId="430" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -9934,9 +10082,9 @@
 									<Void />
 								</BaseType>
 								<Members>
-									<Function Id="423" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Baseband.Configure" ReturnType="Void">
+									<Function Id="435" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Baseband.Configure" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="417" />
+											<Composite RefId="429" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9946,9 +10094,9 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="424" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Baseband.Read" ReturnType="Void">
+									<Function Id="436" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Baseband.Read" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="417" />
+											<Composite RefId="429" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9964,17 +10112,17 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="425" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Baseband.Start" ReturnType="Void">
+									<Function Id="437" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Baseband.Start" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="417" />
+											<Composite RefId="429" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="426" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Baseband.Stop" ReturnType="Void">
+									<Function Id="438" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H TX Baseband.Stop" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="417" />
+											<Composite RefId="429" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -9982,11 +10130,11 @@
 									</Function>
 								</Members>
 							</Composite>
-							<Composite Id="427" Name="802.11 AFW Resources.grsc\H2T RX Baseband" ReferenceClass="" Interface="">
+							<Composite Id="439" Name="802.11 AFW Resources.grsc\H2T RX Baseband" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="428" Name="802.11 AFW Resources.grsc\H2T RX Baseband" ReferenceClass="" Interface="">
+									<Composite Id="440" Name="802.11 AFW Resources.grsc\H2T RX Baseband" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="428" />
+											<Composite RefId="440" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -9995,9 +10143,9 @@
 											<Void />
 										</BaseType>
 										<Members>
-											<Function Id="429" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T RX Baseband.Configure" ReturnType="Void">
+											<Function Id="441" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T RX Baseband.Configure" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="428" />
+													<Composite RefId="440" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -10007,25 +10155,25 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="430" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T RX Baseband.Start" ReturnType="Void">
+											<Function Id="442" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T RX Baseband.Start" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="428" />
+													<Composite RefId="440" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="431" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T RX Baseband.Stop" ReturnType="Void">
+											<Function Id="443" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T RX Baseband.Stop" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="428" />
+													<Composite RefId="440" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="432" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T RX Baseband.Write" ReturnType="Void">
+											<Function Id="444" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T RX Baseband.Write" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="428" />
+													<Composite RefId="440" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -10050,9 +10198,9 @@
 									<Void />
 								</BaseType>
 								<Members>
-									<Function Id="433" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T RX Baseband.Configure" ReturnType="Void">
+									<Function Id="445" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T RX Baseband.Configure" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="427" />
+											<Composite RefId="439" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -10062,25 +10210,25 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="434" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T RX Baseband.Start" ReturnType="Void">
+									<Function Id="446" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T RX Baseband.Start" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="427" />
+											<Composite RefId="439" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="435" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T RX Baseband.Stop" ReturnType="Void">
+									<Function Id="447" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T RX Baseband.Stop" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="427" />
+											<Composite RefId="439" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="436" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T RX Baseband.Write" ReturnType="Void">
+									<Function Id="448" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\H2T RX Baseband.Write" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="427" />
+											<Composite RefId="439" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -10097,11 +10245,11 @@
 									</Function>
 								</Members>
 							</Composite>
-							<Composite Id="437" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output" ReferenceClass="" Interface="">
+							<Composite Id="449" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="438" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output" ReferenceClass="" Interface="">
+									<Composite Id="450" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="438" />
+											<Composite RefId="450" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -10110,9 +10258,9 @@
 											<Void />
 										</BaseType>
 										<Members>
-											<Function Id="439" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output.Configure" ReturnType="Void">
+											<Function Id="451" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output.Configure" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="438" />
+													<Composite RefId="450" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -10122,9 +10270,9 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="440" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output.Read" ReturnType="Void">
+											<Function Id="452" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output.Read" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="438" />
+													<Composite RefId="450" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -10140,17 +10288,17 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="441" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output.Start" ReturnType="Void">
+											<Function Id="453" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output.Start" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="438" />
+													<Composite RefId="450" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="442" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output.Stop" ReturnType="Void">
+											<Function Id="454" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output.Stop" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="438" />
+													<Composite RefId="450" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -10166,9 +10314,9 @@
 									<Void />
 								</BaseType>
 								<Members>
-									<Function Id="443" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output.Configure" ReturnType="Void">
+									<Function Id="455" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output.Configure" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="437" />
+											<Composite RefId="449" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -10178,9 +10326,9 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="444" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output.Read" ReturnType="Void">
+									<Function Id="456" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output.Read" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="437" />
+											<Composite RefId="449" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -10196,17 +10344,17 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="445" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output.Start" ReturnType="Void">
+									<Function Id="457" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output.Start" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="437" />
+											<Composite RefId="449" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="446" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output.Stop" ReturnType="Void">
+									<Function Id="458" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Bit Processing Output.Stop" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="437" />
+											<Composite RefId="449" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -10214,11 +10362,11 @@
 									</Function>
 								</Members>
 							</Composite>
-							<Composite Id="447" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum" ReferenceClass="" Interface="">
+							<Composite Id="459" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="448" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum" ReferenceClass="" Interface="">
+									<Composite Id="460" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="448" />
+											<Composite RefId="460" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -10227,9 +10375,9 @@
 											<Void />
 										</BaseType>
 										<Members>
-											<Function Id="449" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum.Configure" ReturnType="Void">
+											<Function Id="461" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum.Configure" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="448" />
+													<Composite RefId="460" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -10239,9 +10387,9 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="450" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum.Read" ReturnType="Void">
+											<Function Id="462" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum.Read" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="448" />
+													<Composite RefId="460" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -10257,17 +10405,17 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="451" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum.Start" ReturnType="Void">
+											<Function Id="463" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum.Start" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="448" />
+													<Composite RefId="460" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="452" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum.Stop" ReturnType="Void">
+											<Function Id="464" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum.Stop" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="448" />
+													<Composite RefId="460" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -10283,9 +10431,9 @@
 									<Void />
 								</BaseType>
 								<Members>
-									<Function Id="453" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum.Configure" ReturnType="Void">
+									<Function Id="465" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum.Configure" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="447" />
+											<Composite RefId="459" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -10295,9 +10443,9 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="454" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum.Read" ReturnType="Void">
+									<Function Id="466" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum.Read" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="447" />
+											<Composite RefId="459" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -10313,17 +10461,17 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="455" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum.Start" ReturnType="Void">
+									<Function Id="467" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum.Start" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="447" />
+											<Composite RefId="459" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="456" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum.Stop" ReturnType="Void">
+									<Function Id="468" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H RX Power Spectrum.Stop" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="447" />
+											<Composite RefId="459" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -10331,11 +10479,11 @@
 									</Function>
 								</Members>
 							</Composite>
-							<Composite Id="457" Name="802.11 AFW Resources.grsc\T2H Constellation" ReferenceClass="" Interface="">
+							<Composite Id="469" Name="802.11 AFW Resources.grsc\T2H Constellation" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="458" Name="802.11 AFW Resources.grsc\T2H Constellation" ReferenceClass="" Interface="">
+									<Composite Id="470" Name="802.11 AFW Resources.grsc\T2H Constellation" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="458" />
+											<Composite RefId="470" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -10344,9 +10492,9 @@
 											<Void />
 										</BaseType>
 										<Members>
-											<Function Id="459" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Constellation.Configure" ReturnType="Void">
+											<Function Id="471" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Constellation.Configure" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="458" />
+													<Composite RefId="470" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -10356,9 +10504,9 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="460" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Constellation.Read" ReturnType="Void">
+											<Function Id="472" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Constellation.Read" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="458" />
+													<Composite RefId="470" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -10374,17 +10522,17 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="461" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Constellation.Start" ReturnType="Void">
+											<Function Id="473" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Constellation.Start" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="458" />
+													<Composite RefId="470" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="462" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Constellation.Stop" ReturnType="Void">
+											<Function Id="474" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Constellation.Stop" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="458" />
+													<Composite RefId="470" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -10400,9 +10548,9 @@
 									<Void />
 								</BaseType>
 								<Members>
-									<Function Id="463" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Constellation.Configure" ReturnType="Void">
+									<Function Id="475" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Constellation.Configure" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="457" />
+											<Composite RefId="469" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -10412,9 +10560,9 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="464" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Constellation.Read" ReturnType="Void">
+									<Function Id="476" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Constellation.Read" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="457" />
+											<Composite RefId="469" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -10430,17 +10578,17 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="465" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Constellation.Start" ReturnType="Void">
+									<Function Id="477" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Constellation.Start" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="457" />
+											<Composite RefId="469" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="466" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Constellation.Stop" ReturnType="Void">
+									<Function Id="478" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Constellation.Stop" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="457" />
+											<Composite RefId="469" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -10448,11 +10596,11 @@
 									</Function>
 								</Members>
 							</Composite>
-							<Composite Id="467" Name="802.11 AFW Resources.grsc\T2H Channel Estimation" ReferenceClass="" Interface="">
+							<Composite Id="479" Name="802.11 AFW Resources.grsc\T2H Channel Estimation" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="468" Name="802.11 AFW Resources.grsc\T2H Channel Estimation" ReferenceClass="" Interface="">
+									<Composite Id="480" Name="802.11 AFW Resources.grsc\T2H Channel Estimation" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="468" />
+											<Composite RefId="480" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -10461,9 +10609,9 @@
 											<Void />
 										</BaseType>
 										<Members>
-											<Function Id="469" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Channel Estimation.Configure" ReturnType="Void">
+											<Function Id="481" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Channel Estimation.Configure" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="468" />
+													<Composite RefId="480" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -10473,9 +10621,9 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="470" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Channel Estimation.Read" ReturnType="Void">
+											<Function Id="482" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Channel Estimation.Read" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="468" />
+													<Composite RefId="480" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -10491,17 +10639,17 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="471" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Channel Estimation.Start" ReturnType="Void">
+											<Function Id="483" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Channel Estimation.Start" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="468" />
+													<Composite RefId="480" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="472" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Channel Estimation.Stop" ReturnType="Void">
+											<Function Id="484" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Channel Estimation.Stop" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="468" />
+													<Composite RefId="480" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -10517,9 +10665,9 @@
 									<Void />
 								</BaseType>
 								<Members>
-									<Function Id="473" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Channel Estimation.Configure" ReturnType="Void">
+									<Function Id="485" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Channel Estimation.Configure" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="467" />
+											<Composite RefId="479" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -10529,9 +10677,9 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="474" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Channel Estimation.Read" ReturnType="Void">
+									<Function Id="486" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Channel Estimation.Read" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="467" />
+											<Composite RefId="479" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -10547,17 +10695,17 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Elements Remaining" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="475" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Channel Estimation.Start" ReturnType="Void">
+									<Function Id="487" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Channel Estimation.Start" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="467" />
+											<Composite RefId="479" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="476" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Channel Estimation.Stop" ReturnType="Void">
+									<Function Id="488" IsStatic="False" IsConstructor="False" Name="802.11 AFW Resources.grsc\T2H Channel Estimation.Stop" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="467" />
+											<Composite RefId="479" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -10565,11 +10713,11 @@
 									</Function>
 								</Members>
 							</Composite>
-							<Composite Id="477" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0" ReferenceClass="" Interface="">
+							<Composite Id="489" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0" ReferenceClass="" Interface="">
 								<GenericTypeDefinition>
-									<Composite Id="478" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0" ReferenceClass="" Interface="">
+									<Composite Id="490" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0" ReferenceClass="" Interface="">
 										<GenericTypeDefinition>
-											<Composite RefId="478" />
+											<Composite RefId="490" />
 										</GenericTypeDefinition>
 										<GenericParameters>
 											<Typedef TypedefName="T" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
@@ -10578,9 +10726,9 @@
 											<Void />
 										</BaseType>
 										<Members>
-											<Function Id="479" IsStatic="False" IsConstructor="False" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0.Configure" ReturnType="Void">
+											<Function Id="491" IsStatic="False" IsConstructor="False" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0.Configure" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="478" />
+													<Composite RefId="490" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -10590,25 +10738,25 @@
 													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 												</Parameters>
 											</Function>
-											<Function Id="480" IsStatic="False" IsConstructor="False" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0.Start" ReturnType="Void">
+											<Function Id="492" IsStatic="False" IsConstructor="False" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0.Start" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="478" />
+													<Composite RefId="490" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="481" IsStatic="False" IsConstructor="False" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0.Stop" ReturnType="Void">
+											<Function Id="493" IsStatic="False" IsConstructor="False" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0.Stop" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="478" />
+													<Composite RefId="490" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
 												</GenericTypeDefinition>
 											</Function>
-											<Function Id="482" IsStatic="False" IsConstructor="False" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0.Write" ReturnType="Void">
+											<Function Id="494" IsStatic="False" IsConstructor="False" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0.Write" ReturnType="Void">
 												<DeclaringType>
-													<Composite RefId="478" />
+													<Composite RefId="490" />
 												</DeclaringType>
 												<GenericTypeDefinition>
 													<Void />
@@ -10633,9 +10781,9 @@
 									<Void />
 								</BaseType>
 								<Members>
-									<Function Id="483" IsStatic="False" IsConstructor="False" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0.Configure" ReturnType="Void">
+									<Function Id="495" IsStatic="False" IsConstructor="False" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0.Configure" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="477" />
+											<Composite RefId="489" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -10645,25 +10793,25 @@
 											<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="Actual Depth" DataType="UInt32" />
 										</Parameters>
 									</Function>
-									<Function Id="484" IsStatic="False" IsConstructor="False" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0.Start" ReturnType="Void">
+									<Function Id="496" IsStatic="False" IsConstructor="False" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0.Start" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="477" />
+											<Composite RefId="489" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="485" IsStatic="False" IsConstructor="False" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0.Stop" ReturnType="Void">
+									<Function Id="497" IsStatic="False" IsConstructor="False" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0.Stop" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="477" />
+											<Composite RefId="489" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
 										</GenericTypeDefinition>
 									</Function>
-									<Function Id="486" IsStatic="False" IsConstructor="False" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0.Write" ReturnType="Void">
+									<Function Id="498" IsStatic="False" IsConstructor="False" Name="niInstr Register Bus v0.grsc\reg.host instruction fifo 0.Write" ReturnType="Void">
 										<DeclaringType>
-											<Composite RefId="477" />
+											<Composite RefId="489" />
 										</DeclaringType>
 										<GenericTypeDefinition>
 											<Void />
@@ -10690,7 +10838,7 @@
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="4e479a6bf9b9410391eee64852566710">
+		<p.TypeReference TypeId="87ee4ee7b7094a788cbcc399ef5f05d4">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="H2T TX Data FIFO: actual depth" DataType="UInt32" />
@@ -10738,7 +10886,7 @@
 							</Attributed>
 						</DataType>
 					</Field>
-					<Field FieldAccessPolicy="ReadWrite" Name="Track Timing Control queue">
+					<Field FieldAccessPolicy="ReadWrite" Name="Track Chain State queue">
 						<DataType>
 							<Attributed>
 								<AttributedType>

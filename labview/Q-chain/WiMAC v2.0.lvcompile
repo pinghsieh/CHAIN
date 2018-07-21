@@ -234,4 +234,17 @@
     <ConnectionType>Localhost</ConnectionType>
     <StartTime>07/20/2018 10:19:22</StartTime>
   </Job>
+  <Job>
+    <Name>802.11 FPGA USRP RIO 40 MHz BW STA-41.lvbitx</Name>
+    <JobInfo>
+      <SessionId>mX7YpLF</SessionId>
+      <JobId>yaU518K</JobId>
+    </JobInfo>
+    <SourceFolder>C:\NIFPGA\compilation\hnvmksqx.cvn\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\hnvmksqx.cvn</BuildFolder>
+    <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-41.lvbitx</OutputPath>
+    <ConnectionState>Completed</ConnectionState>
+    <ConnectionType>Localhost</ConnectionType>
+    <StartTime>07/20/2018 16:17:30</StartTime>
+  </Job>
 </JobList>

@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="2B96F989590E6A347C12C5DE915E3E91" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="7C719066DFAF0AB4A2B3628642D5FB9E" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
@@ -58,21 +57,6 @@
 			<NodeLabel AttachedTo="25" Bounds="224 355 111 14" Id="26" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>global clock counter</p.Text>
 			</NodeLabel>
-			<IONameConstant Bounds="775 95 322.876678 27" DataType="@6aa1ad1695e44cc7a00e96f2178dd477" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="30" Label="31" UdrClass="Fifo" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>"802.11 AFW Resources.grsc\\T2H Track Timing Control"</p.Data>
-				<IONameConstantBehavior />
-			</IONameConstant>
-			<NodeLabel AttachedTo="30" Bounds="775 95 0 0" Id="31" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>FIFO Constant</p.Text>
-			</NodeLabel>
-			<FIFOWrite Bounds="1195 240 46 65" Id="32" xmlns="http://www.ni.com/LabVIEW.FPGA" />
-			<Wire Id="33" Joints="N(30:Out) h(5) v(145) N(32:reference in)" xmlns="http://www.ni.com/PlatformFramework" />
-			<FeedbackNode ArrowDirection="Right" Bounds="1145 245 30 20" EnableTerminalVisible="False" Id="61" />
-			<Wire Id="62" Joints="N(479:201) N(61:input)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="63" Joints="N(61:output) N(32:data)" xmlns="http://www.ni.com/PlatformFramework" />
-			<FeedbackNode ArrowDirection="Right" Bounds="1145 290 30 20" EnableTerminalVisible="False" Id="64" />
-			<Wire Id="65" Joints="N(482:201) N(64:input)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="66" Joints="N(64:output) h(10) v(-10) N(32:Control Protocol Input)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="340 265 40 15" DataItem="90" Id="92" Label="94" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@f4678f83360140c88f5e42fbb76534c7" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
@@ -225,8 +209,8 @@
 				</CaseStructure.Case>
 				<CaseStructure.Selector Bounds="-4 260 13 10" Docking="Left" Id="204" Terminals="201=498, 202, 203" />
 				<CaseStructure.Tunnel Bounds="-4 205 13 10" Docking="Left" Id="476" Terminals="201=24, 202, 203=475" />
-				<CaseStructure.Tunnel Bounds="586 100 13 10" Docking="Right" Id="479" Terminals="201=62, 202=502, 203=478" />
-				<CaseStructure.Tunnel Bounds="586 145 13 10" Docking="Right" Id="482" Terminals="201=65, 202=500, 203=481" />
+				<CaseStructure.Tunnel Bounds="586 100 13 10" Docking="Right" Id="479" Terminals="201, 202=502, 203=478" />
+				<CaseStructure.Tunnel Bounds="586 145 13 10" Docking="Right" Id="482" Terminals="201, 202=500, 203=481" />
 				<CaseStructure.Tunnel Bounds="-4 115 13 10" Docking="Left" Id="485" Terminals="201=95, 202, 203=484" />
 				<CaseStructure.Tunnel Bounds="-4 150 13 10" Docking="Left" Id="488" Terminals="201=103, 202, 203=487" />
 			</CaseStructure>
@@ -252,98 +236,6 @@
 		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="6aa1ad1695e44cc7a00e96f2178dd477">
-			<Attributed>
-				<AttributedType>
-					<Generic>
-						<Constraints>
-							<Attributed>
-								<AttributedType>
-									<Composite Id="1" Name="FifoWriteInterface" ReferenceClass="" Interface="">
-										<GenericTypeDefinition>
-											<Attributed>
-												<AttributedType>
-													<Composite Id="2" Name="FifoWriteInterface" ReferenceClass="" Interface="">
-														<GenericTypeDefinition>
-															<Composite RefId="2" />
-														</GenericTypeDefinition>
-														<GenericParameters>
-															<Typedef TypedefName="Element" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
-														</GenericParameters>
-														<BaseType>
-															<Void />
-														</BaseType>
-														<Members>
-															<Field FieldAccessPolicy="Read" Name="free elements" DataType="UInt32" />
-															<Field FieldAccessPolicy="Read" Name="empty threshold met?" DataType="Boolean" />
-															<Function Id="3" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
-																<DeclaringType>
-																	<Composite RefId="2" />
-																</DeclaringType>
-																<GenericTypeDefinition>
-																	<Void />
-																</GenericTypeDefinition>
-																<Parameters>
-																	<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="readyForInput" DataType="Boolean" />
-																	<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
-																		<DataType>
-																			<Typedef TypedefName="Element" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
-																		</DataType>
-																	</Parameter>
-																	<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="inputValid" DataType="Boolean" />
-																</Parameters>
-															</Function>
-														</Members>
-													</Composite>
-												</AttributedType>
-												<AttributeValues>
-													<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
-													<AttributeValue Name="NI_UdrClass" Value="[string]Fifo" />
-													<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
-												</AttributeValues>
-											</Attributed>
-										</GenericTypeDefinition>
-										<ClosedGenericParameters>
-											<UInt64 />
-										</ClosedGenericParameters>
-										<BaseType>
-											<Void />
-										</BaseType>
-										<Members>
-											<Field FieldAccessPolicy="Read" Name="free elements" DataType="UInt32" />
-											<Field FieldAccessPolicy="Read" Name="empty threshold met?" DataType="Boolean" />
-											<Function Id="4" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
-												<DeclaringType>
-													<Composite RefId="1" />
-												</DeclaringType>
-												<GenericTypeDefinition>
-													<Void />
-												</GenericTypeDefinition>
-												<Parameters>
-													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="readyForInput" DataType="Boolean" />
-													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="UInt64" />
-													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="inputValid" DataType="Boolean" />
-												</Parameters>
-											</Function>
-										</Members>
-									</Composite>
-								</AttributedType>
-								<AttributeValues>
-									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
-									<AttributeValue Name="NI_UdrClass" Value="[string]Fifo" />
-									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
-								</AttributeValues>
-							</Attributed>
-						</Constraints>
-					</Generic>
-				</AttributedType>
-				<AttributeValues>
-					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
-					<AttributeValue Name="NI_UdrClass" Value="[string]Fifo" />
-					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
 		<p.TypeReference TypeId="f4678f83360140c88f5e42fbb76534c7">
 			<Enumeration>
 				<Members>
@@ -358,9 +250,6 @@
 					<UInt16 />
 				</DataType>
 			</Enumeration>
-		</p.TypeReference>
-		<p.TypeReference TypeId="c843328a30f744cbb29e05526807c415">
-			<Generic />
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 </SourceFile>

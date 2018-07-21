@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="820B0FF7A28CFBF5DDD05C64798AADE2" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
+		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Track Chain State" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6.75" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="10" ListViewHeight="70" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 50" Parameter="508" />
+			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 35" Parameter="27" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="28" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]29" Left="[float]130" MinHeight="[float]22" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Collapsed" Top="[float]118" Value="{DataItemBinding Id=27}" ValueFormatter="[string]LV:" ValueType="[Type]UInt32" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="29" LabelOwner="[UIModel]28" Left="[float]130" Text="[string]global clock counter" Top="[float]95" xmlns="http://www.ni.com/PanelCommon" />
+			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="509" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Left="[float]0" Name="[string]Chain State Enum" Top="[float]0" Value="{DataItemBinding Id=508}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<EnumSelectorInfo DisplayValue="[string]&quot;First time into the chain&quot;" Value="[ushort]0" ValueType="[Type]UInt16" />
+				<EnumSelectorInfo DisplayValue="[string]&quot;First time to update the id table&quot;" Value="[ushort]1" ValueType="[Type]UInt16" />
+				<EnumSelectorInfo DisplayValue="[string]&quot;Update the id table again&quot;" Value="[ushort]2" ValueType="[Type]UInt16" />
+				<EnumSelectorInfo DisplayValue="[string]&quot;Withdraw from Qchain and reset Qchain ID&quot;" Value="[ushort]3" ValueType="[Type]UInt16" />
+			</EnumSelector>
+		</FrontPanelUnplacedItems>
+		<BlockDiagram Id="13">
+			<Wire Id="24" Joints="N(25:Value) h(23) B(1) N(476:201) B(1) v(45) N(490:x)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="340 355 40 15" DataItem="27" Id="25" Label="26" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="25" Bounds="224 355 111 14" Id="26" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>global clock counter</p.Text>
+			</NodeLabel>
+			<IONameConstant Bounds="792.24 95 305.636658 27" DataType="@6aa1ad1695e44cc7a00e96f2178dd477" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="30" Label="31" UdrClass="Fifo" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>"802.11 AFW Resources.grsc\\T2H Track Chain State"</p.Data>
+				<IONameConstantBehavior />
+			</IONameConstant>
+			<NodeLabel AttachedTo="30" Bounds="792.24 95 0 0" Id="31" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>FIFO Constant</p.Text>
+			</NodeLabel>
+			<FIFOWrite Bounds="1195 240 46 65" Id="32" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+			<Wire Id="33" Joints="N(30:Out) h(5) v(145) N(32:reference in)" xmlns="http://www.ni.com/PlatformFramework" />
+			<FeedbackNode ArrowDirection="Right" Bounds="1145 245 30 20" EnableTerminalVisible="False" Id="61" />
+			<Wire Id="62" Joints="N(479:201) N(61:input)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="63" Joints="N(61:output) N(32:data)" xmlns="http://www.ni.com/PlatformFramework" />
+			<FeedbackNode ArrowDirection="Right" Bounds="1145 290 30 20" EnableTerminalVisible="False" Id="64" />
+			<Wire Id="65" Joints="N(482:201) N(64:input)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="66" Joints="N(64:output) h(10) v(-10) N(32:Control Protocol Input)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="95" Joints="N(506:Value) h(15) B(1) N(485:201) B(1) v(35) N(101:input)" xmlns="http://www.ni.com/PlatformFramework" />
+			<FeedbackNode ArrowDirection="Right" Bounds="365 295 30 20" EnableTerminalVisible="False" Id="101" />
+			<Wire Id="103" Joints="N(101:output) N(488:201)" xmlns="http://www.ni.com/PlatformFramework" />
+			<CaseStructure Bounds="460 150 595 355" Default="202" Id="201" Selected="203" UserSelectorBounds="253.6 0 88 16.8">
+				<CaseStructure.Case Bounds="5 5 585 345" Id="202" Pattern="False">
+					<Literal Bounds="540 140 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="499" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>False</p.Data>
+						<BooleanBehavior />
+					</Literal>
+					<Wire Id="500" Joints="N(499:Out) N(482:202)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Literal Bounds="530 95 39.5 16" DataType="UInt64" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="501" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>0</p.Data>
+						<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+					</Literal>
+					<Wire Id="502" Joints="N(501:Out) N(479:202)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 585 345" Id="203" Pattern="True">
+					<CaseStructure Bounds="5 15 570 315" DataType="@ae2c7bb9c1fd477fbe0c29dff41f32fc" Default="35" Id="34" Selected="35" UserSelectorBounds="120 0 328.8 16.8">
+						<CaseStructure.Case Bounds="5 5 560 305" Id="35" Pattern="&quot;\&quot;First time into the chain\&quot;&quot;, Default">
+							<IsNotEqual Bounds="170 110 30 30" Id="106" />
+							<Wire Id="107" Joints="N(37:35) h(120) v(20) N(106:x)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="108" Joints="N(104:35) N(106:y)" xmlns="http://www.ni.com/PlatformFramework" />
+							<ToUnsignedQuadInteger Bounds="150 180 30 10" Id="109" />
+							<Wire Id="110" Joints="N(42:35) N(109:number)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Add Bounds="290 180 30 30" Id="111" Terminals="o=116, c0t0v=113, c1t0v=115" />
+							<Wire Id="112" Joints="N(106:x != y?) N(44:35)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="113" Joints="N(109:unsigned 64bit integer) N(111:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Literal Bounds="180 200 91 16" DataType="UInt64" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="114" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>8589934592</p.Data>
+								<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G13" />
+							</Literal>
+							<Wire Id="115" Joints="N(114:Out) h(14) v(-5) N(111:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="116" Joints="N(111:o) h(5) v(-115) N(46:35)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Comment Bounds="280 225 260 40" Id="118" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+								<p.Text>"07/18/2018 Ping-Chun\r\nIf "Startup", add 2^33 to the timestamp"</p.Text>
+							</Comment>
+						</CaseStructure.Case>
+						<CaseStructure.Case Bounds="5 5 560 305" Id="36" Pattern="&quot;\&quot;First time to update the id table\&quot;&quot;">
+							<IsNotEqual Bounds="175 110 30 30" Id="123" />
+							<ToUnsignedQuadInteger Bounds="155 180 30 10" Id="125" />
+							<Add Bounds="295 180 30 30" Id="127" Terminals="o=137, c0t0v=128, c1t0v=130" />
+							<Wire Id="128" Joints="N(125:unsigned 64bit integer) N(127:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Literal Bounds="178 200 98 16" DataType="UInt64" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="129" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>17179869184</p.Data>
+								<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G13" />
+							</Literal>
+							<Wire Id="130" Joints="N(129:Out) h(14) v(-5) N(127:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Comment Bounds="225 225 320 40" Id="132" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+								<p.Text>"07/18/2018 Ping-Chun\r\nIf "Send slot signal", add 2^34 to the timestamp"</p.Text>
+							</Comment>
+							<Wire Id="133" Joints="N(42:36) N(125:number)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="134" Joints="N(104:36) N(123:y)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="135" Joints="N(37:36) h(120) v(20) N(123:x)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="136" Joints="N(123:x != y?) N(44:36)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="137" Joints="N(127:o) h(30) v(-115) N(46:36)" xmlns="http://www.ni.com/PlatformFramework" />
+						</CaseStructure.Case>
+						<CaseStructure.Case Bounds="5 5 560 305" Id="96" Pattern="&quot;\&quot;Update the id table again\&quot;&quot;">
+							<Wire Id="138" Joints="N(37:96) h(96) v(20) N(140:x)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="139" Joints="N(140:x != y?) N(44:96)" xmlns="http://www.ni.com/PlatformFramework" />
+							<IsNotEqual Bounds="145 110 30 30" Id="140" />
+							<ToUnsignedQuadInteger Bounds="125 180 30 10" Id="141" />
+							<Add Bounds="265 180 30 30" Id="142" Terminals="o=149, c0t0v=143, c1t0v=145" />
+							<Wire Id="143" Joints="N(141:unsigned 64bit integer) N(142:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Literal Bounds="148 200 98 16" DataType="UInt64" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="144" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>34359738368</p.Data>
+								<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G13" />
+							</Literal>
+							<Wire Id="145" Joints="N(144:Out) h(14) v(-5) N(142:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Comment Bounds="195 225 320 40" Id="146" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+								<p.Text>"07/18/2018 Ping-Chun\r\nIf "Wait for next slot", add 2^35 to the timestamp"</p.Text>
+							</Comment>
+							<Wire Id="147" Joints="N(42:96) N(141:number)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="148" Joints="N(104:96) N(140:y)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="149" Joints="N(142:o) h(30) v(-115) N(46:96)" xmlns="http://www.ni.com/PlatformFramework" />
+						</CaseStructure.Case>
+						<CaseStructure.Case Bounds="5 5 560 305" Id="97" Pattern="&quot;\&quot;Withdraw from Qchain and reset Qchain ID\&quot;&quot;">
+							<Wire Id="150" Joints="N(37:97) h(30) v(20) N(152:x)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="151" Joints="N(152:x != y?) N(44:97)" xmlns="http://www.ni.com/PlatformFramework" />
+							<IsNotEqual Bounds="120 110 30 30" Id="152" />
+							<ToUnsignedQuadInteger Bounds="100 180 30 10" Id="153" />
+							<Add Bounds="240 180 30 30" Id="154" Terminals="o=161, c0t0v=155, c1t0v=157" />
+							<Wire Id="155" Joints="N(153:unsigned 64bit integer) N(154:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Literal Bounds="123 200 98 16" DataType="UInt64" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="156" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>68719476736</p.Data>
+								<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G13" />
+							</Literal>
+							<Wire Id="157" Joints="N(156:Out) h(14) v(-5) N(154:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Comment Bounds="170 225 320 40" Id="158" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+								<p.Text>"07/18/2018 Ping-Chun\r\nIf "Set new timing reference", add 2^36 to the timestamp"</p.Text>
+							</Comment>
+							<Wire Id="159" Joints="N(42:97) N(153:number)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="160" Joints="N(104:97) N(152:y)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="161" Joints="N(154:o) h(30) v(-115) N(46:97)" xmlns="http://www.ni.com/PlatformFramework" />
+						</CaseStructure.Case>
+						<CaseStructure.Selector Bounds="-4 95 13 10" Docking="Left" Id="37" Terminals="34=484, 35=107, 36=135, 96=138, 97=150" />
+						<CaseStructure.Tunnel Bounds="-4 185 13 10" Docking="Left" Id="42" Terminals="34=475, 35=110, 36=133, 96=147, 97=159" />
+						<CaseStructure.Tunnel Bounds="561 125 13 10" Docking="Right" Id="44" Terminals="34=481, 35=112, 36=136, 96=139, 97=151" />
+						<CaseStructure.Tunnel Bounds="561 80 13 10" Docking="Right" Id="46" Terminals="34=478, 35=116, 36=137, 96=149, 97=161" />
+						<CaseStructure.Tunnel Bounds="-4 130 13 10" Docking="Left" Id="104" Terminals="34=487, 35=108, 36=134, 96=148, 97=160" />
+					</CaseStructure>
+					<Wire Id="475" Joints="N(476:203) N(42:34)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="478" Joints="N(46:34) N(479:203)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="481" Joints="N(44:34) N(482:203)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="484" Joints="N(485:203) N(37:34)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="487" Joints="N(488:203) N(104:34)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 260 13 10" Docking="Left" Id="204" Terminals="201=498, 202, 203" />
+				<CaseStructure.Tunnel Bounds="-4 205 13 10" Docking="Left" Id="476" Terminals="201=24, 202, 203=475" />
+				<CaseStructure.Tunnel Bounds="586 100 13 10" Docking="Right" Id="479" Terminals="201=62, 202=502, 203=478" />
+				<CaseStructure.Tunnel Bounds="586 145 13 10" Docking="Right" Id="482" Terminals="201=65, 202=500, 203=481" />
+				<CaseStructure.Tunnel Bounds="-4 115 13 10" Docking="Left" Id="485" Terminals="201=95, 202, 203=484" />
+				<CaseStructure.Tunnel Bounds="-4 150 13 10" Docking="Left" Id="488" Terminals="201=103, 202, 203=487" />
+			</CaseStructure>
+			<IsGreater Bounds="410 400 30 30" Id="490" />
+			<Wire Id="498" Joints="N(490:x &gt; y?) N(204:201)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="330 415 39.5 16" DataType="UInt32" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="503" Label="504" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+			</Literal>
+			<NodeLabel AttachedTo="503" Bounds="330 415 0 0" Id="504" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>y</p.Text>
+			</NodeLabel>
+			<Wire Id="505" Joints="N(503:Out) N(490:y)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="290 265 40 15" DataItem="508" Id="506" Label="507" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@ae2c7bb9c1fd477fbe0c29dff41f32fc" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="506" Bounds="185 265 100 14" Id="507" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Chain State Enum</p.Text>
+			</NodeLabel>
+			<Literal Bounds="384 283 12 10" DataType="@ae2c7bb9c1fd477fbe0c29dff41f32fc" Facade="DockedConstantFacade" Id="513" Label="515" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>3</p.Data>
+				<EnumBehavior Id="514" />
+				<DockedConstantFacade UndockedSize="278.466675 15" />
+			</Literal>
+			<NodeLabel AttachedTo="513" Bounds="384 283 0 0" Id="515" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Chain State Enum</p.Text>
+			</NodeLabel>
+			<Wire Facade="WireInvisibleFacade" Id="516" Joints="N(513:Out) h(5) v(2) h(-21) N(101:initial value)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="UInt32" Id="27" Name="global clock counter" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="@ae2c7bb9c1fd477fbe0c29dff41f32fc" Id="508" Name="Chain State Enum" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="6aa1ad1695e44cc7a00e96f2178dd477">
+			<Attributed>
+				<AttributedType>
+					<Generic>
+						<Constraints>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="1" Name="FifoWriteInterface" ReferenceClass="" Interface="">
+										<GenericTypeDefinition>
+											<Attributed>
+												<AttributedType>
+													<Composite Id="2" Name="FifoWriteInterface" ReferenceClass="" Interface="">
+														<GenericTypeDefinition>
+															<Composite RefId="2" />
+														</GenericTypeDefinition>
+														<GenericParameters>
+															<Typedef TypedefName="Element" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
+														</GenericParameters>
+														<BaseType>
+															<Void />
+														</BaseType>
+														<Members>
+															<Field FieldAccessPolicy="Read" Name="free elements" DataType="UInt32" />
+															<Field FieldAccessPolicy="Read" Name="empty threshold met?" DataType="Boolean" />
+															<Function Id="3" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+																<DeclaringType>
+																	<Composite RefId="2" />
+																</DeclaringType>
+																<GenericTypeDefinition>
+																	<Void />
+																</GenericTypeDefinition>
+																<Parameters>
+																	<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="readyForInput" DataType="Boolean" />
+																	<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+																		<DataType>
+																			<Typedef TypedefName="Element" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
+																		</DataType>
+																	</Parameter>
+																	<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="inputValid" DataType="Boolean" />
+																</Parameters>
+															</Function>
+														</Members>
+													</Composite>
+												</AttributedType>
+												<AttributeValues>
+													<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+													<AttributeValue Name="NI_UdrClass" Value="[string]Fifo" />
+													<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+												</AttributeValues>
+											</Attributed>
+										</GenericTypeDefinition>
+										<ClosedGenericParameters>
+											<UInt64 />
+										</ClosedGenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Field FieldAccessPolicy="Read" Name="free elements" DataType="UInt32" />
+											<Field FieldAccessPolicy="Read" Name="empty threshold met?" DataType="Boolean" />
+											<Function Id="4" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="1" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="readyForInput" DataType="Boolean" />
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="UInt64" />
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="inputValid" DataType="Boolean" />
+												</Parameters>
+											</Function>
+										</Members>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Fifo" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</Constraints>
+					</Generic>
+				</AttributedType>
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Fifo" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="ae2c7bb9c1fd477fbe0c29dff41f32fc">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="&quot;First time into the chain&quot;" />
+					<EnumerationMember Value="1" Name="&quot;First time to update the id table&quot;" />
+					<EnumerationMember Value="2" Name="&quot;Update the id table again&quot;" />
+					<EnumerationMember Value="3" Name="&quot;Withdraw from Qchain and reset Qchain ID&quot;" />
+				</Members>
+				<DataType>
+					<UInt16 />
+				</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="c843328a30f744cbb29e05526807c415">
+			<Generic />
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

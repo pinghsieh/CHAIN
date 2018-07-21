@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="01642268E5037722055EB2CD1C89C109" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="CDE883B960A5E60A9C3B6A218383B872" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -70,20 +70,20 @@
 				<p4:Label Height="[float]16" Id="700" LabelOwner="[UIModel]699" Left="[float]5" Text="[string]source" Top="[float]52" Width="[float]35" />
 			</Cluster>
 			<Label Height="[float]16" Id="701" LabelOwner="[UIModel]694" Left="[float]316" Text="[string]error out" Top="[float]151" Width="[float]26" xmlns="http://www.ni.com/PanelCommon" />
-			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@3667e42b32f247c48f8ef236ec7f547c" Height="[float]156" Id="722" Label="[UIModel]729" Left="[float]100" Top="[float]100" Value="{DataItemBinding Id=721}" Width="[float]88" p4:ControlDefinitionChecksum="ng0ZHsKAhhdHwuiz6BUaMg==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@a771701145f24dcab677b23c1687c663" Height="[float]156" Id="787" Label="[UIModel]794" Left="[float]100" Top="[float]100" Value="{DataItemBinding Id=721}" Width="[float]88" p4:ControlDefinitionChecksum="GjFGwX0KRBqi3k9SdzrxFw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="Custom\ session\.gtype:ControlDefinition" />
 				</p4:p.TypeDefinitionTargets>
-				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="723" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" Label="[UIModel]726" Left="[float]5" MinHeight="[float]22" Top="[float]23" Value="{ClusterBinding FieldName=H2T\ TX\ Data\ FIFO:\ actual\ depth}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="724" Label="[UIModel]727" Left="[float]5" RefnumType="[Type]@95cc0d1c93f240f0b2cdb037a23a0518" Top="[float]68" Value="{ClusterBinding FieldName=Track\ CCA\ Busy\ queue}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="725" Label="[UIModel]728" Left="[float]5" RefnumType="[Type]@fe709c613e164faf9c225a8316eb5f9d" Top="[float]117" Value="{ClusterBinding FieldName=Track\ Timing\ Control\ queue}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-				<p4:Label Id="726" LabelOwner="[UIModel]723" Left="[float]5" Text="[string]H2T TX Data FIFO: actual depth" Top="[float]0" />
-				<p4:Label Id="727" LabelOwner="[UIModel]724" Left="[float]5" Text="[string]Track CCA Busy queue" Top="[float]45" />
-				<p4:Label Id="728" LabelOwner="[UIModel]725" Left="[float]5" Text="[string]Track Timing Control queue" Top="[float]94" />
+				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="788" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" Label="[UIModel]791" Left="[float]5" MinHeight="[float]22" Top="[float]23" Value="{ClusterBinding FieldName=H2T\ TX\ Data\ FIFO:\ actual\ depth}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="789" Label="[UIModel]792" Left="[float]5" RefnumType="[Type]@95cc0d1c93f240f0b2cdb037a23a0518" Top="[float]68" Value="{ClusterBinding FieldName=Track\ CCA\ Busy\ queue}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="790" Label="[UIModel]793" Left="[float]5" RefnumType="[Type]@fe709c613e164faf9c225a8316eb5f9d" Top="[float]117" Value="{ClusterBinding FieldName=Track\ Chain\ State\ queue}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="791" LabelOwner="[UIModel]788" Left="[float]5" Text="[string]H2T TX Data FIFO: actual depth" Top="[float]0" Width="[float]166" />
+				<p4:Label Height="[float]16" Id="792" LabelOwner="[UIModel]789" Left="[float]5" Text="[string]Track CCA Busy queue" Top="[float]45" Width="[float]119" />
+				<p4:Label Height="[float]16" Id="793" LabelOwner="[UIModel]790" Left="[float]5" Text="[string]Track Chain State queue" Top="[float]94" Width="[float]129" />
 			</Cluster>
-			<Label Id="729" LabelOwner="[UIModel]722" Left="[float]100" Text="[string]custom session" Top="[float]77" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="794" LabelOwner="[UIModel]787" Left="[float]100" Text="[string]custom session" Top="[float]77" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
 			<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" Filter="[string]txt;*.csv" Height="[float]28" Id="769" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" Label="[UIModel]770" Left="[float]205" Path="{DataItemBinding Id=768}" Top="[float]36" Width="[float]180" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Height="[float]16" Id="770" LabelOwner="[UIModel]769" Left="[float]205" Text="[string]Timing Control trace filepath" Top="[float]13" Width="[float]44" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="770" LabelOwner="[UIModel]769" Left="[float]205" Text="[string]Chain State trace filepath" Top="[float]13" Width="[float]44" xmlns="http://www.ni.com/PanelCommon" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="13">
 			<DataAccessor Bounds="225 170 40 15" DataItem="67" Id="71" Label="72" xmlns="http://www.ni.com/MocCommon">
@@ -93,7 +93,7 @@
 				<p.Text>CCA Busy trace filepath</p.Text>
 			</NodeLabel>
 			<Wire Id="75" Joints="N(71:Path) N(330:76)" xmlns="http://www.ni.com/PlatformFramework" />
-			<CaseStructure Bounds="478 100 837 660" Default="77" Id="76" Selected="77" UserSelectorBounds="374.4 0 88 16.8">
+			<CaseStructure Bounds="478 100 837 660" Default="77" Id="76" Selected="78" UserSelectorBounds="374.4 0 88 16.8">
 				<CaseStructure.Case Bounds="5 5 827 650" Id="77" Pattern="False">
 					<Wire Id="708" Joints="N(691:77) h(742) v(95) N(706:77)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
@@ -292,25 +292,25 @@
 			</NodeLabel>
 			<Wire Id="707" Joints="N(706:76) N(703:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="225 220 40 15" DataItem="721" Id="719" Label="720" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@3667e42b32f247c48f8ef236ec7f547c" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@a771701145f24dcab677b23c1687c663" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="719" Bounds="135 220 85 14" Id="720" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>custom session</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="270 220 188 50" HasErrorTerminals="False" Id="730" InstanceDataType="@3667e42b32f247c48f8ef236ec7f547c" Mode="InstanceProperties" Template="List">
-				<PropertyItemTerminal DataType="@95cc0d1c93f240f0b2cdb037a23a0518" Hotspot="188 15" Id="c0t0v" Path="Track CCA Busy queue" Usage="Optional" />
-				<PropertyItemTerminal DataType="@fe709c613e164faf9c225a8316eb5f9d" Hotspot="188 30" Id="c1t0v" Path="Track Timing Control queue" Usage="Optional" />
+			<PropertyNode Bounds="270 220 171.2 50" HasErrorTerminals="False" Id="730" InstanceDataType="@a771701145f24dcab677b23c1687c663" Mode="InstanceProperties" Template="List">
+				<PropertyItemTerminal DataType="@95cc0d1c93f240f0b2cdb037a23a0518" Hotspot="171.2 15" Id="c0t0v" Path="Track CCA Busy queue" Usage="Optional" />
+				<PropertyItemTerminal DataType="@fe709c613e164faf9c225a8316eb5f9d" Hotspot="171.2 30" Id="c1t0v" Path="Track Chain State queue" Usage="Optional" />
 			</PropertyNode>
 			<Wire Id="731" Joints="N(719:Value) N(730:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="732" Joints="N(730:c0t0v) h(5) v(-15) N(677:76)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="732" Joints="N(730:c0t0v) h(16.7999878) v(-15) N(677:76)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="225 495 40 15" DataItem="768" Id="766" Label="767" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Path" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="766" Bounds="61 495 159 14" Id="767" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>Timing Control trace filepath</p.Text>
+			<NodeLabel AttachedTo="766" Bounds="78 495 142 14" Id="767" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Chain State trace filepath</p.Text>
 			</NodeLabel>
 			<Wire Id="771" Joints="N(766:Path) N(772:76)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="775" Joints="N(730:c1t0v) h(12) v(265) N(776:76)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="775" Joints="N(730:c1t0v) h(5) v(265) N(776:76)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="Path" Id="67" Name="CCA Busy trace filepath" xmlns="http://www.ni.com/MocCommon">
@@ -345,13 +345,13 @@
 				<TypeDefinitionTarget TargetName="Error\.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
-		<DataItem CallDirection="Input" CallIndex="0" DataType="@3667e42b32f247c48f8ef236ec7f547c" Id="721" Name="custom session" xmlns="http://www.ni.com/MocCommon">
+		<DataItem CallDirection="Input" CallIndex="0" DataType="@a771701145f24dcab677b23c1687c663" Id="721" Name="custom session" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0_0_0_</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 				<TypeDefinitionTarget TargetName="Custom\ session\.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="4" DataType="Path" Id="768" Name="Timing Control trace filepath" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="4" DataType="Path" Id="768" Name="Chain State trace filepath" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Path a="1" />
 			</p.DefaultValue>
@@ -384,8 +384,8 @@
 		</IconTable>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="3667e42b32f247c48f8ef236ec7f547c">
-			<Typedef TypedefName="Custom session.gtype" UnderlyingType="@4e479a6bf9b9410391eee64852566710" />
+		<p.TypeReference TypeId="a771701145f24dcab677b23c1687c663">
+			<Typedef TypedefName="Custom session.gtype" UnderlyingType="@87ee4ee7b7094a788cbcc399ef5f05d4" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="95cc0d1c93f240f0b2cdb037a23a0518">
 			<Attributed>
@@ -487,7 +487,7 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="4e479a6bf9b9410391eee64852566710">
+		<p.TypeReference TypeId="87ee4ee7b7094a788cbcc399ef5f05d4">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="H2T TX Data FIFO: actual depth" DataType="UInt32" />
@@ -535,7 +535,7 @@
 							</Attributed>
 						</DataType>
 					</Field>
-					<Field FieldAccessPolicy="ReadWrite" Name="Track Timing Control queue">
+					<Field FieldAccessPolicy="ReadWrite" Name="Track Chain State queue">
 						<DataType>
 							<Attributed>
 								<AttributedType>

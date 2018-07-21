@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="B90BE195F74EAA9C273A06FF3ACCDEFC" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="503106C65EFAFC1688BF1AAD8EDDD5A7" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -75,7 +75,7 @@
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 610 275" Id="111" Pattern="True">
 					<IsEqualTo0 Bounds="50 100 30 30" Id="113" />
-					<CaseStructure Bounds="350 70 220 95" Default="117" Id="116" Selected="118" UserSelectorBounds="65.6 0 88 16.8">
+					<CaseStructure Bounds="350 70 220 95" Default="117" Id="116" Selected="117" UserSelectorBounds="65.6 0 88 16.8">
 						<CaseStructure.Case Bounds="5 5 210 85" Id="117" Pattern="False">
 							<Wire Id="189" Joints="N(190:117) h(181) v(-20) N(126:117)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>

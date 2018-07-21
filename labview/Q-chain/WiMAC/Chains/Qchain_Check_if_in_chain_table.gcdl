@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="40CA88AF999CDE42D6D678992D57A1D1" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="1CA2151F940E9B3042C502BC84904EA6" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -96,8 +96,8 @@
 					<Wire Id="373" Joints="N(372:Out) N(359:61)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 395 320" Id="62" Pattern="True">
-					<CaseStructure Bounds="55 55 320 195" Default="30" Id="29" Selected="31" UserSelectorBounds="116 0 88 16.8">
-						<CaseStructure.Case Bounds="5 5 310 185" Id="30" Pattern="False">
+					<CaseStructure Bounds="55 55 320 245" Default="30" Id="29" Selected="31" UserSelectorBounds="116 0 88 16.8">
+						<CaseStructure.Case Bounds="5 5 310 235" Id="30" Pattern="False">
 							<Literal Bounds="245 75 39.5 16" DataType="UInt8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="51" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>0</p.Data>
 								<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
@@ -105,7 +105,7 @@
 							<Wire Id="52" Joints="N(51:Out) N(41:30)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="53" Joints="N(32:30) N(49:30)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
-						<CaseStructure.Case Bounds="5 5 310 185" Id="31" Pattern="True">
+						<CaseStructure.Case Bounds="5 5 310 235" Id="31" Pattern="True">
 							<Literal Bounds="235 75 39.5 16" DataType="UInt8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="34" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>1</p.Data>
 								<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
@@ -123,6 +123,24 @@
 								<p.Text>reference in</p.Text>
 							</NodeLabel>
 							<Wire Id="58" Joints="N(59:31) N(54:data)" xmlns="http://www.ni.com/PlatformFramework" />
+							<IONameConstant Bounds="128 170 12 10" DataType="@7b6887216c2141f69f2e0adb6c09ae23" Facade="DockedConstantFacade" Id="376" Label="378" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>"802.11 AFW Resources.grsc\\Order ID in chain"</p.Data>
+								<IONameConstantBehavior />
+								<DockedConstantFacade UndockedSize="281.726654 27" />
+							</IONameConstant>
+							<Wire Facade="WireInvisibleFacade" Id="377" Joints="N(376:Out) N(380:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+							<NodeLabel AttachedTo="376" Bounds="128 170 0 0" Id="378" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>reference in</p.Text>
+							</NodeLabel>
+							<RegisterWrite Bounds="140 170 40 40" Id="380" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+							<Literal Bounds="65 180 39.5 16" DataType="UInt8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="381" Label="382" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>1</p.Data>
+								<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+							</Literal>
+							<Wire Id="383" Joints="N(381:Out) N(380:data)" xmlns="http://www.ni.com/PlatformFramework" />
+							<NodeLabel AttachedTo="381" Bounds="65 180 0 0" Id="382" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>data</p.Text>
+							</NodeLabel>
 						</CaseStructure.Case>
 						<CaseStructure.Selector Bounds="-4 40 13 10" Docking="Left" Id="32" Terminals="29=355, 30=53, 31=48" />
 						<CaseStructure.Tunnel Bounds="311 80 13 10" Docking="Right" Id="41" Terminals="29=358, 30=52, 31=40" />
@@ -259,6 +277,103 @@
 											<SizedArray LowerBound="6" UpperBound="6" DereferenceType="UInt8" />
 										</DataType>
 									</Parameter>
+								</Parameters>
+							</Function>
+						</Members>
+					</Composite>
+				</AttributedType>
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="7b6887216c2141f69f2e0adb6c09ae23">
+			<Attributed>
+				<AttributedType>
+					<Composite Id="1" Name="RegisterDataType" ReferenceClass="">
+						<GenericTypeDefinition>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="2" Name="RegisterDataType" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Composite RefId="2" />
+										</GenericTypeDefinition>
+										<GenericParameters>
+											<Typedef TypedefName="Element" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
+										</GenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Function Id="3" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+														<DataType>
+															<Typedef TypedefName="Element" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
+														</DataType>
+													</Parameter>
+												</Parameters>
+											</Function>
+											<Function Id="4" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+														<DataType>
+															<Typedef TypedefName="Element" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
+														</DataType>
+													</Parameter>
+												</Parameters>
+											</Function>
+										</Members>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</GenericTypeDefinition>
+						<ClosedGenericParameters>
+							<UInt8 />
+						</ClosedGenericParameters>
+						<BaseType>
+							<Void />
+						</BaseType>
+						<Members>
+							<Function Id="5" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+								<DeclaringType>
+									<Composite RefId="1" />
+								</DeclaringType>
+								<GenericTypeDefinition>
+									<Void />
+								</GenericTypeDefinition>
+								<Parameters>
+									<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data" DataType="UInt8" />
+								</Parameters>
+							</Function>
+							<Function Id="6" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+								<DeclaringType>
+									<Composite RefId="1" />
+								</DeclaringType>
+								<GenericTypeDefinition>
+									<Void />
+								</GenericTypeDefinition>
+								<Parameters>
+									<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="UInt8" />
 								</Parameters>
 							</Function>
 						</Members>

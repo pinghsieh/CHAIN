@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="770CD8B371D0D428705A25C384DB461F" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="3F0D99DEDC176B4D2144729C276F6BDD" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -42,7 +42,7 @@
 				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="19" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]54" MinHeight="[float]22" Name="[string]Child" Top="[float]56" Value="[byte]0" ValueType="[Type]UInt8" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<Label Height="[float]16" Id="20" LabelOwner="[UIModel]18" Left="[float]393" Text="[string]device MAC address" Top="[float]36" Width="[float]108" xmlns="http://www.ni.com/PanelCommon" />
-			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="32" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]36" MinWidth="[float]34" Name="[string]Need update ID table" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=31}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="32" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]36" MinWidth="[float]34" Name="[string]Need to update ID table" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=31}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="141" IsReadOnly="[bool]True" Label="[UIModel]142" Left="[float]161" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]108" TrueContent="[string]On" Value="{DataItemBinding Id=140}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="142" LabelOwner="[UIModel]141" Left="[float]161" Text="[string]Need update piggyback?" Top="[float]85" Width="[float]114" xmlns="http://www.ni.com/PanelCommon" />
 			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@fe79af3d742743ef92be86857eb79037" Height="[float]485" Id="166" Left="[float]0" Name="[string]Mac address cluster" Top="[float]0" Value="{DataItemBinding Id=165}" Width="[float]148" xmlns="http://www.ni.com/PanelCommon">
@@ -126,8 +126,8 @@
 			<DataAccessor Bounds="345 115 40 15" DataItem="31" Id="29" Label="30" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="29" Bounds="221 115 119 14" Id="30" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>Need update ID table</p.Text>
+			<NodeLabel AttachedTo="29" Bounds="206 115 134 14" Id="30" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Need to update ID table</p.Text>
 			</NodeLabel>
 			<MethodCall Bounds="700 115 40 40" DomainName="NI.MocCommon" Id="33" Target="Update\ self\ ID\.gcdl" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
@@ -319,15 +319,24 @@
 			<Wire Id="237" Joints="N(222:c7t0v) h(90) v(-15) N(40:L3)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="248" Joints="N(163:Value) N(27:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="282" Joints="N(15:Value) h(245) B(1) v(-55) N(33:L1) B(1) v(5) B(4) N(34:L1) B(4) v(60) B(6) N(35:L1) B(6) v(55) B(8) N(36:L1) B(8) v(60) B(10) N(37:L1) B(10) v(55) B(12) N(38:L1) B(12) v(60) B(14) N(39:L1) B(14) v(55) N(40:L1)" xmlns="http://www.ni.com/PlatformFramework" />
-			<FeedbackNode ArrowDirection="Right" Bounds="430 110 30 20" EnableTerminalVisible="False" Id="288" />
-			<Wire Id="291" Joints="N(29:Value) N(288:input)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="292" Joints="N(288:output) h(200) B(1) N(33:L0) B(1) v(60) B(3) N(34:L0) B(3) v(60) B(5) N(35:L0) B(5) v(55) B(7) N(36:L0) B(7) v(60) B(9) N(37:L0) B(9) v(55) B(11) N(38:L0) B(11) v(60) B(13) N(39:L0) B(13) v(55) N(40:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="293" Joints="N(295:output) h(160) B(1) N(33:L0) B(1) v(60) B(3) N(34:L0) B(3) v(60) B(5) N(35:L0) B(5) v(55) B(7) N(36:L0) B(7) v(60) B(9) N(37:L0) B(9) v(55) B(11) N(38:L0) B(11) v(60) B(13) N(39:L0) B(13) v(55) N(40:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<FeedbackNode ArrowDirection="Right" Bounds="470 110 30 20" EnableTerminalVisible="False" Id="295" />
+			<Wire Id="296" Joints="N(29:Value) N(295:input)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="490 98 12 10" DataType="Boolean" Facade="DockedConstantFacade" Id="298" Label="299" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>False</p.Data>
+				<BooleanBehavior />
+				<DockedConstantFacade UndockedSize="26 15" />
+			</Literal>
+			<NodeLabel AttachedTo="298" Bounds="490 98 0 0" Id="299" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>initial value</p.Text>
+			</NodeLabel>
+			<Wire Facade="WireInvisibleFacade" Id="300" Joints="N(298:Out) h(5) v(-3) h(-22) N(295:initial value)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="UInt8[6]" Id="17" Name="device MAC address" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="Boolean" Id="31" Name="Need update ID table" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="Boolean" Id="31" Name="Need to update ID table" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="Boolean" Id="140" Name="Need update piggyback?" xmlns="http://www.ni.com/MocCommon">
