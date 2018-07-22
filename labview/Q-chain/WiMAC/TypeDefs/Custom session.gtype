@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="2907A969E7C607E0BE8BBFCE4AA10D94" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="8EA5767C551A77F0104514441F2EB57D" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
@@ -7,44 +7,46 @@
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
 		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
 	</SourceModelFeatureSet>
-	<TypeDefinition DataType="@87ee4ee7b7094a788cbcc399ef5f05d4" Friends="" Id="1" xmlns="http://www.ni.com/MocCommon">
+	<TypeDefinition DataType="@04628ea15db948af99295bd69cc61626" Friends="" Id="1" xmlns="http://www.ni.com/MocCommon">
 		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
 				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
-					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Custom session" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
-						<FontSetting FontFamily="Verdana" FontSize="6.75" Id="8" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Custom session_2" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
 					</FileNameText>
 				</IconTemplate>
 				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
 			</IconPanel>
 		</Icon>
-		<DataItem DataType="@87ee4ee7b7094a788cbcc399ef5f05d4" Id="15" Name="Cluster">
-			<p.DefaultValue>0_0_0_</p.DefaultValue>
+		<DataItem DataType="@04628ea15db948af99295bd69cc61626" Id="15" Name="Cluster">
+			<p.DefaultValue>0_0_0_0_</p.DefaultValue>
 		</DataItem>
 	</TypeDefinition>
 	<EnvoyManagerFile Id="10" xmlns="http://www.ni.com/PlatformFramework">
 		<ProjectSettings Id="11" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
-		<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,DefaultTarget,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="12" ModelDefinitionType="DefaultTarget" Name="Custom\ session\.gtype" NameTracksFileName="True">
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,DefaultTarget,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="12" ModelDefinitionType="DefaultTarget" Name="Custom\ session_2\.gtype" NameTracksFileName="True">
 			<DefaultTarget />
 			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.PanelCommon.SourceModel.ControlDefinition,EmbeddedReference" Id="13" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
 				<ControlDefinition DefaultDirection="Control" Id="14" xmlns="http://www.ni.com/MocCommon">
-					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@87ee4ee7b7094a788cbcc399ef5f05d4" Height="[float]156" Id="17" Label="[UIModel]27" Left="[float]100" Top="[float]100" Value="{DataItemBinding Id=15}" Width="[float]88" xmlns="http://www.ni.com/PanelCommon">
-						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="20" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[uint]1" Label="[UIModel]28" Left="[float]5" MinHeight="[float]22" Top="[float]23" Value="{ClusterBinding FieldName=H2T\ TX\ Data\ FIFO:\ actual\ depth}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="23" Label="[UIModel]29" Left="[float]5" RefnumType="[Type]@95cc0d1c93f240f0b2cdb037a23a0518" Top="[float]68" Value="{ClusterBinding FieldName=Track\ CCA\ Busy\ queue}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="26" Label="[UIModel]30" Left="[float]5" RefnumType="[Type]@fe709c613e164faf9c225a8316eb5f9d" Top="[float]117" Value="{ClusterBinding FieldName=Track\ Chain\ State\ queue}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-						<Label Height="[float]16" Id="28" LabelOwner="[UIModel]20" Left="[float]5" Text="[string]H2T TX Data FIFO: actual depth" Top="[float]0" Width="[float]166" />
-						<Label Height="[float]16" Id="29" LabelOwner="[UIModel]23" Left="[float]5" Text="[string]Track CCA Busy queue" Top="[float]45" Width="[float]119" />
-						<Label Height="[float]16" Id="30" LabelOwner="[UIModel]26" Left="[float]5" Text="[string]Track Chain State queue" Top="[float]94" Width="[float]129" />
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@04628ea15db948af99295bd69cc61626" Height="[float]205" Id="17" Label="[UIModel]30" Left="[float]100" Top="[float]100" Value="{DataItemBinding Id=15}" Width="[float]88" xmlns="http://www.ni.com/PanelCommon">
+						<NumericText BaseName="[string]Numeric" Height="[float]22" Id="20" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[uint]1" Label="[UIModel]31" Left="[float]5" MinHeight="[float]22" Top="[float]23" Value="{ClusterBinding FieldName=H2T\ TX\ Data\ FIFO:\ actual\ depth}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="23" Label="[UIModel]32" Left="[float]5" RefnumType="[Type]@95cc0d1c93f240f0b2cdb037a23a0518" Top="[float]68" Value="{ClusterBinding FieldName=Track\ CCA\ Busy\ queue}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="26" Label="[UIModel]33" Left="[float]5" RefnumType="[Type]@fe709c613e164faf9c225a8316eb5f9d" Top="[float]117" Value="{ClusterBinding FieldName=Track\ Chain\ State\ queue}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]26" Id="29" Label="[UIModel]34" Left="[float]5" RefnumType="[Type]@87772003c737451f811b11a1a99326ee" Top="[float]166" Value="{ClusterBinding FieldName=Track\ Received\ MAC\ Address}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="31" LabelOwner="[UIModel]20" Left="[float]5" Text="[string]H2T TX Data FIFO: actual depth" Top="[float]0" Width="[float]166" />
+						<Label Height="[float]16" Id="32" LabelOwner="[UIModel]23" Left="[float]5" Text="[string]Track CCA Busy queue" Top="[float]45" Width="[float]119" />
+						<Label Height="[float]16" Id="33" LabelOwner="[UIModel]26" Left="[float]5" Text="[string]Track Chain State queue" Top="[float]94" Width="[float]129" />
+						<Label Height="[float]16" Id="34" LabelOwner="[UIModel]29" Left="[float]5" Text="[string]Track Received MAC Address" Top="[float]143" Width="[float]154" />
 					</Cluster>
-					<Label Height="[float]16" Id="27" LabelOwner="[UIModel]17" Left="[float]100" Text="[string]Cluster" Top="[float]77" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
+					<Label Height="[float]16" Id="30" LabelOwner="[UIModel]17" Left="[float]100" Text="[string]Cluster" Top="[float]77" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
 				</ControlDefinition>
 			</EmbeddedDefinitionReference>
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="87ee4ee7b7094a788cbcc399ef5f05d4">
+		<p.TypeReference TypeId="04628ea15db948af99295bd69cc61626">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="H2T TX Data FIFO: actual depth" DataType="UInt32" />
@@ -112,6 +114,41 @@
 												<Members>
 													<Field FieldAccessPolicy="ReadWrite" Name="Timestamp" DataType="UInt32" />
 													<Field FieldAccessPolicy="ReadWrite" Name="Timing Control State Enum" DataType="UInt32" />
+												</Members>
+											</Composite>
+										</ClosedGenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="Track Received MAC Address">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="7" Name="NationalInstruments.SourceModel.DataTypes.Queue" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Attributed>
+												<AttributedType>
+													<Composite RefId="3" />
+												</AttributedType>
+												<AttributeValues>
+													<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+												</AttributeValues>
+											</Attributed>
+										</GenericTypeDefinition>
+										<ClosedGenericParameters>
+											<Composite Id="8" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+												<Members>
+													<Field FieldAccessPolicy="ReadWrite" Name="Timestamp" DataType="UInt32" />
+													<Field FieldAccessPolicy="ReadWrite" Name="LSB of MAC Address" DataType="UInt16" />
+													<Field FieldAccessPolicy="ReadWrite" Name="MSB of MAC Address" DataType="UInt16" />
 												</Members>
 											</Composite>
 										</ClosedGenericParameters>
@@ -200,6 +237,49 @@
 								<Members>
 									<Field FieldAccessPolicy="ReadWrite" Name="Timestamp" DataType="UInt32" />
 									<Field FieldAccessPolicy="ReadWrite" Name="Timing Control State Enum" DataType="UInt32" />
+								</Members>
+							</Composite>
+						</ClosedGenericParameters>
+						<BaseType>
+							<Void />
+						</BaseType>
+					</Composite>
+				</AttributedType>
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="87772003c737451f811b11a1a99326ee">
+			<Attributed>
+				<AttributedType>
+					<Composite Id="1" Name="NationalInstruments.SourceModel.DataTypes.Queue" ReferenceClass="">
+						<GenericTypeDefinition>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="2" Name="NationalInstruments.SourceModel.DataTypes.Queue" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Composite RefId="2" />
+										</GenericTypeDefinition>
+										<GenericParameters>
+											<Typedef TypedefName="DataType" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
+										</GenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+								</AttributeValues>
+							</Attributed>
+						</GenericTypeDefinition>
+						<ClosedGenericParameters>
+							<Composite Id="3" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+								<Members>
+									<Field FieldAccessPolicy="ReadWrite" Name="Timestamp" DataType="UInt32" />
+									<Field FieldAccessPolicy="ReadWrite" Name="LSB of MAC Address" DataType="UInt16" />
+									<Field FieldAccessPolicy="ReadWrite" Name="MSB of MAC Address" DataType="UInt16" />
 								</Members>
 							</Composite>
 						</ClosedGenericParameters>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="EE6428A52E8CB94B7A3812DFEB0BC6B5" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="C37FECF88F3B1CD38D9F105E1EB43546" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -699,6 +699,15 @@
 			<Label Id="5076" LabelOwner="[UIModel]5075" Left="[float]415" Text="[string]Qchain:count fast piggyback" Top="[float]13" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="5082" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]5083" Left="[float]415" MinHeight="[float]22" Top="[float]36" Value="{DataItemBinding Id=5081}" ValueType="[Type]UInt32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Id="5083" LabelOwner="[UIModel]5082" Left="[float]415" Text="[string]Qchain:count fast piggyback trigger" Top="[float]13" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="5096" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" Left="[float]0" MinHeight="[float]22" Name="[string]Fastpiggyback Timestamp" Top="[float]0" Value="{DataItemBinding Id=5093}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="5107" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" Left="[float]0" MinHeight="[float]22" Name="[string]Fastpiggyback at Idle Timestamp" Top="[float]0" Value="{DataItemBinding Id=5104}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="5111" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]5112" Left="[float]415" MinHeight="[float]22" Top="[float]36" Value="{DataItemBinding Id=5110}" ValueType="[Type]UInt32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="5112" LabelOwner="[UIModel]5111" Left="[float]415" Text="[string]Qchain:count fast piggyback trigger at idle" Top="[float]13" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]5126" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" FixedSize="[int]8" Height="[float]36" Id="5129" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]True" Left="[float]0" Name="[string]Indicator for Qchain tracking" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]0" Value="{DataItemBinding Id=5123}" Width="[float]130" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="5126" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[byte]1" Left="[float]0" MinHeight="[float]22" Name="[string]Child" Top="[float]0" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt8" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="5133" Left="[float]0" MinHeight="[float]36" MinWidth="[float]36" Name="[string]Qchain: Manual enable for node departure" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=5132}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<ClockDrivenLoop Bounds="-4042 1800 1104 830" DiagramId="19" Id="18" xmlns="http://www.ni.com/LabVIEW.FPGA">
@@ -3028,7 +3037,7 @@
 				</NodeLabel>
 				<Wire Id="1529" Joints="N(1528:R0) N(1496:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="1558" Joints="N(1557:Out) h(42.0799561) N(1524:T1)" xmlns="http://www.ni.com/PlatformFramework" />
-				<MethodCall Bounds="510 565 60 100" DomainName="NI.Appframeworks.802.11" Id="1183" Target="\802\.11\ MAC\ RX\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<MethodCall Bounds="510 565 60 120" DomainName="NI.Appframeworks.802.11" Id="1183" Target="\802\.11\ MAC\ RX\.gcdl" xmlns="http://www.ni.com/MocCommon">
 					<p.MethodDeclaration>
 						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 							<Parameter Id="L2" Desc="PSDU" />
@@ -3047,6 +3056,7 @@
 							<Parameter Id="L7" Desc="Qchain:DIFS in global clock ticks" />
 							<Parameter Id="L8" Desc="Qchain withdrawal?" />
 							<Parameter Id="L9" Desc="Qchain:id increment" />
+							<Parameter Id="L10" Desc="Manual enable for Qchain node departure" />
 							<Parameter Id="R3" Desc="MAC RX statistics" />
 							<Parameter Id="R4" Desc="channel state indication" />
 							<Parameter Id="R0" Desc="ICP SDU" />
@@ -3059,6 +3069,7 @@
 							<Parameter Id="R7" Desc="Qchain:state" />
 							<Parameter Id="R8" Desc="Qchain:count fast piggyback" />
 							<Parameter Id="R9" Desc="Qchain:count fast piggyback trigger" />
+							<Parameter Id="R10" Desc="Qchain:count fast piggyback trigger at idle" />
 						</MethodDeclaration>
 					</p.MethodDeclaration>
 					<Terminal DataType="UInt8" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
@@ -3069,26 +3080,28 @@
 					<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="UInt8[6]" Direction="Input" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="@4188e1e1ee8043e19084b128140c37d1" Direction="Input" Hotspot="35 0" Id="T2" xmlns="http://www.ni.com/PlatformFramework" />
-					<Terminal DataType="Boolean" Direction="Input" Hotspot="25 100" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
-					<Terminal DataType="UInt8[6]" Direction="Input" Hotspot="15 100" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Boolean" Direction="Input" Hotspot="25 120" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="UInt8[6]" Direction="Input" Hotspot="15 120" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Boolean" Direction="Input" Hotspot="0 55" Id="L5" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="UInt32" Direction="Input" Hotspot="45 0" Id="T3" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="UInt64[8]" Direction="Input" Hotspot="0 65" Id="L6" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="UInt32" Direction="Input" Hotspot="0 75" Id="L7" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Boolean" Direction="Input" Hotspot="0 85" Id="L8" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="UInt8" Direction="Input" Hotspot="0 95" Id="L9" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Boolean" Direction="Input" Hotspot="0 105" Id="L10" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="@62a197377d2042e98487a474562c9cc1" Direction="Output" Hotspot="60 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="@890f0244975a4a858838c72f1bcaa190" Direction="Output" Hotspot="60 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="UInt8" Direction="Output" Hotspot="60 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Boolean" Direction="Output" Hotspot="60 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="@1c3c88e98b78426d96002cdb4c41a227" Direction="Output" Hotspot="60 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
-					<Terminal DataType="Boolean" Direction="Output" Hotspot="35 100" Id="B2" xmlns="http://www.ni.com/PlatformFramework" />
-					<Terminal DataType="Boolean" Direction="Output" Hotspot="45 100" Id="B3" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Boolean" Direction="Output" Hotspot="35 120" Id="B2" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Boolean" Direction="Output" Hotspot="45 120" Id="B3" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Boolean" Direction="Output" Hotspot="60 55" Id="R5" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="UInt32" Direction="Output" Hotspot="60 65" Id="R6" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="@ae2c7bb9c1fd477fbe0c29dff41f32fc" Direction="Output" Hotspot="60 75" Id="R7" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="UInt32" Direction="Output" Hotspot="60 85" Id="R8" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="UInt32" Direction="Output" Hotspot="60 95" Id="R9" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="UInt32" Direction="Output" Hotspot="60 105" Id="R10" xmlns="http://www.ni.com/PlatformFramework" />
 				</MethodCall>
 				<DataAccessor Bounds="752 610 40 15" DataItem="2005" Id="1184" Label="1365" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="@62a197377d2042e98487a474562c9cc1" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -3324,9 +3337,9 @@
 					<p.Point>569.6 865</p.Point>
 					<p.Text>PHY RX AGC state indication</p.Text>
 				</WireComment>
-				<WireComment AttachedTo="3431" Bounds="250.001434 847 192.8 16" Id="3437" xmlns="http://www.ni.com/PlatformFramework">
+				<WireComment AttachedTo="3431" Bounds="250.001465 847 192.8 16" Id="3437" xmlns="http://www.ni.com/PlatformFramework">
 					<p.ExpandedWidth>192.8</p.ExpandedWidth>
-					<p.Point>346.401428 855</p.Point>
+					<p.Point>346.401459 855</p.Point>
 					<p.Text>PHY RX Gain change indication</p.Text>
 				</WireComment>
 				<WireComment AttachedTo="3425" Bounds="145 837 100 16" Id="3438" xmlns="http://www.ni.com/PlatformFramework">
@@ -3344,7 +3357,7 @@
 					<p.Point>220.2 825</p.Point>
 					<p.Text>PHY RX start indication</p.Text>
 				</WireComment>
-				<Wire Id="3442" Joints="N(1183:B2) v(25) N(3434:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="3442" Joints="N(1183:B2) v(10) h(35) v(-5) N(3434:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<DataAccessor Bounds="875 705 40 15" DataItem="3443" Id="3447" Label="3448" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
@@ -3586,7 +3599,7 @@
 					<p.Text>enable piggyback register</p.Text>
 				</NodeLabel>
 				<Wire Id="4076" Joints="N(1503:R3) h(260) N(1493:T4)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="4078" Joints="N(1183:B3) v(5) h(20) v(-35) N(4087:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="4078" Joints="N(1183:B3) v(5) h(20) v(-55) N(4087:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<DataAccessor Bounds="885 630 40 15" DataItem="4079" Id="4083" Label="4084" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="UInt32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
@@ -4015,7 +4028,7 @@
 				<NodeLabel AttachedTo="5032" Bounds="1099 970 231 14" Id="5033" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Queue threshold for withdrawal (packets)</p.Text>
 				</NodeLabel>
-				<Wire Id="5036" Joints="N(5026:R0) h(15) v(-90) B(2) h(-205) N(4902:T1) B(2) v(-20) h(-975) v(-120) h(-65) v(-20) N(1183:L8)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="5036" Joints="N(5026:R0) h(15) v(-90) B(2) h(-205) N(4902:T1) B(2) v(-20) h(-975) v(-125) h(-65) v(-15) N(1183:L8)" xmlns="http://www.ni.com/PlatformFramework" />
 				<WireComment AttachedTo="5036" Bounds="995.000061 782 129.6 16" Id="5038" xmlns="http://www.ni.com/PlatformFramework">
 					<p.ExpandedWidth>129.6</p.ExpandedWidth>
 					<p.Point>1059.8 790</p.Point>
@@ -4046,7 +4059,7 @@
 				<DataAccessor Bounds="355 670 40 15" DataItem="5059" Id="5062" Label="5063" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="UInt8" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
-				<Wire Id="5064" Joints="N(5062:Value) h(105) v(-15) N(1183:L9)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="5064" Joints="N(5062:Value) h(45) v(-15) N(1183:L9)" xmlns="http://www.ni.com/PlatformFramework" />
 				<NodeLabel AttachedTo="5062" Bounds="237 670 113 14" Id="5063" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Qchain:id increment</p.Text>
 				</NodeLabel>
@@ -4078,6 +4091,69 @@
 				<Wire Id="5087" Joints="N(1183:R9) h(13) v(340) N(5085:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 				<NodeLabel AttachedTo="5085" Bounds="740 995 199 14" Id="5086" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Qchain:count fast piggyback trigger</p.Text>
+				</NodeLabel>
+				<RegisterRead Bounds="970 1380 40 40" Id="5089" />
+				<IONameConstant Bounds="614.8333 1380 325.166656 27" DataType="@340eeba9a2174f02b9a9f7a59901433a" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="5090" Label="5092" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>"802.11 AFW Resources.grsc\\Fastpiggyback Timestamp"</p.Data>
+					<IONameConstantBehavior />
+				</IONameConstant>
+				<Wire Id="5091" Joints="N(5090:Out) N(5089:reference in)" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="5090" Bounds="614.8333 1380 0 0" Id="5092" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>reference in</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="1090 1390 40 15" DataItem="5093" Id="5095" Label="5097" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="UInt32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<Wire Id="5098" Joints="N(5089:data) N(5095:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="5095" Bounds="1135 1390 144 14" Id="5097" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Fastpiggyback Timestamp</p.Text>
+				</NodeLabel>
+				<RegisterRead Bounds="970 1425 40 40" Id="5099" />
+				<IONameConstant Bounds="581.6633 1425 358.33667 27" DataType="@340eeba9a2174f02b9a9f7a59901433a" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="5100" Label="5103" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>"802.11 AFW Resources.grsc\\Fastpiggyback at Idle Timestamp"</p.Data>
+					<IONameConstantBehavior />
+				</IONameConstant>
+				<Wire Id="5101" Joints="N(5100:Out) N(5099:reference in)" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="5100" Bounds="581.6633 1425 0 0" Id="5103" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>reference in</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="1090 1435 40 15" DataItem="5104" Id="5106" Label="5108" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="UInt32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<Wire Id="5109" Joints="N(5099:data) N(5106:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="5106" Bounds="1135 1435 184 14" Id="5108" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Fastpiggyback at Idle Timestamp</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="695 1010 40 15" DataItem="5110" Id="5114" Label="5115" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="UInt32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<Wire Id="5116" Joints="N(1183:R10) h(5) v(345) N(5114:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="5114" Bounds="740 1010 237 14" Id="5115" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Qchain:count fast piggyback trigger at idle</p.Text>
+				</NodeLabel>
+				<IONameConstant Bounds="1748 1156 12 10" DataType="@4686a14070e5421183b21313e6db78c0" Facade="DockedConstantFacade" Id="5119" Label="5121" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>"802.11 AFW Resources.grsc\\Indicator for Qchain tracking"</p.Data>
+					<IONameConstantBehavior />
+					<DockedConstantFacade UndockedSize="338.06 27" />
+				</IONameConstant>
+				<Wire Facade="WireInvisibleFacade" Id="5120" Joints="N(5119:Out) h(-5) v(-1) N(5122:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="5119" Bounds="1748 1156 0 0" Id="5121" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>reference in</p.Text>
+				</NodeLabel>
+				<RegisterRead Bounds="1760 1155 40 40" Id="5122" />
+				<DataAccessor Bounds="1890 1165 40 15" DataItem="5123" Id="5128" Label="5130" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="UInt8[8]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<Wire Id="5131" Joints="N(5122:data) N(5128:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="5128" Bounds="1935 1165 159 14" Id="5130" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Indicator for Qchain tracking</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="355 715 40 15" DataItem="5132" Id="5135" Label="5136" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<Wire Id="5137" Joints="N(5135:Value) h(20) v(-50) N(1183:L10)" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="5135" Bounds="115 715 235 14" Id="5136" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Qchain: Manual enable for node departure</p.Text>
 				</NodeLabel>
 				<ClockDrivenLoop.ClockBorderNode Bounds="1 295 22 20" Docking="Left" Id="2497" Terminals="2495=2502" />
 				<ClockDrivenLoop.Tunnel Bounds="-3 370 26 10" Docking="Left" Id="2534" Terminals="o0=3189, i0=2535" />
@@ -6415,6 +6491,21 @@
 		<DataItem AdaptToDiagramType="True" DataType="UInt32" Id="5081" Name="Qchain:count fast piggyback trigger" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="UInt32" Id="5093" Name="Fastpiggyback Timestamp" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="UInt32" Id="5104" Name="Fastpiggyback at Idle Timestamp" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="UInt32" Id="5110" Name="Qchain:count fast piggyback trigger at idle" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="UInt8[8]" Id="5123" Name="Indicator for Qchain tracking" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="5132" Name="Qchain: Manual enable for node departure" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="niInstr\ Register\ Bus\ v1\ FPGA\.lvlib__Process\.gcdl">
 				<MergeScript>
@@ -6830,10 +6921,10 @@
 			<p.IconModel Target="\802\.11\ MAC\ RX\.gcdl">
 				<MergeScript>
 					<MergeItem Path="." IsPrimary="True">
-						<Icon ListViewIconCrop="0 0 60 100">
-							<IconPanel Height="[float]100" Left="[float]0" Top="[float]0" Width="[float]60">
-								<Canvas Height="[float]100" Left="[float]0" Top="[float]0" Width="[float]60">
-									<Path Data="[PathGeometry]M 55.2,100 L 4.8,100 C 2.1492,100 0,96.41801 0,92.00001 L 0,8.000001 C 0,3.582 2.1492,0 4.8,0 L 55.2,0 C 57.8508,0 60,3.582 60,8.000001 L 60,92.00001 C 60,96.41801 57.8508,100 55.2,100 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]100" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]60" />
+						<Icon ListViewIconCrop="0 0 60 120">
+							<IconPanel Height="[float]120" Left="[float]0" Top="[float]0" Width="[float]60">
+								<Canvas Height="[float]120" Left="[float]0" Top="[float]0" Width="[float]60">
+									<Path Data="[PathGeometry]M 55.2,120 L 4.8,120 C 2.1492,120 0,115.7016 0,110.4 L 0,9.600001 C 0,4.2984 2.1492,0 4.8,0 L 55.2,0 C 57.8508,0 60,4.2984 60,9.600001 L 60,110.4 C 60,115.7016 57.8508,120 55.2,120 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]120" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]60" />
 									<Path Data="[PathGeometry]M 55.58334,49 L 4.833333,49 C 2.831125,49 1.208333,47.657 1.208333,46 L 1.208333,4 C 1.208333,2.343 2.831125,1 4.833333,1 L 55.58334,1 C 57.58554,1 59.20834,2.343 59.20834,4 L 59.20834,46 C 59.20834,47.657 57.58554,49 55.58334,49 Z" Fill="[SMSolidColorBrush]#fff2f2f2" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]58" />
 									<Path Data="[PathGeometry]M 4.869565,2 L 56,2 C 57.34521,2 58.43478,2.895 58.43478,4 L 58.43478,46 C 58.43478,47.105 57.34521,48 56,48 L 4.869565,48 C 3.524348,48 2.434783,47.105 2.434783,46 L 2.434783,4 C 2.434783,2.895 3.524348,2 4.869565,2 Z" Fill="[SMSolidColorBrush]#ffe5e5e5" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]56" />
 									<Path Data="[PathGeometry]M 12.426,7.684 C 12.34,7.645 12.215,7.597 12.051,7.539 C 11.887,7.481 11.748,7.432 11.637,7.391 C 11.526,7.493 11.424,7.616 11.334,7.76 C 11.244,7.904 11.199,8.067 11.199,8.246 C 11.199,8.517 11.297,8.732 11.49,8.892 C 11.683,9.052 11.937,9.132 12.25,9.132 C 12.334,9.132 12.432,9.12 12.543,9.095 C 12.654,9.07 12.752,9.032 12.832,8.98 C 12.926,8.92 13.002,8.85 13.059,8.769 C 13.116,8.688 13.145,8.579 13.145,8.441 C 13.145,8.253 13.098,8.111 13.004,8.015 C 12.91,7.919 12.717,7.809 12.426,7.684 Z" Fill="[SMSolidColorBrush]#ff892121" Height="[float]50" Left="[float]5" MinHeight="[float]1" MinWidth="[float]1" Top="[float]-1" Width="[float]50" />
@@ -7012,16 +7103,16 @@
 			<p.IconModel Target="check\ if\ is\ the\ head\ of\ chain\.gcdl">
 				<MergeScript>
 					<MergeItem Path="." IsPrimary="True">
-						<Icon ListViewIconCrop="0 0 40 40">
-							<IconPanel Height="[float]40" Left="[float]0" Top="[float]0" Width="[float]40">
+						<Icon ListViewIconCrop="0 0 40 50">
+							<IconPanel Height="[float]50" Left="[float]0" Top="[float]0" Width="[float]40">
 								<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
 									<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 									<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]check if is the head of chain" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
-										<FontSetting FontFamily="Verdana" FontSize="6" />
+										<FontSetting FontFamily="Verdana" FontSize="6.75" />
 									</FileNameText>
 								</IconTemplate>
-								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]44" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
 							</IconPanel>
 						</Icon>
 					</MergeItem>

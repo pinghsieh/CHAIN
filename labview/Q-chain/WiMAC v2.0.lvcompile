@@ -11,7 +11,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-23.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-24.lvbitx</Name>
@@ -24,7 +24,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-24.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-25.lvbitx</Name>
@@ -37,7 +37,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-25.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-26.lvbitx</Name>
@@ -50,7 +50,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-26.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-27.lvbitx</Name>
@@ -63,7 +63,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-27.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-28.lvbitx</Name>
@@ -76,7 +76,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-28.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-29.lvbitx</Name>
@@ -89,7 +89,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-29.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-30.lvbitx</Name>
@@ -102,7 +102,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-30.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-31.lvbitx</Name>
@@ -115,7 +115,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-31.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-32.lvbitx</Name>
@@ -128,7 +128,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-32.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-33.lvbitx</Name>
@@ -141,7 +141,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-33.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-34.lvbitx</Name>
@@ -154,7 +154,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-34.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-35.lvbitx</Name>
@@ -167,7 +167,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-35.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-36.lvbitx</Name>
@@ -180,7 +180,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-36.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-37.lvbitx</Name>
@@ -193,7 +193,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-37.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-38.lvbitx</Name>
@@ -206,7 +206,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-38.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-39.lvbitx</Name>
@@ -219,7 +219,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-39.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-40.lvbitx</Name>
@@ -232,7 +232,7 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-40.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 10:19:22</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
   </Job>
   <Job>
     <Name>802.11 FPGA USRP RIO 40 MHz BW STA-41.lvbitx</Name>
@@ -245,6 +245,19 @@
     <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-41.lvbitx</OutputPath>
     <ConnectionState>Completed</ConnectionState>
     <ConnectionType>Localhost</ConnectionType>
-    <StartTime>07/20/2018 16:17:30</StartTime>
+    <StartTime>07/21/2018 14:46:55</StartTime>
+  </Job>
+  <Job>
+    <Name>802.11 FPGA USRP RIO 40 MHz BW STA-42.lvbitx</Name>
+    <JobInfo>
+      <SessionId>Dyqjx83</SessionId>
+      <JobId>E834Ick</JobId>
+    </JobInfo>
+    <SourceFolder>C:\NIFPGA\compilation\3alvnsck.3tt\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\3alvnsck.3tt</BuildFolder>
+    <OutputPath>Builds\802.11 FPGA USRP RIO 40 MHz BW STA-42.lvbitx</OutputPath>
+    <ConnectionState>Completed</ConnectionState>
+    <ConnectionType>Localhost</ConnectionType>
+    <StartTime>07/22/2018 12:04:00</StartTime>
   </Job>
 </JobList>

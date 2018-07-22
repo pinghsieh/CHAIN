@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="F7257721797BE59D8B8BD25B001E7D35" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="DFEB54E9515269906288939179093313" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -103,7 +103,7 @@
 			</NodeLabel>
 			<CaseStructure Bounds="-1265 -595 145 125" DataType="@e6f4afd4ccaf494ebaf9f79492a4818c" Id="151" Selected="152" UserSelectorBounds="13.6 0 118.4 16.8">
 				<CaseStructure.Case Bounds="5 5 135 115" Id="152" Pattern="&quot;40 MHz&quot;">
-					<FPGAOpenNode Bounds="50 55 40 40" Id="189" ProjectItem=":NullTarget:\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-41\.lvbitx" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FPGAOpenNode Bounds="50 55 40 40" Id="189" ProjectItem=":NullTarget:\802\.11\ FPGA\ USRP\ RIO\ 40\ MHz\ BW\ STA\-42\.lvbitx" xmlns="http://www.ni.com/LabVIEW.FPGA" />
 					<Literal Bounds="38 65 12 10" DataType="Boolean" Facade="DockedConstantFacade" Id="190" Label="192" xmlns="http://www.ni.com/MocCommon">
 						<p.Data>False</p.Data>
 						<BooleanBehavior />
