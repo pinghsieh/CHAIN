@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="8A6A751DFFA8513D9F143EE0CB72E167" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="9658AE01FF86415287DF260D92CF3301" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -252,6 +252,14 @@
 								<Terminal DataType="UInt8[8]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 								<Terminal DataType="Boolean" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
+							<Literal Bounds="715 155 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="515" Label="516" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>True</p.Data>
+								<BooleanBehavior />
+							</Literal>
+							<Wire Id="517" Joints="N(515:Out) N(514:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+							<NodeLabel AttachedTo="515" Bounds="715 155 0 0" Id="516" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>convert?</p.Text>
+							</NodeLabel>
 						</CaseStructure.Case>
 						<CaseStructure.Selector Bounds="-4 80 13 10" Docking="Left" Id="116" Terminals="113=174, 114, 115" />
 						<CaseStructure.Tunnel Bounds="-4 230 13 10" Docking="Left" Id="180" Terminals="113=179, 114, 115=181" />
