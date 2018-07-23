@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="C37FECF88F3B1CD38D9F105E1EB43546" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="CE142A018232B7D3CDC562EEC142D454" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -708,6 +708,14 @@
 				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="5126" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[byte]1" Left="[float]0" MinHeight="[float]22" Name="[string]Child" Top="[float]0" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt8" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="5133" Left="[float]0" MinHeight="[float]36" MinWidth="[float]36" Name="[string]Qchain: Manual enable for node departure" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=5132}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<ArrayViewer ArrayElement="[UIModel]5146" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" FixedSize="[int]8" Height="[float]36" Id="5149" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]True" Left="[float]0" Name="[string]ID Table temp" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]0" Value="{DataItemBinding Id=5143}" Width="[float]130" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="5146" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[byte]1" Left="[float]0" MinHeight="[float]22" Name="[string]Child" Top="[float]0" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt8" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<ArrayViewer ArrayElement="[UIModel]5161" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" FixedSize="[int]8" Height="[float]36" Id="5160" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]True" Left="[float]0" Name="[string]ID Table first time" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]0" Value="{DataItemBinding Id=5159}" Width="[float]130" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="5161" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[byte]1" Left="[float]0" MinHeight="[float]22" Name="[string]Child" Top="[float]0" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt8" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<ClockDrivenLoop Bounds="-4042 1800 1104 830" DiagramId="19" Id="18" xmlns="http://www.ni.com/LabVIEW.FPGA">
@@ -3337,9 +3345,9 @@
 					<p.Point>569.6 865</p.Point>
 					<p.Text>PHY RX AGC state indication</p.Text>
 				</WireComment>
-				<WireComment AttachedTo="3431" Bounds="250.001465 847 192.8 16" Id="3437" xmlns="http://www.ni.com/PlatformFramework">
+				<WireComment AttachedTo="3431" Bounds="250.0015 847 192.8 16" Id="3437" xmlns="http://www.ni.com/PlatformFramework">
 					<p.ExpandedWidth>192.8</p.ExpandedWidth>
-					<p.Point>346.401459 855</p.Point>
+					<p.Point>346.4015 855</p.Point>
 					<p.Text>PHY RX Gain change indication</p.Text>
 				</WireComment>
 				<WireComment AttachedTo="3425" Bounds="145 837 100 16" Id="3438" xmlns="http://www.ni.com/PlatformFramework">
@@ -3725,7 +3733,7 @@
 				<NodeLabel AttachedTo="4593" Bounds="958 1305 0 0" Id="4594" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>reference in</p.Text>
 				</NodeLabel>
-				<MethodCall Bounds="1090 1315 40 40" DomainName="NI.MocCommon" Id="4617" Target="check\ if\ is\ the\ head\ of\ chain\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<MethodCall Bounds="1090 1315 40 50" DomainName="NI.MocCommon" Id="4617" Target="check\ if\ is\ the\ head\ of\ chain\.gcdl" xmlns="http://www.ni.com/MocCommon">
 					<p.MethodDeclaration>
 						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 							<Parameter Id="L0" Desc="Order in the Chain" />
@@ -4093,12 +4101,13 @@
 					<p.Text>Qchain:count fast piggyback trigger</p.Text>
 				</NodeLabel>
 				<RegisterRead Bounds="970 1380 40 40" Id="5089" />
-				<IONameConstant Bounds="614.8333 1380 325.166656 27" DataType="@340eeba9a2174f02b9a9f7a59901433a" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="5090" Label="5092" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+				<IONameConstant Bounds="958 1380 12 10" DataType="@340eeba9a2174f02b9a9f7a59901433a" Facade="DockedConstantFacade" Id="5090" Label="5092" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
 					<p.Data>"802.11 AFW Resources.grsc\\Fastpiggyback Timestamp"</p.Data>
 					<IONameConstantBehavior />
+					<DockedConstantFacade UndockedSize="325.166656 27" />
 				</IONameConstant>
-				<Wire Id="5091" Joints="N(5090:Out) N(5089:reference in)" xmlns="http://www.ni.com/PlatformFramework" />
-				<NodeLabel AttachedTo="5090" Bounds="614.8333 1380 0 0" Id="5092" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<Wire Facade="WireInvisibleFacade" Id="5091" Joints="N(5090:Out) N(5089:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="5090" Bounds="958 1380 0 0" Id="5092" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>reference in</p.Text>
 				</NodeLabel>
 				<DataAccessor Bounds="1090 1390 40 15" DataItem="5093" Id="5095" Label="5097" xmlns="http://www.ni.com/MocCommon">
@@ -4109,12 +4118,13 @@
 					<p.Text>Fastpiggyback Timestamp</p.Text>
 				</NodeLabel>
 				<RegisterRead Bounds="970 1425 40 40" Id="5099" />
-				<IONameConstant Bounds="581.6633 1425 358.33667 27" DataType="@340eeba9a2174f02b9a9f7a59901433a" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="5100" Label="5103" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+				<IONameConstant Bounds="958 1426 12 10" DataType="@340eeba9a2174f02b9a9f7a59901433a" Facade="DockedConstantFacade" Id="5100" Label="5103" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
 					<p.Data>"802.11 AFW Resources.grsc\\Fastpiggyback at Idle Timestamp"</p.Data>
 					<IONameConstantBehavior />
+					<DockedConstantFacade UndockedSize="358.33667 27" />
 				</IONameConstant>
-				<Wire Id="5101" Joints="N(5100:Out) N(5099:reference in)" xmlns="http://www.ni.com/PlatformFramework" />
-				<NodeLabel AttachedTo="5100" Bounds="581.6633 1425 0 0" Id="5103" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<Wire Facade="WireInvisibleFacade" Id="5101" Joints="N(5100:Out) h(5) v(-1) N(5099:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="5100" Bounds="958 1426 0 0" Id="5103" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>reference in</p.Text>
 				</NodeLabel>
 				<DataAccessor Bounds="1090 1435 40 15" DataItem="5104" Id="5106" Label="5108" xmlns="http://www.ni.com/MocCommon">
@@ -4154,6 +4164,40 @@
 				<Wire Id="5137" Joints="N(5135:Value) h(20) v(-50) N(1183:L10)" xmlns="http://www.ni.com/PlatformFramework" />
 				<NodeLabel AttachedTo="5135" Bounds="115 715 235 14" Id="5136" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Qchain: Manual enable for node departure</p.Text>
+				</NodeLabel>
+				<RegisterRead Bounds="720 1290 40 40" Id="5138" />
+				<IONameConstant Bounds="708 1290 12 10" DataType="@4686a14070e5421183b21313e6db78c0" Facade="DockedConstantFacade" Id="5140" Label="5142" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>"802.11 AFW Resources.grsc\\ID Table temp"</p.Data>
+					<IONameConstantBehavior />
+					<DockedConstantFacade UndockedSize="267.523346 27" />
+				</IONameConstant>
+				<Wire Facade="WireInvisibleFacade" Id="5141" Joints="N(5140:Out) N(5138:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="5140" Bounds="708 1290 0 0" Id="5142" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>reference in</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="775 1300 40 15" DataItem="5143" Id="5148" Label="5150" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="UInt8[8]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<Wire Id="5151" Joints="N(5138:data) N(5148:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="5148" Bounds="820 1300 80 14" Id="5150" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>ID Table temp</p.Text>
+				</NodeLabel>
+				<RegisterRead Bounds="720 1350 40 40" Id="5152" />
+				<DataAccessor Bounds="775 1360 40 15" DataItem="5159" Id="5153" Label="5157" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="UInt8[8]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<Wire Id="5154" Joints="N(5152:data) N(5153:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+				<IONameConstant Bounds="708 1350 12 10" DataType="@4686a14070e5421183b21313e6db78c0" Facade="DockedConstantFacade" Id="5155" Label="5158" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>"802.11 AFW Resources.grsc\\ID Table first time"</p.Data>
+					<IONameConstantBehavior />
+					<DockedConstantFacade UndockedSize="285.056671 27" />
+				</IONameConstant>
+				<Wire Facade="WireInvisibleFacade" Id="5156" Joints="N(5155:Out) N(5152:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="5153" Bounds="820 1360 101 14" Id="5157" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>ID Table first time</p.Text>
+				</NodeLabel>
+				<NodeLabel AttachedTo="5155" Bounds="708 1350 0 0" Id="5158" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>reference in</p.Text>
 				</NodeLabel>
 				<ClockDrivenLoop.ClockBorderNode Bounds="1 295 22 20" Docking="Left" Id="2497" Terminals="2495=2502" />
 				<ClockDrivenLoop.Tunnel Bounds="-3 370 26 10" Docking="Left" Id="2534" Terminals="o0=3189, i0=2535" />
@@ -6505,6 +6549,12 @@
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="5132" Name="Qchain: Manual enable for node departure" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="UInt8[8]" Id="5143" Name="ID Table temp" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="UInt8[8]" Id="5159" Name="ID Table first time" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="niInstr\ Register\ Bus\ v1\ FPGA\.lvlib__Process\.gcdl">

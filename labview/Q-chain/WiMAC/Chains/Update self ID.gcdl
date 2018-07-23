@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="26E68600814E27077DD118566968BD08" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="65D6D99830E5969806D5A8854133AC05" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -39,7 +39,7 @@
 		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Height="[float]1600" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
 			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="180" IsReadOnly="[bool]True" Label="[UIModel]181" Left="[float]161" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]108" TrueContent="[string]On" Value="{DataItemBinding Id=179}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Height="[float]16" Id="181" LabelOwner="[UIModel]180" Left="[float]161" Text="[string]Need update piggyback?" Top="[float]85" Width="[float]114" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="181" LabelOwner="[UIModel]180" Left="[float]161" Text="[string]Need to update piggyback?" Top="[float]85" Width="[float]114" xmlns="http://www.ni.com/PanelCommon" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="13">
 			<DataAccessor Bounds="245 215 40 15" DataItem="19" Id="15" Label="17" xmlns="http://www.ni.com/MocCommon">
@@ -51,8 +51,8 @@
 			<NodeLabel AttachedTo="15" Bounds="129 215 111 14" Id="17" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>device MAC address</p.Text>
 			</NodeLabel>
-			<NodeLabel AttachedTo="16" Bounds="121 125 119 14" Id="18" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>Need update ID table</p.Text>
+			<NodeLabel AttachedTo="16" Bounds="72 125 168 14" Id="18" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Need update order ID in chain</p.Text>
 			</NodeLabel>
 			<DataAccessor Bounds="245 270 40 15" DataItem="29" Id="25" Label="27" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="UInt8[6]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -149,15 +149,15 @@
 			<DataAccessor Bounds="1095 85 40 15" DataItem="179" Id="183" Label="184" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="183" Bounds="1140 85 136 14" Id="184" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>Need update piggyback?</p.Text>
+			<NodeLabel AttachedTo="183" Bounds="1140 85 151 14" Id="184" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Need to update piggyback?</p.Text>
 			</NodeLabel>
 			<Wire Id="192" Joints="N(16:Value) N(37:34)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="221" Joints="N(197:34) N(183:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
 			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="24" IsReadOnly="[bool]False" Label="[UIModel]135" Left="[float]161" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]108" TrueContent="[string]On" Value="{DataItemBinding Id=20}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Height="[float]16" Id="135" LabelOwner="[UIModel]24" Left="[float]161" Text="[string]Need update ID table" Top="[float]85" Width="[float]114" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="135" LabelOwner="[UIModel]24" Left="[float]161" Text="[string]Need update order ID in chain" Top="[float]85" Width="[float]161" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]22" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" FixedSize="[int]6" Height="[float]156" Id="21" IsFixedSize="[bool]True" Label="[UIModel]23" Left="[float]286" Orientation="[SMOrientation]Vertical" Rows="[int]6" Top="[float]66" Value="{DataItemBinding Id=19}" Width="[float]129" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0</p.DefaultElementValue>
 				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="22" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]55" MinHeight="[float]22" Name="[string]Child" RadixBase="[RadixBase]Hexadecimal" Top="[float]8" Value="[byte]0" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt8" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -174,7 +174,7 @@
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" DataType="UInt8[6]" Id="19" Name="device MAC address" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="3" DataType="Boolean" Id="20" Name="Need update ID table" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="3" DataType="Boolean" Id="20" Name="Need update order ID in chain" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="UInt8[6]" Id="29" Name="Mac address" xmlns="http://www.ni.com/MocCommon">
@@ -183,7 +183,7 @@
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="UInt8" Id="30" Name="ID" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="Boolean" Id="179" Name="Need update piggyback?" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="Boolean" Id="179" Name="Need to update piggyback?" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
 	</VirtualInstrument>

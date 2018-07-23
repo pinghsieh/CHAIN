@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="BB98823D108B58CADF5B60E543C54F9B" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="A391DD96F1A5820A4A07D6AFF2DF0078" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
@@ -143,11 +142,10 @@
 			<Wire Id="144" Joints="N(72:.not. x?) h(30) v(25) N(39:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="146" Joints="N(36:c1t0v) h(311) v(40) N(39:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="147" Joints="N(36:c0t0v) h(326) v(45) N(39:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<LogicalOr Bounds="520 420 25 30" Id="148" Terminals="o=153, c0t0v=151, c1t0v=70, c2t0v=80" VerticalChunkCount="3" />
+			<LogicalOr Bounds="520 420 25 30" Id="148" Terminals="o=320, c0t0v=151, c1t0v=70, c2t0v=80" VerticalChunkCount="3" />
 			<Wire Id="149" Joints="N(106:R1) h(5) v(-40) N(39:c3t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="151" Joints="N(36:c2t0v) h(36) v(5) N(148:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="153" Joints="N(148:o) h(105) B(1) N(72:x) B(1) v(130) h(-110) v(-30) N(315:data)" xmlns="http://www.ni.com/PlatformFramework" />
-			<WireComment AttachedTo="153" Bounds="560 422 75.2 16" Id="154" xmlns="http://www.ni.com/PlatformFramework">
+			<WireComment AttachedTo="320" Bounds="560 422 75.2 16" Id="154" xmlns="http://www.ni.com/PlatformFramework">
 				<p.ExpandedWidth>75.2</p.ExpandedWidth>
 				<p.Point>597.6 430</p.Point>
 				<p.Text>CCA busy</p.Text>
@@ -165,7 +163,7 @@
 			<NodeLabel AttachedTo="29" Bounds="139 470 71 14" Id="31" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>CCA TX busy</p.Text>
 			</NodeLabel>
-			<NodeLabel AttachedTo="32" Bounds="1140 435 71 14" Id="33" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="32" Bounds="1140 435 72 14" Id="33" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>backoff done</p.Text>
 			</NodeLabel>
 			<NodeLabel AttachedTo="58" Bounds="101 200 109 14" Id="60" xmlns="http://www.ni.com/PlatformFramework">
@@ -174,22 +172,13 @@
 			<NodeLabel AttachedTo="63" Bounds="184 350 26 14" Id="65" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>start</p.Text>
 			</NodeLabel>
-			<NodeLabel AttachedTo="82" Bounds="1140 470 104 14" Id="83" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="82" Bounds="1140 470 105 14" Id="83" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>backoff done pulse</p.Text>
 			</NodeLabel>
 			<NodeLabel AttachedTo="102" Bounds="1140 400 75 14" Id="104" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>backoff count</p.Text>
 			</NodeLabel>
-			<RegisterWrite Bounds="545 515 40 40" Id="315" xmlns="http://www.ni.com/LabVIEW.FPGA" />
-			<IONameConstant Bounds="533 516 12 10" DataType="@fe727365e16a43739fc579617e572605" Facade="DockedConstantFacade" Id="316" Label="317" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>"802.11 AFW Resources.grsc\\CCA busy"</p.Data>
-				<IONameConstantBehavior />
-				<DockedConstantFacade UndockedSize="245.606674 27" />
-			</IONameConstant>
-			<NodeLabel AttachedTo="316" Bounds="533 516 0 0" Id="317" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>reference in</p.Text>
-			</NodeLabel>
-			<Wire Facade="WireInvisibleFacade" Id="318" Joints="N(316:Out) h(5) v(-1) N(315:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="320" Joints="N(148:o) N(72:x)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" Top="[float]0" Width="[float]2000">
 			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@92d0159a90f54b2aa1a4a907f6c8398e" Height="[float]213" Id="17" Label="[UIModel]190" Left="[float]108" Top="[float]33" Value="{DataItemBinding Id=16}" Width="[float]157" xmlns="http://www.ni.com/PanelCommon">
@@ -315,106 +304,6 @@
 					<Field FieldAccessPolicy="ReadWrite" Name="valid" DataType="Boolean" />
 				</Members>
 			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="fe727365e16a43739fc579617e572605">
-			<Attributed>
-				<AttributedType>
-					<Composite Id="1" Name="RegisterDataType" ReferenceClass="">
-						<GenericTypeDefinition>
-							<Attributed>
-								<AttributedType>
-									<Composite Id="2" Name="RegisterDataType" ReferenceClass="">
-										<GenericTypeDefinition>
-											<Composite RefId="2" />
-										</GenericTypeDefinition>
-										<GenericParameters>
-											<Typedef TypedefName="Element" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
-										</GenericParameters>
-										<BaseType>
-											<Void />
-										</BaseType>
-										<Members>
-											<Function Id="3" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
-												<DeclaringType>
-													<Composite RefId="2" />
-												</DeclaringType>
-												<GenericTypeDefinition>
-													<Void />
-												</GenericTypeDefinition>
-												<Parameters>
-													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
-														<DataType>
-															<Typedef TypedefName="Element" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
-														</DataType>
-													</Parameter>
-												</Parameters>
-											</Function>
-											<Function Id="4" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
-												<DeclaringType>
-													<Composite RefId="2" />
-												</DeclaringType>
-												<GenericTypeDefinition>
-													<Void />
-												</GenericTypeDefinition>
-												<Parameters>
-													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
-														<DataType>
-															<Typedef TypedefName="Element" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
-														</DataType>
-													</Parameter>
-												</Parameters>
-											</Function>
-										</Members>
-									</Composite>
-								</AttributedType>
-								<AttributeValues>
-									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
-									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
-									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
-								</AttributeValues>
-							</Attributed>
-						</GenericTypeDefinition>
-						<ClosedGenericParameters>
-							<Boolean />
-						</ClosedGenericParameters>
-						<BaseType>
-							<Void />
-						</BaseType>
-						<Members>
-							<Function Id="5" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
-								<DeclaringType>
-									<Composite RefId="1" />
-								</DeclaringType>
-								<GenericTypeDefinition>
-									<Void />
-								</GenericTypeDefinition>
-								<Parameters>
-									<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data" DataType="Boolean" />
-								</Parameters>
-							</Function>
-							<Function Id="6" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
-								<DeclaringType>
-									<Composite RefId="1" />
-								</DeclaringType>
-								<GenericTypeDefinition>
-									<Void />
-								</GenericTypeDefinition>
-								<Parameters>
-									<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="Boolean" />
-								</Parameters>
-							</Function>
-						</Members>
-					</Composite>
-				</AttributedType>
-				<AttributeValues>
-					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
-					<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
-					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="c843328a30f744cbb29e05526807c415">
-			<Generic />
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 </SourceFile>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="776E9CE1696C1CF8F644D2FFBAE4B660" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="8A6A751DFFA8513D9F143EE0CB72E167" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -246,9 +246,11 @@
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="input ID table" />
+										<Parameter Id="L1" Desc="convert?" />
 									</MethodDeclaration>
 								</p.MethodDeclaration>
 								<Terminal DataType="UInt8[8]" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Boolean" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
 							</MethodCall>
 						</CaseStructure.Case>
 						<CaseStructure.Selector Bounds="-4 80 13 10" Docking="Left" Id="116" Terminals="113=174, 114, 115" />

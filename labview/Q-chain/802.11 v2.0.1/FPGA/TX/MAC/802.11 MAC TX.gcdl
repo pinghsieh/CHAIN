@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="126E6C58378451927A52446410946E1B" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="215CE896FC344B8BA89B153809F412E1" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -239,7 +239,7 @@
 			<Wire Id="986" Joints="N(330:Value) h(610) v(-40) N(135:L4)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="987" Joints="N(958:Value) h(285) B(1) h(315) v(-30) N(135:L3) B(1) v(-125) B(5) N(290:instance in) B(5) v(-90) N(1088:L1)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="988" Joints="N(962:Value) h(590) v(-20) N(135:L2)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="998" Joints="N(139:output) h(-120) B(1) h(-35) N(103:T0) B(1) N(1265:T0)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="998" Joints="N(139:output) h(-120) B(1) h(-35) B(2) v(-30) h(-40) N(1297:T0) B(2) N(103:T0) B(1) N(1265:T0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="1330 355 40 15" DataItem="1003" Id="1005" Label="1007" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="UInt8" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
@@ -272,7 +272,7 @@
 				<Terminal DataType="@d216bc80504e46a0b6747dbc4849a4eb" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="@92d0159a90f54b2aa1a4a907f6c8398e" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 			</MethodCall>
-			<Wire Id="1092" Joints="N(1088:R0) h(125) B(1) N(103:L2) B(1) v(95) N(1265:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="1092" Joints="N(1088:R0) h(60) B(1) h(65) B(2) N(103:L2) B(2) v(95) N(1265:L2) B(1) v(-90) N(1297:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="1093" Joints="N(15:R0) h(15) v(-45) N(1088:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 			<NodeLabel AttachedTo="83" Bounds="351 235 99 14" Id="85" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>global clock value</p.Text>
@@ -417,6 +417,16 @@
 				<p.Text>time for starting tracking</p.Text>
 			</NodeLabel>
 			<Wire Id="1296" Joints="N(1294:Value) h(235) N(15:T1)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="920 120 40 40" DomainName="NI.MocCommon" Id="1297" Target="Monitor\ CCA\ Status\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="CCA timing indication" />
+						<Parameter Id="T0" Desc="CCA TX busy" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@92d0159a90f54b2aa1a4a907f6c8398e" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" Top="[float]0" Width="[float]2000">
 			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@d216bc80504e46a0b6747dbc4849a4eb" Height="[float]452" Id="723" Label="[UIModel]762" Left="[float]239" Top="[float]37" Value="{DataItemBinding Id=957}" Width="[float]126" xmlns="http://www.ni.com/PanelCommon">
@@ -789,6 +799,24 @@
 										<FontSetting FontSize="5" />
 									</Text>
 								</Canvas>
+							</IconPanel>
+						</Icon>
+					</MergeItem>
+				</MergeScript>
+			</p.IconModel>
+			<p.IconModel Target="Monitor\ CCA\ Status\.gcdl">
+				<MergeScript>
+					<MergeItem Path="." IsPrimary="True">
+						<Icon ListViewIconCrop="0 0 40 40">
+							<IconPanel Height="[float]40" Left="[float]0" Top="[float]0" Width="[float]40">
+								<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
+									<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+									<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Monitor CCA Status" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+										<FontSetting FontFamily="Verdana" FontSize="6.75" />
+									</FileNameText>
+								</IconTemplate>
+								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
 							</IconPanel>
 						</Icon>
 					</MergeItem>

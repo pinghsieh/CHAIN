@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="503106C65EFAFC1688BF1AAD8EDDD5A7" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="1F5F363F1812B577AEA45E8F1E0CD902" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -10,8 +10,8 @@
 		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
-		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
-			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]40">
+		<Icon Id="2" ListViewIconCrop="0 0 50 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" Top="[float]0" Width="[float]50">
 				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="4" Left="[float]0" TemplateName="Gray" Top="[float]0">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
@@ -19,22 +19,24 @@
 						<FontSetting FontFamily="Verdana" FontSize="6" Id="8" />
 					</FileNameText>
 				</IconTemplate>
-				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]44" />
 			</IconPanel>
 		</Icon>
-		<ConnectorPane Height="40" Id="10" ListViewHeight="145" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+		<ConnectorPane Height="40" Id="10" ListViewHeight="160" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
 			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="17" />
 			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 65" Parameter="27" />
 			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 95" Parameter="145" />
-			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 140" Parameter="301" />
 			<ConnectorPaneTerminal Hotspot="15 0" ListViewHotspot="0 110" Parameter="176" />
 			<ConnectorPaneTerminal Hotspot="25 0" ListViewHotspot="0 125" Parameter="291" />
-			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 50" Parameter="130" />
-			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 80" Parameter="47" />
-			<ConnectorPaneTerminal Hotspot="40 25" />
-			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="50 5" ListViewHotspot="150 50" Parameter="130" />
+			<ConnectorPaneTerminal Hotspot="50 15" ListViewHotspot="150 80" Parameter="47" />
+			<ConnectorPaneTerminal Hotspot="50 25" />
+			<ConnectorPaneTerminal Hotspot="50 35" />
 			<ConnectorPaneTerminal Hotspot="15 40" />
 			<ConnectorPaneTerminal Hotspot="25 40" />
+			<ConnectorPaneTerminal Hotspot="35 0" />
+			<ConnectorPaneTerminal Hotspot="35 40" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Height="[float]1600" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
@@ -44,6 +46,8 @@
 			</ArrayViewer>
 			<LED BaseName="[string]Switch" FalseContent="[string]OFF" Height="[float]35" Id="292" IsReadOnly="[bool]False" Label="[UIModel]293" Left="[float]165" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" Top="[float]123" TrueContent="[string]ON" Value="{DataItemBinding Id=291}" Width="[float]35" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="293" LabelOwner="[UIModel]292" Left="[float]165" Text="[string]is the received frame an ACK?" Top="[float]100" Width="[float]116" xmlns="http://www.ni.com/PanelCommon" />
+			<LED BaseName="[string]Switch" FalseContent="[string]OFF" Height="[float]35" Id="302" IsReadOnly="[bool]False" Label="[UIModel]303" Left="[float]165" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" Top="[float]123" TrueContent="[string]ON" Value="{DataItemBinding Id=301}" Width="[float]35" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="303" LabelOwner="[UIModel]302" Left="[float]165" Text="[string]input valid" Top="[float]100" Width="[float]116" xmlns="http://www.ni.com/PanelCommon" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="13">
 			<DataAccessor Bounds="15 170 40 15" DataItem="17" Id="15" Label="16" xmlns="http://www.ni.com/MocCommon">
@@ -163,10 +167,17 @@
 			<NodeLabel AttachedTo="289" Bounds="-158 145 168 14" Id="290" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>is the received frame an ACK?</p.Text>
 			</NodeLabel>
-			<LogicalAnd Bounds="100 145 25 20" Id="294" Terminals="o=298, c0t0v=295, c1t0v=297" />
+			<LogicalAnd Bounds="100 145 25 30" Id="294" Terminals="o=298, c0t0v=295, c1t0v=297, c2t0v=304" VerticalChunkCount="3" />
 			<Wire Id="295" Joints="N(289:Value) N(294:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="297" Joints="N(15:Value) h(25) v(-15) N(294:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="297" Joints="N(15:Value) h(10) v(-15) N(294:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="298" Joints="N(294:o) h(15) v(20) N(112:109)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="15 190 40 15" DataItem="301" Id="299" Label="300" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="299" Bounds="-49 190 59 14" Id="300" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>input valid</p.Text>
+			</NodeLabel>
+			<Wire Id="304" Joints="N(299:Value) h(40) v(-25) N(294:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
 			<LED BaseName="[string]Switch" FalseContent="[string]OFF" Height="[float]35" Id="18" IsReadOnly="[bool]False" Label="[UIModel]19" Left="[float]165" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" Top="[float]123" TrueContent="[string]ON" Value="{DataItemBinding Id=17}" Width="[float]35" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -199,6 +210,9 @@
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="4" DataType="Boolean" Id="291" Name="is the received frame an ACK?" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="5" DataType="Boolean" Id="301" Name="input valid" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
 	</VirtualInstrument>
