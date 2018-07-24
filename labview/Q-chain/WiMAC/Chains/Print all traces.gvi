@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="2C6B04E0E0A500B27B033B3EB2CA2AAB" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="EE188E80E4635BA168EFF89CE835803F" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
@@ -21,31 +21,31 @@
 				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]54" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]44" />
 			</IconPanel>
 		</Icon>
-		<ConnectorPane Height="60" Id="10" ListViewHeight="145" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+		<ConnectorPane Height="60" Id="10" ListViewHeight="175" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
 			<ConnectorPaneTerminal ListViewHotspot="0 50" Parameter="721" />
 			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 35" Parameter="67" />
 			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 65" Parameter="768" />
-			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 80" Parameter="332" />
-			<ConnectorPaneTerminal Hotspot="15 0" />
-			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" ListViewHotspot="0 125" Parameter="332" />
+			<ConnectorPaneTerminal Hotspot="25 0" ListViewHotspot="0 140" Parameter="2327" />
 			<ConnectorPaneTerminal Hotspot="50 5" />
 			<ConnectorPaneTerminal Hotspot="50 15" />
 			<ConnectorPaneTerminal Hotspot="50 25" />
 			<ConnectorPaneTerminal Hotspot="50 35" />
 			<ConnectorPaneTerminal Hotspot="15 60" />
 			<ConnectorPaneTerminal Hotspot="25 60" />
-			<ConnectorPaneTerminal Hotspot="35 0" />
+			<ConnectorPaneTerminal Hotspot="35 0" ListViewHotspot="0 155" Parameter="2331" />
 			<ConnectorPaneTerminal Hotspot="35 60" />
 			<ConnectorPaneTerminal Hotspot="50 45" />
-			<ConnectorPaneTerminal Hotspot="0 45" ListViewHotspot="0 125" Parameter="848" />
-			<ConnectorPaneTerminal Hotspot="50 55" ListViewHotspot="150 110" Parameter="693" />
-			<ConnectorPaneTerminal Hotspot="0 55" ListViewHotspot="0 95" Parameter="678" />
+			<ConnectorPaneTerminal Hotspot="0 45" ListViewHotspot="0 110" Parameter="848" />
+			<ConnectorPaneTerminal Hotspot="50 55" ListViewHotspot="150 95" Parameter="693" />
+			<ConnectorPaneTerminal Hotspot="0 55" ListViewHotspot="0 80" Parameter="678" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Height="[float]1600" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
 			<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" Filter="[string]txt;*.csv" Height="[float]28" Id="68" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" Label="[UIModel]69" Left="[float]205" Path="{DataItemBinding Id=67}" Top="[float]36" Width="[float]180" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="69" LabelOwner="[UIModel]68" Left="[float]205" Text="[string]CCA Busy trace filepath" Top="[float]13" Width="[float]44" xmlns="http://www.ni.com/PanelCommon" />
-			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="335" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]36" MinWidth="[float]34" Name="[string]start printing?" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=332}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="335" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]36" MinWidth="[float]34" Name="[string]start printing CCA log?" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=332}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]165" Id="679" Label="[UIModel]686" Left="[float]316" Top="[float]174" Value="{DataItemBinding Id=678}" Width="[float]138" p4:ControlDefinitionChecksum="zmhsRUGWDTf2PX9vKcqFsw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="Error\.gtype:ControlDefinition" />
@@ -88,6 +88,8 @@
 			<Label Height="[float]16" Id="770" LabelOwner="[UIModel]769" Left="[float]205" Text="[string]Chain State trace filepath" Top="[float]13" Width="[float]44" xmlns="http://www.ni.com/PanelCommon" />
 			<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" Filter="[string]txt;*.csv" Height="[float]28" Id="849" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" Label="[UIModel]850" Left="[float]205" Path="{DataItemBinding Id=848}" Top="[float]36" Width="[float]180" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="850" LabelOwner="[UIModel]849" Left="[float]205" Text="[string]ACK Address trace filepath" Top="[float]13" Width="[float]44" xmlns="http://www.ni.com/PanelCommon" />
+			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="2328" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]36" MinWidth="[float]34" Name="[string]start printing Chain State log?" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=2327}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="2332" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]36" MinWidth="[float]34" Name="[string]start printing ACK Address log?" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=2331}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="13">
 			<DataAccessor Bounds="120 170 40 15" DataItem="67" Id="71" Label="72" xmlns="http://www.ni.com/MocCommon">
@@ -96,13 +98,67 @@
 			<NodeLabel AttachedTo="71" Bounds="-16 170 131 14" Id="72" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>CCA Busy trace filepath</p.Text>
 			</NodeLabel>
-			<Wire Id="75" Joints="N(71:Path) N(330:76)" xmlns="http://www.ni.com/PlatformFramework" />
-			<CaseStructure Bounds="405 100 910 990" Default="77" Id="76" Selected="78" UserSelectorBounds="411.2 0 88 16.8">
-				<CaseStructure.Case Bounds="5 5 900 980" Id="77" Pattern="False">
-					<Wire Id="708" Joints="N(691:77) h(815) v(65) N(706:77)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="300 160 40 15" DataItem="332" Id="334" Label="336" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="334" Bounds="169 160 126 14" Id="336" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>start printing CCA log?</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="115 315 40 15" DataItem="678" Id="688" Label="689" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="688" Bounds="68 315 42 14" Id="689" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>error in</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="1345 380 40 15" DataItem="693" Id="703" Label="704" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="703" Bounds="1390 380 50 14" Id="704" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>error out</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="120 220 40 15" DataItem="721" Id="719" Label="720" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@b60a094678034772a71c5cf1015e00b8" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="719" Bounds="30 220 85 14" Id="720" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>custom session</p.Text>
+			</NodeLabel>
+			<PropertyNode Bounds="170 220 193.6 65" HasErrorTerminals="False" Id="730" InstanceDataType="@b60a094678034772a71c5cf1015e00b8" Mode="InstanceProperties" Template="List">
+				<PropertyItemTerminal DataType="@95cc0d1c93f240f0b2cdb037a23a0518" Hotspot="193.6 15" Id="c0t0v" Path="Track CCA Busy queue" Usage="Optional" />
+				<PropertyItemTerminal DataType="@fe709c613e164faf9c225a8316eb5f9d" Hotspot="193.6 30" Id="c1t0v" Path="Track Chain State queue" Usage="Optional" />
+				<PropertyItemTerminal DataType="@87772003c737451f811b11a1a99326ee" Hotspot="193.6 45" Id="c2t0v" Path="Track Received MAC Address" Usage="Optional" />
+			</PropertyNode>
+			<Wire Id="731" Joints="N(719:Value) N(730:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="120 495 40 15" DataItem="768" Id="766" Label="767" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Path" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="766" Bounds="-27 495 142 14" Id="767" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Chain State trace filepath</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="115 810 40 15" DataItem="848" Id="846" Label="847" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Path" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="846" Bounds="-38 810 148 14" Id="847" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>ACK Address trace filepath</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="310 445 40 15" DataItem="2327" Id="2325" Label="2326" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="2325" Bounds="138 445 167 14" Id="2326" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>start printing Chain State log?</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="310 765 40 15" DataItem="2331" Id="2329" Label="2330" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="2329" Bounds="131 765 174 14" Id="2330" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>start printing ACK Address log?</p.Text>
+			</NodeLabel>
+			<MergeErrors Bounds="1270 380 30 30" Id="781" Terminals="error out=786, c0t0v=785, c1t0v=784, c2t0v=807" VerticalChunkCount="3" />
+			<CaseStructure Bounds="450 120 805 275" Default="862" Id="861" Selected="862" UserSelectorBounds="358.4 0 88 16.8">
+				<CaseStructure.Case Bounds="5 5 795 265" Id="862" Pattern="False">
+					<Wire Id="2336" Joints="N(1124:862) h(782) v(135) N(1127:862)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
-				<CaseStructure.Case Bounds="5 5 900 980" Id="78" Pattern="True">
-					<ForLoop Bounds="258 38 570 230" DiagramId="16" Id="15">
+				<CaseStructure.Case Bounds="5 5 795 265" Id="863" Pattern="True">
+					<ForLoop Bounds="213 18 570 230" DiagramId="16" Id="15">
 						<LoopIteration Bounds="10 195 15 15" Id="18" />
 						<PropertyNode Bounds="25 70 175 50" HasErrorTerminals="False" Id="27" InstanceDataType="@3e4e1d3825b24d3696cf9e2f4d9d6ef0" ListViewAutoSize="False" Mode="InstanceProperties" Template="List">
 							<PropertyItemTerminal DataType="UInt32" Hotspot="175 15" Id="c0t0v" Path="Timestamp" Usage="Optional" />
@@ -175,16 +231,27 @@
 						<Wire Id="718" Joints="N(716:unsigned 32bit integer) N(31:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 						<LoopCount Bounds="1 1 15 15" Docking="Left" Id="17" Terminals="15, 16" />
 						<LoopTunnel AutoIndex="True" Bounds="-5 72 13 10" Docking="Left" Id="26" Terminals="o0=326, i0=28" TunnelMode="0" />
-						<LoopTunnel Bounds="-5 62 13 10" Docking="Left" Id="74" Terminals="o0=329, i0=73" />
+						<LoopTunnel Bounds="-5 62 13 10" Docking="Left" Id="74" Terminals="o0=1117, i0=73" />
 					</ForLoop>
+					<FlushQueue Bounds="125 90 40 40" Id="19" />
+					<Wire Id="1117" Joints="N(1118:863) h(100) v(35) N(74:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="1120" Joints="N(1121:863) N(19:queue)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="1123" Joints="N(1124:863) N(19:error in)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="1126" Joints="N(19:error out) h(10) v(135) N(1127:863)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="326" Joints="N(19:remaining elements) h(23) v(-20) N(26:o0)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="329" Joints="N(330:78) h(145) v(35) N(74:o0)" xmlns="http://www.ni.com/PlatformFramework" />
-					<FlushQueue Bounds="170 110 40 40" Id="19" />
-					<Wire Id="676" Joints="N(677:78) N(19:queue)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="690" Joints="N(691:78) h(144) B(1) h(1) v(-70) N(19:error in) B(1) v(225) h(2) B(6) N(774:error in) B(6) v(315) N(840:error in)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="733" Joints="N(774:remaining elements) h(28) v(-25) N(739:o0)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="734" Joints="N(772:78) N(740:o0)" xmlns="http://www.ni.com/PlatformFramework" />
-					<ForLoop Bounds="258 328 570 230" DiagramId="737" Id="736">
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 40 13 10" Docking="Left" Id="864" Terminals="861=2333, 862, 863" />
+				<CaseStructure.Tunnel Bounds="-4 50 13 10" Docking="Left" Id="1118" Terminals="861=329, 862, 863=1117" />
+				<CaseStructure.Tunnel Bounds="-4 95 13 10" Docking="Left" Id="1121" Terminals="861=676, 862, 863=1120" />
+				<CaseStructure.Tunnel Bounds="-4 125 13 10" Docking="Left" Id="1124" Terminals="861=690, 862=2336, 863=1123" />
+				<CaseStructure.Tunnel Bounds="796 260 13 10" Docking="Right" Id="1127" Terminals="861=785, 862=2336, 863=1126" />
+			</CaseStructure>
+			<CaseStructure Bounds="455 405 790 310" Default="1130" Id="1129" Selected="1130" UserSelectorBounds="351.2 0 88 16.8">
+				<CaseStructure.Case Bounds="5 5 780 300" Id="1130" Pattern="False">
+					<Wire Id="2337" Joints="N(1602:1130) h(767) v(140) N(1611:1130)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 780 300" Id="1131" Pattern="True">
+					<ForLoop Bounds="208 23 570 230" DiagramId="737" Id="736">
 						<LoopIteration Bounds="10 195 15 15" Id="741" />
 						<PropertyNode Bounds="25 70 175 50" HasErrorTerminals="False" Id="742" InstanceDataType="@5314d4e569424cb3bd27ffb8b7b0e9cc" ListViewAutoSize="False" Mode="InstanceProperties" Template="List">
 							<PropertyItemTerminal DataType="UInt32" Hotspot="175 15" Id="c0t0v" Path="Timestamp" Usage="Optional" />
@@ -257,18 +324,27 @@
 						<Wire Id="765" Joints="N(763:unsigned 32bit integer) N(744:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 						<LoopCount Bounds="1 1 15 15" Docking="Left" Id="738" Terminals="736, 737" />
 						<LoopTunnel AutoIndex="True" Bounds="-5 72 13 10" Docking="Left" Id="739" Terminals="o0=733, i0=743" TunnelMode="0" />
-						<LoopTunnel Bounds="-5 62 13 10" Docking="Left" Id="740" Terminals="o0=734, i0=762" />
+						<LoopTunnel Bounds="-5 62 13 10" Docking="Left" Id="740" Terminals="o0=1604, i0=762" />
 					</ForLoop>
-					<FlushQueue Bounds="175 405 40 40" Id="774" />
-					<Wire Id="777" Joints="N(776:78) N(774:queue)" xmlns="http://www.ni.com/PlatformFramework" />
-					<MergeErrors Bounds="860 275 30 30" Id="781" Terminals="error out=786, c0t0v=785, c1t0v=784, c2t0v=807" VerticalChunkCount="3" />
-					<Wire Id="784" Joints="N(774:error out) h(10) v(140) h(615) v(-290) N(781:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="785" Joints="N(19:error out) h(10) v(135) N(781:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="786" Joints="N(781:error out) N(706:78)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="807" Joints="N(840:error out) h(5) v(140) h(630) v(-595) N(781:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="808" Joints="N(840:remaining elements) h(28) v(-25) N(813:o0)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="809" Joints="N(852:78) N(814:o0)" xmlns="http://www.ni.com/PlatformFramework" />
-					<ForLoop Bounds="258 643 570 230" DiagramId="811" Id="810">
+					<FlushQueue Bounds="125 100 40 40" Id="774" />
+					<Wire Id="1601" Joints="N(1602:1131) N(774:error in)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="1604" Joints="N(1605:1131) N(740:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="1607" Joints="N(1608:1131) N(774:queue)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="1610" Joints="N(774:error out) h(10) v(140) N(1611:1131)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="733" Joints="N(774:remaining elements) h(28) v(-25) N(739:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 40 13 10" Docking="Left" Id="1132" Terminals="1129=2334, 1130, 1131" />
+				<CaseStructure.Tunnel Bounds="-4 135 13 10" Docking="Left" Id="1602" Terminals="1129=690, 1130=2337, 1131=1601" />
+				<CaseStructure.Tunnel Bounds="-4 90 13 10" Docking="Left" Id="1605" Terminals="1129=734, 1130, 1131=1604" />
+				<CaseStructure.Tunnel Bounds="-4 105 13 10" Docking="Left" Id="1608" Terminals="1129=777, 1130, 1131=1607" />
+				<CaseStructure.Tunnel Bounds="781 275 13 10" Docking="Right" Id="1611" Terminals="1129=784, 1130=2337, 1131=1610" />
+			</CaseStructure>
+			<CaseStructure Bounds="465 725 785 285" Default="1614" Id="1613" Selected="1614" UserSelectorBounds="348.8 0 88 16.8">
+				<CaseStructure.Case Bounds="5 5 775 275" Id="1614" Pattern="False">
+					<Wire Id="2338" Joints="N(2314:1614) h(762) v(135) N(2317:1614)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 775 275" Id="1615" Pattern="True">
+					<ForLoop Bounds="198 18 570 230" DiagramId="811" Id="810">
 						<LoopIteration Bounds="10 195 15 15" Id="815" />
 						<PropertyNode Bounds="25 70 175 65" HasErrorTerminals="False" Id="816" InstanceDataType="@a9038daf89024befa5c701f40c28d9aa" ListViewAutoSize="False" Mode="InstanceProperties" Template="List">
 							<PropertyItemTerminal DataType="UInt32" Hotspot="175 15" Id="c0t0v" Path="Timestamp" Usage="Optional" />
@@ -347,71 +423,35 @@
 						<Wire Id="860" Joints="N(857:unsigned 32bit integer) h(45) v(-10) N(818:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 						<LoopCount Bounds="1 1 15 15" Docking="Left" Id="812" Terminals="810, 811" />
 						<LoopTunnel AutoIndex="True" Bounds="-5 72 13 10" Docking="Left" Id="813" Terminals="o0=808, i0=817" TunnelMode="0" />
-						<LoopTunnel Bounds="-5 62 13 10" Docking="Left" Id="814" Terminals="o0=809, i0=836" />
+						<LoopTunnel Bounds="-5 62 13 10" Docking="Left" Id="814" Terminals="o0=2319, i0=836" />
 					</ForLoop>
-					<FlushQueue Bounds="175 720 40 40" Id="840" />
-					<Wire Id="841" Joints="N(844:78) N(840:queue)" xmlns="http://www.ni.com/PlatformFramework" />
+					<FlushQueue Bounds="115 95 40 40" Id="840" />
+					<Wire Id="2313" Joints="N(2314:1615) N(840:error in)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2316" Joints="N(840:error out) h(5) v(135) N(2317:1615)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2319" Joints="N(2320:1615) N(814:o0)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="2322" Joints="N(2323:1615) N(840:queue)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="808" Joints="N(840:remaining elements) h(28) v(-25) N(813:o0)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
-				<CaseStructure.Selector Bounds="-4 40 13 10" Docking="Left" Id="79" Terminals="76=337, 77, 78" />
-				<CaseStructure.Tunnel Bounds="-4 70 13 10" Docking="Left" Id="330" Terminals="76=75, 77, 78=329" />
-				<CaseStructure.Tunnel Bounds="-4 115 13 10" Docking="Left" Id="677" Terminals="76=732, 77, 78=676" />
-				<CaseStructure.Tunnel Bounds="-4 215 13 10" Docking="Left" Id="691" Terminals="76=692, 77=708, 78=690" />
-				<CaseStructure.Tunnel Bounds="901 280 13 10" Docking="Right" Id="706" Terminals="76=707, 77=708, 78=786" />
-				<CaseStructure.Tunnel Bounds="-4 395 13 10" Docking="Left" Id="772" Terminals="76=771, 77, 78=734" />
-				<CaseStructure.Tunnel Bounds="-4 410 13 10" Docking="Left" Id="776" Terminals="76=775, 77, 78=777" />
-				<CaseStructure.Tunnel Bounds="-4 725 13 10" Docking="Left" Id="844" Terminals="76=843, 77, 78=841" />
-				<CaseStructure.Tunnel Bounds="-4 710 13 10" Docking="Left" Id="852" Terminals="76=851, 77, 78=809" />
+				<CaseStructure.Selector Bounds="-4 40 13 10" Docking="Left" Id="1616" Terminals="1613=2335, 1614, 1615" />
+				<CaseStructure.Tunnel Bounds="-4 130 13 10" Docking="Left" Id="2314" Terminals="1613=690, 1614=2338, 1615=2313" />
+				<CaseStructure.Tunnel Bounds="776 265 13 10" Docking="Right" Id="2317" Terminals="1613=807, 1614=2338, 1615=2316" />
+				<CaseStructure.Tunnel Bounds="-4 85 13 10" Docking="Left" Id="2320" Terminals="1613=809, 1614, 1615=2319" />
+				<CaseStructure.Tunnel Bounds="-4 100 13 10" Docking="Left" Id="2323" Terminals="1613=841, 1614, 1615=2322" />
 			</CaseStructure>
-			<DataAccessor Bounds="125 140 40 15" DataItem="332" Id="334" Label="336" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-			</DataAccessor>
-			<NodeLabel AttachedTo="334" Bounds="41 140 79 14" Id="336" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>start printing?</p.Text>
-			</NodeLabel>
-			<Wire Id="337" Joints="N(334:Value) N(79:76)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="115 315 40 15" DataItem="678" Id="688" Label="689" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-			</DataAccessor>
-			<NodeLabel AttachedTo="688" Bounds="68 315 42 14" Id="689" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>error in</p.Text>
-			</NodeLabel>
-			<Wire Id="692" Joints="N(688:Value) N(691:76)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="1345 380 40 15" DataItem="693" Id="703" Label="704" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-			</DataAccessor>
-			<NodeLabel AttachedTo="703" Bounds="1390 380 50 14" Id="704" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>error out</p.Text>
-			</NodeLabel>
-			<Wire Id="707" Joints="N(706:76) N(703:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="120 220 40 15" DataItem="721" Id="719" Label="720" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@b60a094678034772a71c5cf1015e00b8" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
-			</DataAccessor>
-			<NodeLabel AttachedTo="719" Bounds="30 220 85 14" Id="720" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>custom session</p.Text>
-			</NodeLabel>
-			<PropertyNode Bounds="170 220 193.6 65" HasErrorTerminals="False" Id="730" InstanceDataType="@b60a094678034772a71c5cf1015e00b8" Mode="InstanceProperties" Template="List">
-				<PropertyItemTerminal DataType="@95cc0d1c93f240f0b2cdb037a23a0518" Hotspot="193.6 15" Id="c0t0v" Path="Track CCA Busy queue" Usage="Optional" />
-				<PropertyItemTerminal DataType="@fe709c613e164faf9c225a8316eb5f9d" Hotspot="193.6 30" Id="c1t0v" Path="Track Chain State queue" Usage="Optional" />
-				<PropertyItemTerminal DataType="@87772003c737451f811b11a1a99326ee" Hotspot="193.6 45" Id="c2t0v" Path="Track Received MAC Address" Usage="Optional" />
-			</PropertyNode>
-			<Wire Id="731" Joints="N(719:Value) N(730:instance in)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="732" Joints="N(730:c0t0v) h(21.3999939) v(-15) N(677:76)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="120 495 40 15" DataItem="768" Id="766" Label="767" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Path" xmlns="http://www.ni.com/PlatformFramework" />
-			</DataAccessor>
-			<NodeLabel AttachedTo="766" Bounds="-27 495 142 14" Id="767" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>Chain State trace filepath</p.Text>
-			</NodeLabel>
-			<Wire Id="771" Joints="N(766:Path) N(772:76)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="775" Joints="N(730:c1t0v) h(31.3999939) v(265) N(776:76)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="843" Joints="N(730:c2t0v) h(6.399994) v(565) N(844:76)" xmlns="http://www.ni.com/PlatformFramework" />
-			<DataAccessor Bounds="115 810 40 15" DataItem="848" Id="846" Label="847" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Path" xmlns="http://www.ni.com/PlatformFramework" />
-			</DataAccessor>
-			<NodeLabel AttachedTo="846" Bounds="-38 810 148 14" Id="847" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>ACK Address trace filepath</p.Text>
-			</NodeLabel>
-			<Wire Id="851" Joints="N(846:Path) N(852:76)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="329" Joints="N(71:Path) N(1118:861)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="676" Joints="N(730:c0t0v) h(21.3999939) v(-15) N(1121:861)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="690" Joints="N(688:Value) h(275) B(1) v(-70) N(1124:861) B(1) v(225) B(4) N(1602:1129) B(4) v(315) N(2314:1613)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="734" Joints="N(766:Path) N(1605:1129)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="777" Joints="N(730:c1t0v) h(31.3999939) v(265) N(1608:1129)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="784" Joints="N(1611:1129) h(6) v(-290) N(781:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="785" Joints="N(1127:861) N(781:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="786" Joints="N(781:error out) N(703:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="807" Joints="N(2317:1613) h(6) v(-590) N(781:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="809" Joints="N(846:Path) N(2320:1613)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="841" Joints="N(730:c2t0v) h(6.399994) v(565) N(2323:1613)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2333" Joints="N(334:Value) N(864:861)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2334" Joints="N(2325:Value) N(1132:1129)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="2335" Joints="N(2329:Value) N(1616:1613)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="Path" Id="67" Name="CCA Busy trace filepath" xmlns="http://www.ni.com/MocCommon">
@@ -419,7 +459,7 @@
 				<Path a="1" />
 			</p.DefaultValue>
 		</DataItem>
-		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" DataType="Boolean" Id="332" Name="start printing?" xmlns="http://www.ni.com/MocCommon">
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" DataType="Boolean" Id="332" Name="start printing CCA log?" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
 		<DataItem CallDirection="Input" CallIndex="3" DataType="Error" Id="678" Name="error in" xmlns="http://www.ni.com/MocCommon">
@@ -461,6 +501,12 @@
 			<p.DefaultValue>
 				<Path a="1" />
 			</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="6" DataType="Boolean" Id="2327" Name="start printing Chain State log?" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="7" DataType="Boolean" Id="2331" Name="start printing ACK Address log?" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="Write\ to\ Spreadsheet\ File\ \(I64\)\.gvi">

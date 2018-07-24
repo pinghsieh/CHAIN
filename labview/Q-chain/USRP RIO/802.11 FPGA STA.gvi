@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="CE142A018232B7D3CDC562EEC142D454" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="6371A736CAFB0C59632DB6E41827DAD7" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -716,6 +716,12 @@
 				<p.DefaultElementValue>0</p.DefaultElementValue>
 				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="5161" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[byte]1" Left="[float]0" MinHeight="[float]22" Name="[string]Child" Top="[float]0" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt8" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
+			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="5163" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Left="[float]0" Name="[string]CCA bandwidth enum" Top="[float]0" Value="{DataItemBinding Id=5162}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<EnumSelectorInfo DisplayValue="[string]20 MHz" Value="[ushort]0" ValueType="[Type]UInt16" />
+				<EnumSelectorInfo DisplayValue="[string]40 MHz" Value="[ushort]1" ValueType="[Type]UInt16" />
+				<EnumSelectorInfo DisplayValue="[string]80 MHz" Value="[ushort]2" ValueType="[Type]UInt16" />
+			</EnumSelector>
+			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="5169" IsReadOnly="[bool]False" Left="[float]0" MinHeight="[float]36" MinWidth="[float]34" Name="[string]Qchain:Use manual CCA bandwidth" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=5168}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<ClockDrivenLoop Bounds="-4042 1800 1104 830" DiagramId="19" Id="18" xmlns="http://www.ni.com/LabVIEW.FPGA">
@@ -2762,7 +2768,7 @@
 				<DataAccessor Bounds="1880 675 40 15" DataItem="2038" Id="1492" Label="1607" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="@0f9e56a36eb84c76b3110191bbb4bf3a" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
-				<MethodCall Bounds="1600 615 70 90" DomainName="NI.Appframeworks.802.11" Id="1493" Target="\802\.11\ MAC\ TX\.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<MethodCall Bounds="1600 615 70 100" DomainName="NI.Appframeworks.802.11" Id="1493" Target="\802\.11\ MAC\ TX\.gcdl" xmlns="http://www.ni.com/MocCommon">
 					<p.MethodDeclaration>
 						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 							<Parameter Id="L4" Desc="TX after backoff request" />
@@ -2778,6 +2784,8 @@
 							<Parameter Id="B1" Desc="Set Backoff Done Pulse to False" />
 							<Parameter Id="T4" Desc="TX Data After SIFS" />
 							<Parameter Id="L7" Desc="time for starting tracking" />
+							<Parameter Id="L8" Desc="CCA bandwidth enum" />
+							<Parameter Id="L9" Desc="Qchain:Use manual CCA bandwidth" />
 							<Parameter Id="R0" Desc="MPDU" />
 							<Parameter Id="R1" Desc="output valid" />
 							<Parameter Id="R2" Desc="PHY TX start request" />
@@ -2802,9 +2810,11 @@
 					<Terminal DataType="UInt8" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Boolean" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Boolean" Direction="Input" Hotspot="45 0" Id="T3" xmlns="http://www.ni.com/PlatformFramework" />
-					<Terminal DataType="Boolean" Direction="Input" Hotspot="25 90" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Boolean" Direction="Input" Hotspot="25 100" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Boolean" Direction="Input" Hotspot="55 0" Id="T4" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="UInt32" Direction="Input" Hotspot="0 75" Id="L7" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="@4f9bb19e878648dfb7a52c6b0779a1fb" Direction="Input" Hotspot="0 85" Id="L8" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Boolean" Direction="Input" Hotspot="0 95" Id="L9" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="UInt8" Direction="Output" Hotspot="70 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Boolean" Direction="Output" Hotspot="70 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="@9c4d0a96a53f499a9b7a3b2a1719bafc" Direction="Output" Hotspot="70 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
@@ -2812,9 +2822,9 @@
 					<Terminal DataType="Boolean" Direction="Output" Hotspot="70 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="@72ff3231910448e8aa318830593f847a" Direction="Output" Hotspot="70 55" Id="R5" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="@0f9e56a36eb84c76b3110191bbb4bf3a" Direction="Output" Hotspot="70 65" Id="R6" xmlns="http://www.ni.com/PlatformFramework" />
-					<Terminal DataType="Boolean" Direction="Output" Hotspot="15 90" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
-					<Terminal DataType="UInt32" Direction="Output" Hotspot="55 90" Id="B4" xmlns="http://www.ni.com/PlatformFramework" />
-					<Terminal DataType="UInt32" Direction="Output" Hotspot="45 90" Id="B3" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Boolean" Direction="Output" Hotspot="15 100" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="UInt32" Direction="Output" Hotspot="55 100" Id="B4" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="UInt32" Direction="Output" Hotspot="45 100" Id="B3" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="Boolean" Direction="Output" Hotspot="70 75" Id="R7" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="UInt32" Direction="Output" Hotspot="70 85" Id="R8" xmlns="http://www.ni.com/PlatformFramework" />
 				</MethodCall>
@@ -3540,7 +3550,7 @@
 				<DataAccessor Bounds="1585 795 40 15" DataItem="4001" Id="4004" Label="4005" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
-				<Wire Id="4006" Joints="N(4004:Value) N(1493:B1)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="4006" Joints="N(4004:Value) h(5) v(-10) h(-5) N(1493:B1)" xmlns="http://www.ni.com/PlatformFramework" />
 				<NodeLabel AttachedTo="4004" Bounds="1404 795 176 14" Id="4005" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Set Backoff Done Pulse to False</p.Text>
 				</NodeLabel>
@@ -3595,7 +3605,7 @@
 				<DataAccessor Bounds="1945 740 40 15" DataItem="4057" Id="4061" Label="4062" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="UInt32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
-				<Wire Id="4063" Joints="N(1493:B4) v(40) N(4061:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="4063" Joints="N(1493:B4) v(30) N(4061:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 				<NodeLabel AttachedTo="4061" Bounds="1990 740 154 14" Id="4062" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Qchain:data after sifs count</p.Text>
 				</NodeLabel>
@@ -3690,20 +3700,20 @@
 					<p.Text>reference in</p.Text>
 				</NodeLabel>
 				<Wire Id="4299" Joints="N(4295:data) N(4291:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-				<RegisterRead Bounds="995 1085 40 40" Id="4550" />
-				<IONameConstant Bounds="983 1085 12 10" DataType="@4686a14070e5421183b21313e6db78c0" Facade="DockedConstantFacade" Id="4551" Label="4552" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+				<RegisterRead Bounds="1005 1140 40 40" Id="4550" />
+				<IONameConstant Bounds="993 1140 12 10" DataType="@4686a14070e5421183b21313e6db78c0" Facade="DockedConstantFacade" Id="4551" Label="4552" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
 					<p.Data>"802.11 AFW Resources.grsc\\ID Table"</p.Data>
 					<IONameConstantBehavior />
 					<DockedConstantFacade UndockedSize="239.09 27" />
 				</IONameConstant>
 				<Wire Facade="WireInvisibleFacade" Id="4553" Joints="N(4551:Out) N(4550:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-				<NodeLabel AttachedTo="4551" Bounds="983 1085 0 0" Id="4552" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="4551" Bounds="993 1140 0 0" Id="4552" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>reference in</p.Text>
 				</NodeLabel>
-				<DataAccessor Bounds="1095 1095 40 15" DataItem="4554" Id="4559" Label="4561" xmlns="http://www.ni.com/MocCommon">
+				<DataAccessor Bounds="1105 1150 40 15" DataItem="4554" Id="4559" Label="4561" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="UInt8[8]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
-				<NodeLabel AttachedTo="4559" Bounds="1140 1095 45 14" Id="4561" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="4559" Bounds="1150 1150 45 14" Id="4561" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>ID table</p.Text>
 				</NodeLabel>
 				<RegisterRead Bounds="1000 1205 40 40" Id="4567" />
@@ -3757,38 +3767,38 @@
 				<NodeLabel AttachedTo="4700" Bounds="1225 1275 81 14" Id="4702" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Order in Chain</p.Text>
 				</NodeLabel>
-				<RegisterRead Bounds="1330 1080 40 40" Id="4703" />
-				<IONameConstant Bounds="1318 1080 12 10" DataType="@2f031c03ab5046a98e77be65bbc2bc11" Facade="DockedConstantFacade" Id="4704" Label="4705" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+				<RegisterRead Bounds="1330 1115 40 40" Id="4703" />
+				<IONameConstant Bounds="1318 1115 12 10" DataType="@2f031c03ab5046a98e77be65bbc2bc11" Facade="DockedConstantFacade" Id="4704" Label="4705" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
 					<p.Data>"802.11 AFW Resources.grsc\\Head Mac Address"</p.Data>
 					<IONameConstantBehavior />
 					<DockedConstantFacade UndockedSize="290.37 27" />
 				</IONameConstant>
 				<Wire Facade="WireInvisibleFacade" Id="4706" Joints="N(4704:Out) N(4703:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-				<NodeLabel AttachedTo="4704" Bounds="1318 1080 0 0" Id="4705" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="4704" Bounds="1318 1115 0 0" Id="4705" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>reference in</p.Text>
 				</NodeLabel>
-				<DataAccessor Bounds="1480 1090 40 15" DataItem="4707" Id="4712" Label="4714" xmlns="http://www.ni.com/MocCommon">
+				<DataAccessor Bounds="1480 1125 40 15" DataItem="4707" Id="4712" Label="4714" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="UInt8[6]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
 				<Wire Id="4715" Joints="N(4703:data) N(4712:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-				<NodeLabel AttachedTo="4712" Bounds="1525 1090 102 14" Id="4714" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="4712" Bounds="1525 1125 102 14" Id="4714" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Head Mac Address</p.Text>
 				</NodeLabel>
-				<RegisterRead Bounds="1330 1165 40 40" Id="4716" />
-				<IONameConstant Bounds="1318 1165 12 10" DataType="@2f031c03ab5046a98e77be65bbc2bc11" Facade="DockedConstantFacade" Id="4717" Label="4718" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+				<RegisterRead Bounds="1330 1185 40 40" Id="4716" />
+				<IONameConstant Bounds="1318 1185 12 10" DataType="@2f031c03ab5046a98e77be65bbc2bc11" Facade="DockedConstantFacade" Id="4717" Label="4718" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
 					<p.Data>"802.11 AFW Resources.grsc\\Piggyback Address"</p.Data>
 					<IONameConstantBehavior />
 					<DockedConstantFacade UndockedSize="290.876678 27" />
 				</IONameConstant>
 				<Wire Facade="WireInvisibleFacade" Id="4719" Joints="N(4717:Out) N(4716:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-				<NodeLabel AttachedTo="4717" Bounds="1318 1165 0 0" Id="4718" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="4717" Bounds="1318 1185 0 0" Id="4718" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>reference in</p.Text>
 				</NodeLabel>
-				<DataAccessor Bounds="1480 1175 40 15" DataItem="4720" Id="4725" Label="4727" xmlns="http://www.ni.com/MocCommon">
+				<DataAccessor Bounds="1480 1195 40 15" DataItem="4720" Id="4725" Label="4727" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="UInt8[6]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
 				<Wire Id="4728" Joints="N(4716:data) N(4725:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-				<NodeLabel AttachedTo="4725" Bounds="1525 1175 105 14" Id="4727" xmlns="http://www.ni.com/PlatformFramework">
+				<NodeLabel AttachedTo="4725" Bounds="1525 1195 105 14" Id="4727" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>PiggyBack Address</p.Text>
 				</NodeLabel>
 				<IONameConstant Bounds="1323 1250 12 10" DataType="@fe727365e16a43739fc579617e572605" Facade="DockedConstantFacade" Id="4730" Label="4731" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
@@ -3864,7 +3874,7 @@
 				<Wire Id="4866" Joints="N(3447:Value) N(3434:L2)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="4880" Joints="N(4882:output) h(-75) B(1) v(-45) N(3434:L3) B(1) v(170) N(4286:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 				<FeedbackNode Bounds="945 755 30 20" EnableTerminalVisible="False" Id="4882" xmlns="http://www.ni.com/LabVIEW.VI" />
-				<Wire Id="4884" Joints="N(1493:B0) v(60) N(4882:input)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="4884" Joints="N(1493:B0) v(50) N(4882:input)" xmlns="http://www.ni.com/PlatformFramework" />
 				<DataAccessor Bounds="805 1135 40 15" DataItem="4891" Id="4889" Label="4890" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="UInt64[8]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
@@ -3961,7 +3971,7 @@
 				<DataAccessor Bounds="1945 755 40 15" DataItem="4960" Id="4964" Label="4965" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="UInt32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
-				<Wire Id="4966" Joints="N(1493:B3) v(55) N(4964:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="4966" Joints="N(1493:B3) v(45) N(4964:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 				<NodeLabel AttachedTo="4964" Bounds="1990 755 197 14" Id="4965" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>Qchain:count TX after backoff done</p.Text>
 				</NodeLabel>
@@ -3989,10 +3999,10 @@
 				<FeedbackNode ArrowDirection="Right" Bounds="1105 905 30 20" EnableTerminalVisible="False" Id="5008" xmlns="http://www.ni.com/LabVIEW.VI" />
 				<Wire Id="5009" Joints="N(4286:R0) h(5) v(-20) N(5008:input)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="5010" Joints="N(5008:output) h(5) v(-20) h(-685) v(-275) N(1183:L5)" xmlns="http://www.ni.com/PlatformFramework" />
-				<Wire Id="5011" Joints="N(1493:R7) h(10) v(370) h(-665) v(-115) N(4286:L1)" xmlns="http://www.ni.com/PlatformFramework" />
-				<WireComment AttachedTo="5011" Bounds="1315 1052 112.8 16" Id="5012" xmlns="http://www.ni.com/PlatformFramework">
+				<Wire Id="5011" Joints="N(1493:R7) h(10) v(395) h(-665) v(-140) N(4286:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+				<WireComment AttachedTo="5011" Bounds="1315 1077 112.8 16" Id="5012" xmlns="http://www.ni.com/PlatformFramework">
 					<p.ExpandedWidth>112.8</p.ExpandedWidth>
-					<p.Point>1371.4 1060</p.Point>
+					<p.Point>1371.4 1085</p.Point>
 					<p.Text>DIFS done pulse</p.Text>
 				</WireComment>
 				<DataAccessor Bounds="1945 725 40 15" DataItem="5013" Id="5016" Label="5017" xmlns="http://www.ni.com/MocCommon">
@@ -4198,6 +4208,20 @@
 				</NodeLabel>
 				<NodeLabel AttachedTo="5155" Bounds="708 1350 0 0" Id="5158" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>reference in</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="1335 1035 40 15" DataItem="5162" Id="5165" Label="5166" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="@4f9bb19e878648dfb7a52c6b0779a1fb" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<Wire Id="5167" Joints="N(5165:Value) h(200) v(-340) N(1493:L8)" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="5165" Bounds="1210 1035 120 14" Id="5166" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>CCA bandwidth enum</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="1335 1050 40 15" DataItem="5168" Id="5171" Label="5172" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<Wire Id="5173" Joints="N(5171:Value) h(220) v(-345) N(1493:L9)" xmlns="http://www.ni.com/PlatformFramework" />
+				<NodeLabel AttachedTo="5171" Bounds="1133 1050 197 14" Id="5172" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Qchain:Use manual CCA bandwidth</p.Text>
 				</NodeLabel>
 				<ClockDrivenLoop.ClockBorderNode Bounds="1 295 22 20" Docking="Left" Id="2497" Terminals="2495=2502" />
 				<ClockDrivenLoop.Tunnel Bounds="-3 370 26 10" Docking="Left" Id="2534" Terminals="o0=3189, i0=2535" />
@@ -4596,8 +4620,8 @@
 				<DataAccessor Bounds="1609 220 40 15" DataItem="2004" Id="1180" Label="1364" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
-				<PropertyNode Bounds="2668 380 60 35" HasErrorTerminals="False" Id="1181" InstanceDataType="@9f5c178b4b6546f2881b46699b70b542" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/LabVIEW.VI">
-					<PropertyItemTerminal DataType="Boolean" Hotspot="60 15" Id="c0t0v" Path="valid" Usage="Optional" />
+				<PropertyNode Bounds="2668 380 60.8 35.2" HasErrorTerminals="False" Id="1181" InstanceDataType="@9f5c178b4b6546f2881b46699b70b542" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/LabVIEW.VI">
+					<PropertyItemTerminal DataType="Boolean" Hotspot="60.8 15" Id="c0t0v" Path="valid" Usage="Optional" />
 				</PropertyNode>
 				<Wire Id="1182" Joints="N(1181:c0t0v) h(5) v(-35) N(1174:input)" xmlns="http://www.ni.com/PlatformFramework" />
 				<MethodCall Bounds="2308 515 40 40" DomainName="NI.Appframeworks.802.11" Id="1187" Target="\802\.11\ Prepare\ RX\ IQ\ Data\ for\ T2H\.gcdl" xmlns="http://www.ni.com/MocCommon">
@@ -4734,7 +4758,7 @@
 					<Terminal DataType="UInt8" Direction="Output" Hotspot="50 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
 					<Terminal DataType="FXP(10.3)" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				</MethodCall>
-				<PropertyNode Bounds="2083 750 200 50" HasErrorTerminals="False" Id="1210" InstanceDataType="@11920cf228224d9ea320e2ad327a9a58" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/LabVIEW.VI">
+				<PropertyNode Bounds="2083 750 200 49.6" HasErrorTerminals="False" Id="1210" InstanceDataType="@11920cf228224d9ea320e2ad327a9a58" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/LabVIEW.VI">
 					<PropertyItemTerminal Action="Write" DataType="UInt8" Hotspot="0 30" Id="c0t0v" Path="CCA energy detection busy" Usage="Required" />
 					<PropertyItemTerminal Action="Write" DataType="Boolean" Hotspot="0 15" Id="c1t0v" Path="CCA signal detection busy" Usage="Required" />
 				</PropertyNode>
@@ -4836,7 +4860,7 @@
 					<InstanceDataEntry Id="1427" Key="ElementShapeFilter" Value="Scalar" />
 				</IONameConstant>
 				<Wire Id="1264" Joints="N(1263:Out) N(1228:L3)" xmlns="http://www.ni.com/PlatformFramework" />
-				<PropertyNode Bounds="2103 105 71.2 35" HasErrorTerminals="False" Id="1275" InstanceDataType="@12c639ba0e2443418c6029667435a634" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/LabVIEW.VI">
+				<PropertyNode Bounds="2103 105 71.2 35.2" HasErrorTerminals="False" Id="1275" InstanceDataType="@12c639ba0e2443418c6029667435a634" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/LabVIEW.VI">
 					<PropertyItemTerminal DataType="@c958f15602ab42d89409e77a3ef59694" Hotspot="71.2 15" Id="c0t0v" Path="format" Usage="Optional" />
 				</PropertyNode>
 				<Wire Id="1276" Joints="N(1275:instance out) h(403.800049) N(1165:T0)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -4949,7 +4973,7 @@
 				<DataAccessor Bounds="1625 1140 40 15" DataItem="2026" Id="1306" Label="1395" xmlns="http://www.ni.com/MocCommon">
 					<Terminal DataType="@54cbba49108b428297a42f75074639aa" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 				</DataAccessor>
-				<PropertyNode Bounds="2203 1090 153.6 50" HasErrorTerminals="False" Id="1307" InstanceDataType="@a69d22aa383445f7bb785c436062728f" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/LabVIEW.VI">
+				<PropertyNode Bounds="2203 1090 153.6 49.6" HasErrorTerminals="False" Id="1307" InstanceDataType="@a69d22aa383445f7bb785c436062728f" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/LabVIEW.VI">
 					<PropertyItemTerminal Action="Write" DataType="Boolean" Hotspot="0 30" Id="c0t0v" Path="trigger gain setting" Usage="Required" />
 					<PropertyItemTerminal Action="Write" DataType="UFXP(5.1)" Hotspot="0 15" Id="c1t0v" Path="gain" Usage="Required" />
 				</PropertyNode>
@@ -4971,7 +4995,7 @@
 				<Select Bounds="1770 850 40 40" Id="1320" xmlns="http://www.ni.com/LabVIEW.VI" />
 				<Wire Id="1321" Joints="N(1318:fixed-point) N(1320:t)" xmlns="http://www.ni.com/PlatformFramework" />
 				<Wire Id="1322" Joints="N(1281:Value) N(1320:f)" xmlns="http://www.ni.com/PlatformFramework" />
-				<PropertyNode Bounds="2203 1145 112.8 50" HasErrorTerminals="False" Id="1324" InstanceDataType="@f409a859703b467aaaf1a7cb6652a7e0" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/LabVIEW.VI">
+				<PropertyNode Bounds="2203 1145 112.8 49.6" HasErrorTerminals="False" Id="1324" InstanceDataType="@f409a859703b467aaaf1a7cb6652a7e0" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/LabVIEW.VI">
 					<PropertyItemTerminal Action="Write" DataType="@b10cef8eef46499b8ac4a6adf271eea9" Hotspot="0 30" Id="c0t0v" Path="AGC state" Usage="Required" />
 					<PropertyItemTerminal Action="Write" DataType="Boolean" Hotspot="0 15" Id="c1t0v" Path="AGC enabled" Usage="Required" />
 				</PropertyNode>
@@ -6556,6 +6580,12 @@
 		<DataItem AdaptToDiagramType="True" DataType="UInt8[8]" Id="5159" Name="ID Table first time" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="@4f9bb19e878648dfb7a52c6b0779a1fb" Id="5162" Name="CCA bandwidth enum" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Boolean" Id="5168" Name="Qchain:Use manual CCA bandwidth" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="niInstr\ Register\ Bus\ v1\ FPGA\.lvlib__Process\.gcdl">
 				<MergeScript>
@@ -6817,10 +6847,10 @@
 			<p.IconModel Target="\802\.11\ MAC\ TX\.gcdl">
 				<MergeScript>
 					<MergeItem Path="." IsPrimary="True">
-						<Icon ListViewIconCrop="0 0 70 90">
-							<IconPanel Height="[float]90" Left="[float]0" Top="[float]0" Width="[float]70">
-								<Canvas Height="[float]90" Left="[float]0" Top="[float]0" Width="[float]70">
-									<Path Data="[PathGeometry]M 65.33334,90 L 4.666667,90 C 2.0895,90 0,87.69729 0,84.85715 L 0,5.142858 C 0,2.302715 2.0895,0 4.666667,0 L 65.33334,0 C 67.91049,0 70,2.302715 70,5.142858 L 70,84.85715 C 70,87.69729 67.91049,90 65.33334,90 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]90" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]70" />
+						<Icon ListViewIconCrop="0 0 70 100">
+							<IconPanel Height="[float]100" Left="[float]0" Top="[float]0" Width="[float]70">
+								<Canvas Height="[float]100" Left="[float]0" Top="[float]0" Width="[float]70">
+									<Path Data="[PathGeometry]M 65.33334,100 L 4.666667,100 C 2.0895,100 0,97.44144 0,94.28572 L 0,5.714287 C 0,2.558573 2.0895,0 4.666667,0 L 65.33334,0 C 67.91049,0 70,2.558573 70,5.714287 L 70,94.28572 C 70,97.44144 67.91049,100 65.33334,100 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]100" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]70" />
 									<Path Data="[PathGeometry]M 65.65517,69 L 4.689655,69 C 2.746965,69 1.172414,67.657 1.172414,66 L 1.172414,4 C 1.172414,2.343 2.746965,1 4.689655,1 L 65.65517,1 C 67.59786,1 69.17242,2.343 69.17242,4 L 69.17242,66 C 69.17242,67.657 67.59786,69 65.65517,69 Z" Fill="[SMSolidColorBrush]#fff2f2f2" Height="[float]68" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]68" />
 									<Path Data="[PathGeometry]M 4.714286,2 L 66,2 C 67.30232,2 68.35715,2.895 68.35715,4 L 68.35715,66 C 68.35715,67.105 67.30232,68 66,68 L 4.714286,68 C 3.411964,68 2.357143,67.105 2.357143,66 L 2.357143,4 C 2.357143,2.895 3.411964,2 4.714286,2 Z" Fill="[SMSolidColorBrush]#ffe5e5e5" Height="[float]70" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]66" />
 									<Path Data="[PathGeometry]M 17.426,7.684 C 17.34,7.645 17.215,7.597 17.051,7.539 C 16.887,7.481 16.748,7.432 16.637,7.391 C 16.526,7.493 16.424,7.616 16.334,7.76 C 16.244,7.904 16.199,8.067 16.199,8.246 C 16.199,8.517 16.297,8.732 16.49,8.892 C 16.683,9.052 16.937,9.132 17.25,9.132 C 17.334,9.132 17.432,9.12 17.543,9.095 C 17.654,9.07 17.752,9.032 17.832,8.98 C 17.926,8.92 18.002,8.85 18.059,8.769 C 18.116,8.688 18.145,8.579 18.145,8.441 C 18.145,8.253 18.098,8.111 18.004,8.015 C 17.91,7.919 17.717,7.809 17.426,7.684 Z" Fill="[SMSolidColorBrush]#ff892121" Height="[float]70" Left="[float]5" MinHeight="[float]1" MinWidth="[float]1" Top="[float]-1" Width="[float]60" />
@@ -11640,17 +11670,6 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="72ff3231910448e8aa318830593f847a">
-			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="ReadWrite" Name="TX after SIFS pending" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="TX after SIFS active" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="TX after backoff pending" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="TX after backoff active" DataType="Boolean" />
-					<Field FieldAccessPolicy="ReadWrite" Name="FCS add done" DataType="Boolean" />
-				</Members>
-			</Composite>
-		</p.TypeReference>
 		<p.TypeReference TypeId="4f9bb19e878648dfb7a52c6b0779a1fb">
 			<Enumeration>
 				<Members>
@@ -11662,6 +11681,17 @@
 					<UInt16 />
 				</DataType>
 			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="72ff3231910448e8aa318830593f847a">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="TX after SIFS pending" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="TX after SIFS active" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="TX after backoff pending" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="TX after backoff active" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="FCS add done" DataType="Boolean" />
+				</Members>
+			</Composite>
 		</p.TypeReference>
 		<p.TypeReference TypeId="1c3c88e98b78426d96002cdb4c41a227">
 			<Typedef TypedefName="MPDU generation request.gtype" UnderlyingType="@565aa14fed2b45308f03c6cc70760185" />

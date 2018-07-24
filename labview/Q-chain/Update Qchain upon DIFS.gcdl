@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="9658AE01FF86415287DF260D92CF3301" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="00583E3185552ADFE07D72858F07A977" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
 		<ApplicationVersionInfo Build="4.5.2.51305" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
 	</SourceModelFeatureSet>
@@ -40,10 +41,16 @@
 			<ConnectorPaneTerminal Hotspot="0 45" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
-		<FrontPanelUnplacedItems Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0">
-			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="31" Left="[float]0" MinHeight="[float]36" MinWidth="[float]36" Name="[string]End of DIFS pulse" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=29}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="490" Left="[float]0" MinHeight="[float]36" MinWidth="[float]36" Name="[string]Manual enable for Qchain node departure" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=489}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]30" Id="508" IsReadOnly="[bool]True" Left="[float]0" MinHeight="[float]16" MinWidth="[float]16" Name="[string]Need to update order in chain" Shape="[LEDShape]Square" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=505}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000">
+			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="490" Label="[UIModel]553" Left="[float]888" MinHeight="[float]36" MinWidth="[float]36" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]195" TrueContent="[string]On" Value="{DataItemBinding Id=489}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<Label Height="[float]16" Id="553" IsVisualChild="[bool]False" LabelOwner="[UIModel]490" Left="[float]888" Text="[string]Manual enable for Qchain node departure" Top="[float]172" Width="[float]223" xmlns="http://www.ni.com/PanelCommon" />
+			</Switch>
+			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="31" Label="[UIModel]552" Left="[float]754" MinHeight="[float]36" MinWidth="[float]36" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]195" TrueContent="[string]On" Value="{DataItemBinding Id=29}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<Label Height="[float]16" Id="552" IsVisualChild="[bool]False" LabelOwner="[UIModel]31" Left="[float]754" Text="[string]End of DIFS pulse" Top="[float]172" Width="[float]93" xmlns="http://www.ni.com/PanelCommon" />
+			</Switch>
+			<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]30" Id="508" IsReadOnly="[bool]True" Label="[UIModel]555" Left="[float]913" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" Top="[float]319" TrueContent="[string]On" Value="{DataItemBinding Id=505}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<Label Height="[float]16" Id="555" IsVisualChild="[bool]False" LabelOwner="[UIModel]508" Left="[float]913" Text="[string]Need to update order in chain" Top="[float]296" Width="[float]161" xmlns="http://www.ni.com/PanelCommon" />
+			</LED>
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="13">
 			<DataAccessor Bounds="80 295 40 15" DataItem="29" Id="30" Label="32" xmlns="http://www.ni.com/MocCommon">
@@ -62,7 +69,6 @@
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 1370 660" Id="40" Pattern="True">
 					<ArrayMaxAndMin Bounds="190 75 40 40" Id="105" />
-					<Wire Id="106" Joints="N(469:40) h(171) v(-75) N(105:array)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="109" Joints="N(105:min value) h(50) B(1) N(171:y) B(1) v(35) N(189:113)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Literal Bounds="215 45 42 16" DataType="UInt8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="110" Label="111" xmlns="http://www.ni.com/MocCommon">
 						<p.Data>255</p.Data>
@@ -155,7 +161,7 @@
 							<Wire Id="85" Joints="N(84:Out) N(79:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="181" Joints="N(180:115) h(41) B(1) v(-20) B(2) N(68:array) B(2) v(-60) B(4) N(65:array) B(4) v(-55) N(62:array) B(1) v(40) B(8) N(71:array) B(8) v(55) B(10) N(74:array) B(10) v(60) B(12) N(77:array) B(12) v(60) B(14) N(78:array) B(14) v(60) N(79:array)" xmlns="http://www.ni.com/PlatformFramework" />
 							<IsLess Bounds="265 80 30 30" Id="190" />
-							<Wire Id="191" Joints="N(189:115) h(5) v(-35) h(236) B(3) N(190:x) B(3) v(50) B(5) N(193:x) B(5) v(65) B(7) N(196:x) B(7) v(60) B(9) N(199:x) B(9) v(70) B(11) N(202:x) B(11) v(60) B(13) N(205:x) B(13) v(60) B(15) N(208:x) B(15) v(60) N(211:x)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="191" Joints="N(189:115) h(31) v(-35) h(210) B(3) N(190:x) B(3) v(50) B(5) N(193:x) B(5) v(65) B(7) N(196:x) B(7) v(60) B(9) N(199:x) B(9) v(70) B(11) N(202:x) B(11) v(60) B(13) N(205:x) B(13) v(60) B(15) N(208:x) B(15) v(60) N(211:x)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="192" Joints="N(62:c0out) h(5) v(-15) B(2) N(190:y) B(2) v(-25) h(105) B(5) N(214:x) B(5) v(30) h(95) v(5) N(230:f)" xmlns="http://www.ni.com/PlatformFramework" />
 							<IsLess Bounds="265 130 30 30" Id="193" />
 							<Wire Id="195" Joints="N(65:c0out) h(5) v(-20) B(2) N(193:y) B(2) v(-25) h(105) B(5) N(216:x) B(5) v(35) N(232:f)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -203,7 +209,7 @@
 							<Wire Id="251" Joints="N(224:x-1) h(5) v(5) N(236:t)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="252" Joints="N(226:x-1) h(30) v(10) N(237:t)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="253" Joints="N(228:x-1) h(35) v(10) N(238:t)" xmlns="http://www.ni.com/PlatformFramework" />
-							<ReplaceArraySubset Bounds="685 90 40 40" Id="262" Terminals="inArray=272, outArray=486, c0t0v=275, c0new=278" />
+							<ReplaceArraySubset Bounds="685 90 40 40" Id="262" Terminals="inArray=272, outArray=564, c0t0v=275, c0new=278" />
 							<BuildArray Bounds="550 90 40 80" CanToggle="False" Id="263" Terminals="outArray=272, c0t0v=264, c1t0v=265, c2t0v=266, c3t0v=267, c4t0v=268, c5t0v=269, c6t0v=270, c7t0v=271" VerticalChunkCount="8" />
 							<Wire Id="264" Joints="N(230:s? t:f) N(263:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="265" Joints="N(232:s? t:f) h(5) v(-40) N(263:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -214,7 +220,7 @@
 							<Wire Id="270" Joints="N(237:s? t:f) h(55) v(-305) N(263:c6t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="271" Joints="N(238:s? t:f) h(65) v(-355) N(263:c7t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Wire Id="272" Joints="N(263:outArray) N(262:inArray)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="275" Joints="N(274:115) h(1) v(-20) h(60) v(-85) h(613) v(75) N(262:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="275" Joints="N(274:115) h(11) v(-105) h(663) v(75) N(262:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Literal Bounds="625 145 39.5 16" DataType="UInt8" Facade="NationalInstruments.MocCommon.SourceModel.INumericBehavior" Id="276" Label="277" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>0</p.Data>
 								<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
@@ -233,7 +239,6 @@
 								<p.Text>reference in</p.Text>
 							</NodeLabel>
 							<RegisterWrite Bounds="780 80 40 40" Id="485" xmlns="http://www.ni.com/LabVIEW.FPGA" />
-							<Wire Id="486" Joints="N(262:outArray) h(20) B(1) N(485:data) B(1) v(55) N(514:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 							<Literal Bounds="895 235 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="496" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>True</p.Data>
 								<BooleanBehavior />
@@ -260,22 +265,24 @@
 							<NodeLabel AttachedTo="515" Bounds="715 155 0 0" Id="516" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 								<p.Text>convert?</p.Text>
 							</NodeLabel>
+							<Wire Id="564" Joints="N(262:outArray) h(20) B(1) N(485:data) B(1) v(55) N(514:L0)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
 						<CaseStructure.Selector Bounds="-4 80 13 10" Docking="Left" Id="116" Terminals="113=174, 114, 115" />
-						<CaseStructure.Tunnel Bounds="-4 230 13 10" Docking="Left" Id="180" Terminals="113=179, 114, 115=181" />
+						<CaseStructure.Tunnel Bounds="-4 230 13 10" Docking="Left" Id="180" Terminals="113=558, 114, 115=181" />
 						<CaseStructure.Tunnel Bounds="-4 120 13 10" Docking="Left" Id="189" Terminals="113=109, 114, 115=191" />
 						<CaseStructure.Tunnel Bounds="-4 145 13 10" Docking="Left" Id="274" Terminals="113=273, 114, 115=275" />
 						<CaseStructure.Tunnel Bounds="941 240 13 10" Docking="Right" Id="499" Terminals="113=500, 114=502, 115=497" />
 					</CaseStructure>
 					<IsNotEqual Bounds="285 80 30 30" Id="171" />
 					<Wire Id="174" Joints="N(171:x != y?) N(116:113)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="179" Joints="N(328:40) N(180:113)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="273" Joints="N(105:min index(es\)) h(10) v(50) N(274:113)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="500" Joints="N(499:113) N(498:40)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="558" Joints="N(328:40) N(180:113)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="562" Joints="N(469:40) h(176) v(-75) N(105:array)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Selector Bounds="-4 70 13 10" Docking="Left" Id="41" Terminals="38=495, 39, 40" />
-				<CaseStructure.Tunnel Bounds="-4 245 13 10" Docking="Left" Id="328" Terminals="38=334, 39, 40=179" />
-				<CaseStructure.Tunnel Bounds="-4 155 13 10" Docking="Left" Id="469" Terminals="38=479, 39, 40=106" />
+				<CaseStructure.Tunnel Bounds="-4 245 13 10" Docking="Left" Id="328" Terminals="38=334, 39, 40=558" />
+				<CaseStructure.Tunnel Bounds="-4 155 13 10" Docking="Left" Id="469" Terminals="38=479, 39, 40=562" />
 				<CaseStructure.Tunnel Bounds="1371 255 13 10" Docking="Right" Id="498" Terminals="38=510, 39=504, 40=500" />
 			</CaseStructure>
 			<RegisterRead Bounds="85 495 40 40" Id="177" xmlns="http://www.ni.com/LabVIEW.FPGA" />
