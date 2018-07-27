@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="4BDC44B8EF49E64D79018E8752BE0B7F" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="748FBC8E7FBD18B5B422BC78FEEA7AA8" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="GResources" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/GResources/SystemModel" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" Version="4.5.0.49152" />
@@ -236,6 +236,38 @@
 					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="ID Table first time" p7:Process.AssociatedIdentifier="3934" p7:Process.DataType="UInt8[8]" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
 					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt8[8]" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
 				</Instance>
+				<Instance Id="3939" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Count Qchain node departure" p7:Process.AssociatedIdentifier="3945" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="3949" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Count Qchain configuration" p7:Process.AssociatedIdentifier="3948" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="3953" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Min value of Qchain indicator" p7:Process.AssociatedIdentifier="3959" p7:Process.DataType="UInt8" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt8" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="4229" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p8:Process.AliasName="Indicator for Qchain tracking temp" p8:Process.AssociatedIdentifier="4228" p8:Process.DataType="UInt8[8]" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt8[1]" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="4236" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p8:Process.AliasName="Indicator for Qchain tracking temp 2" p8:Process.AssociatedIdentifier="4235" p8:Process.DataType="UInt8[8]" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt8[1]" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="4516" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Count Qchain new inclusion" p7:Process.AssociatedIdentifier="4515" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
 				<Superimposition Id="3" Name="Root Superimposition">
 					<Superimpose Source="9" />
 					<Superimpose Source="67" />
@@ -287,6 +319,12 @@
 					<Superimpose Source="3677" />
 					<Superimpose Source="3928" />
 					<Superimpose Source="3935" />
+					<Superimpose Source="3939" />
+					<Superimpose Source="3949" />
+					<Superimpose Source="3953" />
+					<Superimpose Source="4229" />
+					<Superimpose Source="4236" />
+					<Superimpose Source="4516" />
 				</Superimposition>
 			</MappingManager>
 		</EnvoyFacadeManager>
@@ -345,6 +383,12 @@
 			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.Restricted.SystemDesigner.SystemModelCore.Process,ContentKind_{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.TargetRegister,ProcessBackedProjectServiceMetaFactory" ContentName="{:/3677}[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" Id="3683" Name="Indicator\ for\ Qchain\ tracking" />
 			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.Restricted.SystemDesigner.SystemModelCore.Process,ContentKind_{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.TargetRegister,ProcessBackedProjectServiceMetaFactory" ContentName="{:/3928}[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" Id="3927" Name="ID\ Table\ temp" />
 			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.Restricted.SystemDesigner.SystemModelCore.Process,ContentKind_{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.TargetRegister,ProcessBackedProjectServiceMetaFactory" ContentName="{:/3935}[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" Id="3934" Name="ID\ Table\ first\ time" />
+			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.Restricted.SystemDesigner.SystemModelCore.Process,ContentKind_{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.TargetRegister,ProcessBackedProjectServiceMetaFactory" ContentName="{:/3939}[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" Id="3945" Name="Count\ Qchain\ node\ departure" />
+			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.Restricted.SystemDesigner.SystemModelCore.Process,ContentKind_{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.TargetRegister,ProcessBackedProjectServiceMetaFactory" ContentName="{:/3949}[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" Id="3948" Name="Count\ Qchain\ configuration" />
+			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.Restricted.SystemDesigner.SystemModelCore.Process,ContentKind_{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.TargetRegister,ProcessBackedProjectServiceMetaFactory" ContentName="{:/3953}[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" Id="3959" Name="Min\ value\ of\ Qchain\ indicator" />
+			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.Restricted.SystemDesigner.SystemModelCore.Process,ContentKind_{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.TargetRegister,ProcessBackedProjectServiceMetaFactory" ContentName="{:/4229}[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" Id="4228" Name="Indicator\ for\ Qchain\ tracking\ temp" />
+			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.Restricted.SystemDesigner.SystemModelCore.Process,ContentKind_{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.TargetRegister,ProcessBackedProjectServiceMetaFactory" ContentName="{:/4236}[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" Id="4235" Name="Indicator\ for\ Qchain\ tracking\ temp\ 2" />
+			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.Restricted.SystemDesigner.SystemModelCore.Process,ContentKind_{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.TargetRegister,ProcessBackedProjectServiceMetaFactory" ContentName="{:/4516}[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" Id="4515" Name="Count\ Qchain\ new\ inclusion" />
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 </SourceFile>

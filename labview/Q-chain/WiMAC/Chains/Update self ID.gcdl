@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="65D6D99830E5969806D5A8854133AC05" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="7937295022CA261F3E3C8AD5F63DA22E" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -78,7 +78,7 @@
 					<IsEqual Bounds="120 185 30 30" ComparisonMode="CompareAggregates" Id="39" />
 					<Wire Id="42" Joints="N(41:36) N(39:x)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="45" Joints="N(44:36) h(66) v(-40) N(39:y)" xmlns="http://www.ni.com/PlatformFramework" />
-					<CaseStructure Bounds="305 80 335 260" Default="114" Id="113" Selected="115" UserSelectorBounds="123.2 0 88 16.8">
+					<CaseStructure Bounds="270 80 335 260" Default="114" Id="113" Selected="115" UserSelectorBounds="123.2 0 88 16.8">
 						<CaseStructure.Case Bounds="5 5 325 250" Id="114" Pattern="False">
 							<Literal Bounds="205 60 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="235" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>False</p.Data>
@@ -87,54 +87,29 @@
 							<Wire Id="236" Joints="N(235:Out) h(79) N(233:114)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
 						<CaseStructure.Case Bounds="5 5 325 250" Id="115" Pattern="True">
-							<IsNotEqual Bounds="110 60 30 30" Id="242" />
-							<Wire Id="243" Joints="N(172:115) h(71) B(1) h(5) v(-15) N(242:y) B(1) v(20) N(267:247)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="245" Joints="N(274:data) h(12) v(30) N(242:x)" xmlns="http://www.ni.com/PlatformFramework" />
-							<CaseStructure Bounds="170 30 130 130" Default="248" Id="247" Selected="249" UserSelectorBounds="20.8 0 88 16.8">
-								<CaseStructure.Case Bounds="5 5 120 120" Id="248" Pattern="False">
-									<Literal Bounds="60 35 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="272" xmlns="http://www.ni.com/MocCommon">
-										<p.Data>False</p.Data>
-										<BooleanBehavior />
-									</Literal>
-									<Wire Id="273" Joints="N(272:Out) N(270:248)" xmlns="http://www.ni.com/PlatformFramework" />
-								</CaseStructure.Case>
-								<CaseStructure.Case Bounds="5 5 120 120" Id="249" Pattern="True">
-									<RegisterWrite Bounds="65 65 40 40" Id="118" xmlns="http://www.ni.com/LabVIEW.FPGA" />
-									<IONameConstant Bounds="53 65 12 10" DataType="@7b6887216c2141f69f2e0adb6c09ae23" Facade="DockedConstantFacade" Id="119" Label="120" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
-										<p.Data>"802.11 AFW Resources.grsc\\Order ID in chain"</p.Data>
-										<IONameConstantBehavior />
-										<DockedConstantFacade UndockedSize="281.726654 27" />
-									</IONameConstant>
-									<NodeLabel AttachedTo="119" Bounds="53 65 0 0" Id="120" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-										<p.Text>reference in</p.Text>
-									</NodeLabel>
-									<Wire Facade="WireInvisibleFacade" Id="121" Joints="N(119:Out) N(118:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-									<Wire Id="266" Joints="N(267:249) N(118:data)" xmlns="http://www.ni.com/PlatformFramework" />
-									<Wire Id="269" Joints="N(250:249) N(270:249)" xmlns="http://www.ni.com/PlatformFramework" />
-								</CaseStructure.Case>
-								<CaseStructure.Selector Bounds="-4 40 13 10" Docking="Left" Id="250" Terminals="247=265, 248, 249=269" />
-								<CaseStructure.Tunnel Bounds="-4 80 13 10" Docking="Left" Id="267" Terminals="247=243, 248, 249=266" />
-								<CaseStructure.Tunnel Bounds="121 40 13 10" Docking="Right" Id="270" Terminals="247=271, 248=273, 249=269" />
-							</CaseStructure>
-							<Wire Id="265" Joints="N(242:x != y?) N(250:247)" xmlns="http://www.ni.com/PlatformFramework" />
-							<Wire Id="271" Joints="N(270:247) h(6) N(233:115)" xmlns="http://www.ni.com/PlatformFramework" />
-							<RegisterRead Bounds="20 20 40 40" Id="274" xmlns="http://www.ni.com/LabVIEW.FPGA" />
-							<IONameConstant Bounds="8 20 12 10" DataType="@7b6887216c2141f69f2e0adb6c09ae23" Facade="DockedConstantFacade" Id="275" Label="277" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+							<RegisterWrite Bounds="120 80 40 40" Id="278" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+							<IONameConstant Bounds="108 80 12 10" DataType="@7b6887216c2141f69f2e0adb6c09ae23" Facade="DockedConstantFacade" Id="280" Label="282" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>"802.11 AFW Resources.grsc\\Order ID in chain"</p.Data>
 								<IONameConstantBehavior />
 								<DockedConstantFacade UndockedSize="281.726654 27" />
 							</IONameConstant>
-							<Wire Facade="WireInvisibleFacade" Id="276" Joints="N(275:Out) h(5) v(-1) h(-5) N(274:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-							<NodeLabel AttachedTo="275" Bounds="8 20 0 0" Id="277" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+							<Wire Facade="WireInvisibleFacade" Id="281" Joints="N(280:Out) N(278:reference in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="381" Joints="N(172:115) N(278:data)" xmlns="http://www.ni.com/PlatformFramework" />
+							<NodeLabel AttachedTo="280" Bounds="108 80 0 0" Id="282" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 								<p.Text>reference in</p.Text>
 							</NodeLabel>
+							<Literal Bounds="250 25 26 15" DataType="Boolean" Facade="NationalInstruments.MocCommon.SourceModel.IBooleanBehavior" Id="386" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>True</p.Data>
+								<BooleanBehavior />
+							</Literal>
+							<Wire Id="387" Joints="N(386:Out) h(34) N(233:115)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
 						<CaseStructure.Selector Bounds="-4 115 13 10" Docking="Left" Id="116" Terminals="113=222, 114, 115" />
-						<CaseStructure.Tunnel Bounds="-4 95 13 10" Docking="Left" Id="172" Terminals="113=225, 114, 115=243" />
-						<CaseStructure.Tunnel Bounds="310 -4 10 13" Docking="Top" Id="233" Terminals="113=232, 114=236, 115=271" />
+						<CaseStructure.Tunnel Bounds="-4 95 13 10" Docking="Left" Id="172" Terminals="113=225, 114, 115=381" />
+						<CaseStructure.Tunnel Bounds="310 -4 10 13" Docking="Top" Id="233" Terminals="113=232, 114=236, 115=387" />
 					</CaseStructure>
 					<Wire Id="222" Joints="N(39:x = y?) N(116:113)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Wire Id="225" Joints="N(123:36) h(261) v(-115) N(172:113)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="225" Joints="N(123:36) h(251) v(-115) N(172:113)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="232" Joints="N(233:113) v(-16) N(197:36)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Selector Bounds="-4 100 13 10" Docking="Left" Id="37" Terminals="34=192, 35, 36" />

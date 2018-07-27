@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="D14912C9E01E555C501D615DD095C66E" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="1C0C33D337C73D7B0A99208DFD67B639" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
@@ -22,14 +21,14 @@
 				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]34" Id="9" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]34" />
 			</IconPanel>
 		</Icon>
-		<ConnectorPane Height="40" Id="10" ListViewHeight="100" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+		<ConnectorPane Height="40" Id="10" ListViewHeight="115" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
 			<ConnectorPaneTerminal ListViewHotspot="0 65" Parameter="49" />
 			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 50" Parameter="37" />
 			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 35" Parameter="17" />
 			<ConnectorPaneTerminal Hotspot="0 35" />
 			<ConnectorPaneTerminal Hotspot="15 0" />
 			<ConnectorPaneTerminal Hotspot="25 0" />
-			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 95" Parameter="262" />
 			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 80" Parameter="139" />
 			<ConnectorPaneTerminal Hotspot="40 25" />
 			<ConnectorPaneTerminal Hotspot="40 35" />
@@ -93,6 +92,10 @@
 				<Label Id="173" LabelOwner="[UIModel]163" Left="[float]5" Text="[string]Element 7" Top="[float]270" />
 				<Label Id="174" LabelOwner="[UIModel]166" Left="[float]5" Text="[string]Element 8" Top="[float]315" />
 			</Cluster>
+			<ArrayViewer ArrayElement="[UIModel]265" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" FixedSize="[int]8" Height="[float]36" Id="268" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]True" Left="[float]0" Name="[string]ID Table out" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]0" Value="{DataItemBinding Id=262}" Width="[float]130" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]22" Id="265" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[byte]1" Left="[float]0" MinHeight="[float]22" Name="[string]Child" Top="[float]0" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt8" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="13">
 			<DataAccessor Bounds="170 175 40 15" DataItem="17" Id="15" Label="16" xmlns="http://www.ni.com/MocCommon">
@@ -263,7 +266,7 @@
 			<Wire Id="102" Joints="N(67:c5t0v) h(65) v(-10) N(78:L2)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="103" Joints="N(67:c6t0v) h(55) v(35) N(79:L2)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="104" Joints="N(67:c7t0v) h(45) v(75) N(80:L2)" xmlns="http://www.ni.com/PlatformFramework" />
-			<BuildArray Bounds="865 165 40 80" CanToggle="False" Id="106" Terminals="outArray=261, c0t0v=107, c1t0v=108, c2t0v=109, c3t0v=110, c4t0v=111, c5t0v=112, c6t0v=218, c7t0v=219" VerticalChunkCount="8" />
+			<BuildArray Bounds="865 165 40 80" CanToggle="False" Id="106" Terminals="outArray=270, c0t0v=107, c1t0v=108, c2t0v=109, c3t0v=110, c4t0v=111, c5t0v=112, c6t0v=218, c7t0v=219" VerticalChunkCount="8" />
 			<Wire Id="107" Joints="N(41:R0) h(25) v(30) h(220) B(3) N(106:c0t0v) B(3) v(130) N(198:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="108" Joints="N(74:R0) h(35) v(-15) h(195) B(3) N(106:c1t0v) B(3) v(130) h(91) v(5) N(198:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="109" Joints="N(75:R0) h(45) v(-65) h(170) B(3) N(106:c2t0v) B(3) v(130) h(106) v(10) N(198:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -273,15 +276,6 @@
 			<Comment Bounds="215 35 124.8 28" Id="124" xmlns="http://www.ni.com/MocCommon">
 				<p.Text>"04/08/2018 Yue\r\nupdate the ID table"</p.Text>
 			</Comment>
-			<RegisterWrite Bounds="965 155 40 40" Id="125" xmlns="http://www.ni.com/LabVIEW.FPGA" />
-			<IONameConstant Bounds="645.910034 105 239.09 27" DataType="@4686a14070e5421183b21313e6db78c0" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="126" Label="127" UdrClass="Register" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
-				<p.Data>"802.11 AFW Resources.grsc\\ID Table"</p.Data>
-				<IONameConstantBehavior />
-			</IONameConstant>
-			<NodeLabel AttachedTo="126" Bounds="645.910034 105 0 0" Id="127" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
-				<p.Text>reference in</p.Text>
-			</NodeLabel>
-			<Wire Id="128" Joints="N(126:Out) h(65) v(50) N(125:reference in)" xmlns="http://www.ni.com/PlatformFramework" />
 			<DataAccessor Bounds="1205 285 40 15" DataItem="139" Id="141" Label="175" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@13d59c69032243ce8fcb6f06d6324ba2" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
@@ -367,7 +361,13 @@
 			<Wire Id="218" Joints="N(79:R0) h(85) v(-255) h(70) B(3) N(106:c6t0v) B(3) v(160) N(198:c6t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="219" Joints="N(80:R0) h(95) v(-300) h(45) B(3) N(106:c7t0v) B(3) v(165) N(198:c7t0v)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="224" Joints="N(198:instance out) N(141:Value)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="261" Joints="N(106:outArray) N(125:data)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="1200 165 40 15" DataItem="262" Id="267" Label="269" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt8[8]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="267" Bounds="1245 165 69 14" Id="269" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>ID Table out</p.Text>
+			</NodeLabel>
+			<Wire Id="270" Joints="N(106:outArray) N(267:Value)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="14" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="@13d59c69032243ce8fcb6f06d6324ba2" Id="17" Name="ID table cluster" xmlns="http://www.ni.com/MocCommon">
@@ -381,6 +381,9 @@
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" DataType="@13d59c69032243ce8fcb6f06d6324ba2" Id="139" Name="ID cluster" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0_0_0_0_0_0_0_0_</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="UInt8[8]" Id="262" Name="ID Table out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="Update\ ID\.gcdl">
@@ -432,111 +435,6 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="4686a14070e5421183b21313e6db78c0">
-			<Attributed>
-				<AttributedType>
-					<Composite Id="1" Name="RegisterDataType" ReferenceClass="">
-						<GenericTypeDefinition>
-							<Attributed>
-								<AttributedType>
-									<Composite Id="2" Name="RegisterDataType" ReferenceClass="">
-										<GenericTypeDefinition>
-											<Composite RefId="2" />
-										</GenericTypeDefinition>
-										<GenericParameters>
-											<Typedef TypedefName="Element" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
-										</GenericParameters>
-										<BaseType>
-											<Void />
-										</BaseType>
-										<Members>
-											<Function Id="3" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
-												<DeclaringType>
-													<Composite RefId="2" />
-												</DeclaringType>
-												<GenericTypeDefinition>
-													<Void />
-												</GenericTypeDefinition>
-												<Parameters>
-													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
-														<DataType>
-															<Typedef TypedefName="Element" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
-														</DataType>
-													</Parameter>
-												</Parameters>
-											</Function>
-											<Function Id="4" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
-												<DeclaringType>
-													<Composite RefId="2" />
-												</DeclaringType>
-												<GenericTypeDefinition>
-													<Void />
-												</GenericTypeDefinition>
-												<Parameters>
-													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
-														<DataType>
-															<Typedef TypedefName="Element" UnderlyingType="@c843328a30f744cbb29e05526807c415" />
-														</DataType>
-													</Parameter>
-												</Parameters>
-											</Function>
-										</Members>
-									</Composite>
-								</AttributedType>
-								<AttributeValues>
-									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
-									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
-									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
-								</AttributeValues>
-							</Attributed>
-						</GenericTypeDefinition>
-						<ClosedGenericParameters>
-							<SizedArray LowerBound="8" UpperBound="8" DereferenceType="UInt8" />
-						</ClosedGenericParameters>
-						<BaseType>
-							<Void />
-						</BaseType>
-						<Members>
-							<Function Id="5" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
-								<DeclaringType>
-									<Composite RefId="1" />
-								</DeclaringType>
-								<GenericTypeDefinition>
-									<Void />
-								</GenericTypeDefinition>
-								<Parameters>
-									<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
-										<DataType>
-											<SizedArray LowerBound="8" UpperBound="8" DereferenceType="UInt8" />
-										</DataType>
-									</Parameter>
-								</Parameters>
-							</Function>
-							<Function Id="6" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
-								<DeclaringType>
-									<Composite RefId="1" />
-								</DeclaringType>
-								<GenericTypeDefinition>
-									<Void />
-								</GenericTypeDefinition>
-								<Parameters>
-									<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
-										<DataType>
-											<SizedArray LowerBound="8" UpperBound="8" DereferenceType="UInt8" />
-										</DataType>
-									</Parameter>
-								</Parameters>
-							</Function>
-						</Members>
-					</Composite>
-				</AttributedType>
-				<AttributeValues>
-					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
-					<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
-					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
 		<p.TypeReference TypeId="01ba3d935381490484a813fdcca049b3">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
@@ -550,9 +448,6 @@
 					<Field FieldAccessPolicy="ReadWrite" Name="Update ID_8" DataType="UInt8" />
 				</Members>
 			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="c843328a30f744cbb29e05526807c415">
-			<Generic />
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 </SourceFile>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="1393853A2A05578A830A9C5F907C363D" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="6AAB7E362191FDF733CFF2F76865855D" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -30,30 +30,30 @@
 		<ConnectorPane Height="100" Id="9" ListViewHeight="135" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
 			<ConnectorPaneTerminal ListViewHotspot="0 95" Parameter="696" />
 			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 35" Parameter="35" />
-			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 290" Parameter="2917" />
+			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 305" Parameter="2917" />
 			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="150 50" Parameter="585" />
 			<ConnectorPaneTerminal Hotspot="15 0" ListViewHotspot="0 110" Parameter="932" />
-			<ConnectorPaneTerminal Hotspot="25 0" ListViewHotspot="0 380" Parameter="2288" />
+			<ConnectorPaneTerminal Hotspot="25 0" ListViewHotspot="0 395" Parameter="2288" />
 			<ConnectorPaneTerminal Hotspot="50 5" ListViewHotspot="150 65" Parameter="615" />
 			<ConnectorPaneTerminal Hotspot="50 15" ListViewHotspot="150 80" Parameter="609" />
-			<ConnectorPaneTerminal Hotspot="50 25" ListViewHotspot="150 335" Parameter="2403" />
-			<ConnectorPaneTerminal Hotspot="50 35" ListViewHotspot="150 395" Parameter="2359" />
-			<ConnectorPaneTerminal Hotspot="15 100" ListViewHotspot="0 365" Parameter="2303" />
-			<ConnectorPaneTerminal Hotspot="25 100" ListViewHotspot="150 350" Parameter="2384" />
-			<ConnectorPaneTerminal Hotspot="35 0" ListViewHotspot="0 260" Parameter="3125" />
-			<ConnectorPaneTerminal Hotspot="35 100" ListViewHotspot="150 320" Parameter="2485" />
-			<ConnectorPaneTerminal Hotspot="50 45" ListViewHotspot="150 305" Parameter="2580" />
-			<ConnectorPaneTerminal Hotspot="0 45" ListViewHotspot="0 275" Parameter="3106" />
-			<ConnectorPaneTerminal Hotspot="50 55" ListViewHotspot="150 245" Parameter="3145" />
-			<ConnectorPaneTerminal Hotspot="0 55" ListViewHotspot="0 230" Parameter="3162" />
-			<ConnectorPaneTerminal Hotspot="50 65" ListViewHotspot="150 200" Parameter="3169" />
-			<ConnectorPaneTerminal Hotspot="0 65" ListViewHotspot="0 215" Parameter="3159" />
-			<ConnectorPaneTerminal Hotspot="50 75" ListViewHotspot="150 170" Parameter="3212" />
-			<ConnectorPaneTerminal Hotspot="0 75" ListViewHotspot="0 185" Parameter="3199" />
-			<ConnectorPaneTerminal Hotspot="50 85" ListViewHotspot="150 155" Parameter="3228" />
-			<ConnectorPaneTerminal Hotspot="0 85" ListViewHotspot="0 125" Parameter="3406" />
-			<ConnectorPaneTerminal Hotspot="50 95" ListViewHotspot="150 140" Parameter="3319" />
-			<ConnectorPaneTerminal Hotspot="0 95" />
+			<ConnectorPaneTerminal Hotspot="50 25" ListViewHotspot="150 350" Parameter="2403" />
+			<ConnectorPaneTerminal Hotspot="50 35" ListViewHotspot="150 410" Parameter="2359" />
+			<ConnectorPaneTerminal Hotspot="15 100" ListViewHotspot="0 380" Parameter="2303" />
+			<ConnectorPaneTerminal Hotspot="25 100" ListViewHotspot="150 365" Parameter="2384" />
+			<ConnectorPaneTerminal Hotspot="35 0" ListViewHotspot="0 275" Parameter="3125" />
+			<ConnectorPaneTerminal Hotspot="35 100" ListViewHotspot="150 335" Parameter="2485" />
+			<ConnectorPaneTerminal Hotspot="50 45" ListViewHotspot="150 320" Parameter="2580" />
+			<ConnectorPaneTerminal Hotspot="0 45" ListViewHotspot="0 290" Parameter="3106" />
+			<ConnectorPaneTerminal Hotspot="50 55" ListViewHotspot="150 260" Parameter="3145" />
+			<ConnectorPaneTerminal Hotspot="0 55" ListViewHotspot="0 245" Parameter="3162" />
+			<ConnectorPaneTerminal Hotspot="50 65" ListViewHotspot="150 215" Parameter="3169" />
+			<ConnectorPaneTerminal Hotspot="0 65" ListViewHotspot="0 230" Parameter="3159" />
+			<ConnectorPaneTerminal Hotspot="50 75" ListViewHotspot="150 185" Parameter="3212" />
+			<ConnectorPaneTerminal Hotspot="0 75" ListViewHotspot="0 200" Parameter="3199" />
+			<ConnectorPaneTerminal Hotspot="50 85" ListViewHotspot="150 170" Parameter="3228" />
+			<ConnectorPaneTerminal Hotspot="0 85" ListViewHotspot="0 140" Parameter="3406" />
+			<ConnectorPaneTerminal Hotspot="50 95" ListViewHotspot="150 155" Parameter="3319" />
+			<ConnectorPaneTerminal Hotspot="0 95" ListViewHotspot="0 125" Parameter="3412" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" Top="[float]0" Width="[float]2053">
@@ -187,6 +187,7 @@
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="3320" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]3321" Left="[float]415" MinHeight="[float]22" Top="[float]36" Value="{DataItemBinding Id=3319}" ValueType="[Type]UInt32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Id="3321" LabelOwner="[UIModel]3320" Left="[float]415" Text="[string]Qchain:count fast piggyback trigger at idle" Top="[float]13" xmlns="http://www.ni.com/PanelCommon" />
 			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="3407" Left="[float]0" MinHeight="[float]36" MinWidth="[float]36" Name="[string]Manual enable for Qchain node departure" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=3406}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="3413" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[byte]1" Left="[float]0" MinHeight="[float]22" Name="[string]Qchain:default indicator" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Collapsed" Top="[float]0" UnitAnnotation="[string]" Value="{DataItemBinding Id=3412}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt8" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<DataAccessor Bounds="170 10 40 15" DataItem="35" Id="37" Label="39" xmlns="http://www.ni.com/MocCommon">
@@ -1515,7 +1516,7 @@
 			<NodeLabel AttachedTo="2596" Bounds="410 -260 0 0" Id="2598" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>sample index offset</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="470 -245 70 80" DomainName="NI.MocCommon" Id="2605" Target="Qchain_check_mac_in_the_table\.gcdl" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="470 -245 70 90" DomainName="NI.MocCommon" Id="2605" Target="Qchain_check_mac_in_the_table\.gcdl" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="sample index offset" />
@@ -1531,8 +1532,9 @@
 						<Parameter Id="T2" Desc="is received frame an ACK?" />
 						<Parameter Id="T3" Desc="Qchain:id increment" />
 						<Parameter Id="T4" Desc="Manual enable for Qchain node departure" />
+						<Parameter Id="L8" Desc="Qchain:default indicator" />
 						<Parameter Id="R1" Desc="ID cluster" />
-						<Parameter Id="R0" Desc="Need to update ID table" />
+						<Parameter Id="R0" Desc="Need to update order ID in chain" />
 						<Parameter Id="R2" Desc="Fast piggyback" />
 						<Parameter Id="R3" Desc="Qchain:state" />
 					</MethodDeclaration>
@@ -1550,6 +1552,7 @@
 				<Terminal DataType="Boolean" Direction="Input" Hotspot="35 0" Id="T2" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="UInt8" Direction="Input" Hotspot="45 0" Id="T3" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Boolean" Direction="Input" Hotspot="55 0" Id="T4" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt8" Direction="Input" Hotspot="0 85" Id="L8" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="@13d59c69032243ce8fcb6f06d6324ba2" Direction="Output" Hotspot="70 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Boolean" Direction="Output" Hotspot="70 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Boolean" Direction="Output" Hotspot="70 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
@@ -1566,7 +1569,7 @@
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="device MAC address" />
-						<Parameter Id="L1" Desc="Need to update ID table (pulse)" />
+						<Parameter Id="L1" Desc="Need to update order ID (pulse)" />
 						<Parameter Id="L3" Desc="Mac address cluster" />
 						<Parameter Id="L2" Desc="ID cluster" />
 						<Parameter Id="R0" Desc="Need update piggyback?" />
@@ -2011,6 +2014,13 @@
 				<p.Text>Manual enable for Qchain node departure</p.Text>
 			</NodeLabel>
 			<Wire Id="3411" Joints="N(3409:Value) h(490) N(2605:T4)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="-5 -165 40 15" DataItem="3412" Id="3415" Label="3416" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt8" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="3415" Bounds="-143 -165 133 14" Id="3416" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Qchain:default indicator</p.Text>
+			</NodeLabel>
+			<Wire Id="3417" Joints="N(3415:Value) N(2605:L8)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" Top="[float]0" Width="[float]2000">
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="697" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Label="[UIModel]2139" Left="[float]183" MinHeight="[float]22" Top="[float]59" Value="{DataItemBinding Id=696}" ValueType="[Type]UInt8" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -2141,6 +2151,9 @@
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="12" DataType="Boolean" Id="3406" Name="Manual enable for Qchain node departure" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="13" DataType="UInt8" Id="3412" Name="Qchain:default indicator" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>255</p.DefaultValue>
 		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="\802\.11\ Add\ Sample\ Index\.gcdl">
@@ -2298,8 +2311,8 @@
 			<p.IconModel Target="Qchain_check_mac_in_the_table\.gcdl">
 				<MergeScript>
 					<MergeItem Path="." IsPrimary="True">
-						<Icon ListViewIconCrop="0 0 70 80">
-							<IconPanel Height="[float]80" Left="[float]0" Top="[float]0" Width="[float]70">
+						<Icon ListViewIconCrop="0 0 70 90">
+							<IconPanel Height="[float]90" Left="[float]0" Top="[float]0" Width="[float]70">
 								<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
 									<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
@@ -2307,7 +2320,7 @@
 										<FontSetting FontFamily="Verdana" FontSize="6" />
 									</FileNameText>
 								</IconTemplate>
-								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]74" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]64" />
+								<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]84" Left="[float]0" Margin="[SMThickness]3,3,3,3" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]64" />
 							</IconPanel>
 						</Icon>
 					</MergeItem>

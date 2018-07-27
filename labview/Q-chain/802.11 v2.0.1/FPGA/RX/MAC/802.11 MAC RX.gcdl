@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="4FC8DD19B015043C6BDD5F7D71F8CE05" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="BF1F2DFB65AB38C8D0C6881B1E314F1B" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="4.5.0.49153" />
 		<ParsableNamespace AssemblyFileVersion="4.5.2.51305" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
@@ -38,28 +38,28 @@
 			<ConnectorPaneTerminal Hotspot="35 0" ListViewHotspot="0 170" Parameter="338" />
 			<ConnectorPaneTerminal Hotspot="60 5" ListViewHotspot="150 110" Parameter="266" />
 			<ConnectorPaneTerminal Hotspot="60 15" ListViewHotspot="150 125" Parameter="272" />
-			<ConnectorPaneTerminal Hotspot="60 25" ListViewHotspot="150 440" Parameter="632" />
+			<ConnectorPaneTerminal Hotspot="60 25" ListViewHotspot="150 455" Parameter="632" />
 			<ConnectorPaneTerminal Hotspot="60 35" ListViewHotspot="150 80" Parameter="209" />
-			<ConnectorPaneTerminal Hotspot="60 45" ListViewHotspot="150 470" Parameter="474" />
-			<ConnectorPaneTerminal Hotspot="15 120" ListViewHotspot="0 410" Parameter="651" />
-			<ConnectorPaneTerminal Hotspot="25 120" ListViewHotspot="0 425" Parameter="645" />
-			<ConnectorPaneTerminal Hotspot="35 120" ListViewHotspot="150 455" Parameter="617" />
-			<ConnectorPaneTerminal Hotspot="45 0" ListViewHotspot="0 350" Parameter="707" />
-			<ConnectorPaneTerminal Hotspot="45 120" ListViewHotspot="150 395" Parameter="659" />
-			<ConnectorPaneTerminal Hotspot="60 55" ListViewHotspot="150 380" Parameter="682" />
-			<ConnectorPaneTerminal Hotspot="0 55" ListViewHotspot="0 365" Parameter="703" />
-			<ConnectorPaneTerminal Hotspot="60 65" ListViewHotspot="150 320" Parameter="721" />
-			<ConnectorPaneTerminal Hotspot="0 65" ListViewHotspot="0 335" Parameter="716" />
-			<ConnectorPaneTerminal Hotspot="60 75" ListViewHotspot="150 275" Parameter="741" />
-			<ConnectorPaneTerminal Hotspot="0 75" ListViewHotspot="0 305" Parameter="728" />
-			<ConnectorPaneTerminal Hotspot="60 85" ListViewHotspot="150 245" Parameter="753" />
-			<ConnectorPaneTerminal Hotspot="0 85" ListViewHotspot="0 290" Parameter="734" />
-			<ConnectorPaneTerminal Hotspot="60 95" ListViewHotspot="150 230" Parameter="760" />
-			<ConnectorPaneTerminal Hotspot="0 95" ListViewHotspot="0 260" Parameter="747" />
-			<ConnectorPaneTerminal Hotspot="60 105" ListViewHotspot="150 215" Parameter="767" />
-			<ConnectorPaneTerminal Hotspot="0 105" ListViewHotspot="0 200" Parameter="774" />
+			<ConnectorPaneTerminal Hotspot="60 45" ListViewHotspot="150 485" Parameter="474" />
+			<ConnectorPaneTerminal Hotspot="15 120" ListViewHotspot="0 425" Parameter="651" />
+			<ConnectorPaneTerminal Hotspot="25 120" ListViewHotspot="0 440" Parameter="645" />
+			<ConnectorPaneTerminal Hotspot="35 120" ListViewHotspot="150 470" Parameter="617" />
+			<ConnectorPaneTerminal Hotspot="45 0" ListViewHotspot="0 365" Parameter="707" />
+			<ConnectorPaneTerminal Hotspot="45 120" ListViewHotspot="150 410" Parameter="659" />
+			<ConnectorPaneTerminal Hotspot="60 55" ListViewHotspot="150 395" Parameter="682" />
+			<ConnectorPaneTerminal Hotspot="0 55" ListViewHotspot="0 380" Parameter="703" />
+			<ConnectorPaneTerminal Hotspot="60 65" ListViewHotspot="150 335" Parameter="721" />
+			<ConnectorPaneTerminal Hotspot="0 65" ListViewHotspot="0 350" Parameter="716" />
+			<ConnectorPaneTerminal Hotspot="60 75" ListViewHotspot="150 290" Parameter="741" />
+			<ConnectorPaneTerminal Hotspot="0 75" ListViewHotspot="0 320" Parameter="728" />
+			<ConnectorPaneTerminal Hotspot="60 85" ListViewHotspot="150 260" Parameter="753" />
+			<ConnectorPaneTerminal Hotspot="0 85" ListViewHotspot="0 305" Parameter="734" />
+			<ConnectorPaneTerminal Hotspot="60 95" ListViewHotspot="150 245" Parameter="760" />
+			<ConnectorPaneTerminal Hotspot="0 95" ListViewHotspot="0 275" Parameter="747" />
+			<ConnectorPaneTerminal Hotspot="60 105" ListViewHotspot="150 230" Parameter="767" />
+			<ConnectorPaneTerminal Hotspot="0 105" ListViewHotspot="0 215" Parameter="774" />
 			<ConnectorPaneTerminal Hotspot="60 115" />
-			<ConnectorPaneTerminal Hotspot="0 115" />
+			<ConnectorPaneTerminal Hotspot="0 115" ListViewHotspot="0 200" Parameter="780" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" Top="[float]0" Width="[float]2000">
@@ -146,6 +146,7 @@
 			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="768" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]769" Left="[float]415" MinHeight="[float]22" Top="[float]36" Value="{DataItemBinding Id=767}" ValueType="[Type]UInt32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Id="769" LabelOwner="[UIModel]768" Left="[float]415" Text="[string]Qchain:count fast piggyback trigger at idle" Top="[float]13" xmlns="http://www.ni.com/PanelCommon" />
 			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="775" Left="[float]0" MinHeight="[float]36" MinWidth="[float]36" Name="[string]Manual enable for Qchain node departure" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=774}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]22" Id="781" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[byte]1" Left="[float]0" MinHeight="[float]22" Name="[string]Qchain:default indicator" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Collapsed" Top="[float]0" UnitAnnotation="[string]" Value="{DataItemBinding Id=780}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt8" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 		</FrontPanelUnplacedItems>
 		<BlockDiagram Id="12">
 			<MethodCall Bounds="725 250 40 40" DomainName="NI.Appframeworks.802.11" Id="14" Target="\802\.11\ MPDU\ Validate\.gcdl" xmlns="http://www.ni.com/MocCommon">
@@ -276,6 +277,7 @@
 						<Parameter Id="L5" Desc="Qchain:DIFS in global clock ticks" />
 						<Parameter Id="L7" Desc="Qchain:id increment" />
 						<Parameter Id="L8" Desc="Manual enable for Qchain node departure" />
+						<Parameter Id="L9" Desc="Qchain:default indicator" />
 						<Parameter Id="R3" Desc="MPDU Generation Request" />
 						<Parameter Id="R2" Desc="RX indication" />
 						<Parameter Id="B1" Desc="Piggyback?" />
@@ -303,6 +305,7 @@
 				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 55" Id="L5" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="UInt8" Direction="Input" Hotspot="0 75" Id="L7" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 85" Id="L8" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt8" Direction="Input" Hotspot="0 95" Id="L9" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="@1c3c88e98b78426d96002cdb4c41a227" Direction="Output" Hotspot="50 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="@139c5ee101a74d5fb49810334e57b375" Direction="Output" Hotspot="50 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Boolean" Direction="Output" Hotspot="25 100" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
@@ -573,6 +576,13 @@
 				<p.Text>Manual enable for Qchain node departure</p.Text>
 			</NodeLabel>
 			<Wire Id="779" Joints="N(777:Value) h(595) v(-135) N(295:L8)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="395 485 40 15" DataItem="780" Id="783" Label="784" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt8" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="783" Bounds="257 485 133 14" Id="784" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Qchain:default indicator</p.Text>
+			</NodeLabel>
+			<Wire Id="785" Joints="N(783:Value) h(605) v(-145) N(295:L9)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
 		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" Top="[float]0" Width="[float]2000">
 			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@62a197377d2042e98487a474562c9cc1" Height="[float]245" Id="212" Label="[UIModel]425" Left="[float]998" Top="[float]65" Value="{DataItemBinding Id=209}" Width="[float]213" xmlns="http://www.ni.com/PanelCommon">
@@ -764,6 +774,9 @@
 		</DataItem>
 		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="16" DataType="Boolean" Id="774" Name="Manual enable for Qchain node departure" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="17" DataType="UInt8" Id="780" Name="Qchain:default indicator" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>255</p.DefaultValue>
 		</DataItem>
 		<IconTable xmlns="http://www.ni.com/PlatformFramework">
 			<p.IconModel Target="\802\.11\ MPDU\ Validate\.gcdl">
