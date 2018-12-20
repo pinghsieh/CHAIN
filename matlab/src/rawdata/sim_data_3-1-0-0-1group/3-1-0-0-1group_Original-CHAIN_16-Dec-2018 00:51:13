@@ -1,0 +1,16 @@
+***** Mode = Original-CHAIN, rho = 2.200 , p = 0.800 ***** 
+average queue length of client 1: 4515.96
+average queue length of client 2: 4365.67
+average queue length of client 3: 4560.52
+average throughput of client 1 (pkt/sec): 1364.34
+average throughput of client 2 (pkt/sec): 1349.84
+average throughput of client 3 (pkt/sec): 1347.34
+average throughput of Q-CHAIN clients (pkt/sec): 4061.53
+average throughput of DCF clients (pkt/sec): 0.00
+average throughput of DCFsat clients (pkt/sec): 0.00
+total average queue length: 13442.15
+total average delay: 2036.69 (ms)
+average contention time per interval: 0.081 (ms)
+contention time percentage: 18.652 %
+average collision rate: 9.55 %
+

@@ -1,5 +1,6 @@
-function [] = sim_single_CHAINs_real_backoff(network_config_code, rho, Mode, fileID)
+function [] = sim_single_CHAINs_real_backoff(network_config_code, Mode, fileID, varargin)
 %% Main Function For Throughput-Optimal CHAIN
+% This function requires 3 inputs, 2 optionals
 %% Choose algorithm
 % Qth-based: 
 % Qth-cross-piggyback:
@@ -10,10 +11,42 @@ function [] = sim_single_CHAINs_real_backoff(network_config_code, rho, Mode, fil
 % Pure-DCF:
 
 tic;
+%% Check number of input arguments
+if nargin >= 6
+    error('myfuns:sim_single_CHAINs_real_backoff:TooManyInputs', ...
+        'requires at most 3 optional inputs');
+end
 
-fprintf(fileID, '***** Mode = %s, rho = %.3f ***** \n', Mode, rho);
+%% Fill in unset optional values.
+switch nargin
+    case 3
+        rho = 0;
+    case 4
+        rho = varargin{1};
+    case 5
+        rho1 = varargin{1};
+        rho2 = varargin{2};
+end
 %% Initialization
 switch network_config_code
+    case '2-1-0-0-1group'
+        config_real_backoff.network_2nodes_1Chain_0DCF_0DCFsat_1group;    
+    case '3-1-0-0-1group'
+        config_real_backoff.network_3nodes_1Chain_0DCF_0DCFsat_1group;  
+    case '10-1-0-0-1group'
+        config_real_backoff.network_10nodes_1Chain_0DCF_0DCFsat_1group;   
+    case '10-1-0-0-10groups-het'
+        config_real_backoff.network_10nodes_1Chain_0DCF_0DCFsat_10groups_het;         
+    case '500-1-0-0-1group'
+        config_real_backoff.network_500nodes_1Chain_0DCF_0DCFsat_1group; 
+    case '500-1-0-0-2groups'
+        config_real_backoff.network_500nodes_1Chain_0DCF_0DCFsat_2groups; 
+    case '500-1-0-0-2groups-het'
+        config_real_backoff.network_500nodes_1Chain_0DCF_0DCFsat_2groups_het;    
+    case '500-1-0-0-10groups-het'
+        config_real_backoff.network_500nodes_1Chain_0DCF_0DCFsat_10groups_het;  
+    case '500-1-0-0-10groups-het-unreliable'
+        config_real_backoff.network_500nodes_1Chain_0DCF_0DCFsat_10groups_het_unreliable;      
     case '5-1-0'
         config_real_backoff.network_5nodes_1Chain_0DCF;   
     case '10-1-0'
@@ -23,18 +56,33 @@ switch network_config_code
     case '20-1-0-2groups'
         config_real_backoff.network_20nodes_1Chain_0DCF_2groups;
     case '20-1-0-2groups-het'
-        config_real_backoff.network_20nodes_1Chain_0DCF_2groups_hetero;         
+        config_real_backoff.network_20nodes_1Chain_0DCF_2groups_hetero;   
     case '20-1-10-2groups-het'
         config_real_backoff.network_20nodes_1Chain_10DCF_2groups_hetero;        
     case '20-1-0-4groups'
         config_real_backoff.network_20nodes_1Chain_0DCF_4groups; 
+    case '30-1-0-10-2groups-sat'
+        config_real_backoff.network_30nodes_1Chain_0DCF_10DCFsat_2groups;          
     case '30-1-0-3groups'
         config_real_backoff.network_30nodes_1Chain_0DCF_3groups; 
     case '30-1-10-3groups'
         config_real_backoff.network_30nodes_1Chain_10DCF_3groups; 
     otherwise
-        config_real_backoff.network_5nodes_1Chain_0DCF;
+        config_real_backoff.network_2nodes_1Chain_0DCF_0DCFsat_1group; 
 end
+
+total_arrival = sum(arrival_rate);
+
+%% Print log headers
+switch nargin
+    case 3
+        fprintf(fileID, '***** Mode = %s, simT = %d (ms), rho = %.4f, total arrival = %.4f, p = %.3f, Qth = %d ***** \n', Mode, simT, rho, total_arrival, p_star, q_threshold);
+    case 4
+        fprintf(fileID, '***** Mode = %s, simT = %d (ms), rho = %.4f, total arrival = %.4f, p = %.3f, Qth = %d ***** \n', Mode, simT, rho, total_arrival, p_star, q_threshold);
+    case 5
+        fprintf(fileID, '***** Mode = %s, simT = %d (ms), rho1 = %.4f, rho2 = %.4f, total arrival = %.4f, p = %.3f, Qth = %d ***** \n', Mode, simT, rho1, rho2, total_arrival, p_star, q_threshold);
+end
+
 
 currentT = 0;
 
@@ -56,11 +104,15 @@ total_contention_time = 0;
 queue_length_calculus = zeros(N,1);
 time_since_last_queue_update = 0;
 dummy_packet_count = zeros(N,1);
+time_last_queue_update_QLBCSMA = 0;
 
 %% Parameters
-Npoints = 3000000;
+Npoints = 500000;
+Nmorepoints = 100000;
 qn = zeros(N,1);
+qn_slow = zeros(N,1); % for QLB-CSMA
 qn_history = zeros(N, Npoints);
+total_delivery_history = zeros(N, Npoints);
 frame_timestamps = zeros(1, Npoints);
 
 for i = 1:N_CHAIN_node
@@ -73,18 +125,30 @@ end
 
 %% Parameters
 MAX_TOL = 1e-10;
-
+ROUND_COUNT_ON = 0;
 
 %% Main Program
 count = 0;
-round_count = zeros(2^N, 1);
+current_CHAIN = [];
+if ROUND_COUNT_ON == 1
+    round_count = zeros(2^N, 1);
+end
+
 for i=1:N
     next_arrival_time(i) = get_interarrival_time(arrival_rate(i),number_of_mini_slots_per_unit_time);
 end
 while currentT < simT
     count = count + 1;
     round_idx = 1;
-    
+    if count > 1
+        total_delivery_history(:,count) = total_delivery_history(:,count-1);
+    end
+    if count >= Npoints
+        qn_history = [qn_history zeros(N, Nmorepoints)];
+        total_delivery_history = [total_delivery_history zeros(N, Nmorepoints)];
+        frame_timestamps = [frame_timestamps zeros(1, Nmorepoints)];
+        Npoints = Npoints + Nmorepoints;
+    end
 %% Original CHAIN
 % Chain may break due to a link with an empty queue
 % For simplicity, we consider that there is only one CHAIN (by choosing a small delta in the CHAIN paper)
@@ -150,23 +214,33 @@ while currentT < simT
                 currentT = currentT + Tpkt; 
                 queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
                 time_since_last_queue_update = currentT;
-                qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
-                Tput_shortterm(winner_id) = Tput_shortterm(winner_id) + 1;
-                round_idx = round_idx + power(2,winner_id-1); 
-                next_in_CHAIN = WIFI_nodes{winner_id}.succ_id;
-                while next_in_CHAIN ~= winner_id
-                    if qn(next_in_CHAIN) > 0
-                        currentT = currentT + Tpkt; 
-                        queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
-                        time_since_last_queue_update = currentT;
-                        qn(next_in_CHAIN) = qn(next_in_CHAIN) - 1;  % service is deterministic
-                        Tput_shortterm(next_in_CHAIN) = Tput_shortterm(next_in_CHAIN) + 1;
-                        round_idx = round_idx + power(2,next_in_CHAIN-1);
-                        next_in_CHAIN = WIFI_nodes{next_in_CHAIN}.succ_id;
-                    else
-                        % CHAIN breaks and the next contention interval
-                        % starts
-                        break
+                round_idx = round_idx + power(2,winner_id-1);
+                % channel is unreliable
+                if rand(1) <= channel_pn(winner_id)
+                    qn(winner_id) = max(0,qn(winner_id) - 1); 
+                    total_delivery_history(winner_id,count) = total_delivery_history(winner_id,count) + 1;
+                    Tput_shortterm(winner_id) = Tput_shortterm(winner_id) + 1;                 
+                    next_in_CHAIN = WIFI_nodes{winner_id}.succ_id;
+                    while next_in_CHAIN ~= winner_id
+                        if qn(next_in_CHAIN) > 0
+                            currentT = currentT + Tpkt; 
+                            queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
+                            time_since_last_queue_update = currentT;
+                            round_idx = round_idx + power(2,next_in_CHAIN-1);
+                            % channel is unreliable
+                            if rand(1) <= channel_pn(next_in_CHAIN)
+                                qn(next_in_CHAIN) = max(0,qn(next_in_CHAIN) - 1);
+                                total_delivery_history(next_in_CHAIN,count) = total_delivery_history(next_in_CHAIN,count) + 1;
+                                Tput_shortterm(next_in_CHAIN) = Tput_shortterm(next_in_CHAIN) + 1;
+                                next_in_CHAIN = WIFI_nodes{next_in_CHAIN}.succ_id;
+                            else
+                                break
+                            end
+                        else
+                            % CHAIN breaks and the next contention interval
+                            % starts
+                            break
+                        end
                     end
                 end
             else
@@ -174,9 +248,13 @@ while currentT < simT
                 currentT = currentT + Tpkt; 
                 queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
                 time_since_last_queue_update = currentT;
-                qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
-                Tput_shortterm(winner_id) = Tput_shortterm(winner_id) + 1;
-                round_idx = round_idx + power(2,winner_id-1);                
+                round_idx = round_idx + power(2,winner_id-1); 
+                % channel is unreliable
+                if rand(1) <= channel_pn(next_in_CHAIN)                
+                    qn(winner_id) = max(0,qn(winner_id) - 1);  % service is deterministic
+                    total_delivery_history(winner_id,count) = total_delivery_history(winner_id,count) + 1;
+                    Tput_shortterm(winner_id) = Tput_shortterm(winner_id) + 1; 
+                end
             end
         else
             if winner_id == -2
@@ -276,23 +354,33 @@ while currentT < simT
                 currentT = currentT + Tpkt; 
                 queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
                 time_since_last_queue_update = currentT;
-                qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
-                Tput_shortterm(winner_id) = Tput_shortterm(winner_id) + 1;
                 round_idx = round_idx + power(2,winner_id-1); 
-                next_in_CHAIN = WIFI_nodes{winner_id}.succ_id;
-                while next_in_CHAIN ~= winner_id
-                    if qn(next_in_CHAIN) > 0
-                        currentT = currentT + Tpkt; 
-                        queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
-                        time_since_last_queue_update = currentT;
-                        qn(next_in_CHAIN) = qn(next_in_CHAIN) - 1;  % service is deterministic
-                        Tput_shortterm(next_in_CHAIN) = Tput_shortterm(next_in_CHAIN) + 1;
-                        round_idx = round_idx + power(2,next_in_CHAIN-1);
-                        next_in_CHAIN = WIFI_nodes{next_in_CHAIN}.succ_id;
-                    else
-                        % CHAIN breaks and the next contention interval
-                        % starts
-                        break
+                % channel is unreliable
+                if rand(1) <= channel_pn(winner_id) 
+                    qn(winner_id) = max(0,qn(winner_id) - 1); 
+                    total_delivery_history(winner_id,count) = total_delivery_history(winner_id,count) + 1;
+                    Tput_shortterm(winner_id) = Tput_shortterm(winner_id) + 1;
+                    next_in_CHAIN = WIFI_nodes{winner_id}.succ_id;
+                    while next_in_CHAIN ~= winner_id
+                        if qn(next_in_CHAIN) > 0
+                            currentT = currentT + Tpkt; 
+                            queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
+                            time_since_last_queue_update = currentT;
+                            round_idx = round_idx + power(2,next_in_CHAIN-1);
+                            % channel is unreliable
+                            if rand(1) <= channel_pn(next_in_CHAIN)
+                                qn(next_in_CHAIN) = max(0,qn(next_in_CHAIN) - 1);
+                                total_delivery_history(next_in_CHAIN,count) = total_delivery_history(next_in_CHAIN,count) + 1;
+                                Tput_shortterm(next_in_CHAIN) = Tput_shortterm(next_in_CHAIN) + 1;
+                                next_in_CHAIN = WIFI_nodes{next_in_CHAIN}.succ_id;
+                            else
+                                break
+                            end
+                        else
+                            % CHAIN breaks and the next contention interval
+                            % starts
+                            break
+                        end
                     end
                 end
             else
@@ -300,9 +388,13 @@ while currentT < simT
                 currentT = currentT + Tpkt; 
                 queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
                 time_since_last_queue_update = currentT;
-                qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
-                Tput_shortterm(winner_id) = Tput_shortterm(winner_id) + 1;
-                round_idx = round_idx + power(2,winner_id-1);                 
+                round_idx = round_idx + power(2,winner_id-1); 
+                % channel is unreliable
+                if rand(1) <= channel_pn(winner_id) 
+                    qn(winner_id) = max(0,qn(winner_id) - 1);
+                    total_delivery_history(winner_id,count) = total_delivery_history(winner_id,count) + 1;
+                    Tput_shortterm(winner_id) = Tput_shortterm(winner_id) + 1;   
+                end
             end
         else
             if winner_id == -2
@@ -323,7 +415,7 @@ while currentT < simT
     if strcmp(Mode,'Qth-plus-Contention')
         % Contention
         winner_id = -1;
-
+        CHAIN_break = 0;
         %% Determine contention time (including possible collisions)
         contention_time = DIFS;   
         % CHAIN node is active if
@@ -332,8 +424,9 @@ while currentT < simT
         % q_threshold packets
         contention_set_part1 = find(qn(1:N_CHAIN_node).*(state_vec(1:N_CHAIN_node) == 0) >= q_threshold);
         contention_set_part2 = find(qn(1:N_CHAIN_node).*(state_vec(1:N_CHAIN_node) == 1) >= 1);
-        % DCF node is active if it has at least one packet
-        contention_set_part3 = find(qn.*is_DCF >= 1);
+        % DCF node is active if it has at least one packet or has saturated
+        % traffic
+        contention_set_part3 = find((qn.*is_DCF) + is_DCFsat >= 1);
         contention_set = [contention_set_part1; contention_set_part2; contention_set_part3];     
         % There can be multiple winners, a.k.a. collision
         if ~isempty(contention_set)
@@ -370,93 +463,146 @@ while currentT < simT
                     currentT = currentT + Tpkt; 
                     queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
                     time_since_last_queue_update = currentT;
-                    qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
                     round_idx = round_idx + power(2,winner_id-1);
-                    next_in_CHAIN = WIFI_nodes{winner_id}.succ_id;
-                    while next_in_CHAIN ~= winner_id
-                        if qn(next_in_CHAIN) > 0
-                            currentT = currentT + Tpkt; 
-                            queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
-                            time_since_last_queue_update = currentT;
-                            qn(next_in_CHAIN) = qn(next_in_CHAIN) - 1;  % service is deterministic
-                            round_idx = round_idx + power(2,next_in_CHAIN-1);
-                        else
+                    % channel is unreliable
+                    if rand(1) <= channel_pn(winner_id) 
+                        qn(winner_id) = max(0,qn(winner_id) - 1);
+                        total_delivery_history(winner_id,count) = total_delivery_history(winner_id,count) + 1;
+                        next_in_CHAIN = WIFI_nodes{winner_id}.succ_id;
+                        while next_in_CHAIN ~= winner_id
+                            if qn(next_in_CHAIN) > 0
+                                currentT = currentT + Tpkt; 
+                                queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
+                                time_since_last_queue_update = currentT;
+                                round_idx = round_idx + power(2,next_in_CHAIN-1);
+                                % channel is unreliable
+                                if rand(1) <= channel_pn(next_in_CHAIN) 
+                                    qn(next_in_CHAIN) = max(0,qn(next_in_CHAIN) - 1);
+                                    total_delivery_history(next_in_CHAIN,count) = total_delivery_history(next_in_CHAIN,count) + 1;
+                                else
+                                    CHAIN_break = 1;
+                                end
+                            else
+                                CHAIN_break = 1;
+                            end
                             % CHAIN breaks and needs to update predecessors
                             % and successors
-                            WIFI_nodes{next_in_CHAIN}.is_active = 0;
-                            state_vec(next_in_CHAIN) = 0;
-                            % Update CHAIN head or tail
-                            if next_in_CHAIN == CHAIN_tail_id
-                                CHAIN_tail_id = WIFI_nodes{next_in_CHAIN}.pred_id;
-                            else
-                                if next_in_CHAIN == CHAIN_head_id
-                                    CHAIN_head_id = WIFI_nodes{next_in_CHAIN}.succ_id;       
+                            if CHAIN_break == 1
+                                WIFI_nodes{next_in_CHAIN}.is_active = 0;
+                                state_vec(next_in_CHAIN) = 0;
+                                current_CHAIN = current_CHAIN(current_CHAIN ~= next_in_CHAIN);
+                                % Update CHAIN head or tail
+                                if next_in_CHAIN == CHAIN_tail_id
+                                    CHAIN_tail_id = WIFI_nodes{next_in_CHAIN}.pred_id;
+                                else
+                                    if next_in_CHAIN == CHAIN_head_id
+                                        CHAIN_head_id = WIFI_nodes{next_in_CHAIN}.succ_id;       
+                                    end
                                 end
+                                WIFI_nodes{WIFI_nodes{next_in_CHAIN}.succ_id}.pred_id = WIFI_nodes{next_in_CHAIN}.pred_id;
+                                WIFI_nodes{WIFI_nodes{next_in_CHAIN}.pred_id}.succ_id = WIFI_nodes{next_in_CHAIN}.succ_id;
+                                WIFI_nodes{next_in_CHAIN}.succ_id = 0;
+                                WIFI_nodes{next_in_CHAIN}.pred_id = 0;
+                                break
                             end
-                            WIFI_nodes{WIFI_nodes{next_in_CHAIN}.succ_id}.pred_id = WIFI_nodes{next_in_CHAIN}.pred_id;
-                            WIFI_nodes{WIFI_nodes{next_in_CHAIN}.pred_id}.succ_id = WIFI_nodes{next_in_CHAIN}.succ_id;
-                            WIFI_nodes{next_in_CHAIN}.succ_id = 0;
-                            WIFI_nodes{next_in_CHAIN}.pred_id = 0;
-                            break
+                            next_in_CHAIN = WIFI_nodes{next_in_CHAIN}.succ_id;
                         end
-                        next_in_CHAIN = WIFI_nodes{next_in_CHAIN}.succ_id;
+                    else
+                        % No need to change Q-CHAIN relations                       
                     end
                 else
                     % The winner is currently not in CHAIN
                     % TODO: The winner joins the CHAIN as the head, and the
                     % rest of CHAIN can piggyback
-                    WIFI_nodes{winner_id}.is_active = 1;
-                    if CHAIN_tail_id ~= 0
-                        WIFI_nodes{winner_id}.pred_id = CHAIN_tail_id;
-                        WIFI_nodes{CHAIN_tail_id}.succ_id = winner_id;
-                    else
-                        % if there was no link in CHAIN
-                        WIFI_nodes{winner_id}.pred_id = winner_id;
-                        CHAIN_tail_id = winner_id;
-                    end
-                    if CHAIN_head_id ~= 0
-                        WIFI_nodes{winner_id}.succ_id = CHAIN_head_id;
-                        WIFI_nodes{CHAIN_head_id}.pred_id = winner_id;
-                    else
-                        % if there was no link in CHAIN
-                        WIFI_nodes{winner_id}.succ_id = winner_id;
-                    end
-                    CHAIN_head_id = winner_id;                  
-                    state_vec(winner_id) = 1;
                     currentT = currentT + Tpkt; 
                     queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
                     time_since_last_queue_update = currentT;
-                    qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
                     round_idx = round_idx + power(2,winner_id-1);
-                    
-                    % The rest of CHAIN can piggyback with possibly dummy
-                    % packets
-                    next_in_CHAIN = WIFI_nodes{winner_id}.succ_id;
-                    while next_in_CHAIN ~= winner_id
-                        if qn(next_in_CHAIN) > 0
-                            currentT = currentT + Tpkt; 
-                            queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
-                            time_since_last_queue_update = currentT;
-                            qn(next_in_CHAIN) = qn(next_in_CHAIN) - 1;  % service is deterministic
-                            round_idx = round_idx + power(2,next_in_CHAIN-1);
+                    % channel is unreliable
+                    if rand(1) <= channel_pn(winner_id) 
+                        WIFI_nodes{winner_id}.is_active = 1;
+                        current_CHAIN = [winner_id current_CHAIN];
+                        if CHAIN_tail_id ~= 0
+                            WIFI_nodes{winner_id}.pred_id = CHAIN_tail_id;
+                            WIFI_nodes{CHAIN_tail_id}.succ_id = winner_id;
                         else
-                            % CHAIN shall not break and can transmit dummy
-                            % packets
-                            currentT = currentT + Tdummy; 
-                            queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
-                            time_since_last_queue_update = currentT;
-                            round_idx = round_idx + power(2,next_in_CHAIN-1);
+                            % if there was no link in CHAIN
+                            WIFI_nodes{winner_id}.pred_id = winner_id;
+                            CHAIN_tail_id = winner_id;
                         end
-                        next_in_CHAIN = WIFI_nodes{next_in_CHAIN}.succ_id;
-                    end                    
+                        if CHAIN_head_id ~= 0
+                            WIFI_nodes{winner_id}.succ_id = CHAIN_head_id;
+                            WIFI_nodes{CHAIN_head_id}.pred_id = winner_id;
+                        else
+                            % if there was no link in CHAIN
+                            WIFI_nodes{winner_id}.succ_id = winner_id;
+                        end
+                        CHAIN_head_id = winner_id;                  
+                        state_vec(winner_id) = 1;
+                        qn(winner_id) = max(0,qn(winner_id) - 1); 
+                        total_delivery_history(winner_id,count) = total_delivery_history(winner_id,count) + 1;
+                    
+                        % The rest of CHAIN can piggyback with possibly dummy
+                        % packets
+                        next_in_CHAIN = WIFI_nodes{winner_id}.succ_id;
+                        while next_in_CHAIN ~= winner_id
+                            if qn(next_in_CHAIN) > 0
+                                currentT = currentT + Tpkt; 
+                                queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
+                                time_since_last_queue_update = currentT;
+                                round_idx = round_idx + power(2,next_in_CHAIN-1);
+                                % channel is unreliable
+                                if rand(1) <= channel_pn(next_in_CHAIN)
+                                    qn(next_in_CHAIN) = max(0,qn(next_in_CHAIN) - 1);
+                                    total_delivery_history(next_in_CHAIN,count) = total_delivery_history(next_in_CHAIN,count) + 1;
+                                else
+                                    % When a new node joins and the CHAIN
+                                    % breaks in the middle, all the nodes in the
+                                    % remaining part of the CHAIN should
+                                    % leave
+                                    % Remove one by one
+                                    while next_in_CHAIN ~= CHAIN_head_id
+                                        WIFI_nodes{next_in_CHAIN}.is_active = 0;
+                                        state_vec(next_in_CHAIN) = 0;
+                                        current_CHAIN = current_CHAIN(current_CHAIN ~= next_in_CHAIN);
+                                        % Update CHAIN head or tail
+                                        if next_in_CHAIN == CHAIN_tail_id
+                                            CHAIN_tail_id = WIFI_nodes{next_in_CHAIN}.pred_id;
+                                        end
+                                        next_in_CHAIN_new = WIFI_nodes{next_in_CHAIN}.succ_id;
+                                        WIFI_nodes{WIFI_nodes{next_in_CHAIN}.succ_id}.pred_id = WIFI_nodes{next_in_CHAIN}.pred_id;
+                                        WIFI_nodes{WIFI_nodes{next_in_CHAIN}.pred_id}.succ_id = WIFI_nodes{next_in_CHAIN}.succ_id;
+                                        WIFI_nodes{next_in_CHAIN}.succ_id = 0;
+                                        WIFI_nodes{next_in_CHAIN}.pred_id = 0;
+                                        next_in_CHAIN = next_in_CHAIN_new;
+                                    end
+                                    break
+                                end
+                            else
+                                % CHAIN shall not break and can transmit dummy
+                                % packets
+                                currentT = currentT + Tdummy; 
+                                queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
+                                time_since_last_queue_update = currentT;
+                                round_idx = round_idx + power(2,next_in_CHAIN-1);
+                            end
+                            next_in_CHAIN = WIFI_nodes{next_in_CHAIN}.succ_id;
+                        end
+                    else
+                        % Do nothing
+                    end
                 end
             else
                 % The winner follows DCF
                 currentT = currentT + Tpkt; 
                 queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
                 time_since_last_queue_update = currentT;
-                qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
                 round_idx = round_idx + power(2,winner_id-1);
+                % channel is unreliable
+                if rand(1) <= channel_pn(winner_id) 
+                    qn(winner_id) = max(0,qn(winner_id) - 1);
+                    total_delivery_history(winner_id,count) = total_delivery_history(winner_id,count) + 1;
+                end
             end 
         else
             if winner_id == -2
@@ -475,6 +621,7 @@ while currentT < simT
 %% Q-threshold plus contention-based re-admission
 % Chain may break due to a link with an empty queue
 % A link can stay in the Chain by sending dummy packets
+% NOTE: Unreliable channel for this policy has not been implemented yet!!!!
     if strcmp(Mode,'Qth-plus-Contention-with-dummy')
         % Contention
         winner_id = -1;
@@ -525,7 +672,7 @@ while currentT < simT
                     currentT = currentT + Tpkt; 
                     queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
                     time_since_last_queue_update = currentT;
-                    qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
+                    qn(winner_id) = max(0,qn(winner_id) - 1);  % service is deterministic
                     round_idx = round_idx + power(2,winner_id-1);
                     next_in_CHAIN = WIFI_nodes{winner_id}.succ_id;
                     while next_in_CHAIN ~= winner_id
@@ -533,7 +680,7 @@ while currentT < simT
                             currentT = currentT + Tpkt; 
                             queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
                             time_since_last_queue_update = currentT;
-                            qn(next_in_CHAIN) = qn(next_in_CHAIN) - 1;  % service is deterministic
+                            qn(next_in_CHAIN) = max(0,qn(next_in_CHAIN) - 1);  % service is deterministic
                             round_idx = round_idx + power(2,next_in_CHAIN-1);
                         else
                             % CHAIN breaks and needs to update predecessors
@@ -591,7 +738,7 @@ while currentT < simT
                     currentT = currentT + Tpkt; 
                     queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
                     time_since_last_queue_update = currentT;
-                    qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
+                    qn(winner_id) = max(0,qn(winner_id) - 1);  % service is deterministic
                     round_idx = round_idx + power(2,winner_id-1);
                     
                     % The rest of CHAIN can piggyback with possibly dummy
@@ -602,7 +749,7 @@ while currentT < simT
                             currentT = currentT + Tpkt; 
                             queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
                             time_since_last_queue_update = currentT;
-                            qn(next_in_CHAIN) = qn(next_in_CHAIN) - 1;  % service is deterministic
+                            qn(next_in_CHAIN) = max(0,qn(next_in_CHAIN) - 1);  % service is deterministic
                             round_idx = round_idx + power(2,next_in_CHAIN-1);
                         else
                             % CHAIN shall not break and can transmit dummy
@@ -620,7 +767,7 @@ while currentT < simT
                 currentT = currentT + Tpkt; 
                 queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
                 time_since_last_queue_update = currentT;
-                qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
+                qn(winner_id) = max(0,qn(winner_id) - 1);  % service is deterministic
                 round_idx = round_idx + power(2,winner_id-1);
             end 
         else
@@ -636,468 +783,68 @@ while currentT < simT
             end
         end
     end    
-%{    
-%% Q-threshold plus contention-based re-admission, and DCF nodes are given higher priority
-% Chain may break due to a link with an empty queue
-    if strcmp(Mode,'Qth-plus-Contention-DCF-priority')
+
+%% Queue-Length-Based CSMA (TON 2011, Jiang and Walrand)
+    if strcmp(Mode,'QLB-CSMA')
         % Contention
         winner_id = -1;
-        contention_time = get_contention_time(Tcont);
-        % CHAIN node is active if
-        % (1) it is already in CHAIN and has at least one packet
-        % (2) it it currently not in CHAIN but has more than or equal to
-        % q_threshold packets
-        contention_set_part1 = find(qn(1:N_CHAIN_node).*(state_vec(1:N_CHAIN_node) == 0) >= q_threshold);
-        contention_set_part2 = find(qn(1:N_CHAIN_node).*(state_vec(1:N_CHAIN_node) == 1) >= 1);
-        % DCF node is active if it has at least one packet
-        contention_set_part3 = find(qn.*is_DCF >= 1);
-        contention_set = [contention_set_part1; contention_set_part3];
-        if ~isempty(contention_set)
-            winner_id = contention_set(randi([1, length(contention_set)]));
-        else
-            if ~isempty(contention_set_part2)
-                 winner_id = contention_set_part2(randi([1, length(contention_set_part2)]));
-            end
+        
+        % Update queue length periodically
+        if (currentT - time_last_queue_update_QLBCSMA) >= qlen_update_interval
+            qn_slow = qn;
+            time_last_queue_update_QLBCSMA = currentT;
         end
-    
-        % Services
-        if winner_id > 0
-            if winner_id <= N_CHAIN_node
-                % The winner supports CHAIN
-                if WIFI_nodes{winner_id}.is_active == 1
-                    % The winner is already in CHAIN
-                    % TODO: In this case, CHAIN might break if a link in CHAIN
-                    % has an empty queue
-                    qn(winner_id) = max(0, qn(winner_id) - 1);  % service is deterministic
-                    total_TX_time = total_TX_time + Tpkt;
-                    round_idx = round_idx + power(2,winner_id-1);
-                    next_in_CHAIN = WIFI_nodes{winner_id}.succ_id;
-                    while next_in_CHAIN ~= winner_id
-                        if qn(next_in_CHAIN) > 0
-                            qn(next_in_CHAIN) = qn(next_in_CHAIN) - 1;  % service is deterministic
-                            total_TX_time = total_TX_time + Tpkt;
-                            round_idx = round_idx + power(2,next_in_CHAIN-1);
-                        else
-                            % CHAIN breaks and needs to update predecessors
-                            % and successors
-                            WIFI_nodes{next_in_CHAIN}.is_active = 0;
-                            state_vec(next_in_CHAIN) = 0;
-                            % Update CHAIN head or tail
-                            if next_in_CHAIN == CHAIN_tail_id
-                                CHAIN_tail_id = WIFI_nodes{next_in_CHAIN}.pred_id;
-                            else
-                                if next_in_CHAIN == CHAIN_head_id
-                                    CHAIN_head_id = WIFI_nodes{next_in_CHAIN}.succ_id;       
-                                end
-                            end
-                            WIFI_nodes{WIFI_nodes{next_in_CHAIN}.succ_id}.pred_id = WIFI_nodes{next_in_CHAIN}.pred_id;
-                            WIFI_nodes{WIFI_nodes{next_in_CHAIN}.pred_id}.succ_id = WIFI_nodes{next_in_CHAIN}.succ_id;
-                            WIFI_nodes{next_in_CHAIN}.succ_id = 0;
-                            WIFI_nodes{next_in_CHAIN}.pred_id = 0;
-                            break
-                        end
-                        next_in_CHAIN = WIFI_nodes{next_in_CHAIN}.succ_id;
-                    end
-                else
-                    % The winner is currently not in CHAIN
-                    % TODO: The winner joins the CHAIN as the head, and the
-                    % rest of CHAIN can piggyback
-                    WIFI_nodes{winner_id}.is_active = 1;
-                    if CHAIN_tail_id ~= 0
-                        WIFI_nodes{winner_id}.pred_id = CHAIN_tail_id;
-                        WIFI_nodes{CHAIN_tail_id}.succ_id = winner_id;
-                    else
-                        % if there was no link in CHAIN
-                        WIFI_nodes{winner_id}.pred_id = winner_id;
-                        CHAIN_tail_id = winner_id;
-                    end
-                    if CHAIN_head_id ~= 0
-                        WIFI_nodes{winner_id}.succ_id = CHAIN_head_id;
-                        WIFI_nodes{CHAIN_head_id}.pred_id = winner_id;
-                    else
-                        % if there was no link in CHAIN
-                        WIFI_nodes{winner_id}.succ_id = winner_id;
-                    end
-                    CHAIN_head_id = winner_id;                  
-                    state_vec(winner_id) = 1;
-                    qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
-                    total_TX_time = total_TX_time + Tpkt;
-                    round_idx = round_idx + power(2,winner_id-1);
-                    
-                    % The rest of CHAIN can piggyback with possibly dummy
-                    % packets
-                    next_in_CHAIN = WIFI_nodes{winner_id}.succ_id;
-                    while next_in_CHAIN ~= winner_id
-                        if qn(next_in_CHAIN) > 0
-                            qn(next_in_CHAIN) = qn(next_in_CHAIN) - 1;  % service is deterministic
-                            total_TX_time = total_TX_time + Tpkt;
-                            round_idx = round_idx + power(2,next_in_CHAIN-1);
-                        else
-                            % CHAIN shall not break and can transmit dummy
-                            % packets
-                            total_TX_time = total_TX_time + Tdummy;
-                            round_idx = round_idx + power(2,next_in_CHAIN-1);
-                        end
-                        next_in_CHAIN = WIFI_nodes{next_in_CHAIN}.succ_id;
-                    end                    
-                end
+        %% Determine contention time (including possible collisions)
+        contention_time = DIFS;   
+        % Each node is active if it has at least one packet is active if
+        contention_set = find((qn >= 1) | (is_DCFsat == 1));      
+        % There can be multiple winners, a.k.a. collision
+        if ~isempty(contention_set)
+            total_contention_interval = total_contention_interval + 1;
+            winner_id = contention_set(find(min(backoff(contention_set)) == backoff(contention_set)));
+            contention_time = contention_time + min(backoff(contention_set))*slot_time;
+            backoff(contention_set) = backoff(contention_set) - min(backoff(contention_set));
+            if length(winner_id) < 1 + MAX_TOL
+                WIFI_nodes{winner_id(1)}.CW = WIFI_nodes{winner_id(1)}.CW_Min;
+                backoff(winner_id(1)) = get_backoff(getCW_QLB(qn_slow(winner_id(1)))); 
             else
-                % The winner follows DCF
-                qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
-                total_TX_time = total_TX_time + Tpkt;
-                round_idx = round_idx + power(2,winner_id-1);
+                for j=1:length(winner_id)
+                    WIFI_nodes{winner_id(j)}.CW = min((WIFI_nodes{winner_id(j)}.CW)*2, WIFI_nodes{winner_id(j)}.CW_Max);
+                    backoff(winner_id(j)) = get_backoff(getCW_QLB(qn_slow(winner_id(j)))); 
+                end
+                contention_time = contention_time + Tpkt; % time wasted during collision
+                total_collision = total_collision + 1;
+                winner_id = -2; % no winner due to collision
             end
+            currentT = currentT + contention_time;
+            total_contention_time = total_contention_time + contention_time;
+            queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
+            time_since_last_queue_update = currentT;
+        end
+        if winner_id > 0            
             % Time evolution
-            total_frame_time = contention_time + total_TX_time;
-            oldT = currentT;
-            currentT = currentT + total_frame_time;  
+            currentT = currentT + Tpkt; 
+            queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
+            time_since_last_queue_update = currentT;
+            round_idx = round_idx + power(2,winner_id-1);
+            % channel is unreliable
+            if rand(1) <= channel_pn(winner_id)
+                qn(winner_id) = max(0,qn(winner_id) - 1); 
+                total_delivery_history(winner_id,count) = total_delivery_history(winner_id,count) + 1;
+            end
         else
-            oldT = currentT;
-            currentT = min(next_arrival_time);
+            if winner_id == -2
+                % Do nothing
+            else
+                if winner_id == -1
+                    % there is no packet available in the network
+                    currentT = min(next_arrival_time);
+                    queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
+                    time_since_last_queue_update = currentT;
+                end
+            end           
         end
     end
-        
-%}
-
-%{    
-%% Q-threshold based 
-% If an active CHAIN node wins contention, then all the active CHAIN nodes
-% can transmit one packet in this interval
-% A CHAIN node is active if
-% (1) it is already active and has at least one packet
-% (2) it it currently not active but has more than or equal to
-% q_threshold packets at the beginning of the current interval
-
-    if strcmp(Mode,'Qth-based')
-        % Contention
-        winner_id = -1;
-        contention_time = get_contention_time(Tcont);
-        % CHAIN node is active if
-        % (1) it is already active and has at least one packet
-        % (2) it it currently not active but has more than or equal to
-        % q_threshold packets
-        state_vec(1:N_CHAIN_node) = state_vec(1:N_CHAIN_node) - ((state_vec(1:N_CHAIN_node) == 1).*(qn(1:N_CHAIN_node) == 0));
-        state_vec(1:N_CHAIN_node) = ((state_vec(1:N_CHAIN_node) + (qn(1:N_CHAIN_node) >= q_threshold)) > 0.5);
-        
-        contention_set_part1 = find(state_vec(1:N_CHAIN_node) == 1);
-        % DCF node is active if it has at least one packet
-        contention_set_part2 = find(qn.*is_DCF >= 1);
-        contention_set = [contention_set_part1; contention_set_part2];
-        if ~isempty(contention_set)
-            winner_id = contention_set(randi([1, length(contention_set)]));
-        end
-        
-        % Services
-        if winner_id > 0
-            if winner_id <= N_CHAIN_node
-                % The winner supports CHAIN
-                % TODO: In this case, an active CHAIN node with a non-empty
-                % queue can transmit.
-                for j=1:N_CHAIN_node
-                    if state_vec(j) == 1 
-                        qn(j) = qn(j) - 1;  % service is deterministic
-                        total_TX_time = total_TX_time + Tpkt;
-                        round_idx = round_idx + power(2,j-1);
-                    end
-                end                 
-            else
-                % The winner follows DCF
-                qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
-                total_TX_time = total_TX_time + Tpkt;
-                round_idx = round_idx + power(2,winner_id-1);
-            end
-            % Time evolution
-            total_frame_time = contention_time + total_TX_time;
-            oldT = currentT;
-            currentT = currentT + total_frame_time;  
-        else
-            oldT = currentT;
-            currentT = min(next_arrival_time);
-        end
-    end              
-%}
-    
-%{    
-%% Q-threshold based and let DCF nodes have higher priority
-% During contention, all DCF nodes have higher priority than CHAIN nodes
-% If an active CHAIN node wins contention, then all the active CHAIN nodes
-% can transmit one packet in this interval
-% A CHAIN node is active if
-% (1) it is already active and has at least one packet
-% (2) it it currently not active but has more than or equal to
-% q_threshold packets at the beginning of the current interval
-
-    if strcmp(Mode,'Qth-based-DCF-priority')
-        % Contention
-        winner_id = -1;
-        contention_time = get_contention_time(Tcont);
-        % CHAIN node is active if
-        % (1) it is already active and has at least one packet
-        % (2) it it currently not active but has more than or equal to
-        % q_threshold packets
-        state_vec(1:N_CHAIN_node) = state_vec(1:N_CHAIN_node) - ((state_vec(1:N_CHAIN_node) == 1).*(qn(1:N_CHAIN_node) == 0));
-        state_vec(1:N_CHAIN_node) = ((state_vec(1:N_CHAIN_node) + (qn(1:N_CHAIN_node) >= q_threshold)) > 0.5);
-        
-        contention_set_part1 = find(state_vec(1:N_CHAIN_node) == 1);
-        % DCF node is active if it has at least one packet
-        contention_set_part2 = find(qn.*is_DCF >= 1);
-        if ~isempty(contention_set_part2)
-            winner_id = contention_set_part2(randi([1, length(contention_set_part2)]));
-        else
-            if ~isempty(contention_set_part1)
-                winner_id = contention_set_part1(1);
-            end
-        end
-        
-        % Services
-        if winner_id > 0
-            if winner_id <= N_CHAIN_node
-                % The winner supports CHAIN
-                % TODO: In this case, an active CHAIN node with a non-empty
-                % queue can transmit.
-                for j=1:N_CHAIN_node
-                    if state_vec(j) == 1 
-                        qn(j) = qn(j) - 1;  % service is deterministic
-                        total_TX_time = total_TX_time + Tpkt;
-                        round_idx = round_idx + power(2,j-1);
-                    end
-                end                 
-            else
-                % The winner follows DCF
-                qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
-                total_TX_time = total_TX_time + Tpkt;
-                round_idx = round_idx + power(2,winner_id-1);
-            end
-            % Time evolution
-            total_frame_time = contention_time + total_TX_time;
-            oldT = currentT;
-            currentT = currentT + total_frame_time;  
-        else
-            oldT = currentT;
-            currentT = min(next_arrival_time);
-        end
-    end
-%}
-
-%{    
-%% Q-threshold based and use Chain-wide contention 
-% If an active CHAIN node wins contention, then all the active CHAIN nodes
-% can transmit one packet in this interval
-% A CHAIN node is active if
-% (1) it is already active and has at least one packet
-% (2) it it currently not active but has more than or equal to
-% q_threshold packets at the beginning of the current interval
-% Only the representer of Chain can contend for channel access
-
-    if strcmp(Mode,'Qth-based-Chain-wide-contention')
-        % Contention
-        winner_id = -1;
-        contention_time = get_contention_time(Tcont);
-        % CHAIN node is active if
-        % (1) it is already active and has at least one packet
-        % (2) it it currently not active but has more than or equal to
-        % q_threshold packets
-        state_vec(1:N_CHAIN_node) = state_vec(1:N_CHAIN_node) - ((state_vec(1:N_CHAIN_node) == 1).*(qn(1:N_CHAIN_node) == 0));
-        state_vec(1:N_CHAIN_node) = ((state_vec(1:N_CHAIN_node) + (qn(1:N_CHAIN_node) >= q_threshold)) > 0.5);
-        
-        contention_set_part1 = find(state_vec(1:N_CHAIN_node) == 1);
-        % DCF node is active if it has at least one packet
-        contention_set_part2 = find(qn.*is_DCF >= 1);
-        if ~isempty(contention_set_part1)
-            contention_set = [contention_set_part1(1); contention_set_part2]; 
-        else
-            contention_set = contention_set_part2;
-        end
-        if ~isempty(contention_set)
-            winner_id = contention_set(randi([1, length(contention_set)]));
-        end
-        
-        % Services
-        if winner_id > 0
-            if winner_id <= N_CHAIN_node
-                % The winner supports CHAIN
-                % TODO: In this case, an active CHAIN node with a non-empty
-                % queue can transmit.
-                for j=1:N_CHAIN_node
-                    if state_vec(j) == 1 
-                        qn(j) = qn(j) - 1;  % service is deterministic
-                        total_TX_time = total_TX_time + Tpkt;
-                        round_idx = round_idx + power(2,j-1);
-                    end
-                end                 
-            else
-                % The winner follows DCF
-                qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
-                total_TX_time = total_TX_time + Tpkt;
-                round_idx = round_idx + power(2,winner_id-1);
-            end
-            % Time evolution
-            total_frame_time = contention_time + total_TX_time;
-            oldT = currentT;
-            currentT = currentT + total_frame_time;  
-        else
-            oldT = currentT;
-            currentT = min(next_arrival_time);
-        end
-    end       
-%}
- 
-%{    
-%% Q-threshold with cross piggybacking
-% If a DCF node wins contention, the head of CHAIN can still piggyback
-    if strcmp(Mode,'Qth-cross-piggyback')
-        % Contention
-        winner_id = -1;
-        contention_time = get_contention_time(Tcont);
-        % CHAIN node is active if
-        % (1) it is already in CHAIN and has at least one packet
-        % (2) it it currently not in CHAIN but has more than or equal to
-        % q_threshold packets
-        contention_set_part1 = find(qn(1:N_CHAIN_node).*(state_vec(1:N_CHAIN_node) == 0) >= q_threshold);
-        contention_set_part2 = find(qn(1:N_CHAIN_node).*(state_vec(1:N_CHAIN_node) == 1) >= 1);
-        % DCF node is active if it has at least one packet
-        contention_set_part3 = find(qn.*is_DCF >= 1);
-        contention_set = [contention_set_part1; contention_set_part2; contention_set_part3];
-        if ~isempty(contention_set)
-            winner_id = contention_set(randi([1, length(contention_set)]));
-        end
-        
-        % Services
-        if winner_id > 0
-            if winner_id <= N_CHAIN_node
-                % The winner supports CHAIN
-                if WIFI_nodes{winner_id}.is_active == 1
-                    % The winner is already in CHAIN
-                    % TODO: In this case, CHAIN might break if a link in CHAIN
-                    % has an empty queue
-                    qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
-                    total_TX_time = total_TX_time + Tpkt;
-                    round_idx = round_idx + power(2,winner_id-1);
-                    next_in_CHAIN = WIFI_nodes{winner_id}.succ_id;
-                    while next_in_CHAIN ~= winner_id
-                        if qn(next_in_CHAIN) > 0
-                            qn(next_in_CHAIN) = qn(next_in_CHAIN) - 1;  % service is deterministic
-                            total_TX_time = total_TX_time + Tpkt;
-                            round_idx = round_idx + power(2,next_in_CHAIN-1);
-                        else
-                            % CHAIN breaks and needs to update predecessors
-                            % and successors
-                            WIFI_nodes{next_in_CHAIN}.is_active = 0;
-                            state_vec(next_in_CHAIN) = 0;
-                            % Update CHAIN head or tail
-                            if next_in_CHAIN == CHAIN_tail_id
-                                CHAIN_tail_id = WIFI_nodes{next_in_CHAIN}.pred_id;
-                            else
-                                if next_in_CHAIN == CHAIN_head_id
-                                    CHAIN_head_id = WIFI_nodes{next_in_CHAIN}.succ_id;       
-                                end
-                            end
-                            WIFI_nodes{WIFI_nodes{next_in_CHAIN}.succ_id}.pred_id = WIFI_nodes{next_in_CHAIN}.pred_id;
-                            WIFI_nodes{WIFI_nodes{next_in_CHAIN}.pred_id}.succ_id = WIFI_nodes{next_in_CHAIN}.succ_id;
-                            WIFI_nodes{next_in_CHAIN}.succ_id = 0;
-                            WIFI_nodes{next_in_CHAIN}.pred_id = 0;
-                            break
-                        end
-                        next_in_CHAIN = WIFI_nodes{next_in_CHAIN}.succ_id;
-                    end
-                else
-                    % The winner is currently not in CHAIN
-                    % TODO: The winner joins the CHAIN as the head, and the
-                    % rest of CHAIN can piggyback
-                    WIFI_nodes{winner_id}.is_active = 1;
-                    if CHAIN_tail_id ~= 0
-                        WIFI_nodes{winner_id}.pred_id = CHAIN_tail_id;
-                        WIFI_nodes{CHAIN_tail_id}.succ_id = winner_id;
-                    else
-                        % if there was no link in CHAIN
-                        WIFI_nodes{winner_id}.pred_id = winner_id;
-                        CHAIN_tail_id = winner_id;
-                    end
-                    if CHAIN_head_id ~= 0
-                        WIFI_nodes{winner_id}.succ_id = CHAIN_head_id;
-                        WIFI_nodes{CHAIN_head_id}.pred_id = winner_id;
-                    else
-                        % if there was no link in CHAIN
-                        WIFI_nodes{winner_id}.succ_id = winner_id;
-                    end
-                    CHAIN_head_id = winner_id;                  
-                    state_vec(winner_id) = 1;
-                    qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
-                    total_TX_time = total_TX_time + Tpkt;
-                    round_idx = round_idx + power(2,winner_id-1);
-                    
-                    % The rest of CHAIN can piggyback with possibly dummy
-                    % packets
-                    next_in_CHAIN = WIFI_nodes{winner_id}.succ_id;
-                    while next_in_CHAIN ~= winner_id
-                        if qn(next_in_CHAIN) > 0
-                            qn(next_in_CHAIN) = qn(next_in_CHAIN) - 1;  % service is deterministic
-                            total_TX_time = total_TX_time + Tpkt;
-                            round_idx = round_idx + power(2,next_in_CHAIN-1);
-                        else
-                            % CHAIN shall not break and can transmit dummy
-                            % packets
-                            total_TX_time = total_TX_time + Tdummy;
-                            round_idx = round_idx + power(2,next_in_CHAIN-1);
-                        end
-                        next_in_CHAIN = WIFI_nodes{next_in_CHAIN}.succ_id;
-                    end                    
-                end
-            else
-                % The winner follows DCF
-                qn(winner_id) = qn(winner_id) - 1;  % service is deterministic
-                total_TX_time = total_TX_time + Tpkt;
-                round_idx = round_idx + power(2,winner_id-1);
-                
-                % The head of CHAIN can piggyback and the rest of CHAIN can
-                % also follow
-                if CHAIN_head_id > 0
-                    if qn(CHAIN_head_id) > 0
-                        qn(CHAIN_head_id) = qn(CHAIN_head_id) - 1; % service is deterministic
-                        total_TX_time = total_TX_time + Tpkt;
-                    else
-                        total_TX_time = total_TX_time + Tdummy;
-                    end              
-                    next_in_CHAIN = WIFI_nodes{CHAIN_head_id}.succ_id;
-                    while next_in_CHAIN ~= CHAIN_head_id
-                        if qn(next_in_CHAIN) > 0
-                            qn(next_in_CHAIN) = qn(next_in_CHAIN) - 1;  % service is deterministic
-                            total_TX_time = total_TX_time + Tpkt;
-                            round_idx = round_idx + power(2,next_in_CHAIN-1);
-                        else
-                            % CHAIN breaks and needs to update predecessors
-                            % and successors
-                            WIFI_nodes{next_in_CHAIN}.is_active = 0;
-                            state_vec(next_in_CHAIN) = 0;
-                            % Update CHAIN head or tail
-                            if next_in_CHAIN == CHAIN_tail_id
-                                CHAIN_tail_id = WIFI_nodes{next_in_CHAIN}.pred_id;
-                            else
-                                if next_in_CHAIN == CHAIN_head_id
-                                    CHAIN_head_id = WIFI_nodes{next_in_CHAIN}.succ_id;       
-                                end
-                            end
-                            WIFI_nodes{WIFI_nodes{next_in_CHAIN}.succ_id}.pred_id = WIFI_nodes{next_in_CHAIN}.pred_id;
-                            WIFI_nodes{WIFI_nodes{next_in_CHAIN}.pred_id}.succ_id = WIFI_nodes{next_in_CHAIN}.succ_id;
-                            WIFI_nodes{next_in_CHAIN}.succ_id = 0;
-                            WIFI_nodes{next_in_CHAIN}.pred_id = 0;
-                            break
-                        end
-                        next_in_CHAIN = WIFI_nodes{next_in_CHAIN}.succ_id;
-                    end                
-                end
-            end
-            % Time evolution
-            total_frame_time = contention_time + total_TX_time;
-            oldT = currentT;
-            currentT = currentT + total_frame_time;  
-        else
-            oldT = currentT;
-            currentT = min(next_arrival_time);
-        end
-    end 
-%}
-    
 %% Conventional Pure-DCF mode
     if strcmp(Mode,'Pure-DCF')
         % Contention
@@ -1106,7 +853,7 @@ while currentT < simT
         %% Determine contention time (including possible collisions)
         contention_time = DIFS;   
         % Each node is active if it has at least one packet is active if
-        contention_set = find(qn >= 1);      
+        contention_set = find((qn >= 1) | (is_DCFsat == 1));      
         % There can be multiple winners, a.k.a. collision
         if ~isempty(contention_set)
             total_contention_interval = total_contention_interval + 1;
@@ -1136,9 +883,12 @@ while currentT < simT
             currentT = currentT + Tpkt; 
             queue_length_calculus = queue_length_calculus + (currentT - time_since_last_queue_update)*qn;
             time_since_last_queue_update = currentT;
-            
-            qn(winner_id) = qn(winner_id) - 1;  % service is deterministic            
             round_idx = round_idx + power(2,winner_id-1);
+            % channel is unreliable
+            if rand(1) <= channel_pn(winner_id)
+                qn(winner_id) = max(0,qn(winner_id) - 1); 
+                total_delivery_history(winner_id,count) = total_delivery_history(winner_id,count) + 1;
+            end
         else
             if winner_id == -2
                 % Do nothing
@@ -1163,29 +913,62 @@ while currentT < simT
     end
     
     % Round Counting
-    round_count(round_idx,1) = round_count(round_idx,1) + 1;
-    
+    if ROUND_COUNT_ON == 1
+        round_count(round_idx,1) = round_count(round_idx,1) + 1;
+    end
     % Update history
     qn_history(:,count) = qn;
     frame_timestamps(count) = currentT;
 end
 
 %% Post-processing
-round_count_normalize = round_count/(sum(round_count));
+if ROUND_COUNT_ON == 1
+    round_count_normalize = round_count/(sum(round_count));
+end
 average_contention_time_per_interval = total_contention_time/total_contention_interval;
+average_throughput = max(total_delivery_history, [], 2)/currentT;
 
 %% Plotting
 %plot(frame_timestamps(1:count), qn_history(:,1:count));
-createfigure(frame_timestamps(1:count), qn_history(:,1:count));
+Stepsize = 50;
+createfigure(frame_timestamps(1:Stepsize:count), qn_history(:,1:Stepsize:count));
 average_qn = queue_length_calculus/currentT;
-for i=1:N
-fprintf(fileID, 'average queue length of client %d: %.2f\n', i, average_qn(i));
+switch N_arrival_groups
+    case 1
+        fprintf(fileID, 'average throughput of Q-CHAIN clients (pkt/sec): %.2f\n', sum(average_throughput(1:N_CHAIN_node))*1000);
+        fprintf(fileID, 'average throughput of DCF clients (pkt/sec): %.2f\n', sum(average_throughput(N_CHAIN_node+1:N_CHAIN_node+N_DCF))*1000);
+        fprintf(fileID, 'average throughput of DCFsat clients (pkt/sec): %.2f\n', sum(average_throughput(N_CHAIN_node+N_DCF+1:N_CHAIN_node+N_DCF+N_DCFsat))*1000);
+        fprintf(fileID, 'total average queue length: %.2f\n', sum(average_qn));
+        fprintf(fileID, 'total average delay: %.2f (ms)\n', sum(average_qn)/sum(arrival_rate));
+    case 2
+        fprintf(fileID, 'average throughput of Q-CHAIN clients (pkt/sec): %.2f\n', sum(average_throughput(1:N_CHAIN_node))*1000);
+        fprintf(fileID, 'average throughput of DCF clients (pkt/sec): %.2f\n', sum(average_throughput(N_CHAIN_node+1:N_CHAIN_node+N_DCF))*1000);
+        fprintf(fileID, 'average throughput of DCFsat clients (pkt/sec): %.2f\n', sum(average_throughput(N_CHAIN_node+N_DCF+1:N_CHAIN_node+N_DCF+N_DCFsat))*1000);
+        fprintf(fileID, 'average throughput of Arrival-Group-1 clients (pkt/sec): %.2f\n', sum(average_throughput(1:N_half))*1000);
+        fprintf(fileID, 'average throughput of Arrival-Group-2 clients (pkt/sec): %.2f\n', sum(average_throughput(N_half+1:N_nonsat))*1000);
+        fprintf(fileID, 'total average queue length of Arrival-Group-1: %.2f\n', sum(average_qn(1:N_half)));
+        fprintf(fileID, 'total average queue length of Arrival-Group-2: %.2f\n', sum(average_qn(N_half+1:N_nonsat)));
+        fprintf(fileID, 'total average queue length: %.2f\n', sum(average_qn));
+        fprintf(fileID, 'total average delay of Arrival-Group-1: %.2f (ms)\n', sum(average_qn(1:N_half))/sum(arrival_rate(1:N_half)));
+        fprintf(fileID, 'total average delay of Arrival-Group-2: %.2f (ms)\n', sum(average_qn(N_half+1:N_nonsat))/sum(arrival_rate(N_half+1:N_nonsat)));
+        fprintf(fileID, 'total average delay: %.2f (ms)\n', sum(average_qn)/sum(arrival_rate));
+    otherwise
+        fprintf(fileID, 'average throughput of Q-CHAIN clients (pkt/sec): %.2f\n', sum(average_throughput(1:N_CHAIN_node))*1000);
+        fprintf(fileID, 'average throughput of DCF clients (pkt/sec): %.2f\n', sum(average_throughput(N_CHAIN_node+1:N_CHAIN_node+N_DCF))*1000);
+        fprintf(fileID, 'average throughput of DCFsat clients (pkt/sec): %.2f\n', sum(average_throughput(N_CHAIN_node+N_DCF+1:N_CHAIN_node+N_DCF+N_DCFsat))*1000);
+        fprintf(fileID, 'total average queue length: %.2f\n', sum(average_qn));
+        fprintf(fileID, 'total average delay: %.2f (ms)\n', sum(average_qn)/sum(arrival_rate));
 end
-fprintf(fileID, 'total average queue length: %.2f\n', sum(average_qn));
-fprintf(fileID, 'total average delay: %.2f (ms)\n', sum(average_qn)/sum(arrival_rate));
 fprintf(fileID, 'average contention time per interval: %.3f (ms)\n', average_contention_time_per_interval);
 fprintf(fileID, 'contention time percentage: %.3f %%\n', total_contention_time/currentT*100);
 fprintf(fileID, 'average collision rate: %.2f %%\n\n', total_collision/total_contention_interval*100);
+for i=1:N
+fprintf(fileID, 'average queue length of client %d: %.2f\n', i, average_qn(i));
+end
+for i=1:N
+fprintf(fileID, 'average throughput of client %d (pkt/sec): %.2f\n', i, average_throughput(i)*1000);
+end
+
 
 toc;
 end

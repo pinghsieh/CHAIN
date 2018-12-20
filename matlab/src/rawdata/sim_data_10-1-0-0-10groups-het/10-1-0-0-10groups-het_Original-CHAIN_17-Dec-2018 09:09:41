@@ -1,0 +1,30 @@
+***** Mode = Original-CHAIN, simT = 30000 (ms), rho = 0.1000, p = 1.000, Qth = 10 ***** 
+average throughput of Q-CHAIN clients (pkt/sec): 4953.20
+average throughput of DCF clients (pkt/sec): 0.00
+average throughput of DCFsat clients (pkt/sec): 0.00
+total average queue length: 9069.92
+total average delay: 1649.08 (ms)
+average contention time per interval: 0.085 (ms)
+contention time percentage: 20.746 %
+average collision rate: 16.90 %
+
+average queue length of client 1: 4781.15
+average queue length of client 2: 3064.71
+average queue length of client 3: 1213.76
+average queue length of client 4: 4.32
+average queue length of client 5: 1.75
+average queue length of client 6: 1.51
+average queue length of client 7: 0.85
+average queue length of client 8: 0.91
+average queue length of client 9: 0.66
+average queue length of client 10: 0.30
+average throughput of client 1 (pkt/sec): 705.66
+average throughput of client 2 (pkt/sec): 711.43
+average throughput of client 3 (pkt/sec): 717.73
+average throughput of client 4 (pkt/sec): 706.10
+average throughput of client 5 (pkt/sec): 604.33
+average throughput of client 6 (pkt/sec): 506.03
+average throughput of client 7 (pkt/sec): 400.93
+average throughput of client 8 (pkt/sec): 299.23
+average throughput of client 9 (pkt/sec): 203.83
+average throughput of client 10 (pkt/sec): 97.93
