@@ -18,7 +18,7 @@ N_CHAIN_group = 1;
 CHAINs = cell(N_CHAIN_group,1);
 CHAINs{1} = 1:1:500;
 DCF = [];
-DCFsat = [];
+DCFsat = [501];
 len_CHAIN = cellfun('length',CHAINs);
 N_CHAIN_node = sum(len_CHAIN);
 N_DCF = length(DCF);
@@ -41,10 +41,9 @@ q_threshold = 10; % threshold for reactivation
 Tput_shortterm_delta = 0.001;
 dummy_packet_limit = 20;
 % For QLB-CSMA
-qlen_update_p
+qlen_update_interval = 5;
 
 %% Part 5: Arrival rates for Qth-based algorithm
-N_arrival_groups = 2;
-arrival_rate_group1 = rho1*ones(N_half, 1);
-arrival_rate_group2 = rho2*ones(N_half, 1);
-arrival_rate = [arrival_rate_group1; arrival_rate_group2];
+N_arrival_groups = 1;
+arrival_rate = rho*ones(N_nonsat, 1);
+

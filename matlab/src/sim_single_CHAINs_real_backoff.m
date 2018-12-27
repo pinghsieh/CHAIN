@@ -39,10 +39,14 @@ switch network_config_code
         config_real_backoff.network_10nodes_1Chain_0DCF_0DCFsat_10groups_het;         
     case '500-1-0-0-1group'
         config_real_backoff.network_500nodes_1Chain_0DCF_0DCFsat_1group; 
+    case '500-1-0-1-1group'
+        config_real_backoff.network_500nodes_1Chain_0DCF_1DCFsat_1group;         
     case '500-1-0-0-2groups'
         config_real_backoff.network_500nodes_1Chain_0DCF_0DCFsat_2groups; 
     case '500-1-0-0-2groups-het'
-        config_real_backoff.network_500nodes_1Chain_0DCF_0DCFsat_2groups_het;    
+        config_real_backoff.network_500nodes_1Chain_0DCF_0DCFsat_2groups_het;   
+    case '500-1-0-1-2groups-het'
+        config_real_backoff.network_500nodes_1Chain_0DCF_1DCFsat_2groups_het; 
     case '500-1-0-0-10groups-het'
         config_real_backoff.network_500nodes_1Chain_0DCF_0DCFsat_10groups_het;  
     case '500-1-0-0-10groups-het-unreliable'
@@ -129,12 +133,14 @@ ROUND_COUNT_ON = 0;
 
 %% Main Program
 count = 0;
+progress = 1;
+total_progress = 10;
 current_CHAIN = [];
 if ROUND_COUNT_ON == 1
     round_count = zeros(2^N, 1);
 end
 
-for i=1:N
+for i=1:N_nonsat
     next_arrival_time(i) = get_interarrival_time(arrival_rate(i),number_of_mini_slots_per_unit_time);
 end
 while currentT < simT
@@ -148,6 +154,10 @@ while currentT < simT
         total_delivery_history = [total_delivery_history zeros(N, Nmorepoints)];
         frame_timestamps = [frame_timestamps zeros(1, Nmorepoints)];
         Npoints = Npoints + Nmorepoints;
+    end
+    if currentT > progress/total_progress*simT
+         fprintf('currentT = %.2f\n', currentT);
+         progress = progress + 1;
     end
 %% Original CHAIN
 % Chain may break due to a link with an empty queue
@@ -183,7 +193,7 @@ while currentT < simT
         %% Determine contention time (including possible collisions)
         contention_time = DIFS;   
         % Each node is active if it has at least one packet is active if
-        contention_set = find(qn >= 1);      
+        contention_set = find(qn >= 1 | (is_DCFsat == 1));      
         % There can be multiple winners, a.k.a. collision
         if ~isempty(contention_set)
             total_contention_interval = total_contention_interval + 1;
@@ -250,7 +260,7 @@ while currentT < simT
                 time_since_last_queue_update = currentT;
                 round_idx = round_idx + power(2,winner_id-1); 
                 % channel is unreliable
-                if rand(1) <= channel_pn(next_in_CHAIN)                
+                if rand(1) <= channel_pn(winner_id)                
                     qn(winner_id) = max(0,qn(winner_id) - 1);  % service is deterministic
                     total_delivery_history(winner_id,count) = total_delivery_history(winner_id,count) + 1;
                     Tput_shortterm(winner_id) = Tput_shortterm(winner_id) + 1; 
@@ -905,7 +915,7 @@ while currentT < simT
     
 %% Common parts    
     % Arrivals
-    for i=1:N
+    for i=1:N_nonsat
         while next_arrival_time(i) <= currentT + MAX_TOL
             qn(i) = qn(i) + 1;
             next_arrival_time(i) = next_arrival_time(i) + get_interarrival_time(arrival_rate(i),number_of_mini_slots_per_unit_time);
